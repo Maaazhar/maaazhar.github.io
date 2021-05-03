@@ -167,7 +167,8 @@ section .title::after{
     pointer-events: auto;
 }
 .scroll-up-btn:hover{
-    filter: brightness(90%);
+    background: #fff;
+    color: crimson;
 }
 
 
