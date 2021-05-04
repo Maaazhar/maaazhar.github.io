@@ -53,8 +53,9 @@ section{
 .contact{
     background: url("images/banner.jpg");
     background-attachment: fixed;
+    background-size: 100%;
     color: #fff;
-    color:#dc143c, 83%, 47%)
+    color:#dc143c;
 }
 section .title{
     position: relative;
@@ -302,6 +303,7 @@ section .title::after{
 .project, .services{
     color:#fff;
     background: url("images/banner.jpg");
+    background-size: 100%;
     background-attachment: fixed;
 }
 .feedback{
