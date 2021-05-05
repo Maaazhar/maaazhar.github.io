@@ -524,7 +524,8 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .feedback .carousel .card:hover{
-    background: crimson; 
+    background: crimson;
+    color: #fff;
 }
 .feedback .carousel .card .box{
     display: flex;
