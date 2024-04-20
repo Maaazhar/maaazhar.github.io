@@ -270,31 +270,38 @@ section .title::after {
 }
 
 .home .home-content .text-1 {
-    font-size: 27px;
+    font-size: 25px;
+    text-shadow: 5px 5px 10px #000;
 }
 
 .home .home-content .text-2 {
     font-size: 80px;
     font-weight: 600;
+    text-shadow: 5px 5px 10px #000;
     /* margin-left: -3px; */
 }
 
-.home .home-content .text-2-5 {
-    margin: 10px 0px 10px 0px;
-    font-size: 40px;
-    font-weight: 400;
-    color: #aaa;
-    /* margin-left: -3px; */
-}
 
 .home .home-content .text-3 {
-    margin: 5px 0;
+    margin: 10px 0;
     font-size: 45px;
     font-weight: 600;
     color: #bbb;
+    text-shadow: 5px 5px 10px #000;
 }
 
-.home .home-content .text-2-5 span,
+.home .home-content .text-4 {
+    width: 50%;
+    margin: 20px 0px 20px 0px;
+    color: #bbb;
+    font-size: 20px;
+    font-weight: 300;
+    text-shadow: 5px 5px 10px #000;
+    line-height: 1.5;
+    /* margin-left: -3px; */
+}
+
+.home .home-content .text-4 span,
 .home .home-content .text-3 span {
     color: crimson;
     font-weight: 500;
