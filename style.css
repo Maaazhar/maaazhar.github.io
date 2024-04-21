@@ -55,7 +55,6 @@ footer {
 .about .about-content,
 .project .project-content,
 .services .serv-content,
-.skills .skills-content,
 .contact .contact-content {
     display: flex;
     flex-wrap: wrap;
@@ -356,16 +355,23 @@ section .title::after {
 
 .about .about-content .right .text {
     font-size: 25px;
-    font-weight: 600;
-    margin-bottom: 10px;
+    font-weight: 500;
+    margin-bottom: 5px;
 }
 
-.about .about-content .right .text span {
+.about .about-content .right .text span,
+.about .about-content .right p span {
     color: crimson;
+}
+.about .about-content .right .text .aboutWork {
+    display: block;
 }
 
 .about .about-content .right p {
     text-align: justify;
+}
+.about .about-content .right p span{
+    font-weight: 500;
 }
 
 .about .about-content .right a {
@@ -404,10 +410,6 @@ section .title::after {
 .services .title::after {
     background: none;
     content: "what i do";
-}
-
-.blog .title::after {
-    content: "what i think";
 }
 
 .project .title::after {
@@ -507,6 +509,27 @@ section .title::after {
 .skills .title::after {
     background: none;
     content: "what i know";
+}
+
+.skills-content{
+    border: 1px solid red;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 10px;
+}
+
+.skillCategory{
+    background: #fefefead;
+    padding: 10px;
+
+}
+
+.skillCategoryTitle{
+    font-size: 28px;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
 }
 
 .skills .skills-content .column {
@@ -826,11 +849,21 @@ footer span a:hover {
     .home .home-content .text-4 {
         width: 60%;
     }
+    .about .about-content .right .text {
+        font-size: 25px;
+        font-weight: 500;
+    }
+    .about .about-content .right .text .aboutWork {
+        display: inline;
+    }
 }
 
 @media (max-width: 991px) {
     .max-width {
         padding: 0 50px;
+    }
+    .about .about-content .right .text .aboutWork {
+        display: block;
     }
 
 }
@@ -947,7 +980,9 @@ footer span a:hover {
         display: block;
         margin-top: -15px;
     }
-
+    .about .about-content .right .text .aboutWork {
+        display: inline;
+    }
     .about-btn {
         display: flex;
         align-items: center;
@@ -965,6 +1000,10 @@ footer span a:hover {
         padding: 80px 0px 0px 0px ;
     }
     
+    .home .home-content .text-1 img {
+        width:40px;
+    }
+
     .home .home-content .text-1 {
         text-align: center;
     }
@@ -1041,6 +1080,14 @@ footer span a:hover {
 
     .home-btn a {
         font-size: 20px;
+    }
+    
+    .about .about-content .right .text {
+        text-align: center;
+    }
+    
+    .about .about-content .right .text .aboutWork {
+        display: block;
     }
 }
 @media (max-width: 350px) {

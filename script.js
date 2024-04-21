@@ -34,7 +34,7 @@ $(document).ready(function(){
     });
 
     // typing text animation script
-    const typedScript = ["Web Developer.", "Front-End Web Developer.", "ReactJS Developer.", "MERN Stack Developer.", "Designer." ]; 
+    const typedScript = ["Web Development.", "Front-End Development.", "ReactJS Development.", "MERN Stack Development.", "Web Design." ]; 
     var typed = new Typed(".typing", {
         strings: typedScript,
         typeSpeed: 100,
