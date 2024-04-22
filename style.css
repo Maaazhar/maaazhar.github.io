@@ -521,15 +521,19 @@ section .title::after {
 }
 
 .skillCategory{
-    background: #fefefead;
+    background: #1c1c1cad;
     padding: 10px;
 
 }
 
 .skillCategoryTitle{
     font-size: 28px;
-    color: rgb(0, 0, 0);
+    color: #dc143c;
     font-weight: 500;
+}
+.skillItem{
+    display: flex ;
+    
 }
 
 .skills .skills-content .column {
