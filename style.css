@@ -512,7 +512,6 @@ section .title::after {
 }
 
 .skills-content{
-    border: 1px solid red;
     min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
@@ -521,8 +520,7 @@ section .title::after {
 }
 
 .skillCategory{
-    background: #1c1c1cad;
-    padding: 10px;
+    padding: 15px 0px;
 
 }
 
@@ -531,9 +529,46 @@ section .title::after {
     color: #dc143c;
     font-weight: 500;
 }
-.skillItem{
+
+.skill{
     display: flex ;
-    
+    align-items: center;
+    flex-wrap: wrap;
+}
+.skillItem{
+    display: block;
+    margin: 10px 10px 10px 0px;
+    padding: 10px;
+    display: flex ;
+    align-items: center;
+    justify-content: space-between;
+    background: #1c1c1cad;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.skillItem:hover{    
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.skillImg{
+    margin: 0px 10px;
+    padding-top: 5px;
+
+}
+.skillItem:hover  .skillImg svg{
+    fill: #dc143c;
+}
+.skillName{
+    margin: 0px 5px;
+    font-size: 20px;
+} 
+.skillTime{
+    margin: 0px 10px;
+    font-size: 14px;
+    color: #cfbca2;
 }
 
 .skills .skills-content .column {
