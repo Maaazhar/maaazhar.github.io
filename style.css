@@ -542,13 +542,13 @@ section .title::after {
     display: flex ;
     align-items: center;
     justify-content: space-between;
-    background: #1c1c1cad;
+    background: rgba(28, 28, 28, 0.6);
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.skillItem:hover{    
-    background: rgba(0, 0, 0, 0.5);
+.skillItem:hover{
+    backdrop-filter: blur(3px);
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.3);
 }

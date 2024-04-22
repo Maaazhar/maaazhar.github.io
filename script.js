@@ -49,6 +49,56 @@ $(document).ready(function(){
         loop: true
     });
 
+    //Skills
+    const skills = [
+        [
+            "Front-end",
+            ["", "HTML", 2019],
+            ["", "CSS", 2019],
+            ["", "Bootstrap", 2019],
+            ["", "Material", 2020],
+            ["", "JavaScript", 2019],
+            ["", "ES6", 2019],
+            ["", "ReactJs", 2020],
+            ["", "React-Hook", 2020],
+            ["", "Redux", 2020],
+            ["", "React-Router", 2020],
+            ["", "NextJs", 2020],
+            ["", "TypeScrip", 2020]
+        ],
+        [
+            "Back-end",
+            ["", "JavaScript", 2019],
+            ["", "NodeJs (CRUD)", 2020],
+            ["", "ExpressJs", 2020],
+            ["", "MongoDB", 2020]
+        ],
+        [
+            "Tools",
+            ["", "VS code", 2019],
+            ["", "Git", 2020], 
+            ["", "Chrome Dev tool", 2020], 
+            ["", "Code Blocks", 2017],
+            ["", "Dev C++", 2017],
+            ["", "Figma", 2020],
+            ["", "PhotoShop", 2019]
+        ],
+        [
+            "Platform",
+            ["", "GitHub", 2020], 
+            ["", "Firebase", 2020], 
+            ["", "Netlify", 2020],
+            ["", "Vercel", 2022]
+        ],
+        [
+            "Programming Language",
+            ["", "c", 2017], 
+            ["", "C++", 2018], 
+            ["", "JavaScript", 2019],
+            ["", "Python", 2020]
+        ]
+    ]
+
     // owl carousel script
     $('.carousel').owlCarousel({
         margin: 20,
