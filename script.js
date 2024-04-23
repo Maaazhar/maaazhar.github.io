@@ -49,6 +49,32 @@ $(document).ready(function () {
         loop: true
     });
 
+
+    // owl carousel script
+    $('.carousel').owlCarousel({
+        margin: 20,
+        loop: true,
+        autoplayTimeOut: 2000,
+        autoplayHoverPause: true,
+        responsive: {
+            0: {
+                items: 1,
+                nav: false
+            },
+            600: {
+                items: 2,
+                nav: false
+            },
+            1000: {
+                items: 3,
+                nav: false
+            }
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+
     //Skills
     const skills = [
         {
@@ -107,38 +133,26 @@ $(document).ready(function () {
                 ["images/skill-svg/html-5-logo.svg", "Python", 2020]
             ]
         }
-    ]
+    ];
 
     const currentYear = new Date().getFullYear();
     const skillsContent = document.querySelector(".skillsContent");
     const skillList = document.querySelector(".skill");
 
-        skillsContent.insertAdjacentHTML('afterbegin' `
-            <h2>Bismillah</h2>
+    skills.map(d => { skillsContent.insertAdjacentHTML('afterbegin' `
+            <div class="skillCategory">
+                <div class="skillCategoryTitle">${d.category}</div>
+                    ${d.skillList.map(s => { skillList.insertAdjacentHTML('afterbegin', `
+                            <div class="skillItem">
+                                <div class="skillImg">
+                                 <svg data-src="${s[0]}" width="30px" fill="#faebd7"></svg>
+                                </div>
+                                <div class="skillName">${s[1]}</div>
+                                <div class="skillAge">${currentYear - s[2]} Years of<br>Experience </div>
+                            </div>
+                        `)
+        })}
+            </div>
       `)
-
-    document.querySelector("#test").innerHTML = skills.map(data => `<div">HTML</div>`).join('')
-
-
-    // owl carousel script
-    $('.carousel').owlCarousel({
-        margin: 20,
-        loop: true,
-        autoplayTimeOut: 2000,
-        autoplayHoverPause: true,
-        responsive: {
-            0: {
-                items: 1,
-                nav: false
-            },
-            600: {
-                items: 2,
-                nav: false
-            },
-            1000: {
-                items: 3,
-                nav: false
-            }
-        }
-    });
+    })
 });
