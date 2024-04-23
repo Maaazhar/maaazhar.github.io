@@ -1,40 +1,40 @@
-$(document).ready(function(){
-    $(window).scroll(function(){
+$(document).ready(function () {
+    $(window).scroll(function () {
         // sticky navbar on scroll script
-        if(this.scrollY > 20){
+        if (this.scrollY > 20) {
             $('.navbar').addClass("sticky");
-        }else{
+        } else {
             $('.navbar').removeClass("sticky");
         }
-        
+
         // scroll-up button show/hide script
-        if(this.scrollY > 500){
+        if (this.scrollY > 500) {
             $('.scroll-up-btn').addClass("show");
-        }else{
+        } else {
             $('.scroll-up-btn').removeClass("show");
         }
     });
 
     // slide-up script
-    $('.scroll-up-btn').click(function(){
-        $('html').animate({scrollTop: 0});
+    $('.scroll-up-btn').click(function () {
+        $('html').animate({ scrollTop: 0 });
         // removing smooth scroll on slide-up button click
         $('html').css("scrollBehavior", "auto");
     });
 
-    $('.navbar .menu li a').click(function(){
+    $('.navbar .menu li a').click(function () {
         // applying again smooth scroll on menu items click
         $('html').css("scrollBehavior", "smooth");
     });
 
     // toggle menu/navbar script
-    $('.menu-btn').click(function(){
+    $('.menu-btn').click(function () {
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
     });
 
     // typing text animation script
-    const typedScript = ["Web Development.", "Front-End Development.", "ReactJS Development.", "MERN Stack Development.", "Web Design." ]; 
+    const typedScript = ["Web Development.", "Front-End Development.", "ReactJS Development.", "MERN Stack Development.", "Web Design."];
     var typed = new Typed(".typing", {
         strings: typedScript,
         typeSpeed: 100,
@@ -51,53 +51,74 @@ $(document).ready(function(){
 
     //Skills
     const skills = [
-        [
-            "Front-end",
-            ["", "HTML", 2019],
-            ["", "CSS", 2019],
-            ["", "Bootstrap", 2019],
-            ["", "Material", 2020],
-            ["", "JavaScript", 2019],
-            ["", "ES6", 2019],
-            ["", "ReactJs", 2020],
-            ["", "React-Hook", 2020],
-            ["", "Redux", 2020],
-            ["", "React-Router", 2020],
-            ["", "NextJs", 2020],
-            ["", "TypeScrip", 2020]
-        ],
-        [
-            "Back-end",
-            ["", "JavaScript", 2019],
-            ["", "NodeJs (CRUD)", 2020],
-            ["", "ExpressJs", 2020],
-            ["", "MongoDB", 2020]
-        ],
-        [
-            "Tools",
-            ["", "VS code", 2019],
-            ["", "Git", 2020], 
-            ["", "Chrome Dev tool", 2020], 
-            ["", "Code Blocks", 2017],
-            ["", "Dev C++", 2017],
-            ["", "Figma", 2020],
-            ["", "PhotoShop", 2019]
-        ],
-        [
-            "Platform",
-            ["", "GitHub", 2020], 
-            ["", "Firebase", 2020], 
-            ["", "Netlify", 2020],
-            ["", "Vercel", 2022]
-        ],
-        [
-            "Programming Language",
-            ["", "c", 2017], 
-            ["", "C++", 2018], 
-            ["", "JavaScript", 2019],
-            ["", "Python", 2020]
-        ]
+        {
+            "category": "Front-End",
+            "skillList": [
+                ["images/skill-svg/html-5-logo.svg", "HTML", 2019],
+                ["images/skill-svg/html-5-logo.svg", "CSS", 2019],
+                ["images/skill-svg/html-5-logo.svg", "Bootstrap", 2019],
+                ["images/skill-svg/html-5-logo.svg", "Material", 2020],
+                ["images/skill-svg/html-5-logo.svg", "JavaScript", 2019],
+                ["images/skill-svg/html-5-logo.svg", "ES6", 2019],
+                ["images/skill-svg/html-5-logo.svg", "ReactJs", 2020],
+                ["images/skill-svg/html-5-logo.svg", "React-Hook", 2020],
+                ["images/skill-svg/html-5-logo.svg", "Redux", 2020],
+                ["images/skill-svg/html-5-logo.svg", "React-Router", 2020],
+                ["images/skill-svg/html-5-logo.svg", "NextJs", 2020],
+                ["images/skill-svg/html-5-logo.svg", "TypeScrip", 2020]
+            ]
+        },
+        {
+            "category": "Back-End",
+            "skillList": [
+                ["images/skill-svg/html-5-logo.svg", "JavaScript", 2019],
+                ["images/skill-svg/html-5-logo.svg", "NodeJs (CRUD)", 2020],
+                ["images/skill-svg/html-5-logo.svg", "ExpressJs", 2020],
+                ["images/skill-svg/html-5-logo.svg", "MongoDB", 2020]
+            ]
+        },
+        {
+            "category": "Tools",
+            "skillList": [
+                ["images/skill-svg/html-5-logo.svg", "VS code", 2019],
+                ["images/skill-svg/html-5-logo.svg", "Git", 2020],
+                ["images/skill-svg/html-5-logo.svg", "Chrome Dev tool", 2020],
+                ["images/skill-svg/html-5-logo.svg", "Code Blocks", 2017],
+                ["images/skill-svg/html-5-logo.svg", "Dev C++", 2017],
+                ["images/skill-svg/html-5-logo.svg", "Figma", 2020],
+                ["images/skill-svg/html-5-logo.svg", "PhotoShop", 2019]
+            ]
+        },
+        {
+            "category": "Platform",
+            "skillList": [
+                ["images/skill-svg/html-5-logo.svg", "GitHub", 2020],
+                ["images/skill-svg/html-5-logo.svg", "Firebase", 2020],
+                ["images/skill-svg/html-5-logo.svg", "Netlify", 2020],
+                ["images/skill-svg/html-5-logo.svg", "Vercel", 2022]
+            ]
+        },
+        {
+            "category": "Programming Language",
+            "skillList": [
+                ["images/skill-svg/html-5-logo.svg", "c", 2017],
+                ["images/skill-svg/html-5-logo.svg", "C++", 2018],
+                ["images/skill-svg/html-5-logo.svg", "JavaScript", 2019],
+                ["images/skill-svg/html-5-logo.svg", "Python", 2020]
+            ]
+        }
     ]
+
+    const currentYear = new Date().getFullYear();
+    const skillsContent = document.querySelector(".skillsContent");
+    const skillList = document.querySelector(".skill");
+
+        skillsContent.insertAdjacentHTML('afterbegin' `
+            <h2>Bismillah</h2>
+      `)
+
+    document.querySelector("#test").innerHTML = skills.map(data => `<div">HTML</div>`).join('')
+
 
     // owl carousel script
     $('.carousel').owlCarousel({
@@ -106,15 +127,15 @@ $(document).ready(function(){
         autoplayTimeOut: 2000,
         autoplayHoverPause: true,
         responsive: {
-            0:{
+            0: {
                 items: 1,
                 nav: false
             },
-            600:{
+            600: {
                 items: 2,
                 nav: false
             },
-            1000:{
+            1000: {
                 items: 3,
                 nav: false
             }

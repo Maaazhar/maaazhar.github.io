@@ -511,7 +511,8 @@ section .title::after {
     content: "what i know";
 }
 
-.skills-content{
+.skillsContent{
+    border: 1px solid red;
     min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
@@ -565,27 +566,27 @@ section .title::after {
     margin: 0px 5px;
     font-size: 20px;
 } 
-.skillTime{
+.skillAge{
     margin: 0px 10px;
     font-size: 14px;
     color: #cfbca2;
 }
 
-.skills .skills-content .column {
+.skills .skillsContent .column {
     width: calc(50% - 30px);
 }
 
-.skills .skills-content .left .text {
+.skills .skillsContent .left .text {
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
 }
 
-.skills .skills-content .left p {
+.skills .skillsContent .left p {
     text-align: justify;
 }
 
-.skills .skills-content .left a {
+.skills .skillsContent .left a {
     display: inline-block;
     background: crimson;
     color: #fff;
@@ -598,42 +599,42 @@ section .title::after {
     transition: all 0.3s ease;
 }
 
-.skills .skills-content .left a:hover {
+.skills .skillsContent .left a:hover {
     color: crimson;
     background: none;
 }
 
-.skills .skills-content .right .bars {
+.skills .skillsContent .right .bars {
     margin-bottom: 15px;
     transition: all 0.3s ease;
     padding: 5px 10px 10px 10px;
     border-radius: 5px;
 }
 
-.skills .skills-content .right .bars:hover {
+.skills .skillsContent .right .bars:hover {
     box-shadow: 5px 5px 25px crimson;
 }
 
-.skills .skills-content .right .info {
+.skills .skillsContent .right .info {
     display: flex;
     margin-bottom: 5px;
     align-items: center;
     justify-content: space-between;
 }
 
-.skills .skills-content .right span {
+.skills .skillsContent .right span {
     font-weight: 500;
     font-size: 18px;
 }
 
-.skills .skills-content .right .line {
+.skills .skillsContent .right .line {
     height: 5px;
     width: 100%;
     background: lightgrey;
     position: relative;
 }
 
-.skills .skills-content .right .line::before {
+.skills .skillsContent .right .line::before {
     content: "";
     position: absolute;
     height: 100%;
@@ -642,55 +643,55 @@ section .title::after {
     background: crimson;
 }
 
-.skills-content .right .c::before {
+.skillsContent .right .c::before {
     width: 90%;
 }
 
-.skills-content .right .cpp::before {
+.skillsContent .right .cpp::before {
     width: 65%;
 }
 
-.skills-content .right .python::before {
+.skillsContent .right .python::before {
     width: 45%;
 }
 
-.skills-content .right .python::before {
+.skillsContent .right .python::before {
     width: 45%;
 }
 
-.skills-content .right .ccna::before {
+.skillsContent .right .ccna::before {
     width: 85%;
 }
 
-.skills-content .right .comptia::before {
+.skillsContent .right .comptia::before {
     width: 95%;
 }
 
-.skills-content .right .html::before {
+.skillsContent .right .html::before {
     width: 95%;
 }
 
-.skills-content .right .css::before {
+.skillsContent .right .css::before {
     width: 80%;
 }
 
-.skills-content .right .js::before {
+.skillsContent .right .js::before {
     width: 80%;
 }
 
-.skills-content .right .react::before {
+.skillsContent .right .react::before {
     width: 80%;
 }
 
-.skills-content .right .node::before {
+.skillsContent .right .node::before {
     width: 50%;
 }
 
-.skills-content .right .express::before {
+.skillsContent .right .express::before {
     width: 50%;
 }
 
-.skills-content .right .mongo::before {
+.skillsContent .right .mongo::before {
     width: 50%;
 }
 
@@ -989,7 +990,7 @@ footer span a:hover {
         margin-bottom: 20px;
     }
 
-    .skills .skills-content .column,
+    .skills .skillsContent .column,
     .contact .contact-content .column {
         width: 100%;
         margin-bottom: 35px;
@@ -1077,7 +1078,7 @@ footer span a:hover {
     }
 
     .about .about-content .right .text,
-    .skills .skills-content .left .text {
+    .skills .skillsContent .left .text {
         font-size: 19px;
     }
 
