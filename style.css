@@ -856,6 +856,7 @@ footer {
 }
 
 footer span a {
+    display: inline-block;
     color: crimson;
     text-decoration: none;
 }
