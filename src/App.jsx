@@ -1,11 +1,11 @@
-import { Navigation } from './components/Nav/Navigation'
 
 import './App.css'
+import { HomePage } from './pages/HomePage/HomePage'
 function App() {
 
   return (
     <>
-    <Navigation/>
+    <HomePage/>
       
     </>
   )
