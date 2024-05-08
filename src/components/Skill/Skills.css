@@ -1,0 +1,139 @@
+
+.skills .title::after {
+    background: none;
+    content: "what i know";
+}
+
+.skillsContent{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 10px;
+}
+
+.skillCategory{
+    padding: 15px 0px;
+}
+
+.skillCategoryTitle{
+    font-size: 28px;
+    color: #dc143c;
+    font-weight: 500;
+}
+
+.skill{
+    display: flex ;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.skillItem{
+    display: block;
+    margin: 10px 10px 10px 0px;
+    padding: 10px;
+    display: flex ;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(28, 28, 28, 0.6);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.skillItem:hover{
+    backdrop-filter: blur(3px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.skillImg{
+    width: 30px;
+    margin: 0px 10px;
+    padding-top: 5px;
+}
+
+.skillItem:hover  .skillImg svg{
+    fill: #dc143c;
+}
+
+.skillName{
+    margin: 0px 5px;
+    font-size: 20px;
+} 
+
+.skillAge{
+    margin: 0px 10px;
+    font-size: 14px;
+    color: #cfbca2;
+}
+
+.skills .skillsContent .column {
+    width: calc(50% - 30px);
+}
+
+.skills .skillsContent .left .text {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.skills .skillsContent .left p {
+    text-align: justify;
+}
+
+.skills .skillsContent .left a {
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+
+.skills .skillsContent .left a:hover {
+    color: crimson;
+    background: none;
+}
+
+.skills .skillsContent .right .bars {
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+    padding: 5px 10px 10px 10px;
+    border-radius: 5px;
+}
+
+.skills .skillsContent .right .bars:hover {
+    box-shadow: 5px 5px 25px crimson;
+}
+
+.skills .skillsContent .right .info {
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills .skillsContent .right span {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.skills .skillsContent .right .line {
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+
+.skills .skillsContent .right .line::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: crimson;
+}

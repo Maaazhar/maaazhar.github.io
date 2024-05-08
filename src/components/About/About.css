@@ -60,7 +60,6 @@
     background: none;
 }
 
-
 /* responsive media query */
 @media (max-width: 1104px) {
     .about .about-content .left img {
@@ -79,7 +78,6 @@
     .about .about-content .right .text .aboutWork {
         display: block;
     }
-
 }
 
 @media (max-width: 947px) {

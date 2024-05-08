@@ -1,4 +1,7 @@
 /* all similar content styling codes */
+.border{
+    border: 1px solid red;
+}
 section {
     padding: 100px 0;
 }
@@ -26,6 +29,20 @@ footer {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+}
+.home,
+.skills,
+.services {
+    color: #fff;
+    background: url("../../assets/images/banner.jpg");
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.services .title::before,
+.skills .title::before,
+.contact .title::before {
+    background: none;
 }
 
 .about-line-break {
