@@ -1,6 +1,8 @@
 import wave from "../../assets/images/wave.gif"
 import "./Hero.css"
+
 export const Hero = () => {
+    
   return (
     <div className="hero">
         <section className="home" id="home">
