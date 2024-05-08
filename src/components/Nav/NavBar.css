@@ -85,6 +85,7 @@
         background: #dc143cce;
         text-align: center;
         margin-top: 81px;
+        backdrop-filter: blur(3px);
         transition: all 0.3s ease;
     }
 

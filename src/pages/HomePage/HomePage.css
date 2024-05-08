@@ -2,9 +2,6 @@
 section {
     padding: 100px 0;
 }
-#home {
-    padding: 100px 0px 0px 0px ;
-}
 
 .max-width {
     max-width: 1300px;
@@ -74,8 +71,6 @@ section .title::after {
     background: #fff;
     transform: translateX(-50%);
 }
-
-
 
   /* responsive media query for similar content */
 @media (max-width: 991px) {
