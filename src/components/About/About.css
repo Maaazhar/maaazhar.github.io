@@ -59,3 +59,65 @@
     color: crimson;
     background: none;
 }
+
+
+/* responsive media query */
+@media (max-width: 1104px) {
+    .about .about-content .left img {
+        height: 350px;
+    }
+    .about .about-content .right .text {
+        font-size: 25px;
+        font-weight: 500;
+    }
+    .about .about-content .right .text .aboutWork {
+        display: inline;
+    }
+}
+
+@media (max-width: 991px) {
+    .about .about-content .right .text .aboutWork {
+        display: block;
+    }
+
+}
+
+@media (max-width: 947px) {
+    .about .about-content .column {
+        width: 100%;
+    }
+
+    .about .about-content .left {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+
+    .about .about-content .right {
+        flex: 100%;
+    }
+}
+
+@media (max-width: 690px) {
+    .about .about-content .right .text .aboutWork {
+        display: inline;
+    }
+    .about-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .about .about-content .right p {
+        text-align: left;
+    }
+}
+
+@media (max-width: 380px) {
+    .about .about-content .right .text {
+        text-align: center;
+    }
+    
+    .about .about-content .right .text .aboutWork {
+        display: block;
+    }
+}

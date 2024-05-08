@@ -83,11 +83,28 @@ section .title::after {
     .max-width {
         max-width: 930px;
     }
+    .services .serv-content .card,
+    .project .project-content .card {
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+
+    .skills .skillsContent .column,
+    .contact .contact-content .column {
+        width: 100%;
+        margin-bottom: 35px;
+    }
 }
 
 @media (max-width: 690px) {
     .max-width {
         padding: 0 23px;
+    }
+
+    .home-line-break,
+    .about-line-break {
+        display: block;
+        margin-top: -15px;
     }
 }
 
@@ -99,5 +116,10 @@ section .title::after {
         width: 35px;
         font-size: 25px;
         line-height: 38px;
+    }
+
+    .about .about-content .right .text,
+    .skills .skillsContent .left .text {
+        font-size: 19px;
     }
   }
