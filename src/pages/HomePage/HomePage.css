@@ -74,3 +74,35 @@ section .title::after {
     background: #fff;
     transform: translateX(-50%);
 }
+
+
+
+  /* responsive media query for similar content */
+@media (max-width: 991px) {
+    .max-width {
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 947px) {
+    .max-width {
+        max-width: 930px;
+    }
+}
+
+@media (max-width: 690px) {
+    .max-width {
+        padding: 0 23px;
+    }
+}
+
+@media (max-width: 500px) {
+    .scroll-up-btn {
+        right: 15px;
+        bottom: 15px;
+        height: 38px;
+        width: 35px;
+        font-size: 25px;
+        line-height: 38px;
+    }
+  }
