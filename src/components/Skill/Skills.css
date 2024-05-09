@@ -30,14 +30,16 @@
 
 .skillItem{
     display: block;
-    margin: 10px 10px 10px 0px;
-    padding: 10px;
+    height: 60px;
     display: flex ;
     align-items: center;
     justify-content: space-between;
+    margin: 10px 10px 10px 0px;
+    padding: 10px;
     background: rgba(28, 28, 28, 0.6);
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.05);
+    overflow: hidden;
 }
 
 .skillItem:hover{
