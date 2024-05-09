@@ -29,6 +29,36 @@ import typeScriptLogo from "../../assets/images/skill-svg/typescript.svg";
 import vercelLogo from "../../assets/images/skill-svg/vercel.svg";
 import vsCodeLogo from "../../assets/images/skill-svg/vs-code.svg";
 
+// import { ReactComponent as photoshopLogo } from "../../assets/images/skill-svg/adobe-photoshop.svg";
+// import { ReactComponent as bootstrapLogo } from "../../assets/images/skill-svg/bootstrap.svg";
+// import { ReactComponent as chromeLogo } from "../../assets/images/skill-svg/browser-chrome.svg";
+// import { ReactComponent as cLogo } from "../../assets/images/skill-svg/c-letter.svg";
+// import { ReactComponent as cppLogo } from "../../assets/images/skill-svg/c-cpp.svg";
+// import { ReactComponent as codeblocksLogo } from "../../assets/images/skill-svg/codeblocks.svg";
+// import { ReactComponent as cssLogo } from "../../assets/images/skill-svg/css3.svg";
+// import { ReactComponent as devcppLogo } from "../../assets/images/skill-svg/dev cpp.svg";
+// import { ReactComponent as es6Logo } from "../../assets/images/skill-svg/es6.svg";
+// import { ReactComponent as expressJsLogo } from "../../assets/images/skill-svg/express.svg";
+// import { ReactComponent as figmaLogo } from "../../assets/images/skill-svg/figma-logo.svg";
+// import { ReactComponent as firebaseLogo } from "../../assets/images/skill-svg/firebase.svg";
+// import { ReactComponent as gitLogo } from "../../assets/images/skill-svg/git-alt.svg";
+// import { ReactComponent as githubLogo } from "../../assets/images/skill-svg/github.svg";
+// import { ReactComponent as htmlLogo } from "../../assets/images/skill-svg/html-5-logo.svg";
+// import { ReactComponent as javaScriptLogo } from "../../assets/images/skill-svg/javascript-js.svg";
+// import { ReactComponent as materialUiLogo } from "../../assets/images/skill-svg/material-ui.svg";
+// import { ReactComponent as mongoDbLogo } from "../../assets/images/skill-svg/mongoDB.svg";
+// import { ReactComponent as netlifyLogo } from "../../assets/images/skill-svg/netlify.svg";
+// import { ReactComponent as nextJsLogo } from "../../assets/images/skill-svg/nextjs.svg";
+// import { ReactComponent as nodeJsLogo } from "../../assets/images/skill-svg/node-js.svg";
+// import { ReactComponent as pythonLogo } from "../../assets/images/skill-svg/python.svg";
+// import { ReactComponent as reactJsLogo } from "../../assets/images/skill-svg/react.svg";
+// import { ReactComponent as reactHookLogo } from "../../assets/images/skill-svg/react-hook.svg";
+// import { ReactComponent as reactRouterLogo } from "../../assets/images/skill-svg/react-router.svg";
+// import { ReactComponent as reduxLogo } from "../../assets/images/skill-svg/redux.svg";
+// import { ReactComponent as typeScriptLogo } from "../../assets/images/skill-svg/typescript.svg";
+// import { ReactComponent as vercelLogo } from "../../assets/images/skill-svg/vercel.svg";
+// import { ReactComponent as vsCodeLogo } from "../../assets/images/skill-svg/vs-code.svg";
+
 export const Skills = () => {
     const currentYear = new Date().getFullYear();
 
