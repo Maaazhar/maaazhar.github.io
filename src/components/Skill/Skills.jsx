@@ -29,6 +29,8 @@ import typeScriptLogo from "../../assets/images/skill-svg/typescript.svg";
 import vercelLogo from "../../assets/images/skill-svg/vercel.svg";
 import vsCodeLogo from "../../assets/images/skill-svg/vs-code.svg";
 
+import  AdobeLogo  from "../../assets/images/skill-svg/adobeLogo";
+
 // import { ReactComponent as photoshopLogo } from "../../assets/images/skill-svg/adobe-photoshop.svg";
 // import { ReactComponent as bootstrapLogo } from "../../assets/images/skill-svg/bootstrap.svg";
 // import { ReactComponent as chromeLogo } from "../../assets/images/skill-svg/browser-chrome.svg";
@@ -137,7 +139,8 @@ export const Skills = () => {
                                             return (
                                                 <div className="skillItem" key={`${s[1]}-${i}`}>
                                                     <div className="skillImg">
-                                                        <svg data-src={s[0]} width="30px" fill="#faebd7"></svg>
+                                                        {/* <svg data-src={s[0]} width="30px" fill="#faebd7"></svg> */}
+                                                        <AdobeLogo/>
                                                     </div>
                                                     <div className="skillName">{s[1]}</div>
                                                     <div className="skillAge">{currentYear - s[2]}+ Years of<br />Experience </div>
