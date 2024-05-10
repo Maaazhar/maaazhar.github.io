@@ -29,7 +29,7 @@ import typeScriptLogo from "../../assets/images/skill-svg/typescript.svg";
 import vercelLogo from "../../assets/images/skill-svg/vercel.svg";
 import vsCodeLogo from "../../assets/images/skill-svg/vs-code.svg";
 
-import  AdobeLogo  from "../../assets/images/skill-svg/adobeLogo";
+import  AdobeLogo  from "./Logo/AdobeLogo";
 
 
 // import SkillList  from "./SkillList.jsx";
@@ -133,3 +133,6 @@ export const Skills = () => {
         </div>
     )
 }
+
+export default Skills
+
