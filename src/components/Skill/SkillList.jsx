@@ -1,4 +1,3 @@
-import "./Skills.css"
 import photoshopLogo from "../../assets/images/skill-svg/adobe-photoshop.svg";
 import bootstrapLogo from "../../assets/images/skill-svg/bootstrap.svg";
 import chromeLogo from "../../assets/images/skill-svg/browser-chrome.svg";
@@ -29,19 +28,15 @@ import typeScriptLogo from "../../assets/images/skill-svg/typescript.svg";
 import vercelLogo from "../../assets/images/skill-svg/vercel.svg";
 import vsCodeLogo from "../../assets/images/skill-svg/vs-code.svg";
 
-import  AdobeLogo  from "../../assets/images/skill-svg/adobeLogo";
+import AdobeLogo from "../../assets/images/skill-svg/adobeLogo";
 
-
-// import SkillList  from "./SkillList.jsx";
-
-export const Skills = () => {
-    const currentYear = new Date().getFullYear();
-    const logos = [{"component": <AdobeLogo/>}]
+const SkillList = () => {
+    const logos = [{ "component": <AdobeLogo /> }]
 
     const skills = [
         {
             "category": "Front-End",
-            "list": [
+            "skillList": [
                 [htmlLogo, "HTML", 2019],
                 [cssLogo, "CSS", 2019],
                 [javaScriptLogo, "JavaScript", 2019],
@@ -58,7 +53,7 @@ export const Skills = () => {
         },
         {
             "category": "Back-End",
-            "list": [
+            "skillList": [
                 [javaScriptLogo, "JavaScript", 2019],
                 [nodeJsLogo, "NodeJs (CRUD)", 2020],
                 [expressJsLogo, "ExpressJs", 2020],
@@ -67,7 +62,7 @@ export const Skills = () => {
         },
         {
             "category": "Tools",
-            "list": [
+            "skillList": [
                 [vsCodeLogo, "VS code", 2019],
                 [gitLogo, "Git", 2020],
                 [chromeLogo, "Chrome Dev tool", 2020],
@@ -79,7 +74,7 @@ export const Skills = () => {
         },
         {
             "category": "Platform",
-            "list": [
+            "skillList": [
                 [githubLogo, "GitHub", 2020],
                 [firebaseLogo, "Firebase", 2020],
                 [netlifyLogo, "Netlify", 2020],
@@ -88,7 +83,7 @@ export const Skills = () => {
         },
         {
             "category": "Programming Language",
-            "list": [
+            "skillList": [
                 [cLogo, "C", 2017],
                 [cppLogo, "C++", 2018],
                 [javaScriptLogo, "JavaScript", 2019],
@@ -98,38 +93,6 @@ export const Skills = () => {
     ];
 
 
-    return (
-        <div>
-            <section className="skills" id="skills">
-                <div className="max-width">
-                    <h2 className="title">My skills</h2>
-                    <div className="skillsContent">
-                        {skills.map((d, i) => {
-                            return (
-                                <div className="skillCategory" key={`${d.category}-${i}`}>
-                                    <div className="skillCategoryTitle">{d.category}</div>
-                                    <div className="skill">
-                                        {d.list.map((s, i) => {
-                                            return (
-                                                <div className="skillItem" key={`${s[1]}-${i}`}>
-                                                    <div className="skillImg">
-                                                        {/* <svg data-src={s[0]} width="30px" fill="#faebd7"></svg> */}
-                                                        {logos[0].component}
-                                                    </div>
-                                                    <div className="skillName">{s[1]}</div>
-                                                    <div className="skillAge">{currentYear - s[2]}+ Years of<br />Experience </div>
-                                                </div>
-                                            )
-                                        }
-                                        )}
-                                    </div>
-                                </div>
-                            )
-                        }
-                        )}
-                    </div>
-                </div>
-            </section>
-        </div>
-    )
 }
+
+export default SkillList
