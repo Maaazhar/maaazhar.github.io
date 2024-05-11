@@ -32,7 +32,8 @@ footer {
 }
 .home,
 .skills,
-.services {
+.services,
+.contact {
     color: #fff;
     background: url("../../assets/images/banner.jpg");
     background-size: 100%;
@@ -49,13 +50,7 @@ footer {
     display: none;
 }
 
-.contact {
-    background: url("images/banner.jpg");
-    background-attachment: fixed;
-    background-size: 100%;
-    color: #fff;
-    color: #dc143c;
-}
+
 
 section .title {
     position: relative;
