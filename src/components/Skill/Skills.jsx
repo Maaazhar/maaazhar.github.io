@@ -70,6 +70,64 @@ export const Skills = () => {
         {
             "category": "Front-End",
             "list": [
+                [htmlLogo, "HTML", 2019],
+                [cssLogo, "CSS", 2019],
+                [javaScriptLogo, "JavaScript", 2019],
+                [es6Logo, "ES6", 2019],
+                [bootstrapLogo, "Bootstrap", 2019],
+                [materialUiLogo, "Material UI", 2020],
+                [reactJsLogo, "ReactJs", 2020],
+                [reactHookLogo, "React-Hook", 2020],
+                [reduxLogo, "Redux", 2020],
+                [reactRouterLogo, "React-Router", 2020],
+                [nextJsLogo, "NextJs", 2020],
+                [typeScriptLogo, "TypeScrip", 2020]
+            ]
+        },
+        {
+            "category": "Back-End",
+            "list": [
+                [javaScriptLogo, "JavaScript", 2019],
+                [nodeJsLogo, "NodeJs (CRUD)", 2020],
+                [expressJsLogo, "ExpressJs", 2020],
+                [mongoDbLogo, "MongoDB", 2020]
+            ]
+        },
+        {
+            "category": "Tools",
+            "list": [
+                [vsCodeLogo, "VS code", 2019],
+                [gitLogo, "Git", 2020],
+                [chromeLogo, "Chrome Dev tool", 2020],
+                [codeblocksLogo, "Code Blocks", 2017],
+                [devcppLogo, "Dev C++", 2017],
+                [figmaLogo, "Figma", 2020],
+                [photoshopLogo, "PhotoShop", 2019]
+            ]
+        },
+        {
+            "category": "Platform",
+            "list": [
+                [githubLogo, "GitHub", 2020],
+                [firebaseLogo, "Firebase", 2020],
+                [netlifyLogo, "Netlify", 2020],
+                [vercelLogo, "Vercel", 2022]
+            ]
+        },
+        {
+            "category": "Programming Language",
+            "list": [
+                [cLogo, "C", 2017],
+                [cppLogo, "C++", 2018],
+                [javaScriptLogo, "JavaScript", 2019],
+                [pythonLogo, "Python", 2020]
+            ]
+        }
+    ];
+    const skills1 = [
+        {
+            "category": "Front-End",
+            "list": [
                 {"logo": <BootstrapLogo/>, "title": "HTML", "startingYear": 2019},
                 [cssLogo, "CSS", 2019],
                 [javaScriptLogo, "JavaScript", 2019],

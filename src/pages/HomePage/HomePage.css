@@ -33,7 +33,8 @@ footer {
 .home,
 .skills,
 .services,
-.contact {
+.contact,
+.footer {
     color: #fff;
     background: url("../../assets/images/banner.jpg");
     background-size: 100%;
@@ -49,8 +50,6 @@ footer {
 .about-line-break {
     display: none;
 }
-
-
 
 section .title {
     position: relative;

@@ -35,8 +35,7 @@
     padding: 10px 0px 10px 0px;
     border-radius: 6px;
     text-align: center;
-    font-size: 25px;
-    font-weight: 600;
+    font-size: 28px;
     color: crimson;
     backdrop-filter: blur(20px);
 }
@@ -113,7 +112,7 @@ input[type=number] {
     height: 100%;
     width: 100%;
     padding: 0 15px;
-    background: #ffffffbe;
+    background: #ffffffcc;
     backdrop-filter: blur(5px);
     border: 1px solid lightgrey;
     border-radius: 6px;

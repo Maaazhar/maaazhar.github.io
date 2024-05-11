@@ -1,5 +1,6 @@
 import { About } from "../../components/About/About"
 import Contact from "../../components/Contact/Contact"
+import Footer from "../../components/Footer/Footer"
 import { Hero } from "../../components/Hero/Hero"
 import { NavBar } from "../../components/Nav/NavBar"
 import { Skills } from "../../components/Skill/Skills"
@@ -15,6 +16,7 @@ export const HomePage = () => {
         <Skills/>
 
         <Contact/>
+        <Footer/>
     </>
   )
 }
