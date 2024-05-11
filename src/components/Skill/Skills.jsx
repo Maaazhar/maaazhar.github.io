@@ -29,20 +29,48 @@ import typeScriptLogo from "../../assets/images/skill-svg/typescript.svg";
 import vercelLogo from "../../assets/images/skill-svg/vercel.svg";
 import vsCodeLogo from "../../assets/images/skill-svg/vs-code.svg";
 
-import  AdobeLogo  from "./Logo/AdobeLogo";
+import  BootstrapLogo  from "./Logo/BootstrapLogo";
+import  ChromeDevToolLogo  from "./Logo/ChromeDevToolLogo";
+import  CLogo  from "./Logo/CLogo";
+import  CodeBlocksLogo  from "./Logo/CodeBlocksLogo";
+import  CppLogo  from "./Logo/CppLogo";
+import  CssLogo  from "./Logo/CssLogo";
+import  DevCppLogo  from "./Logo/DevCppLogo";
+import  Es6Logo  from "./Logo/Es6Logo";
+import  ExpressLogo  from "./Logo/ExpressLogo";
+import  FigmaLogo  from "./Logo/FigmaLogo";
+import  FirebaseLogo  from "./Logo/FirebaseLogo";
+import  GitHubLogo  from "./Logo/GitHubLogo";
+import  GitLogo  from "./Logo/GitLogo";
+import  HtmlLogo  from "./Logo/HtmlLogo";
+import  JavaScriptLogo  from "./Logo/JavaScriptLogo";
+import  MaterialUiLogo  from "./Logo/MaterialUiLogo";
+import  MongoDbLogo  from "./Logo/MongoDbLogo";
+import  NextJsLogo  from "./Logo/NextJsLogo";
+import  NodeJsLogo  from "./Logo/NodeJsLogo";
+import  NtlifyLogo  from "./Logo/NtlifyLogo";
+import  PhotoShopLogo  from "./Logo/PhotoShopLogo";
+import  PhythonLogo  from "./Logo/PhythonLogo";
+import  ReactHookLogo  from "./Logo/ReactHookLogo";
+import  ReactJsLogo  from "./Logo/ReactJsLogo";
+import  ReactRouterLogo  from "./Logo/ReactRouterLogo";
+import  ReduxLogo  from "./Logo/ReduxLogo";
+import  TypeScriptLogo  from "./Logo/TypeScriptLogo";
+import  VercelLogo  from "./Logo/VercelLogo";
+import  VsCodeLogo  from "./Logo/VsCodeLogo";
 
 
 // import SkillList  from "./SkillList.jsx";
 
 export const Skills = () => {
     const currentYear = new Date().getFullYear();
-    const logos = [{"component": <AdobeLogo/>}]
+    const logos = [{"component": <PhotoShopLogo/>}]
 
     const skills = [
         {
             "category": "Front-End",
             "list": [
-                [htmlLogo, "HTML", 2019],
+                {"logo": <BootstrapLogo/>, "title": "HTML", "startingYear": 2019},
                 [cssLogo, "CSS", 2019],
                 [javaScriptLogo, "JavaScript", 2019],
                 [es6Logo, "ES6", 2019],
