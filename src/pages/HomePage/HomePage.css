@@ -32,7 +32,7 @@ footer {
 }
 .home,
 .skills,
-.services,
+.project,
 .contact,
 .footer {
     color: #fff;
@@ -41,9 +41,15 @@ footer {
     background-attachment: fixed;
 }
 
-.services .title::before,
 .skills .title::before,
+.project .title::before,
 .contact .title::before {
+    background: none;
+}
+
+.skills .title::after,
+.project .title::after,
+.contact .title::after {
     background: none;
 }
 

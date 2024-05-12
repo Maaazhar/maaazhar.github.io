@@ -1,0 +1,13 @@
+.project{
+
+}
+
+.project .title::after {
+    content: "I have done";
+}
+
+.project h3{
+    text-align: center;
+    font-weight: normal;
+    font-family: serif;
+}

@@ -4,6 +4,7 @@ import Experience from "../../components/Experience/Experience"
 import Footer from "../../components/Footer/Footer"
 import { Hero } from "../../components/Hero/Hero"
 import { NavBar } from "../../components/Nav/NavBar"
+import Project from "../../components/Project/Project"
 import { Skills } from "../../components/Skill/Skills"
 
 import "./HomePage.css"
@@ -16,6 +17,7 @@ export const HomePage = () => {
         <About/>
         <Skills/>
         <Experience/>
+        <Project/>
 
         <Contact/>
         <Footer/>
