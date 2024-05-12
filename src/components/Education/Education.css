@@ -1,0 +1,16 @@
+.education{
+    background: #fff;
+}
+
+.education .title::before {
+    width: 240px;
+}
+
+.education .title::after {
+    background: #fff;
+    content: "what I learn";
+}
+
+.education h3{
+    text-align: center;
+}

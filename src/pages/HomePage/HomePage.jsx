@@ -1,5 +1,6 @@
 import { About } from "../../components/About/About"
 import Contact from "../../components/Contact/Contact"
+import Education from "../../components/Education/Education"
 import Experience from "../../components/Experience/Experience"
 import Footer from "../../components/Footer/Footer"
 import { Hero } from "../../components/Hero/Hero"
@@ -18,7 +19,7 @@ export const HomePage = () => {
         <Skills/>
         <Experience/>
         <Project/>
-
+        <Education/>
         <Contact/>
         <Footer/>
     </>
