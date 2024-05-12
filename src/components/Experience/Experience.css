@@ -1,0 +1,16 @@
+.experience{
+    background: #fff;
+}
+
+.experience .title::before {
+    width: 280px;
+}
+
+.experience .title::after {
+    background: #fff;
+    content: "what i acquire";
+}
+
+.experience h3{
+    text-align: center;
+}
