@@ -42,8 +42,8 @@ const skills = [
             { "logo": <ReactJsLogo />, "title": "ReactJs", "startingYear": 2020 },
             { "logo": <ReduxLogo />, "title": "Redux", "startingYear": 2020 },
             { "logo": <ReactHookLogo />, "title": "React-Hook", "startingYear": 2020 },
-            { "logo": <ReactRouterLogo />, "title": "React-Router", "startingYear": 2020 },
             { "logo": <NextJsLogo />, "title": "NextJs", "startingYear": 2020 },
+            { "logo": <ReactRouterLogo />, "title": "React-Router", "startingYear": 2020 },
             { "logo": <TypeScriptLogo />, "title": "TypeScrip", "startingYear": 2020 }
         ]
     },
@@ -62,9 +62,9 @@ const skills = [
             { "logo": <VsCodeLogo />, "title": "VS code", "startingYear": 2020 },
             { "logo": <GitLogo />, "title": "Git", "startingYear": 2020 },
             { "logo": <ChromeDevToolLogo />, "title": "Chrome Dev tool", "startingYear": 2020 },
+            { "logo": <FigmaLogo />, "title": "Figma", "startingYear": 2020 },
             { "logo": <CodeBlocksLogo />, "title": "Code Blocks", "startingYear": 2017 },
             { "logo": <DevCppLogo />, "title": "Dev C++", "startingYear": 2017 },
-            { "logo": <FigmaLogo />, "title": "Figma", "startingYear": 2020 },
             { "logo": <PhotoShopLogo />, "title": "PhotoShop", "startingYear": 2019 }
         ]
     },

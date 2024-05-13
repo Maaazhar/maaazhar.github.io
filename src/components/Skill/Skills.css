@@ -1,10 +1,9 @@
-
 .skills .title::after {
     background: none;
     content: "what I know";
 }
 
-.skillsContent{
+.skillsContent {
     min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
@@ -12,130 +11,185 @@
     grid-row-gap: 10px;
 }
 
-.skillCategory{
-    padding: 15px 0px;
+.skillCategory {
+    padding: 10px 0px;
 }
 
-.skillCategoryTitle{
+.skillCategoryTitle {
     font-size: 28px;
     color: #dc143c;
     font-weight: 500;
 }
 
-.skill{
-    display: flex ;
+.skill {
+    display: flex;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.skillItem{
+.skillItem {
     display: block;
     height: 60px;
-    display: flex ;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 10px 10px 10px 0px;
     padding: 10px;
     background: rgba(28, 28, 28, 0.6);
-    border-radius: 10px;
+    border-radius: 5px;
     border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease-in-out;
+    backdrop-filter: blur(5px);
+    user-select: none;
     overflow: hidden;
 }
 
-.skillItem:hover{
-    backdrop-filter: blur(3px);
-    border-radius: 10px;
+.skillItem:hover {
+    backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 1px 1px 5px #19ffffd4;
+
 }
 
-.skillImg{
+.skillImg {
     width: 30px;
     margin: 0px 10px;
     padding-top: 5px;
+    overflow: hidden;
 }
 
-.skillItem:hover  .skillImg svg{
+.skillItem:hover .skillImg svg {
     fill: #dc143c;
 }
 
-.skillName{
+.skillName {
     margin: 0px 5px;
     font-size: 20px;
-} 
+}
 
-.skillAge{
+.skillAge {
     margin: 0px 10px;
     font-size: 14px;
     color: #cfbca2;
 }
 
-.skills .skillsContent .column {
-    width: calc(50% - 30px);
+
+@media (max-width: 1104px) {
+    .skillItem {
+        height: 50px;
+    }
+
+    .skillImg {
+        width: 25px;
+    }
+
+    .skillImg svg {
+        width: 25px;
+    }
+
+    .skillName {
+        font-size: 18px;
+    }
+
+    .skillAge {
+        font-size: 12px;
+    }
 }
 
-.skills .skillsContent .left .text {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 10px;
+@media (max-width: 991px) {
+    .skillItem {
+        height: 40px;
+    }
+
+    .skillImg {
+        width: 20px;
+        margin: 0px 5px;
+    }
+
+    .skillImg svg {
+        width: 20px;
+    }
+
+    .skillName {
+        font-size: 16px;
+    }
+
+    .skillAge {
+        font-size: 10px;
+        margin: 0px 5px;
+    }
 }
 
-.skills .skillsContent .left p {
-    text-align: justify;
+@media (max-width: 947px) {
+    .skills .skillsContent .column {
+        width: 100%;
+        margin-bottom: 35px;
+    }
 }
 
-.skills .skillsContent .left a {
-    display: inline-block;
-    background: crimson;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 8px 16px;
-    margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid crimson;
-    transition: all 0.3s ease;
+@media (max-width: 690px) {
+    
 }
 
-.skills .skillsContent .left a:hover {
-    color: crimson;
-    background: none;
+@media (max-width: 500px) {
+    .skills .skillsContent .left .text {
+        font-size: 19px;
+    }
+    
+    .skillCategoryTitle {
+        font-size: 22px;
+    }
+
+    .skillItem {
+        height: 30px;
+    }
+
+    .skillImg {
+        width: 12px;
+        margin: 0px 5px;
+    }
+
+    .skillImg svg {
+        width: 12px;
+    }
+
+    .skillName {
+        font-size: 12px;
+    }
+
+    .skillAge {
+        font-size: 8px;
+        margin: 0px 5px;
+    }
+
 }
 
-.skills .skillsContent .right .bars {
-    margin-bottom: 15px;
-    transition: all 0.3s ease;
-    padding: 5px 10px 10px 10px;
-    border-radius: 5px;
+@media (max-width: 380px) {
+    .skillCategoryTitle {
+        font-size: 20px;
+    }
+
+    .skillItem {
+        height: 25px;
+    }
+
+    .skillImg {
+        width: 10px;
+        margin: 0px 2px;
+    }
+
+    .skillImg svg {
+        width: 10px;
+    }
+
+    .skillName {
+        font-size: 10px;
+    }
+
+    .skillAge {
+        font-size: 7px;
+        margin: 0px 2px;
+    }
 }
 
-.skills .skillsContent .right .bars:hover {
-    box-shadow: 5px 5px 25px crimson;
-}
-
-.skills .skillsContent .right .info {
-    display: flex;
-    margin-bottom: 5px;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.skills .skillsContent .right span {
-    font-weight: 500;
-    font-size: 18px;
-}
-
-.skills .skillsContent .right .line {
-    height: 5px;
-    width: 100%;
-    background: lightgrey;
-    position: relative;
-}
-
-.skills .skillsContent .right .line::before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background: crimson;
-}
+@media (max-width: 350px) {}
