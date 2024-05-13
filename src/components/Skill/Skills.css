@@ -141,30 +141,31 @@
     }
 
     .skillItem {
-        height: 30px;
+        height: 40px;
     }
 
     .skillImg {
-        width: 12px;
-        margin: 0px 5px;
+        width: 16px;
+        margin: 0px 2px;
     }
 
     .skillImg svg {
-        width: 12px;
+        width: 16px;
     }
 
     .skillName {
-        font-size: 12px;
+        font-size: 15px;
+        margin: 0px 10px;
     }
 
     .skillAge {
-        font-size: 8px;
-        margin: 0px 5px;
+        font-size: 10px;
+        margin: 0px 2px;
     }
 
 }
 
-@media (max-width: 380px) {
+/* @media (max-width: 380px) {
     .skillCategoryTitle {
         font-size: 20px;
     }
@@ -190,6 +191,4 @@
         font-size: 7px;
         margin: 0px 2px;
     }
-}
-
-@media (max-width: 350px) {}
+} */
