@@ -141,26 +141,27 @@
     }
 
     .skillItem {
-        height: 40px;
+        height: fit-content;
+        flex-direction: column;
     }
 
     .skillImg {
-        width: 16px;
-        margin: 0px 2px;
+        width: 25px;
+        margin: 2px 0px;
     }
 
     .skillImg svg {
-        width: 16px;
+        width: 25px;
     }
 
     .skillName {
-        font-size: 15px;
-        margin: 0px 10px;
+        font-size: 16px;
+        margin: 5px 0px;
     }
 
     .skillAge {
-        font-size: 10px;
-        margin: 0px 2px;
+        font-size: 12px;
+        margin: 2px 0px;
     }
 
 }
