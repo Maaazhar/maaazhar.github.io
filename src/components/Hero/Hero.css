@@ -1,12 +1,8 @@
-#home {
-    padding: 100px 0px 0px 0px ;
-}
-
 .home {
     display: flex;
-    background: url("../../assets/images/banner.jpg") no-repeat center;
     min-height: 100vh;
     height: fit-content;
+    padding: 0px 0px 0px 0px ;
     width: 100%;
     color: #fff;
     background-size: cover;
@@ -16,7 +12,6 @@
 
 .home .overlay{
     width: 100vw;
-    height: 100vh;
     background: rgba(0, 0, 0, 0.5);
 }
 
@@ -42,6 +37,8 @@
 
 .home .home-content {
     width: 100%;
+    padding-bottom: 100px;
+    padding-top: 80px;
 }
 
 .home .home-content .text-1 {
@@ -183,9 +180,6 @@
 }
 
 @media (max-width: 500px) {
-    #home {
-        padding: 80px 0px 0px 0px ;
-    }
     
     .home .home-content .text-1 img {
         width:40px;
@@ -262,6 +256,6 @@
     }
     
     .home-btn a {
-        font-size: 15px !important;
+        font-size: 18px !important;
     }
 }

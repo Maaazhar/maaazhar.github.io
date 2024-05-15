@@ -6,7 +6,7 @@ export const Hero = () => {
   return (
     <div className="hero">
         <section className="home" id="home">
-        <div className="overlay">
+        <div className="overlay ">
             <div className="max-width">
                 <div className="row">
                     <div className="home-content">
