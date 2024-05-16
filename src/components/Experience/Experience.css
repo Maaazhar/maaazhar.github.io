@@ -11,6 +11,55 @@
     content: "what I acquire";
 }
 
-.experience h3{
-    text-align: center;
+.experienceContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.experienceTabs{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #000;
+}
+
+.tabWrapper{
+    padding: 0px 0px 0px 10px;
+    border: 1px solid #000;
+    border-right: none;
+}
+
+.tab{
+    padding: 5px;
+    border-left: 4px solid #a4a4a4;
+    border-right: 1px solid #000;
+    font-family: 'Ubuntu', sans-serif;
+    cursor: pointer;
+}
+
+.activeTab{
+    color: crimson;
+    border-left: 4px solid #000;
+    border-right: 1px solid #fff;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.contentWrapper{
+    padding: 2px 20px;
+    border: 1px solid #000;
+    border-left: none;
+}
+
+.content{
+    display: none;
+}
+
+.activeContent{
+    display: block;
+}
+
+.content>ul>li{
+    list-style: none;
 }

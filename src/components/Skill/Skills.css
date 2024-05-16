@@ -24,6 +24,7 @@
     font-size: 28px;
     color: #dc143c;
     font-weight: 500;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .skill {
@@ -70,6 +71,7 @@
 .skillName {
     margin: 0px 5px;
     font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .skillAge {
