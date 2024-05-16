@@ -14,12 +14,12 @@ export const Hero = () => {
                             <div className="text-1">
                                 <img src={wave} width="60px" alt=""/> Hello there, I am
                             </div>
-                            <div className="text-2">Mazharul Islam</div>
-                            <div className="text-3">I Transform <span> Idea </span> into <span> Smooth Web
-                                    Experience.</span> </div>
-                            <div className="text-4">I am an <span> experienced front-end web developer,</span> I craft website with <span> intuitive</span> and <span> engaging</span> user interfaces, integrate
+                            <h1 className="text-2">Mazharul Islam</h1>
+                            <h2 className="text-3">I transform <span> idea </span> into <span> smooth web
+                                    experience.</span> </h2>
+                            <h3 className="text-4">I am an <span> experienced web developer,</span> I craft website with <span> intuitive</span> and <span> engaging</span> user interfaces, integrate
                                 functionality with <span> seamless</span> user experiences.
-                            </div>
+                            </h3>
                             <div className="home-btn">
                                 <a className="home-btn-item" target="_blank" href="https://www.linkedin.com/in/maaazhar/"
                                     title="See LinekdIn">See LinekdIn</a>
@@ -36,3 +36,6 @@ export const Hero = () => {
     </div>
   )
 }
+
+
+export default Hero

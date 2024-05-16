@@ -100,7 +100,7 @@
 .home .home-content a:hover {
     color: crimson;
     background: none;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(10px);
 }
 
 /* responsive media query */
