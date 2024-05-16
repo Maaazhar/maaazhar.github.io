@@ -65,15 +65,35 @@
     width: 30px;
 }
 
-.contact .contact-content .info .head {
+/* .contact>.max-width>.contact-content>.left>.icons>.row>.info>.sub-title:hover + .contact i {
+    color: #ffffff;
+} */
+
+.contact>.max-width>.contact-content>.left>.icons>.row>.info>.head {
     font-weight: 500;
-    color: #c72041;
+    /* color: #c72041; */
+    color: crimson;
 }
 
-.contact .contact-content .info .sub-title,
-.contact .contact-content .info .sub-title a {
+.contact>.max-width>.contact-content>.left>.icons>.row>.info>.sub-title,
+.contact>.max-width>.contact-content>.left>.icons>.row>.info>.sub-title a {
     color: #fff;
+    /* padding: 0px 5px;
+    border-radius: 2px;
+    font-weight: 500;
+    transition: all 0.3s ease; */
 }
+
+/* .contact>.max-width>.contact-content>.left>.icons>.row>.info>.sub-title:hover .contact>.max-width>.contact-content>.left>.icons>.row>.info>.head,
+.contact>.max-width>.contact-content>.left>.icons>.row>.info>.sub-title a:hover  .contact>.max-width>.contact-content>.left>.icons>.row>.info>.head {
+    color: #fff;
+} */
+
+/* .contact>.max-width>.contact-content>.left>.icons>.row>.info>.sub-title:hover,
+.contact>.max-width>.contact-content>.left>.icons>.row>.info>.sub-title a:hover {
+    color: crimson;
+    background: #fff;
+} */
 
 .contact .right form .fields {
     display: flex;
