@@ -34,7 +34,8 @@ const Experience = () => {
                 "duration": "June, 2022 - August, 2023",
                 "description": [
                     "Design, developed, maintained, and shipped interactive cross browser compatibility and mobile responsiveness web applications for the company using HTML, CSS, JavaScript, and ReactJS.",
-                    "Maintain and troubleshoot computer systems and devices remotely for the company offices."
+                    "Pioneered and built a website for the company",
+                    "Open and lead a new department (software department) in the company.",
                 ]
             }
         ]
@@ -48,10 +49,17 @@ const Experience = () => {
                     <div className="experienceContent">
                         <div className="experienceTabs border">
                             <div className="tabWrapper">
+                                {jobList.companies.map((d, i) => {
+                                    return (
+                                        <button key={d+1+i} onClick={() => toggleTab(i)} className={tabState === i ? "tab activeTab" : "tab"}>{d}</button>
+                                    )
+                                })}
+                            </div>
+                            {/* <div className="tabWrapper">
                                 <button onClick={() => toggleTab(1)} className={tabState === 1 ? "tab activeTab" : "tab"}>MJ Project Management</button>
                                 <button onClick={() => toggleTab(2)} className={tabState === 2 ? "tab activeTab" : "tab"}>Technology Palli</button>
                                 <button onClick={() => toggleTab(3)} className={tabState === 3 ? "tab activeTab" : "tab"}>Creative IT Institute</button>
-                            </div>
+                            </div> */}
                             <div className="contentWrapper">
                                 <div className={tabState === 1 ? "content activeContent" : "content"}>
                                     <h3 className="position">Position 1</h3>
