@@ -30,7 +30,6 @@
     display: flex;
     flex-direction: column;
     margin-right: 20px;
-    padding: 10px;
 }
 
 
@@ -77,27 +76,34 @@
     font: 500 20px 'Ubuntu', sans-serif;
 }
 
+.content>.location{
+    font: 500 15px 'Ubuntu', sans-serif;
+}
+
 .content>.duration{
     color: #222;
-    font-size: 15px;
+    font: 400 15px 'Ubuntu', sans-serif;
 }
 
 .content>ul{
     margin-top: 20px;
-    font-family: "RamillasLight", sans-serif;
-    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
     line-height: 1.5;
 }
 
 .content>ul>li{
-    padding-left: 20px;
+    position: relative;
     list-style: none;
+    padding-left: 30px;
+    margin-bottom: 10px;
 }
 
 .content>ul>li::before{
     content: "\027a5";
     position: absolute;
-    transform: translateX(-120%);
+    top: -4px;
+    left: 0px;
     font-size: 20px;
     color: crimson;
 }
