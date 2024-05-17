@@ -12,11 +12,11 @@ const Experience = () => {
                 <div className="max-width">
                     <h2 className="title">My Experiences</h2>
                     <div className="experienceContent">
-                        <div className="experienceTabs">
+                        <div className="experienceTabs border">
                             <div className="tabWrapper">
-                                <h3 onClick={() => toggleTab(1)} className={tabState === 1 ? "tab activeTab" : "tab"}>Company 1</h3>
-                                <h3 onClick={() => toggleTab(2)} className={tabState === 2 ? "tab activeTab" : "tab"}>Company 2</h3>
-                                <h3 onClick={() => toggleTab(3)} className={tabState === 3 ? "tab activeTab" : "tab"}>Company 3</h3>
+                                <button onClick={() => toggleTab(1)} className={tabState === 1 ? "tab activeTab" : "tab"}>Company 1</button>
+                                <button onClick={() => toggleTab(2)} className={tabState === 2 ? "tab activeTab" : "tab"}>Company 22</button>
+                                <button onClick={() => toggleTab(3)} className={tabState === 3 ? "tab activeTab" : "tab"}>Company 333</button>
                             </div>
                             <div className="contentWrapper">
                                 <div className={tabState === 1 ? "content activeContent" : "content"}>
