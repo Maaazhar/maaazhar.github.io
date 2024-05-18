@@ -1,4 +1,4 @@
-.experience{
+.experience {
     background: #fff;
     min-height: 100dvh;
 }
@@ -12,20 +12,20 @@
     content: "what I acquire";
 }
 
-.experienceContent{
+.experienceContent {
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
 }
 
-.experienceTabs{
-    width: 80%;
+.experienceTabs {
+    width: 85%;
     display: flex;
     padding: 10px;
 }
 
-.experienceTabs>.tabWrapper{
-    flex: 4;
+.experienceTabs>.tabWrapper {
+    flex: 3;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -33,81 +33,146 @@
 }
 
 
-.experienceTabs>.tabWrapper>.tab{
+.experienceTabs>.tabWrapper>.tab {
+    width: 100%;
     background: transparent;
     border-left: 3px solid #dc143c49;
     border-right: none;
     border-top: none;
     border-bottom: none;
-    padding: 10px;
-    font: 500 20px 'Ubuntu', sans-serif;
+    padding: 15px;
+    font: 500 18px 'Ubuntu', sans-serif;
     text-align: left;
     cursor: pointer;
+    white-space: nowrap;
     transition: all 0.2s;
 }
 
-.experienceTabs>.tabWrapper>.tab:hover{
+.experienceTabs>.tabWrapper>.tab:hover {
     background: #9e9e9e56;
 }
 
-.experienceTabs>.tabWrapper>.activeTab{
+.experienceTabs>.tabWrapper>.activeTab {
     color: crimson;
     background: #9e9e9e56;
     border-left: 3px solid #dc143c;
 }
 
-.experienceTabs>.contentWrapper{
-    flex: 8;
-    padding: 5px 10px ;
+.experienceTabs>.contentWrapper {
+    flex: 9;
+    padding: 5px 10px;
     border-left: none;
 }
 
-.experienceTabs>.contentWrapper>.content{
+.experienceTabs>.contentWrapper>.content {
     display: none;
 }
 
-.experienceTabs>.contentWrapper>.activeContent{
+.experienceTabs>.contentWrapper>.activeContent {
     display: block;
 }
 
-.experienceTabs>.contentWrapper>.content>.position{
+.experienceTabs>.contentWrapper>.content>.position {
     margin-bottom: 10px;
     color: crimson;
     font: 500 20px 'Ubuntu', sans-serif;
 }
 
-.experienceTabs>.contentWrapper>.content>.company{
+.experienceTabs>.contentWrapper>.content>.company {
     font: 500 18px 'Ubuntu', sans-serif;
 }
-.experienceTabs>.contentWrapper>.content>.location{
+
+.experienceTabs>.contentWrapper>.content>.location {
     font: 500 15px 'Ubuntu', sans-serif;
 }
 
-.experienceTabs>.contentWrapper>.content>.duration{
+.experienceTabs>.contentWrapper>.content>.duration {
     margin-top: 5px;
     color: #222;
     font: 400 15px 'Ubuntu', sans-serif;
 }
 
-.experienceTabs>.contentWrapper>.content>ul{
+.experienceTabs>.contentWrapper>.content>ul {
     margin-top: 20px;
     font-family: "Poppins", sans-serif;
     font-size: 16px;
     line-height: 1.5;
 }
 
-.experienceTabs>.contentWrapper>.content>ul>li{
+.experienceTabs>.contentWrapper>.content>ul>li {
     position: relative;
     list-style: none;
     padding-left: 30px;
     margin-bottom: 10px;
 }
 
-.experienceTabs>.contentWrapper>.content>ul>li::before{
+.experienceTabs>.contentWrapper>.content>ul>li::before {
     content: "\027a5";
     position: absolute;
     top: -4px;
     left: 0px;
     font-size: 20px;
     color: crimson;
+}
+
+@media (max-width: 1190px) {
+    .experienceTabs {
+        width: 95%;
+    }
+
+    .experienceTabs>.tabWrapper {
+        flex: 3;
+    }
+}
+
+@media (max-width: 947px) {
+    .experienceTabs {
+        width: 95%;
+        flex-direction: column;
+    }
+
+    .experienceTabs>.tabWrapper {
+        flex-direction: row;
+        overflow-x: auto;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+
+    .experienceTabs>.tabWrapper>.tab {
+        padding: 10px 20px;
+        border-left: none;
+        border-bottom: 3px solid #dc143c49;
+    }
+
+    .experienceTabs>.tabWrapper>.activeTab {
+        border-bottom: 3px solid crimson;
+    }
+
+
+}
+
+@media (max-width: 690px) {}
+
+@media (max-width: 500px) {
+    .experienceTabs {
+        width: 110%;
+    }
+
+    .experienceTabs>.tabWrapper>.tab {
+        padding: 10px 10px;
+        font-size: 16px;
+    }
+
+    .experienceTabs>.contentWrapper {
+        /* width: 90%; */
+        align-self: center;
+    }
+}
+
+@media (max-width: 380px) {}
+
+@media (max-width: 350px) {
+    .experience .title::after {
+        font-size: 18px;
+    }
 }

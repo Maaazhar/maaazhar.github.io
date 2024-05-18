@@ -23,10 +23,12 @@
 
 html {
     scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: crimson;
 }
 
 /* custom scroll bar */
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     width: 10px;
 }
 
@@ -40,4 +42,4 @@ html {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
-}
+} */
