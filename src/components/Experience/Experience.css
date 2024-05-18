@@ -1,5 +1,6 @@
 .experience{
     background: #fff;
+    min-height: 100dvh;
 }
 
 .experience .title::before {
@@ -20,11 +21,10 @@
 .experienceTabs{
     width: 80%;
     display: flex;
-    /* justify-content: space-around; */
     padding: 10px;
 }
 
-.tabWrapper{
+.experienceTabs>.tabWrapper{
     flex: 4;
     position: relative;
     display: flex;
@@ -33,7 +33,7 @@
 }
 
 
-.tab{
+.experienceTabs>.tabWrapper>.tab{
     background: transparent;
     border-left: 3px solid #dc143c49;
     border-right: none;
@@ -46,60 +46,64 @@
     transition: all 0.2s;
 }
 
-.tab:hover{
+.experienceTabs>.tabWrapper>.tab:hover{
     background: #9e9e9e56;
 }
 
-.activeTab{
+.experienceTabs>.tabWrapper>.activeTab{
     color: crimson;
     background: #9e9e9e56;
     border-left: 3px solid #dc143c;
 }
 
-.contentWrapper{
+.experienceTabs>.contentWrapper{
     flex: 8;
     padding: 5px 10px ;
     border-left: none;
 }
 
-.content{
+.experienceTabs>.contentWrapper>.content{
     display: none;
 }
 
-.activeContent{
+.experienceTabs>.contentWrapper>.activeContent{
     display: block;
 }
 
-.content>.position{
-    margin-bottom: 5px;
+.experienceTabs>.contentWrapper>.content>.position{
+    margin-bottom: 10px;
     color: crimson;
     font: 500 20px 'Ubuntu', sans-serif;
 }
 
-.content>.location{
+.experienceTabs>.contentWrapper>.content>.company{
+    font: 500 18px 'Ubuntu', sans-serif;
+}
+.experienceTabs>.contentWrapper>.content>.location{
     font: 500 15px 'Ubuntu', sans-serif;
 }
 
-.content>.duration{
+.experienceTabs>.contentWrapper>.content>.duration{
+    margin-top: 5px;
     color: #222;
     font: 400 15px 'Ubuntu', sans-serif;
 }
 
-.content>ul{
+.experienceTabs>.contentWrapper>.content>ul{
     margin-top: 20px;
     font-family: "Poppins", sans-serif;
     font-size: 16px;
     line-height: 1.5;
 }
 
-.content>ul>li{
+.experienceTabs>.contentWrapper>.content>ul>li{
     position: relative;
     list-style: none;
     padding-left: 30px;
     margin-bottom: 10px;
 }
 
-.content>ul>li::before{
+.experienceTabs>.contentWrapper>.content>ul>li::before{
     content: "\027a5";
     position: absolute;
     top: -4px;
