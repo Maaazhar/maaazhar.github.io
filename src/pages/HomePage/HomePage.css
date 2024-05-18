@@ -126,6 +126,10 @@ section .title::after {
 }
 
 @media (max-width: 500px) {
+    section .title {
+        font-size: 35px;
+    }
+
     .scroll-up-btn {
         right: 15px;
         bottom: 15px;

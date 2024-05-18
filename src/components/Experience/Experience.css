@@ -8,8 +8,9 @@
 }
 
 .experience .title::after {
+    width: 170px;
     background: #fff;
-    content: "what I acquire";
+    content: "where I’ve worked";
 }
 
 .experienceContent {
@@ -73,7 +74,7 @@
 }
 
 .experienceTabs>.contentWrapper>.content>.position {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     color: crimson;
     font: 500 20px 'Ubuntu', sans-serif;
 }
@@ -135,6 +136,7 @@
         flex-direction: row;
         overflow-x: auto;
         padding-bottom: 10px;
+        margin-right: 0px;
         margin-bottom: 20px;
     }
 
@@ -154,25 +156,26 @@
 @media (max-width: 690px) {}
 
 @media (max-width: 500px) {
+    .experience .title::before {
+        width: 250px;
+    }
+
     .experienceTabs {
         width: 110%;
     }
 
     .experienceTabs>.tabWrapper>.tab {
-        padding: 10px 10px;
+        padding: 10px 15px;
         font-size: 16px;
     }
 
     .experienceTabs>.contentWrapper {
-        /* width: 90%; */
         align-self: center;
     }
 }
 
-@media (max-width: 380px) {}
+@media (max-width: 380px) {
+}
 
 @media (max-width: 350px) {
-    .experience .title::after {
-        font-size: 18px;
-    }
 }
