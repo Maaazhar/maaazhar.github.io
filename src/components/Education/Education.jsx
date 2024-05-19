@@ -5,7 +5,7 @@ const Education = () => {
             <section className="education" id="education">
                 <div className="max-width">
                     <h2 className="title">My Education</h2>
-                    <h3>This section is under development</h3>
+                    <h3>This section is under maintenance</h3>
                 </div>
             </section>
         </div>

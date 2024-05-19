@@ -37,7 +37,7 @@
 .experienceTabs>.tabWrapper>.tab {
     width: 100%;
     background: transparent;
-    border-left: 3px solid #dc143c49;
+    border-left: 3px solid #dc143c33;
     border-right: none;
     border-top: none;
     border-bottom: none;
@@ -137,13 +137,13 @@
         overflow-x: auto;
         padding-bottom: 10px;
         margin-right: 0px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 
     .experienceTabs>.tabWrapper>.tab {
         padding: 10px 20px;
         border-left: none;
-        border-bottom: 3px solid #dc143c49;
+        border-bottom: 3px solid #dc143c33;
     }
 
     .experienceTabs>.tabWrapper>.activeTab {
