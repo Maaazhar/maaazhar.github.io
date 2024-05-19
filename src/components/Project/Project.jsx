@@ -1,5 +1,5 @@
 import "./Project.css";
-import imgRafada from "../../assets/images/project/rafada.png";
+import imgOfRafada from "../../assets/images/project/rafada.png";
 
 const Project = () => {
     return (
@@ -11,7 +11,7 @@ const Project = () => {
                         <div className="projectContent">
                             <div className="singleProjectWrapper">
                                 <div className="singleProject">
-                                    <div className="projectImg"><img src="" alt="" /></div>
+                                    <div className="projectImg"><img src={imgOfRafada} alt="" /></div>
                                     <div className="projectDescription">
                                         <div className="projectTitle">
                                             <h3>ProjectTitle</h3>
@@ -32,7 +32,7 @@ const Project = () => {
                             </div>
                             <div className="singleProjectWrapper">
                                 <div className="singleProject">
-                                    <div className="projectImg"><img src="" alt="" /></div>
+                                    <div className="projectImg"><img src={imgOfRafada} alt="" /></div>
                                     <div className="projectDescription">
                                         <div className="projectTitle">
                                             <h3>ProjectTitle</h3>
@@ -53,7 +53,7 @@ const Project = () => {
                             </div>
                             <div className="singleProjectWrapper">
                                 <div className="singleProject">
-                                    <div className="projectImg"><img src="" alt="" /></div>
+                                    <div className="projectImg"><img src={imgOfRafada} alt="" /></div>
                                     <div className="projectDescription">
                                         <div className="projectTitle">
                                             <h3>ProjectTitle</h3>
@@ -74,7 +74,7 @@ const Project = () => {
                             </div>
                             <div className="singleProjectWrapper">
                                 <div className="singleProject">
-                                    <div className="projectImg"><img src="" alt="" /></div>
+                                    <div className="projectImg"><img src={imgOfRafada} alt="" /></div>
                                     <div className="projectDescription">
                                         <div className="projectTitle">
                                             <h3>ProjectTitle</h3>

@@ -6,8 +6,56 @@
     content: "I have done";
 }
 
-.project h3{
-    text-align: center;
-    font-weight: normal;
-    font-family: serif;
+.projectContentWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.projectContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.singleProjectWrapper{}
+
+.singleProject{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px;
+}
+
+.projectImg{
+    z-index: 1;
+}
+
+.projectImg img{
+    width: 100%;
+}
+
+.projectDescription{
+    transform: translateX(-15%);
+    text-align: right;
+
+    z-index: 2;
+}
+
+.projectTitle{}
+
+.projectInfo{}
+
+.projectTechnology{}
+
+.projectTechnology>ul>li{
+    list-style: none;
+}
+
+
+
+
+
+
