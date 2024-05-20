@@ -95,8 +95,7 @@
 
 .experienceTabs>.contentWrapper>.content>ul {
     margin-top: 20px;
-    font-family: "Poppins", sans-serif;
-    font-size: 16px;
+    font: 400 16px "Poppins", sans-serif;
     line-height: 1.5;
 }
 
@@ -116,6 +115,7 @@
     color: crimson;
 }
 
+/* responsive media query for similar content */
 @media (max-width: 1190px) {
     .experienceTabs {
         width: 95%;

@@ -10,85 +10,26 @@ const Project = () => {
                     <div className="projectContentWrapper">
                         <div className="projectContent">
                             <div className="singleProjectWrapper">
-                                <div className="singleProject">
-                                    <div className="projectImg"><img src={imgOfRafada} alt="" /></div>
-                                    <div className="projectDescription">
+                                <div className="singleProject ">
+                                    <div className="projectImg "><img src={imgOfRafada} alt="" /></div>
+                                    <div className="projectDescription ">
                                         <div className="projectTitle">
-                                            <h3>ProjectTitle</h3>
+                                            <h3>Website of RAFADA Group</h3>
                                         </div>
-                                        <div className="projectInfo">
-                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum ea ut tempore sint vitae natus beatae ad odit reprehenderit perspiciatis!</p>
-                                        </div>
-                                        <div className="projectTechnology">
-                                            <ul>
-                                                <li>HTML</li>
-                                                <li>HTML</li>
-                                                <li>HTML</li>
-                                                <li>HTML</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="singleProjectWrapper">
-                                <div className="singleProject">
-                                    <div className="projectImg"><img src={imgOfRafada} alt="" /></div>
-                                    <div className="projectDescription">
-                                        <div className="projectTitle">
-                                            <h3>ProjectTitle</h3>
-                                        </div>
-                                        <div className="projectInfo">
-                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum ea ut tempore sint vitae natus beatae ad odit reprehenderit perspiciatis!</p>
-                                        </div>
-                                        <div className="projectTechnology">
-                                            <ul>
-                                                <li>HTML</li>
-                                                <li>HTML</li>
-                                                <li>HTML</li>
-                                                <li>HTML</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="singleProjectWrapper">
-                                <div className="singleProject">
-                                    <div className="projectImg"><img src={imgOfRafada} alt="" /></div>
-                                    <div className="projectDescription">
-                                        <div className="projectTitle">
-                                            <h3>ProjectTitle</h3>
-                                        </div>
-                                        <div className="projectInfo">
-                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum ea ut tempore sint vitae natus beatae ad odit reprehenderit perspiciatis!</p>
-                                        </div>
-                                        <div className="projectTechnology">
-                                            <ul>
-                                                <li>HTML</li>
-                                                <li>HTML</li>
-                                                <li>HTML</li>
-                                                <li>HTML</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="singleProjectWrapper">
-                                <div className="singleProject">
-                                    <div className="projectImg"><img src={imgOfRafada} alt="" /></div>
-                                    <div className="projectDescription">
-                                        <div className="projectTitle">
-                                            <h3>ProjectTitle</h3>
-                                        </div>
-                                        <div className="projectInfo">
-                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum ea ut tempore sint vitae natus beatae ad odit reprehenderit perspiciatis!</p>
-                                        </div>
-                                        <div className="projectTechnology">
-                                            <ul>
-                                                <li>HTML</li>
-                                                <li>HTML</li>
-                                                <li>HTML</li>
-                                                <li>HTML</li>
-                                            </ul>
+                                        <div className="projectInfo ">
+                                            <p className="projectDetails">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum ea ut tempore sint vitae natus beatae ad odit reprehenderit perspiciatis!</p>
+                                            <div className="projectTechnology">
+                                                <ul>
+                                                    <li>HTML</li>
+                                                    <li>HTML</li>
+                                                    <li>HTML</li>
+                                                    <li>HTML</li>
+                                                </ul>
+                                            </div>
+                                            <div className="projectLink ">
+                                                <a href="#"><i className="fab fa-github"></i></a>
+                                                <a href="#"><i className="fab fa-github"></i></a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
