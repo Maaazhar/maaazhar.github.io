@@ -30,7 +30,7 @@ const Project = () => {
                                                 </ul>
                                             </div>
                                             <div className="projectLink ">
-                                                <a href="#"><i className="fab fa-github"></i></a>
+                                                <a href="#"><i className="fas fa-external-link-square-alt"></i></a>
                                                 <a href="#"><i className="fab fa-github"></i></a>
                                             </div>
                                         </div>
@@ -58,7 +58,7 @@ const Project = () => {
                                                 </ul>
                                             </div>
                                             <div className="projectLink ">
-                                                <a href="#"><i className="fab fa-github"></i></a>
+                                                <a href="#"><i className="fas fa-external-link-square-alt"></i></a>
                                                 <a href="#"><i className="fab fa-github"></i></a>
                                             </div>
                                         </div>
@@ -86,7 +86,7 @@ const Project = () => {
                                                 </ul>
                                             </div>
                                             <div className="projectLink ">
-                                                <a href="#"><i className="fab fa-github"></i></a>
+                                                <a href="#"><i className="fas fa-external-link-square-alt"></i></a>
                                                 <a href="#"><i className="fab fa-github"></i></a>
                                             </div>
                                         </div>
@@ -114,7 +114,7 @@ const Project = () => {
                                                 </ul>
                                             </div>
                                             <div className="projectLink ">
-                                                <a href="#"><i className="fab fa-github"></i></a>
+                                                <a href="#"><i className="fas fa-external-link-square-alt"></i></a>
                                                 <a href="#"><i className="fab fa-github"></i></a>
                                             </div>
                                         </div>
@@ -142,7 +142,7 @@ const Project = () => {
                                                 </ul>
                                             </div>
                                             <div className="projectLink ">
-                                                <a href="#"><i className="fab fa-github"></i></a>
+                                                <a href="#"><i className="fas fa-external-link-square-alt"></i></a>
                                                 <a href="#"><i className="fab fa-github"></i></a>
                                             </div>
                                         </div>
@@ -170,7 +170,7 @@ const Project = () => {
                                                 </ul>
                                             </div>
                                             <div className="projectLink ">
-                                                <a href="#"><i className="fab fa-github"></i></a>
+                                                <a href="#"><i className="fas fa-external-link-square-alt"></i></a>
                                                 <a href="#"><i className="fab fa-github"></i></a>
                                             </div>
                                         </div>
