@@ -63,7 +63,7 @@
 .projectDetails{
     margin-top: 30px;
     padding: 20px;
-    background-color: #0f1f22da;
+    background-color: #0c181aa0;
     backdrop-filter: blur(10px);
     border-radius: 5px;
     box-shadow: 0 20px 30px -15px rgba(7, 14, 15, 0.7);
@@ -85,7 +85,7 @@
 }
 .projectTechnology>ul>li{
     padding: 5px 10px;
-    background-color: #0f1f22da;
+    background-color: #0f1f227a;
     backdrop-filter: blur(10px);
     border-radius: 5px;
     text-shadow: 5px 5px 10px #000;
@@ -100,7 +100,7 @@
 
 .projectLink>a{
     padding: 5px 10px;
-    background-color: #0f1f22da;
+    background-color: #0f1f22a9;
     backdrop-filter: blur(10px);
     border-radius: 50%;
     margin: 10px;

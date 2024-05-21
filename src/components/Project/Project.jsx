@@ -24,6 +24,10 @@ const Project = () => {
                                                     <li>HTML</li>
                                                     <li>HTML</li>
                                                     <li>HTML</li>
+                                                    <li>HTML</li>
+                                                    <li>HTML</li>
+                                                    <li>HTML</li>
+                                                    <li>HTML</li>
                                                 </ul>
                                             </div>
                                             <div className="projectLink ">
