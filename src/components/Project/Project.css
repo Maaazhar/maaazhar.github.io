@@ -56,6 +56,7 @@
 
 .singleProjectRevers>.projectDescription{
     text-align: left;
+    float: left;
 }
 
 .projectTitle{
@@ -72,8 +73,10 @@
     /* transform: translateX(-15%); */
 }
 
-.singleProjectRevers>.projectInfo{
-    right: 100px;
+.singleProjectRevers>.projectDescription>.projectInfo{
+    position: absolute;
+    width: 50%;
+    left: 0;
 }
 
 .projectDetails{
@@ -98,6 +101,10 @@
     gap: 10px;
     font: 400 16px 'Ubuntu', sans-serif;
     text-shadow: 5px 5px 10px #000;
+}
+
+.singleProjectRevers>.projectDescription>.projectInfo>.projectTechnology>ul{
+    float: left;
 }
 .projectTechnology>ul>li{
     padding: 5px 10px;
