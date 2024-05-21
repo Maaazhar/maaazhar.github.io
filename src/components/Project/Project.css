@@ -30,6 +30,13 @@
     padding: 20px 0px;
 }
 
+.singleProjectRevers{
+    position: relative;
+    display: flex; 
+    flex-direction: row-reverse;
+    padding: 20px 0px;
+}
+
 .projectImg{
     flex: 0 0 60%;
     z-index: 1;
@@ -37,13 +44,18 @@
 
 .projectImg img{
     width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 20px 30px -15px rgba(7, 14, 15, 0.7);
 }
 
 .projectDescription{
     flex: 1;
     text-align: right;
-
     z-index: 2;
+}
+
+.singleProjectRevers>.projectDescription{
+    text-align: left;
 }
 
 .projectTitle{
@@ -58,6 +70,10 @@
     width: 50%;
     right: 0;
     /* transform: translateX(-15%); */
+}
+
+.singleProjectRevers>.projectInfo{
+    right: 100px;
 }
 
 .projectDetails{
