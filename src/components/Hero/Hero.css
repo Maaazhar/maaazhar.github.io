@@ -12,7 +12,8 @@
 
 .home .overlay{
     width: 100vw;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.80);
+    /* backdrop-filter: blur(5px); */
 }
 
 .home-line-break {
