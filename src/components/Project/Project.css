@@ -53,6 +53,7 @@
 
 .projectImg img{
     width: 100%;
+    height: 100%;
     border-radius: 5px;
     box-shadow: 0 20px 30px -15px rgba(7, 14, 15, 0.7);
 }
@@ -69,7 +70,6 @@
 }
 
 .projectTitle{
-    margin-top: 20px;
     color: crimson;
     font: 500 25px 'Ubuntu', sans-serif;
     text-shadow: 5px 5px 10px #000;
@@ -115,6 +115,7 @@
 .singleProjectRevers>.projectDescription>.projectInfo>.projectTechnology>ul{
     float: left;
 }
+
 .projectTechnology>ul>li{
     padding: 5px 10px;
     background-color: #0f1f2279;
@@ -135,11 +136,17 @@
     background-color: #0f1f22a9;
     backdrop-filter: blur(10px);
     border-radius: 10%;
-    margin: 10px;
-    font-size: 24px;
+    margin-left: 10px;
+    font-size: 22px;
     color: inherit;
     text-decoration: none;
     transition: all 0.2s ease-in-out;
+}
+
+
+.singleProjectRevers>.projectDescription>.projectInfo>.projectLink>a{
+    margin-left: 0px;
+    margin-right: 10px;
 }
 
 .projectLink>a>i{
@@ -155,7 +162,40 @@
 }
 
 
+/* responsive media query for Project */
+@media (max-width: 1104px) {
+    .projectTitle{
+        font-size: 20px;
+    }
 
+    .projectDetails{
+        margin-top: 15px;
+        padding: 15px;
+        font-size: 15px;
+    }
 
+    .projectTechnology>ul{
+        font-size: 13px;
+    }
 
+    .projectLink>a{
+        font-size: 16px;
+    }
+}
 
+@media (max-width: 991px) {
+
+}
+
+@media (max-width: 947px) {
+}
+
+@media (max-width: 690px) {
+}
+
+@media (max-width: 500px) {
+}
+@media (max-width: 380px) {
+}
+@media (max-width: 350px) {
+}

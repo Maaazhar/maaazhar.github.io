@@ -89,7 +89,7 @@ section .title::after {
     transform: translateX(-50%);
 }
 
-  /* responsive media query for similar content */
+/* responsive media query for similar content */
 @media (max-width: 991px) {
     .max-width {
         padding: 0 50px;
