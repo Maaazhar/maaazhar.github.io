@@ -115,7 +115,7 @@
     color: crimson;
 }
 
-/* responsive media query for similar content */
+/* responsive media query for Experience */
 @media (max-width: 1190px) {
     .experienceTabs {
         width: 95%;
@@ -153,7 +153,6 @@
 
 }
 
-/* responsive media query for Experience */
 @media (max-width: 690px) {}
 
 @media (max-width: 500px) {

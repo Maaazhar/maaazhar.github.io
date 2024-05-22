@@ -1,25 +1,23 @@
-.project{
+.project {}
 
-}
-
-.information{
+.information {
     text-align: center;
     margin-top: 100px;
     padding: 10px;
-    background-color:crimson
+    background-color: crimson
 }
 
 .project .title::after {
     content: "I have done";
 }
 
-.projectContentWrapper{
+.projectContentWrapper {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.projectContent{
+.projectContent {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,72 +25,68 @@
     gap: 20px;
 }
 
-.singleProjectWrapper{
+.singleProjectWrapper {
     margin-bottom: 50px;
 }
 
-.singleProject{
+.singleProject {
     position: relative;
     display: flex;
     /* align-items: center; */
     /* justify-content: center; */
     padding: 20px 0px;
-    border: 1px solid red;
-    overflow: hidden;
 }
 
-.singleProjectRevers{
+.singleProjectRevers {
     position: relative;
-    display: flex; 
+    display: flex;
     flex-direction: row-reverse;
     padding: 20px 0px;
-    border: 1px solid red;
-    overflow: hidden;
 }
 
-.projectImg{
+.projectImg {
     flex: 0 0 60%;
     z-index: 1;
 }
 
-.projectImg img{
+.projectImg img {
     width: 100%;
     height: 100%;
     border-radius: 5px;
     box-shadow: 0 20px 30px -15px rgba(7, 14, 15, 0.7);
 }
 
-.projectDescription{
+.projectDescription {
     flex: 1;
     text-align: right;
     z-index: 2;
 }
 
-.singleProjectRevers>.projectDescription{
+.singleProjectRevers>.projectDescription {
     text-align: left;
     float: left;
 }
 
-.projectTitle{
+.projectTitle {
     color: crimson;
     font: 500 25px 'Ubuntu', sans-serif;
     text-shadow: 5px 5px 10px #000;
 }
 
-.projectInfo{
+.projectInfo {
     position: absolute;
     width: 50%;
     right: 0;
     /* transform: translateX(-15%); */
 }
 
-.singleProjectRevers>.projectDescription>.projectInfo{
+.singleProjectRevers>.projectDescription>.projectInfo {
     position: absolute;
     width: 50%;
     left: 0;
 }
 
-.projectDetails{
+.projectDetails {
     margin-top: 30px;
     padding: 20px;
     background-color: #0c181aa0;
@@ -104,11 +98,11 @@
 }
 
 
-.projectTechnology{
+.projectTechnology {
     margin-top: 20px;
 }
 
-.projectTechnology>ul{
+.projectTechnology>ul {
     float: right;
     display: flex;
     gap: 10px;
@@ -116,11 +110,11 @@
     text-shadow: 5px 5px 10px #000;
 }
 
-.singleProjectRevers>.projectDescription>.projectInfo>.projectTechnology>ul{
+.singleProjectRevers>.projectDescription>.projectInfo>.projectTechnology>ul {
     float: left;
 }
 
-.projectTechnology>ul>li{
+.projectTechnology>ul>li {
     padding: 5px 10px;
     background-color: #0f1f2279;
     backdrop-filter: blur(10px);
@@ -129,13 +123,13 @@
     list-style: none;
 }
 
-.projectLink{
+.projectLink {
     width: 100%;
     float: right;
     margin-top: 20px;
 }
 
-.projectLink>a{
+.projectLink>a {
     padding: 5px 10px;
     background-color: #0f1f22a9;
     backdrop-filter: blur(10px);
@@ -148,19 +142,20 @@
 }
 
 
-.singleProjectRevers>.projectDescription>.projectInfo>.projectLink>a{
+.singleProjectRevers>.projectDescription>.projectInfo>.projectLink>a {
     margin-left: 0px;
     margin-right: 10px;
 }
 
-.projectLink>a>i{
+.projectLink>a>i {
     text-shadow: 5px 5px 10px #000;
 }
 
-.projectLink>a:hover{
+.projectLink>a:hover {
     background-color: #cccccc;
 }
-.projectLink>a:hover i{
+
+.projectLink>a:hover i {
     color: crimson;
     text-shadow: none;
 }
@@ -168,72 +163,195 @@
 
 /* responsive media query for Project */
 @media (max-width: 1104px) {
-    .projectTitle{
+    .projectTitle {
         font-size: 20px;
     }
 
-    .projectDetails{
+    .projectDetails {
         margin-top: 15px;
         padding: 15px;
         font-size: 15px;
     }
 
-    .projectInfo{
+    .projectInfo {
         width: 50%;
     }
 
-    .projectTechnology>ul{
+    .projectTechnology>ul {
         font-size: 13px;
     }
 
-    .projectLink>a{
+    .projectLink>a {
         font-size: 16px;
     }
 }
 
 @media (max-width: 800px) {
-    .projectTitle{
+    .projectTitle {
         font-size: 18px;
     }
 
-    .projectDetails{
+    .projectDetails {
         margin-top: 10px;
         padding: 10px;
         font-size: 13px;
     }
 
-    .projectInfo{
-        width: 60%;
-    }
-    
-    .singleProjectRevers>.projectDescription>.projectInfo{
+    .projectInfo {
         width: 60%;
     }
 
-    .projectTechnology{
+    .singleProjectRevers>.projectDescription>.projectInfo {
+        width: 60%;
+    }
+
+    .projectTechnology {
         margin-top: 10px;
     }
 
-    .projectTechnology>ul{
+    .projectTechnology>ul {
         font-size: 13px;
     }
 
-    .projectLink{
+    .projectLink {
         margin-top: 10px;
     }
 
-    .projectLink>a{
+    .projectLink>a {
         font-size: 15px;
     }
 
 }
 
-@media (max-width: 690px) {
-}
+@media (max-width: 690px) {}
 
 @media (max-width: 500px) {
+    .singleProject {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+        background-color: #ffffff10;
+        backdrop-filter: blur(10px);
+        border-radius: 5px;
+        border-top: 1px solid #ffffff17;
+        border-left: 1px solid #ffffff17;
+    }
+
+    .singleProjectRevers {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+        background-color: #ffffff10;
+        backdrop-filter: blur(10px);
+        border-radius: 5px;
+        border-top: 1px solid #ffffff17;
+        border-left: 1px solid #ffffff17;
+    }
+
+
+    .projectImg {
+        flex: 12;
+        z-index: 1;
+    }
+
+    .projectImg img {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        box-shadow: 0 20px 30px -15px rgba(7, 14, 15, 0.7);
+    }
+
+    .projectDescription {
+        position: relative;
+        flex: 12;
+        width: 100%;
+        margin-top: 20px;
+        text-align: left;
+        z-index: 2;
+    }
+
+    .singleProjectRevers>.projectDescription {
+        margin-top: 0px;
+    }
+
+    .projectTitle {
+        color: crimson;
+        font: 500 22px 'Ubuntu', sans-serif;
+        text-align: center;
+        text-shadow: 5px 5px 10px #000;
+    }
+
+    .projectInfo {
+        position: relative;
+        width: 100%;
+        left: 0;
+    }
+
+    .singleProjectRevers>.projectDescription>.projectInfo {
+        position: relative;
+        width: 100%;
+    }
+
+    .projectDetails {
+        margin-top: 20px;
+        padding: 15px;
+        background-color: #0000002d;
+        backdrop-filter: blur(0px);
+        border-top: 1px solid #ffffff17;
+        border-left: 1px solid #ffffff17;
+        font-size: 15px;
+    }
+
+
+    .projectTechnology {
+        margin-top: 20px;
+    }
+
+    .projectTechnology>ul {
+        float: left;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        font-size: 15px;
+    }
+
+    .projectTechnology>ul>li {
+        background-color: #0000002d;
+        backdrop-filter: blur(0px);
+        border-top: 1px solid #ffffff17;
+        border-left: 1px solid #ffffff17;
+    }
+
+    .singleProjectRevers>.projectDescription>.projectInfo>.projectTechnology>ul {
+        float: left;
+    }
+
+    .projectLink {
+        width: 100%;
+        float: left;
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    .projectLink>a {
+        margin: 0px 10px;
+        background-color: #e8e8e827;
+        backdrop-filter: blur(0px);
+        border-top: 1px solid #ffffff2c;
+        border-left: 1px solid #ffffff2c;
+    }
+
 }
-@media (max-width: 380px) {
-}
-@media (max-width: 350px) {
-}
+
+@media (max-width: 380px) {}
+
+@media (max-width: 350px) {}
