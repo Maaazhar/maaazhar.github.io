@@ -1,9 +1,14 @@
 import "./Skills.css"
 import SkillList  from "./SkillList.jsx";
+import { useState } from "react";
 
 export const Skills = () => {
     const currentYear = new Date().getFullYear();
+    const [skillCategory, setSkillCategory] = useState(0)
 
+    const toggleCategory = (i) =>{
+        setSkillCategory(i);
+    }
 
     return (
         <div>
@@ -16,7 +21,7 @@ export const Skills = () => {
                                 <>
                                 <div className="skillCategory" key={`${d.category}-${i}`}>
                                     <label className="skillCategoryTitle" htmlFor={"skillAccordion-"+i}>{d.category}</label>
-                                    <input type="radio" name="SkillAccordion" id={"skillAccordion-"+i} />
+                                    <input type="radio" name="SkillAccordion" value={i} id={"skillAccordion-"+i} onClick={() =>toggleCategory(i)} checked={skillCategory === i ? true : false}/>
                                     <div className="skill">
                                         {d.list.map((s, i) => {
                                             return (
