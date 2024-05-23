@@ -93,12 +93,15 @@
     backdrop-filter: blur(10px);
     border-radius: 5px;
     box-shadow: 0 20px 30px -15px rgba(7, 14, 15, 0.7);
+    border-top: 1px solid #ffffff17;
+    border-left: 1px solid #ffffff17;
     font: 400 16px "Poppins", sans-serif;
     text-shadow: 5px 5px 10px #000;
 }
 
 
 .projectTechnology {
+    width: 100%;
     margin-top: 20px;
 }
 
@@ -126,12 +129,16 @@
 }
 
 .projectLink {
-    width: 100%;
     float: right;
+    display: flex;
     margin-top: 20px;
+}
+.singleProjectRevers>.projectDescription>.projectInfo>.projectLink {
+    float: left;
 }
 
 .projectLink>a {
+    display: block;
     padding: 5px 10px;
     background-color: #0f1f22a9;
     backdrop-filter: blur(10px);
@@ -142,7 +149,7 @@
     font-size: 18px;
     color: inherit;
     text-decoration: none;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 
@@ -157,6 +164,8 @@
 
 .projectLink>a:hover {
     background-color: #cccccc;
+    border-top: 1px solid #ffffff17;
+    border-left: 1px solid #ffffff17;
 }
 
 .projectLink>a:hover i {
