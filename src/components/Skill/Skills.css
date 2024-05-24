@@ -287,8 +287,16 @@
         height: 330px;
     }
 }
+@media (max-width: 368px) {
+    .skillCategory>input[type="radio"]:checked+.skill-0 {
+        height: 780px;
+    }
+    .skillCategory>input[type="radio"]:checked+.skill-2 {
+        height: 630px;
+    }
+}
 
-@media (max-width: 320px) {
+@media (max-width: 342px) {
     .skillCategory>input[type="radio"]:checked+.skill-0 {
         height: 980px;
     }
