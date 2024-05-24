@@ -19,6 +19,7 @@
     width: 100%;
     padding: 20px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     background-color: #ffffff10;
     backdrop-filter: blur(10px);
@@ -101,6 +102,9 @@
 
 
 @media (max-width: 1104px) {
+    .skillCategory> input[type="radio"]:checked + .skill{
+        height: 280px;
+    }
     .skillItem {
         height: 50px;
     }
@@ -123,6 +127,25 @@
 }
 
 @media (max-width: 991px) {
+    .skillCategoryTitle{
+        padding: 10px;
+    }
+    .skillCategory> input[type="radio"]:checked + .skill-0{
+        height: 230px;
+    }
+    .skillCategory> input[type="radio"]:checked + .skill-1{
+        height: 120px;
+    }
+    .skillCategory> input[type="radio"]:checked + .skill-2{
+        height: 180px;
+    }
+    .skillCategory> input[type="radio"]:checked + .skill-3{
+        height: 120px;
+    }
+    .skillCategory> input[type="radio"]:checked + .skill-4{
+        height: 120px;
+    }
+    
     .skillItem {
         height: 40px;
     }
@@ -165,12 +188,29 @@
     .skillCategoryTitle {
         margin-inline: auto;
         font-size: 25px;
-        text-align: center;
     }
 
     .skill {
+        align-items:flex-start;
         justify-content: center;
     }
+
+    .skillCategory> input[type="radio"]:checked + .skill-0{
+        height: 650px;
+    }
+    .skillCategory> input[type="radio"]:checked + .skill-1{
+        height: 320px;
+    }
+    .skillCategory> input[type="radio"]:checked + .skill-2{
+        height: 500px;
+    }
+    .skillCategory> input[type="radio"]:checked + .skill-3{
+        height: 180px;
+    }
+    .skillCategory> input[type="radio"]:checked + .skill-4{
+        height: 320px;
+    }
+
     .skillItem {
         height: 145px;
         flex-direction: column;
@@ -197,6 +237,19 @@
 
 }
 
+@media (max-width: 380px) {
+    .skillCategory> input[type="radio"]:checked + .skill-3{
+        height: 320px;
+    }
+}
+@media (max-width: 320px) {
+    .skillCategory> input[type="radio"]:checked + .skill-0{
+        height: 980px;
+    }
+    .skillCategory> input[type="radio"]:checked + .skill-2{
+        height: 650px;
+    }
+}
 /* @media (max-width: 380px) {
     .skillCategoryTitle {
         font-size: 20px;
