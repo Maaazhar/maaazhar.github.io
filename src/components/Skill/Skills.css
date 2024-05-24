@@ -5,19 +5,22 @@
 
 .skillsContent {
     min-height: 100vh;
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr;
     grid-column-gap: 0px;
-    grid-row-gap: 10px;
+    grid-row-gap: 10px; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .skillCategory {
-    padding: 0px 0px;
+    height: fit-content;
 }
 
 .skillCategoryTitle {
     width: 100%;
-    padding: 20px;
+    padding: 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -28,12 +31,12 @@
     font: 500 30px 'Ubuntu', sans-serif;
 }
 
-.skillCategoryTitle>i{
+.skillCategoryTitle>i {
     font-size: 28px;
     transition: transform 0.5s ease-in-out;
 }
 
-.skillCategory> input[type="radio"]{
+.skillCategory>input[type="radio"] {
     display: none;
 }
 
@@ -47,8 +50,24 @@
     transition: all 0.5s ease-in-out;
 }
 
-.skillCategory> input[type="radio"]:checked + .skill{
-    height: 250px;
+.skillCategory>input[type="radio"]:checked+.skill-0 {
+    height: 240px;
+}
+
+.skillCategory>input[type="radio"]:checked+.skill-1 {
+    height: 80px;
+}
+
+.skillCategory>input[type="radio"]:checked+.skill-2 {
+    height: 160px;
+}
+
+.skillCategory>input[type="radio"]:checked+.skill-3 {
+    height: 80px;
+}
+
+.skillCategory>input[type="radio"]:checked+.skill-4 {
+    height: 80px;
 }
 
 
@@ -102,9 +121,26 @@
 
 
 @media (max-width: 1104px) {
-    .skillCategory> input[type="radio"]:checked + .skill{
+    .skillCategory>input[type="radio"]:checked+.skill-0 {
         height: 280px;
     }
+
+    .skillCategory>input[type="radio"]:checked+.skill-1 {
+        height: 140px;
+    }
+
+    .skillCategory>input[type="radio"]:checked+.skill-2 {
+        height: 210px;
+    }
+
+    .skillCategory>input[type="radio"]:checked+.skill-3 {
+        height: 140px;
+    }
+
+    .skillCategory>input[type="radio"]:checked+.skill-4 {
+        height: 70px;
+    }
+
     .skillItem {
         height: 50px;
     }
@@ -127,25 +163,30 @@
 }
 
 @media (max-width: 991px) {
-    .skillCategoryTitle{
+    .skillCategoryTitle {
         padding: 10px;
     }
-    .skillCategory> input[type="radio"]:checked + .skill-0{
-        height: 230px;
+
+    .skillCategory>input[type="radio"]:checked+.skill-0 {
+        height: 240px;
     }
-    .skillCategory> input[type="radio"]:checked + .skill-1{
+
+    .skillCategory>input[type="radio"]:checked+.skill-1 {
         height: 120px;
     }
-    .skillCategory> input[type="radio"]:checked + .skill-2{
+
+    .skillCategory>input[type="radio"]:checked+.skill-2 {
         height: 180px;
     }
-    .skillCategory> input[type="radio"]:checked + .skill-3{
+
+    .skillCategory>input[type="radio"]:checked+.skill-3 {
         height: 120px;
     }
-    .skillCategory> input[type="radio"]:checked + .skill-4{
+
+    .skillCategory>input[type="radio"]:checked+.skill-4 {
         height: 120px;
     }
-    
+
     .skillItem {
         height: 40px;
     }
@@ -176,42 +217,46 @@
     }
 }
 
-@media (max-width: 690px) {
-    
-}
+@media (max-width: 690px) {}
 
 @media (max-width: 500px) {
     .skills .skillsContent .left .text {
         font-size: 19px;
     }
-    
+
     .skillCategoryTitle {
         margin-inline: auto;
         font-size: 25px;
     }
 
     .skill {
-        align-items:flex-start;
+        padding: 0px;
+        align-items: flex-start;
         justify-content: center;
     }
 
-    .skillCategory> input[type="radio"]:checked + .skill-0{
-        height: 650px;
+    .skillCategory>input[type="radio"]:checked+.skill-0 {
+        height: 660px;
     }
-    .skillCategory> input[type="radio"]:checked + .skill-1{
-        height: 320px;
+
+    .skillCategory>input[type="radio"]:checked+.skill-1 {
+        height: 330px;
     }
-    .skillCategory> input[type="radio"]:checked + .skill-2{
+
+    .skillCategory>input[type="radio"]:checked+.skill-2 {
         height: 500px;
     }
-    .skillCategory> input[type="radio"]:checked + .skill-3{
+
+    .skillCategory>input[type="radio"]:checked+.skill-3 {
         height: 180px;
     }
-    .skillCategory> input[type="radio"]:checked + .skill-4{
-        height: 320px;
+
+    .skillCategory>input[type="radio"]:checked+.skill-4 {
+        height: 330px;
     }
 
     .skillItem {
+        margin: 5px;
         height: 145px;
         flex-direction: column;
     }
@@ -238,18 +283,21 @@
 }
 
 @media (max-width: 380px) {
-    .skillCategory> input[type="radio"]:checked + .skill-3{
-        height: 320px;
+    .skillCategory>input[type="radio"]:checked+.skill-3 {
+        height: 330px;
     }
 }
+
 @media (max-width: 320px) {
-    .skillCategory> input[type="radio"]:checked + .skill-0{
+    .skillCategory>input[type="radio"]:checked+.skill-0 {
         height: 980px;
     }
-    .skillCategory> input[type="radio"]:checked + .skill-2{
+
+    .skillCategory>input[type="radio"]:checked+.skill-2 {
         height: 650px;
     }
 }
+
 /* @media (max-width: 380px) {
     .skillCategoryTitle {
         font-size: 20px;
