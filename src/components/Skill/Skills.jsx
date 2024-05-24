@@ -20,7 +20,7 @@ export const Skills = () => {
                             return (
                                 <>
                                 <div className="skillCategory" key={`${d.category}-${i}`}>
-                                    <label className="skillCategoryTitle" htmlFor={"skillAccordion-"+i}>{d.category} {skillCategory === i ? "-" : "+"} <i className="fas fa-angle-down"></i></label>
+                                    <label className="skillCategoryTitle" htmlFor={"skillAccordion-"+i}>{d.category} {skillCategory === i ? "-" : "+"} <i style={skillCategory === i ? {transform: "rotate(180deg)"} : {}} className="fas fa-angle-down"></i></label>
                                     <input type="radio" name="SkillAccordion" value={i} id={"skillAccordion-"+i} onClick={() =>toggleCategory(i)} checked={skillCategory === i ? true : false}/>
                                     <div className="skill">
                                         {d.list.map((s, i) => {
@@ -37,7 +37,7 @@ export const Skills = () => {
                                         )}
                                     </div>
                                 </div>
-                                <div className="skillCategory" key={`${d.category}-${i}`}>
+                                {/* <div className="skillCategory" key={`${d.category}-${i}`}>
                                     <div className="skillCategoryTitle">{d.category}</div>
                                     <div className="skill">
                                         {d.list.map((s, i) => {
@@ -53,7 +53,7 @@ export const Skills = () => {
                                         }
                                         )}
                                     </div>
-                                </div>
+                                </div> */}
                                 </>
                             )
                         }
