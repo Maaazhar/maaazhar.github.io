@@ -25,6 +25,8 @@
     align-items: center;
     justify-content: space-between;
     background-color: #ffffff10;
+    border-top: 1px solid #ffffff17;
+    border-left: 1px solid #ffffff17;
     backdrop-filter: blur(10px);
     border-radius: 5px;
     color: #dc143c;
@@ -40,6 +42,15 @@
     display: none;
 }
 
+.skillWrapper {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: all 0.5s ease-in-out;
+}
+
+.skillCategory>input[type="radio"]:checked+.skillWrapper {
+    grid-template-rows: 1fr;
+}
 
 .skill {
     padding: 0px 10px;
@@ -47,29 +58,7 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    height: 0;
     overflow: hidden;
-    transition: all 0.5s ease-in-out;
-}
-
-.skillCategory>input[type="radio"]:checked+.skill-0 {
-    height: 240px;
-}
-
-.skillCategory>input[type="radio"]:checked+.skill-1 {
-    height: 80px;
-}
-
-.skillCategory>input[type="radio"]:checked+.skill-2 {
-    height: 160px;
-}
-
-.skillCategory>input[type="radio"]:checked+.skill-3 {
-    height: 80px;
-}
-
-.skillCategory>input[type="radio"]:checked+.skill-4 {
-    height: 80px;
 }
 
 
@@ -126,26 +115,6 @@
 
 
 @media (max-width: 1104px) {
-    .skillCategory>input[type="radio"]:checked+.skill-0 {
-        height: 280px;
-    }
-
-    .skillCategory>input[type="radio"]:checked+.skill-1 {
-        height: 140px;
-    }
-
-    .skillCategory>input[type="radio"]:checked+.skill-2 {
-        height: 210px;
-    }
-
-    .skillCategory>input[type="radio"]:checked+.skill-3 {
-        height: 140px;
-    }
-
-    .skillCategory>input[type="radio"]:checked+.skill-4 {
-        height: 70px;
-    }
-
     .skillItem {
         height: 50px;
     }
@@ -170,26 +139,6 @@
 @media (max-width: 991px) {
     .skillCategoryTitle {
         padding: 10px;
-    }
-
-    .skillCategory>input[type="radio"]:checked+.skill-0 {
-        height: 240px;
-    }
-
-    .skillCategory>input[type="radio"]:checked+.skill-1 {
-        height: 120px;
-    }
-
-    .skillCategory>input[type="radio"]:checked+.skill-2 {
-        height: 180px;
-    }
-
-    .skillCategory>input[type="radio"]:checked+.skill-3 {
-        height: 120px;
-    }
-
-    .skillCategory>input[type="radio"]:checked+.skill-4 {
-        height: 120px;
     }
 
     .skillItem {
@@ -240,26 +189,6 @@
         justify-content: center;
     }
 
-    .skillCategory>input[type="radio"]:checked+.skill-0 {
-        height: 660px;
-    }
-
-    .skillCategory>input[type="radio"]:checked+.skill-1 {
-        height: 330px;
-    }
-
-    .skillCategory>input[type="radio"]:checked+.skill-2 {
-        height: 500px;
-    }
-
-    .skillCategory>input[type="radio"]:checked+.skill-3 {
-        height: 180px;
-    }
-
-    .skillCategory>input[type="radio"]:checked+.skill-4 {
-        height: 330px;
-    }
-
     .skillItem {
         margin: 5px;
         height: 145px;
@@ -285,30 +214,6 @@
         margin: 2px 0px;
     }
 
-}
-
-@media (max-width: 380px) {
-    .skillCategory>input[type="radio"]:checked+.skill-3 {
-        height: 330px;
-    }
-}
-@media (max-width: 368px) {
-    .skillCategory>input[type="radio"]:checked+.skill-0 {
-        height: 780px;
-    }
-    .skillCategory>input[type="radio"]:checked+.skill-2 {
-        height: 630px;
-    }
-}
-
-@media (max-width: 342px) {
-    .skillCategory>input[type="radio"]:checked+.skill-0 {
-        height: 980px;
-    }
-
-    .skillCategory>input[type="radio"]:checked+.skill-2 {
-        height: 650px;
-    }
 }
 
 /* @media (max-width: 380px) {
