@@ -42,8 +42,10 @@
 
 
 .skill {
+    padding: 0px 10px;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     height: 0;
     overflow: hidden;
@@ -79,18 +81,21 @@
     justify-content: space-between;
     margin: 10px 10px 10px 0px;
     padding: 10px;
-    background: rgba(28, 28, 28, 0.6);
+    background: rgba(75, 75, 75, 0.241);
     border-radius: 5px;
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    /* border: 1px solid rgba(255, 255, 255, 0.05); */
+    border-top: 1px solid #ffffff17;
+    border-left: 1px solid #ffffff17;
     transition: all 0.3s ease-in-out;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(8px);
     user-select: none;
     overflow: hidden;
 }
 
 .skillItem:hover {
-    backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(15px);
+    border-top: 1px solid #ffffff00;
+    border-left: 1px solid #ffffff00;
     box-shadow: 1px 1px 10px #19ffffd4;
 
 }
@@ -108,8 +113,8 @@
 
 .skillName {
     margin: 0px 5px;
-    font-size: 20px;
-    font-family: 'Ubuntu', sans-serif;
+    font: 20px 'Ubuntu', sans-serif;
+    text-shadow: 5px 5px 10px #000;
 }
 
 .skillAge {
