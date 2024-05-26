@@ -30,7 +30,7 @@ export const Skills = () => {
                                             {d.category} <i className="fas fa-angle-down"> </i>
                                         </label>
                                         <div className="skillWrapper">
-                                            <div className={"skill skill-"}>
+                                            <div className="skill">
                                                 {d.list.map((s, i) => {
                                                     return (
                                                         <div className="skillItem" key={`${s.logo}-${i}`}>

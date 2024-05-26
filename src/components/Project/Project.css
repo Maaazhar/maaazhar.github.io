@@ -11,12 +11,6 @@
     content: "I have done";
 }
 
-.projectContentWrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .projectContent {
     display: flex;
     flex-direction: column;
@@ -126,6 +120,7 @@
     border-radius: 5px;
     text-shadow: 5px 5px 10px #000;
     list-style: none;
+    white-space: nowrap;
 }
 
 .projectLink {
