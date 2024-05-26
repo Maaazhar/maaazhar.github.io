@@ -16,20 +16,21 @@ export const Skills = () => {
                         {SkillList.map((d, i) => {
                             return (
                                 <>
-                                    <div className="skillCategory" key={`${d.category}-${i}`}>
+                                    <div className="skillCategory accordion" key={`${d.category}-${i}`}>
                                         <input
                                             type="radio"
                                             id={"skillAccordion-" + i}
+                                            className="accordionInput"
                                             name="SkillAccordion"
                                             value={i}
                                             onClick={() => toggleCategory(i)}
                                             checked={skillCategory === i ? true : false} />
                                         <label
-                                            className="skillCategoryTitle"
+                                            className="skillCategoryTitle accordionButton"
                                             htmlFor={"skillAccordion-" + i}>
                                             {d.category} <i className="fas fa-angle-down"> </i>
                                         </label>
-                                        <div className="skillWrapper">
+                                        <div className="skillWrapper accordionContent">
                                             <div className="skill">
                                                 {d.list.map((s, i) => {
                                                     return (

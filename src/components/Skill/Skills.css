@@ -14,7 +14,7 @@
     gap: 10px;
 }
 
-.skillCategory {
+/* .skillCategory {
     height: fit-content;
     background-color: #ffffff10;
     backdrop-filter: blur(10px);
@@ -60,7 +60,7 @@
 .skillCategory>input[type="radio"]:checked~.skillWrapper {
     grid-template-rows: 1fr;
     padding: 10px 0px;
-}
+} */
 
 .skill {
     padding: 0px 10px;
@@ -175,20 +175,9 @@
     }
 }
 
-@media (max-width: 947px) {
-    .skills .skillsContent .column {
-        width: 100%;
-        margin-bottom: 35px;
-    }
-}
-
 @media (max-width: 500px) {
-    .skills .skillsContent .left .text {
-        font-size: 19px;
-    }
 
     .skillCategoryTitle {
-        margin-inline: auto;
         font-size: 25px;
     }
 

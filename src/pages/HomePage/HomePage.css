@@ -141,6 +141,10 @@ section .title::after {
     .max-width {
         padding: 0 50px;
     }
+
+    .accordionButton{
+        padding: 10px;
+    }
 }
 
 @media (max-width: 947px) {
@@ -189,5 +193,9 @@ section .title::after {
     .about .about-content .right .text,
     .skills .skillsContent .left .text {
         font-size: 19px;
+    }
+
+    .accordionButton{
+        font-size: 25px;
     }
   }
