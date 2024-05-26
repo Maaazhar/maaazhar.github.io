@@ -30,13 +30,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    border-radius: 5px;
     color: #dc143c;
     font: 500 30px 'Ubuntu', sans-serif;
     user-select: none;
     cursor: pointer;
 }
+
 
 .skillCategoryTitle>i {
     font-size: 28px;

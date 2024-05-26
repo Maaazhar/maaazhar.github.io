@@ -40,20 +40,21 @@ const Project = () => {
                     <div className="projectContent">
                         {projectList.map((d, i) => {
                             return (
-                                <div className="projectCategory" key={`${d.category}-${i}`}>
+                                <div className="projectCategory accordion" key={`${d.category}-${i}`}>
                                     <input
                                         type="radio"
                                         id={"projectAccordion-" + i}
+                                        className="accordionInput"
                                         name="projectAccordion"
                                         value={i}
                                         onClick={() => toggleCategory(i)}
                                         checked={projectCategory === i ? true : false} />
                                     <label
-                                        className="projectCategoryTitle"
+                                        className="projectCategoryTitle accordionButton"
                                         htmlFor={"projectAccordion-" + i}>
                                         {d.category} <i className="fas fa-angle-down"> </i>
                                     </label>
-                                    <div className="projectWrapper">
+                                    <div className="projectWrapper accordionContent">
                                         <div className="project">
                                             {d.list.map((p, i) => {
                                                 return (
