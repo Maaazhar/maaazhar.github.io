@@ -28,7 +28,7 @@ export const About = () => {
                                 </span>
                             </div>
                             <p>
-                                I am an experienced Front-End Web Developer, I bring designs to life, crafting interactive and
+                                I am an experienced Web Developer, I bring designs to life, crafting interactive and
                                 visually engaging user interfaces that seamlessly blend in form with functionality. Utilizing my
                                 expertise in HTML, CSS, JavaScript, and ReactJS.
                                 <br />

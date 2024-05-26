@@ -1,5 +1,6 @@
 import "./Project.css";
 import imgOfRafada from "../../assets/images/project/rafada.png";
+import portfolio from "../../assets/images/project/portfolio.jpg";
 import { useState } from "react";
 
 const Project = () => {
@@ -22,11 +23,11 @@ const Project = () => {
             "category": "Personal Project",
             "list": [
                 {
-                    "image": "",
-                    "title": "",
-                    "details": "",
-                    "technology": [],
-                    "liveLink": "",
+                    "image": portfolio,
+                    "title": "Portfolio of Mazharul Islam",
+                    "details": "This is a portfolio website of Mazharul Islam showcases his professional expertise as a web developer based in the UAE, featuring his portfolio, technical skills, and professional experience.",
+                    "technology": ["HTML", "CSS", "ReactJS", "Font Awesome", "Organic  SEO"],
+                    "liveLink": "https://maaazhar.github.io/",
                     "githubLink": ""
                 }
             ]
