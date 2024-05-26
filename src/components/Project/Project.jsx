@@ -28,7 +28,7 @@ const Project = () => {
                     "details": "This is a portfolio website of Mazharul Islam showcases his professional expertise as a web developer based in the UAE, featuring his portfolio, technical skills, and professional experience.",
                     "technology": ["HTML", "CSS", "ReactJS", "Font Awesome", "Organic  SEO"],
                     "liveLink": "https://maaazhar.github.io/",
-                    "githubLink": ""
+                    "githubLink": "https://github.com/Maaazhar/maaazhar.github.io"
                 }
             ]
         }
@@ -74,8 +74,8 @@ const Project = () => {
                                                                         </ul>
                                                                     </div>
                                                                     <div className="projectLink ">
-                                                                        <a href={p.liveLink}><i className="fas fa-external-link-square-alt"></i></a>
-                                                                        {p.githubLink ? <a href={p.githubLink}><i className="fab fa-github"></i></a> : " "}
+                                                                        <a href={p.liveLink} target="_blank"><i className="fas fa-external-link-square-alt"></i></a>
+                                                                        {p.githubLink ? <a href={p.githubLink} target="_blank"><i className="fab fa-github"></i></a> : " "}
                                                                     </div>
                                                                 </div>
                                                             </div>
