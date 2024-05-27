@@ -15,29 +15,17 @@
 }
 
 .skillCategory {
-    height: fit-content;
     background-color: #ffffff10;
     backdrop-filter: blur(10px);
     border-top: 1px solid #ffffff17;
     border-left: 1px solid #ffffff17;
-    border-radius: 5px;
 }
 
 .skillCategoryTitle {
-    margin-bottom: 0px;
-    width: 100%;
-    padding: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 5px;
     color: #dc143c;
-    font: 500 30px 'Ubuntu', sans-serif;
-    user-select: none;
-    cursor: pointer;
 }
 
-
+/* 
 .skillCategoryTitle>i {
     font-size: 28px;
     transition: transform 0.5s ease-in-out;
@@ -60,7 +48,7 @@
 .skillCategory>input[type="radio"]:checked~.skillWrapper {
     grid-template-rows: 1fr;
     padding: 10px 0px;
-}
+} */
 
 .skill {
     padding: 0px 10px;

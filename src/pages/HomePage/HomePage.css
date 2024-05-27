@@ -89,12 +89,8 @@ section .title::after {
     transform: translateX(-50%);
 }
 
-/* .accordion{
+.accordion{
     height: fit-content;
-    background-color: #ffffff10;
-    backdrop-filter: blur(10px);
-    border-top: 1px solid #ffffff17;
-    border-left: 1px solid #ffffff17;
     border-radius: 5px;
 }
 
@@ -110,7 +106,6 @@ section .title::after {
     align-items: center;
     justify-content: space-between;
     border-radius: 5px;
-    color: #dc143c;
     font: 500 30px 'Ubuntu', sans-serif;
     user-select: none;
     cursor: pointer;
@@ -134,7 +129,7 @@ section .title::after {
 .accordion>input[type="radio"]:checked~.accordionContent {
     grid-template-rows: 1fr;
     padding: 10px;
-} */
+}
 
 /* responsive media query for similar content */
 @media (max-width: 991px) {

@@ -1,4 +1,3 @@
-.project {}
 
 .information {
     text-align: center;
@@ -19,10 +18,19 @@
     gap: 20px;
 }
 
-.projectCategory{}
+.projectCategory{
+    background-color: #ffffff10;
+    backdrop-filter: blur(10px);
+    border-top: 1px solid #ffffff17;
+    border-left: 1px solid #ffffff17;
+}
 
-.singleProjectWrapper {
-    margin-bottom: 50px;
+.projectCategoryTitle{
+    color: #dc143c;
+}
+
+.projectCard{
+    overflow: hidden;
 }
 
 .singleProject {
@@ -30,6 +38,7 @@
     display: flex;
     /* align-items: center; */
     /* justify-content: center; */
+    margin-bottom: 50px;
     padding: 20px 0px;
 }
 
@@ -37,6 +46,7 @@
     position: relative;
     display: flex;
     flex-direction: row-reverse;
+    margin-bottom: 50px;
     padding: 20px 0px;
 }
 
@@ -48,6 +58,7 @@
 .projectImg img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
     border-radius: 5px;
     box-shadow: 0 20px 30px -15px rgba(7, 14, 15, 0.7);
 }
@@ -89,7 +100,7 @@
     margin-top: 30px;
     padding: 20px;
     background-color: #0c181aa0;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(1px);
     border-radius: 5px;
     box-shadow: 0 20px 30px -15px rgba(7, 14, 15, 0.7);
     border-top: 1px solid #ffffff17;
@@ -119,8 +130,8 @@
 
 .projectTechnology>ul>li {
     padding: 5px 10px;
-    background-color: #0f1f2279;
-    backdrop-filter: blur(10px);
+    background-color: #0c181aa0;
+    backdrop-filter: blur(1px);
     border-top: 1px solid #ffffff17;
     border-left: 1px solid #ffffff17;
     border-radius: 5px;
@@ -143,8 +154,8 @@
 .projectLink>a {
     display: block;
     padding: 5px 10px;
-    background-color: #0f1f22a9;
-    backdrop-filter: blur(10px);
+    background-color: #0c181aa0;
+    backdrop-filter: blur(1px);
     border-radius: 10%;
     margin-left: 10px;
     border-top: 1px solid #ffffff17;
@@ -249,8 +260,8 @@
         align-items: center;
         justify-content: center;
         padding: 15px;
-        background-color: #ffffff10;
-        backdrop-filter: blur(10px);
+        background-color: #8a8a8a10;
+        /* backdrop-filter: blur(1px); */
         border-radius: 5px;
         border-top: 1px solid #ffffff17;
         border-left: 1px solid #ffffff17;
@@ -263,8 +274,8 @@
         align-items: center;
         justify-content: center;
         padding: 15px;
-        background-color: #ffffff10;
-        backdrop-filter: blur(10px);
+        background-color: #8a8a8a10;
+        /* backdrop-filter: blur(1px); */
         border-radius: 5px;
         border-top: 1px solid #ffffff17;
         border-left: 1px solid #ffffff17;

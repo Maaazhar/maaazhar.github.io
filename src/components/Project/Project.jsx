@@ -71,27 +71,25 @@ const Project = () => {
                                         {d.category} <i className="fas fa-angle-down"> </i>
                                     </label>
                                     <div className="projectWrapper accordionContent">
-                                        <div className="project">
+                                        <div className="projectCard">
                                             {d.list.map((p, i) => {
                                                 return (
-                                                    <div className="singleProjectWrapper" key={`${p.image}-${i}`}>
-                                                        <div className={i/2 === 0 ? "singleProject" : "singleProjectRevers"}>
-                                                            <div className="projectImg "><img src={p.image} alt="" /></div>
-                                                            <div className="projectDescription ">
-                                                                <div className="projectTitle">
-                                                                    <h3>{p.title}</h3>
+                                                    <div key={`${p.image}-${i}`} className={i / 2 === 0 ? "singleProject" : "singleProjectRevers"}>
+                                                        <div className="projectImg "><img src={p.image} alt="" /></div>
+                                                        <div className="projectDescription ">
+                                                            <div className="projectTitle">
+                                                                <h3>{p.title}</h3>
+                                                            </div>
+                                                            <div className="projectInfo ">
+                                                                <p className="projectDetails">{p.details}</p>
+                                                                <div className="projectTechnology">
+                                                                    <ul>
+                                                                        {p.technology.map((t) => (<li key={t + 1}>{t}</li>))}
+                                                                    </ul>
                                                                 </div>
-                                                                <div className="projectInfo ">
-                                                                    <p className="projectDetails">{p.details}</p>
-                                                                    <div className="projectTechnology">
-                                                                        <ul>
-                                                                            {p.technology.map((t) => (<li key={t + 1}>{t}</li>))}
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div className="projectLink ">
-                                                                        <a href={p.liveLink} target="_blank"><i className="fas fa-external-link-square-alt"></i></a>
-                                                                        {p.githubLink ? <a href={p.githubLink} target="_blank"><i className="fab fa-github"></i></a> : " "}
-                                                                    </div>
+                                                                <div className="projectLink ">
+                                                                    <a href={p.liveLink} target="_blank"><i className="fas fa-external-link-square-alt"></i></a>
+                                                                    {p.githubLink ? <a href={p.githubLink} target="_blank"><i className="fab fa-github"></i></a> : " "}
                                                                 </div>
                                                             </div>
                                                         </div>
