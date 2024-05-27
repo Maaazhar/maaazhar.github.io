@@ -71,6 +71,8 @@
 
 .projectInfo {
     position: absolute;
+    display: flex;
+    flex-direction: column;
     width: 50%;
     right: 0;
     /* transform: translateX(-15%); */
@@ -83,6 +85,7 @@
 }
 
 .projectDetails {
+    position: relative;
     margin-top: 30px;
     padding: 20px;
     background-color: #0c181aa0;
@@ -97,6 +100,7 @@
 
 
 .projectTechnology {
+    position: relative;
     width: 100%;
     margin-top: 20px;
 }
@@ -127,11 +131,13 @@
 
 .projectLink {
     float: right;
+    align-self: flex-end;
     display: flex;
     margin-top: 20px;
 }
 .singleProjectRevers>.projectDescription>.projectInfo>.projectLink {
     float: left;
+    align-self: flex-start;
 }
 
 .projectLink>a {
