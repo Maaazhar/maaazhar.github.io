@@ -77,7 +77,7 @@ const Project = () => {
                                                     <div key={`${p.image}-${i}`} className={i / 2 === 0 ? "singleProject" : "singleProjectRevers"}>
                                                         <div className="projectImg "><img src={p.image} alt="" /></div>
                                                         <div className="projectDescription ">
-                                                            <div className="projectTitle">
+                                                            <div className="projectTitle" data={i+1}>
                                                                 <h3>{p.title}</h3>
                                                             </div>
                                                             <div className="projectInfo ">

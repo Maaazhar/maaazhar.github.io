@@ -75,9 +75,25 @@
 }
 
 .projectTitle {
+    position: relative;
     color: crimson;
     font: 500 25px 'Ubuntu', sans-serif;
     text-shadow: 5px 5px 10px #000;
+}
+
+.projectTitle::after{
+    content: attr(data);
+    position: absolute;
+    top: -150%;
+    right: 0%;
+    color: #66666657;
+    font: 600 100px "Poppins", sans-serif;
+    text-shadow: none;
+    z-index: -1;
+}
+
+.singleProjectRevers>.projectDescription>.projectTitle::after{
+    left: 0%;
 }
 
 .projectInfo {
@@ -253,20 +269,7 @@
 @media (max-width: 690px) {}
 
 @media (max-width: 500px) {
-    .singleProject {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 15px;
-        background-color: #8a8a8a10;
-        /* backdrop-filter: blur(1px); */
-        border-radius: 5px;
-        border-top: 1px solid #ffffff17;
-        border-left: 1px solid #ffffff17;
-    }
-
+    .singleProject,
     .singleProjectRevers {
         position: relative;
         display: flex;
@@ -281,7 +284,6 @@
         border-left: 1px solid #ffffff17;
     }
 
-
     .projectImg {
         flex: 12;
         z-index: 1;
@@ -294,17 +296,14 @@
         box-shadow: 0 20px 30px -15px rgba(7, 14, 15, 0.7);
     }
 
-    .projectDescription {
+    .projectDescription,
+    .singleProjectRevers>.projectDescription {
         position: relative;
         flex: 12;
         width: 100%;
         margin-top: 20px;
         text-align: left;
         z-index: 2;
-    }
-
-    .singleProjectRevers>.projectDescription {
-        margin-top: 0px;
     }
 
     .projectTitle {
@@ -314,15 +313,15 @@
         text-shadow: 5px 5px 10px #000;
     }
 
-    .projectInfo {
-        position: relative;
-        width: 100%;
-        left: 0;
+    .singleProjectRevers>.projectDescription>.projectTitle::after{
+        right: 0%;
     }
 
+    .projectInfo,
     .singleProjectRevers>.projectDescription>.projectInfo {
         position: relative;
         width: 100%;
+        left: 0;
     }
 
     .projectDetails {
