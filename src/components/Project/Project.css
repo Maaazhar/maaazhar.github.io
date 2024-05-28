@@ -1,4 +1,3 @@
-
 .information {
     text-align: center;
     margin-top: 100px;
@@ -18,18 +17,18 @@
     gap: 20px;
 }
 
-.projectCategory{
+.projectCategory {
     background-color: #ffffff10;
     backdrop-filter: blur(10px);
     border-top: 1px solid #ffffff17;
     border-left: 1px solid #ffffff17;
 }
 
-.projectCategoryTitle{
+.projectCategoryTitle {
     color: #dc143c;
 }
 
-.projectCard{
+.projectCard {
     overflow: hidden;
 }
 
@@ -81,7 +80,7 @@
     text-shadow: 5px 5px 10px #000;
 }
 
-.projectTitle::after{
+.projectTitle::after {
     content: attr(data);
     position: absolute;
     top: -150%;
@@ -92,7 +91,7 @@
     z-index: -1;
 }
 
-.singleProjectRevers>.projectDescription>.projectTitle::after{
+.singleProjectRevers>.projectDescription>.projectTitle::after {
     left: 0%;
 }
 
@@ -162,6 +161,7 @@
     display: flex;
     margin-top: 20px;
 }
+
 .singleProjectRevers>.projectDescription>.projectInfo>.projectLink {
     float: left;
     align-self: flex-start;
@@ -210,6 +210,10 @@
         font-size: 20px;
     }
 
+    .projectTitle::after {
+        font-size: 75px;
+    }
+
     .projectDetails {
         margin-top: 15px;
         padding: 15px;
@@ -232,6 +236,11 @@
 @media (max-width: 800px) {
     .projectTitle {
         font-size: 18px;
+    }
+
+    .projectTitle::after {
+        font-size: 75px;
+        top: -60%;
     }
 
     .projectDetails {
@@ -269,6 +278,7 @@
 @media (max-width: 690px) {}
 
 @media (max-width: 500px) {
+
     .singleProject,
     .singleProjectRevers {
         position: relative;
@@ -276,7 +286,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 15px;
+        padding: 5px;
         background-color: #8a8a8a10;
         /* backdrop-filter: blur(1px); */
         border-radius: 5px;
@@ -308,13 +318,18 @@
 
     .projectTitle {
         color: crimson;
-        font: 500 22px 'Ubuntu', sans-serif;
+        font: 500 20px 'Ubuntu', sans-serif;
         text-align: center;
         text-shadow: 5px 5px 10px #000;
     }
 
-    .singleProjectRevers>.projectDescription>.projectTitle::after{
+    .projectTitle::after {
+        top: -140%;
+    }
+
+    .singleProjectRevers>.projectDescription>.projectTitle::after {
         right: 0%;
+        left: auto;
     }
 
     .projectInfo,
@@ -383,6 +398,27 @@
 
 }
 
-@media (max-width: 380px) {}
+@media (max-width: 380px) {
+    .projectTitle {
+        font-size: 22px;
+    }
 
-@media (max-width: 350px) {}
+    .projectTitle::after {
+        top: -50%;
+    }
+}
+
+@media (max-width: 350px) {
+    .singleProjectRevers>.projectDescription,
+    .projectDescription {
+        margin-top: 5px;
+    }
+
+    .projectDetails {
+        margin-top: 5px;
+    }
+
+    .projectTitle {
+        font-size: 20px;
+    }
+}
