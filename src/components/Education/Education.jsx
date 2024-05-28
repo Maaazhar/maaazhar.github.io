@@ -9,14 +9,34 @@ const Education = () => {
 
     const educationList = [
         {
-            "category": "",
-            "courseTitles": [],
+            "category": "Professional Training and Course",
+            "courseTitles": ["Web Development", "Search Engine Optimization", "Complete Web Design", "CompTIA A+", "CCNA", "MTCRE and MTCNA", "Computer Network", "Red Hat Linux", "Windows Server"],
             "courseList": [
                 {
-                    "title": "",
-                    "institute": "",
+                    "title": "Complete Web Development (MERN stack)",
+                    "institute": "Programming Hero",
+                    "location": "Dhaka, Bangladesh",
+                    "duration": "6 Months",
+                    "passingYear": "2021",
+                    "majorSubject": [
+                        ["HTML", "CSS", "JavaScript", "ES6","Bootstrap","Material UI", "ReactJs", "Redux", "React-Hook", "NextJs", "React-Router", "TypeScrip",],
+                        [ "JavaScript", "NodeJs", "ExpressJs", "MongoDB",],
+                        [ "VS code", "Git", "Chrome Dev tool", "Figma",],
+                        [ "GitHub", "Firebase", "Netlify",]
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Academic Course",
+            "courseTitles": ["Bachelor (Honors)", "Higher Secondary", "Secondary"],
+            "courseList": [
+                {
+                    "title": "Complete Web Development (MERN)",
+                    "institute": "Programming Hero",
                     "universityBoard": "",
-                    "location": "",
+                    "location": "Dhaka, Bangladesh",
+                    "duration": "",
                     "passingYear": "",
                     "majorSubject": [
                         [],
@@ -25,7 +45,6 @@ const Education = () => {
                     ]
                 }
             ]
-
         }
     ]
 
