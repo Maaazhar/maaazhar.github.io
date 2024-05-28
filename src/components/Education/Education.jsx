@@ -24,6 +24,19 @@ const Education = () => {
                         [ "VS code", "Git", "Chrome Dev tool", "Figma",],
                         [ "GitHub", "Firebase", "Netlify",]
                     ]
+                },
+                {
+                    "title": "Complete Web Development (MERN stack)",
+                    "institute": "Programming Hero",
+                    "location": "Dhaka, Bangladesh",
+                    "duration": "6 Months",
+                    "passingYear": "2021",
+                    "majorSubject": [
+                        ["HTML", "CSS", "JavaScript", "ES6","Bootstrap","Material UI", "ReactJs", "Redux", "React-Hook", "NextJs", "React-Router", "TypeScrip",],
+                        [ "JavaScript", "NodeJs", "ExpressJs", "MongoDB",],
+                        [ "VS code", "Git", "Chrome Dev tool", "Figma",],
+                        [ "GitHub", "Firebase", "Netlify",]
+                    ]
                 }
             ]
         },
@@ -32,16 +45,31 @@ const Education = () => {
             "courseTitles": ["Bachelor (Honors)", "Higher Secondary", "Secondary"],
             "courseList": [
                 {
-                    "title": "Complete Web Development (MERN)",
-                    "institute": "Programming Hero",
-                    "universityBoard": "",
+                    "title": "BSc (Honors) in Electronics and Communication Engineering",
+                    "institute": "Institute of Science and Technology",
+                    "universityBoard": "National University, Bangladesh",
                     "location": "Dhaka, Bangladesh",
-                    "duration": "",
-                    "passingYear": "",
+                    "duration": "4 Years",
+                    "passingYear": "2020",
                     "majorSubject": [
-                        [],
-                        [],
-                        []
+                        ["HTML", "CSS", "JavaScript", "ES6","Bootstrap","Material UI", "ReactJs", "Redux", "React-Hook", "NextJs", "React-Router", "TypeScrip",],
+                        [ "JavaScript", "NodeJs", "ExpressJs", "MongoDB",],
+                        [ "VS code", "Git", "Chrome Dev tool", "Figma",],
+                        [ "GitHub", "Firebase", "Netlify",]
+                    ]
+                },
+                {
+                    "title": "BSc (Honors) in Electronics and Communication Engineering",
+                    "institute": "Institute of Science and Technology",
+                    "universityBoard": "National University, Bangladesh",
+                    "location": "Dhaka, Bangladesh",
+                    "duration": "4 Years",
+                    "passingYear": "2020",
+                    "majorSubject": [
+                        ["HTML", "CSS", "JavaScript", "ES6","Bootstrap","Material UI", "ReactJs", "Redux", "React-Hook", "NextJs", "React-Router", "TypeScrip",],
+                        [ "JavaScript", "NodeJs", "ExpressJs", "MongoDB",],
+                        [ "VS code", "Git", "Chrome Dev tool", "Figma",],
+                        [ "GitHub", "Firebase", "Netlify",]
                     ]
                 }
             ]
