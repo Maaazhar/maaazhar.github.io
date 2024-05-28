@@ -73,26 +73,33 @@
     float: left;
 }
 
-.projectTitle {
+
+
+.projectTitleWrapper {
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: end;
     color: crimson;
     font: 500 25px 'Ubuntu', sans-serif;
     text-shadow: 5px 5px 10px #000;
 }
 
-.projectTitle::after {
-    content: attr(projectSequence);
+.singleProjectRevers>.projectDescription>.projectTitleWrapper{
+    justify-content: start;
+}
+
+.projectSequence{
     position: absolute;
-    top: -150%;
-    right: 0%;
+    right: 0;
     color: #66666657;
     font: 600 100px "Poppins", sans-serif;
     text-shadow: none;
     z-index: -1;
 }
 
-.singleProjectRevers>.projectDescription>.projectTitle::after {
-    left: 0%;
+.singleProjectRevers>.projectDescription>.projectTitleWrapper>.projectSequence{
+    left: 0;
 }
 
 .projectInfo {
@@ -207,12 +214,8 @@
 
 /* responsive media query for Project */
 @media (max-width: 1104px) {
-    .projectTitle {
-        font-size: 20px;
-    }
-
-    .projectTitle::after {
-        font-size: 75px;
+    .projectTitleWrapper {
+        font-size: 22px;
     }
 
     .projectDetails {
@@ -235,13 +238,8 @@
 }
 
 @media (max-width: 800px) {
-    .projectTitle {
-        font-size: 18px;
-    }
-
-    .projectTitle::after {
-        font-size: 75px;
-        top: -60%;
+    .projectTitleWrapper {
+        font-size: 20px;
     }
 
     .projectDetails {
@@ -317,20 +315,18 @@
         z-index: 2;
     }
 
-    .projectTitle {
-        color: crimson;
-        font: 500 20px 'Ubuntu', sans-serif;
+    .projectTitleWrapper,
+    .singleProjectRevers>.projectDescription>.projectTitleWrapper {
+        align-items: center;
+        justify-content: center;
         text-align: center;
-        text-shadow: 5px 5px 10px #000;
     }
 
-    .projectTitle::after {
-        top: -140%;
-    }
-
-    .singleProjectRevers>.projectDescription>.projectTitle::after {
-        right: 0%;
+    .projectSequence,
+    .singleProjectRevers>.projectDescription>.projectTitleWrapper>.projectSequence{
+        right: auto;
         left: auto;
+        font-size: 90px;
     }
 
     .projectInfo,
@@ -399,15 +395,7 @@
 
 }
 
-@media (max-width: 380px) {
-    .projectTitle {
-        font-size: 22px;
-    }
-
-    .projectTitle::after {
-        top: -50%;
-    }
-}
+@media (max-width: 380px) {}
 
 @media (max-width: 350px) {
     .singleProjectRevers>.projectDescription,
@@ -419,7 +407,8 @@
         margin-top: 5px;
     }
 
-    .projectTitle {
-        font-size: 20px;
+    .projectSequence,
+    .singleProjectRevers>.projectDescription>.projectTitleWrapper>.projectSequence{
+        font-size: 80px;
     }
 }

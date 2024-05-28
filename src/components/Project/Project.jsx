@@ -34,8 +34,9 @@ const Project = () => {
                                             className={i % 2 === 0 ? "singleProject" : "singleProjectRevers"}>
                                             <div className="projectImg "><img src={p.image} alt="" /></div>
                                             <div className="projectDescription ">
-                                                <div className="projectTitle" projectSequence={i + 1}>
-                                                    <h3>{p.title}</h3>
+                                                <div className="projectTitleWrapper">
+                                                    <h3 className="projectTitle">{p.title}</h3>
+                                                    <h3 className="projectSequence">{i+1}</h3>
                                                 </div>
                                                 <div className="projectInfo ">
                                                     <p className="projectDetails">{p.details}</p>
@@ -133,6 +134,6 @@ const Project = () => {
             </div>
         </section>
     )
-}
+};
 
-export default Project
+export default Project;

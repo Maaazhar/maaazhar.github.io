@@ -13,17 +13,17 @@ import "./HomePage.css"
 export const HomePage = () => {
   return (
     <>
-        <NavBar/>
-        <Hero/>
-        <About/>
-        <Skills/>
-        <Experience/>
-        <Project/>
-        <Education/>
-        <Contact/>
-        <Footer/>
+      <NavBar />
+      <Hero />
+      <About />
+      <Skills />
+      <Experience />
+      <Project />
+      <Education />
+      <Contact />
+      <Footer />
     </>
   )
-}
+};
 
-export default HomePage
+export default HomePage;
