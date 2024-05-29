@@ -114,11 +114,13 @@ const Education = () => {
                                                 <div
                                                     key={c - 1 + k}
                                                     className={tabState === k ? "educationTabContent activeEducationContent" : "educationTabContent"}>
-                                                    <h3 className="position">{c.title}</h3>
-                                                    <p className="company">{c.institute}</p>
-                                                    <p className="location">{c.location}</p>
-                                                    <p className="duration">{d.duration}</p>
-                                                    <p className="workDescription"></p>
+                                                    <h3 className="courseTitle">{c.title}</h3>
+                                                    <p className="institute">{c.institute}</p>
+                                                    <p className="universityBoard">{c.universityBoard}</p>
+                                                    <p className="instituteLocation">{c.location}</p>
+                                                    <p className="courseDuration">Course Duration: {c.duration}</p>
+                                                    <p className="passingYear">Completed in the year of {c.passingYear}</p>
+                                                    <p className="courseDetails"></p>
                                                     <ul>
                                                         {c.majorSubject.map((des) => (
                                                             <li key={des + 1 + k}>{des}</li>
