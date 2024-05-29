@@ -10,3 +10,168 @@
     background: #fff;
     content: "what I learn";
 }
+
+.educationTabsWrapper{
+    overflow: hidden;
+}
+
+.educationTabs {
+    width: 85%;
+    display: flex;
+    padding: 10px;
+}
+
+.educationTabWrapper {
+    flex: 3;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.educationTab {
+    width: 100%;
+    background: transparent;
+    border-left: 3px solid #dc143c33;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    padding: 15px;
+    color: #444;
+    font: 500 18px 'Ubuntu', sans-serif;
+    text-align: left;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.2s;
+}
+
+.educationTab:hover {
+    background: #9e9e9e56;
+}
+
+.activeEducationTab {
+    color: crimson;
+    background: #9e9e9e56;
+    border-left: 3px solid #dc143c;
+}
+
+.educationTabContentWrapper {
+    flex: 9;
+    padding: 5px 10px;
+    border-left: none;
+}
+
+.educationTabContent {
+    display: none;
+}
+
+.activeEducationContent {
+    display: block;
+}
+
+.educationTabs>.educationTabContentWrapper>.educationTabContent>.position {
+    margin-bottom: 5px;
+    color: crimson;
+    font: 500 20px 'Ubuntu', sans-serif;
+}
+
+.educationTabs>.educationTabContentWrapper>.educationTabContent>.company {
+    font: 500 18px 'Ubuntu', sans-serif;
+}
+
+.educationTabs>.educationTabContentWrapper>.educationTabContent>.location {
+    font: 500 15px 'Ubuntu', sans-serif;
+}
+
+.educationTabs>.educationTabContentWrapper>.educationTabContent>.duration {
+    margin-top: 5px;
+    color: #222;
+    font: 400 15px 'Ubuntu', sans-serif;
+}
+
+.educationTabContent>ul {
+    margin-top: 20px;
+    font: 400 16px "Poppins", sans-serif;
+    line-height: 1.5;
+}
+
+.educationTabContent>ul>li {
+    position: relative;
+    list-style: none;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+
+.educationTabContent>ul>li::before {
+    content: "\027a5";
+    position: absolute;
+    top: -4px;
+    left: 0px;
+    font-size: 20px;
+    color: crimson;
+}
+
+/* responsive media query for education */
+@media (max-width: 1190px) {
+    .educationTabs {
+        width: 95%;
+    }
+
+    .educationTabWrapper {
+        flex: 3;
+    }
+}
+
+@media (max-width: 947px) {
+    .educationTabs {
+        width: 95%;
+        flex-direction: column;
+    }
+
+    .educationTabWrapper {
+        flex-direction: row;
+        overflow-x: auto;
+        padding-bottom: 10px;
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+
+    .educationTab {
+        padding: 10px 20px;
+        border-left: none;
+        border-bottom: 3px solid #dc143c33;
+    }
+
+    .activeEducationTab {
+        border-bottom: 3px solid crimson;
+    }
+
+
+}
+
+@media (max-width: 690px) {}
+
+@media (max-width: 500px) {
+    .education .title::before {
+        width: 250px;
+    }
+
+    .educationTabs {
+        width: 110%;
+    }
+
+    .educationTab {
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+
+    .educationTabContentWrapper {
+        align-self: center;
+    }
+}
+
+@media (max-width: 380px) {
+}
+
+@media (max-width: 350px) {
+}

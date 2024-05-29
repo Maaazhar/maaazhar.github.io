@@ -10,7 +10,7 @@ const Education = () => {
     const educationList = [
         {
             "category": "Professional Training and Course",
-            "courseTitles": ["Web Development", "Search Engine Optimization", "Complete Web Design", "CompTIA A+", "CCNA", "MTCRE and MTCNA", "Computer Network", "Red Hat Linux", "Windows Server"],
+            "courseTitles": ["Complete Web Development", "Search Engine Optimization", "Complete Web Design", "CompTIA A+", "CCNA", "MTCRE and MTCNA", "Computer Network", "Red Hat Linux", "Windows Server"],
             "courseList": [
                 {
                     "title": "Complete Web Development (MERN stack)",
@@ -19,23 +19,23 @@ const Education = () => {
                     "duration": "6 Months",
                     "passingYear": "2021",
                     "majorSubject": [
-                        ["HTML", "CSS", "JavaScript", "ES6","Bootstrap","Material UI", "ReactJs", "Redux", "React-Hook", "NextJs", "React-Router", "TypeScrip",],
-                        [ "JavaScript", "NodeJs", "ExpressJs", "MongoDB",],
-                        [ "VS code", "Git", "Chrome Dev tool", "Figma",],
-                        [ "GitHub", "Firebase", "Netlify",]
+                        ["HTML", "CSS", "JavaScript", "ES6", "Bootstrap", "Material UI", "ReactJs", "Redux", "React-Hook", "NextJs", "React-Router", "TypeScrip",],
+                        ["JavaScript", "NodeJs", "ExpressJs", "MongoDB",],
+                        ["VS code", "Git", "Chrome Dev tool", "Figma",],
+                        ["GitHub", "Firebase", "Netlify",]
                     ]
                 },
                 {
-                    "title": "Complete Web Development (MERN stack)",
+                    "title": "Search Engine Optimization",
                     "institute": "Programming Hero",
                     "location": "Dhaka, Bangladesh",
                     "duration": "6 Months",
                     "passingYear": "2021",
                     "majorSubject": [
-                        ["HTML", "CSS", "JavaScript", "ES6","Bootstrap","Material UI", "ReactJs", "Redux", "React-Hook", "NextJs", "React-Router", "TypeScrip",],
-                        [ "JavaScript", "NodeJs", "ExpressJs", "MongoDB",],
-                        [ "VS code", "Git", "Chrome Dev tool", "Figma",],
-                        [ "GitHub", "Firebase", "Netlify",]
+                        ["HTML", "CSS", "JavaScript", "ES6", "Bootstrap", "Material UI", "ReactJs", "Redux", "React-Hook", "NextJs", "React-Router", "TypeScrip",],
+                        ["JavaScript", "NodeJs", "ExpressJs", "MongoDB",],
+                        ["VS code", "Git", "Chrome Dev tool", "Figma",],
+                        ["GitHub", "Firebase", "Netlify",]
                     ]
                 }
             ]
@@ -52,24 +52,24 @@ const Education = () => {
                     "duration": "4 Years",
                     "passingYear": "2020",
                     "majorSubject": [
-                        ["HTML", "CSS", "JavaScript", "ES6","Bootstrap","Material UI", "ReactJs", "Redux", "React-Hook", "NextJs", "React-Router", "TypeScrip",],
-                        [ "JavaScript", "NodeJs", "ExpressJs", "MongoDB",],
-                        [ "VS code", "Git", "Chrome Dev tool", "Figma",],
-                        [ "GitHub", "Firebase", "Netlify",]
+                        ["HTML", "CSS", "JavaScript", "ES6", "Bootstrap", "Material UI", "ReactJs", "Redux", "React-Hook", "NextJs", "React-Router", "TypeScrip",],
+                        ["JavaScript", "NodeJs", "ExpressJs", "MongoDB",],
+                        ["VS code", "Git", "Chrome Dev tool", "Figma",],
+                        ["GitHub", "Firebase", "Netlify",]
                     ]
                 },
                 {
-                    "title": "BSc (Honors) in Electronics and Communication Engineering",
+                    "title": "Higher Secondary Certificate",
                     "institute": "Institute of Science and Technology",
                     "universityBoard": "National University, Bangladesh",
                     "location": "Dhaka, Bangladesh",
                     "duration": "4 Years",
                     "passingYear": "2020",
                     "majorSubject": [
-                        ["HTML", "CSS", "JavaScript", "ES6","Bootstrap","Material UI", "ReactJs", "Redux", "React-Hook", "NextJs", "React-Router", "TypeScrip",],
-                        [ "JavaScript", "NodeJs", "ExpressJs", "MongoDB",],
-                        [ "VS code", "Git", "Chrome Dev tool", "Figma",],
-                        [ "GitHub", "Firebase", "Netlify",]
+                        ["HTML", "CSS", "JavaScript", "ES6", "Bootstrap", "Material UI", "ReactJs", "Redux", "React-Hook", "NextJs", "React-Router", "TypeScrip",],
+                        ["JavaScript", "NodeJs", "ExpressJs", "MongoDB",],
+                        ["VS code", "Git", "Chrome Dev tool", "Figma",],
+                        ["GitHub", "Firebase", "Netlify",]
                     ]
                 }
             ]
@@ -77,15 +77,67 @@ const Education = () => {
     ]
 
     return (
-        <div>
-            <section className="education" id="education">
-                <div className="max-width">
-                    <h2 className="title">My Education</h2>
-
-                    <h3  className="information">This section is under maintenance</h3>
+        <section className="education" id="education">
+            <div className="max-width">
+                <h2 className="title">My Education</h2>
+                <div className="educationContentWrapper">
+                    {educationList.map((d, i) => (
+                        <div className="educationCategory accordion" key={`${d.category}-${i}`}>
+                            <input
+                                type="radio"
+                                id={"educationAccordion-" + i}
+                                className="accordionInput"
+                                name="educationAccordion"
+                                value={i}
+                                onClick={() => toggleCategory(i)}
+                                checked={educationCategory === i ? true : false} />
+                            <label
+                                className="educationCategoryTitle accordionButton"
+                                htmlFor={"educationAccordion-" + i}>
+                                {d.category} <i className="fas fa-angle-down"> </i>
+                            </label>
+                            <div className="educationContent accordionContent">
+                                <div className="educationTabsWrapper">
+                                    <div className="educationTabs">
+                                        <div className="educationTabWrapper">
+                                            {d.courseTitles.map((t, j) => (
+                                                <button
+                                                    key={t + 1 + j}
+                                                    onClick={() => toggleTab(j)}
+                                                    className={tabState === j ? "educationTab activeEducationTab" : "educationTab"}>
+                                                    {t}
+                                                </button>
+                                            ))}
+                                        </div>
+                                        <div className="educationTabContentWrapper">
+                                            {d.courseList.map((c, k) => (
+                                                <div
+                                                    key={c - 1 + k}
+                                                    className={tabState === k ? "educationTabContent activeEducationContent" : "educationTabContent"}>
+                                                    <h3 className="position">{c.title}</h3>
+                                                    <p className="company">{c.institute}</p>
+                                                    <p className="location">{c.location}</p>
+                                                    <p className="duration">{d.duration}</p>
+                                                    <p className="workDescription"></p>
+                                                    <ul>
+                                                        {c.majorSubject.map((des) => (
+                                                            <li key={des + 1 + k}>{des}</li>
+                                                        ))}
+                                                    </ul>
+                                                </div>
+                                            )
+                                            )}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    )
+                    )}
                 </div>
-            </section>
-        </div>
+                <h3 className="information">This section is under maintenance</h3>
+            </div>
+        </section>
     )
 }
 
