@@ -80,7 +80,7 @@ const Education = () => {
         <section className="education" id="education">
             <div className="max-width">
                 <h2 className="title">My Education</h2>
-                <div className="educationContentWrapper">
+                <div className="educationContentWrapper ">
                     {educationList.map((d, i) => (
                         <div className="educationCategory accordion" key={`${d.category}-${i}`}>
                             <input
@@ -99,7 +99,7 @@ const Education = () => {
                             <div className="educationContent accordionContent">
                                 <div className="educationTabsWrapper">
                                     <div className="educationTabs">
-                                        <div className="educationTabWrapper">
+                                        <div className="educationTabWrapper ">
                                             {d.courseTitles.map((t, j) => (
                                                 <button
                                                     key={t + 1 + j}
@@ -109,11 +109,11 @@ const Education = () => {
                                                 </button>
                                             ))}
                                         </div>
-                                        <div className="educationTabContentWrapper">
+                                        <div className="educationTabContentWrapper ">
                                             {d.courseList.map((c, k) => (
                                                 <div
                                                     key={c - 1 + k}
-                                                    className={tabState === k ? "educationTabContent activeEducationContent" : "educationTabContent"}>
+                                                    className={tabState === k ? "educationTabContent activeEducationContent  " : "educationTabContent"}>
                                                     <h3 className="courseTitle">{c.title}</h3>
                                                     <p className="institute">{c.institute}</p>
                                                     <p className="universityBoard">{c.universityBoard}</p>
@@ -122,8 +122,12 @@ const Education = () => {
                                                     <p className="passingYear">Completed in the year of {c.passingYear}</p>
                                                     <p className="courseDetails"></p>
                                                     <ul>
-                                                        {c.majorSubject.map((des) => (
-                                                            <li key={des + 1 + k}>{des}</li>
+                                                        {c.majorSubject.map((des, l) => (
+                                                            <li key={des + 1 + l}>
+                                                                {des.map((major) => (
+                                                                    <li key={major + 1 + l}>{major}</li>
+                                                                ))}
+                                                            </li>
                                                         ))}
                                                     </ul>
                                                 </div>

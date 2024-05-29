@@ -16,7 +16,6 @@
 }
 
 .educationTabs {
-    width: 85%;
     display: flex;
     padding: 10px;
 }
@@ -97,6 +96,8 @@
 
 .educationTabContent>ul>li {
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
     list-style: none;
     padding-left: 30px;
     margin-bottom: 10px;
@@ -111,11 +112,16 @@
     color: crimson;
 }
 
+.educationTabContent>ul>li>li{
+    margin: 2px 5px;
+    padding: 2px 5px;
+    background-color: #e1e1e1;
+    border: 1px solid #b5b4b4;
+    border-radius: 5px;
+}
+
 /* responsive media query for education */
 @media (max-width: 1190px) {
-    .educationTabs {
-        width: 95%;
-    }
 
     .educationTabWrapper {
         flex: 3;
@@ -124,7 +130,6 @@
 
 @media (max-width: 947px) {
     .educationTabs {
-        width: 95%;
         flex-direction: column;
     }
 
@@ -156,9 +161,6 @@
         width: 250px;
     }
 
-    .educationTabs {
-        width: 110%;
-    }
 
     .educationTab {
         padding: 10px 15px;
