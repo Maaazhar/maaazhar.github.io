@@ -59,6 +59,20 @@ const Education = () => {
                     ]
                 },
                 {
+                    "title": "BSc (Honors) in Electronics and Communication Engineering",
+                    "institute": "Institute of Science and Technology",
+                    "universityBoard": "National University, Bangladesh",
+                    "location": "Dhaka, Bangladesh",
+                    "duration": "4 Years",
+                    "passingYear": "2020",
+                    "majorSubject": [
+                        ["HTML", "CSS", "JavaScript", "ES6", "Bootstrap", "Material UI", "ReactJs", "Redux", "React-Hook", "NextJs", "React-Router", "TypeScrip",],
+                        ["JavaScript", "NodeJs", "ExpressJs", "MongoDB",],
+                        ["VS code", "Git", "Chrome Dev tool", "Figma",],
+                        ["GitHub", "Firebase", "Netlify",]
+                    ]
+                },
+                {
                     "title": "Higher Secondary Certificate",
                     "institute": "Institute of Science and Technology",
                     "universityBoard": "National University, Bangladesh",
