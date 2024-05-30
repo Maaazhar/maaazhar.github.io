@@ -14,9 +14,9 @@
 .educationCategory {
     /* box-shadow: 1px 1px 10px #444; */
     margin-bottom: 20px;
-    background: linear-gradient(145deg, #efefef, #ffffff);
-    box-shadow: 2px 2px 15px #b2b2b2,
-        -2px -2px 15px #cbcbcb;
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    box-shadow: 12px 12px 24px #d4d4d4,
+        -12px -12px 24px #ffffff;
 }
 
 .educationCategoryTitle {
@@ -76,7 +76,12 @@
     display: none;
 }
 
-.activeEducationContent {
+.educationTabContent>p>a{
+    text-decoration: none;
+    color:  inherit;
+}
+
+.activeEducationTabContent {
     display: block;
 }
 
@@ -89,10 +94,12 @@
 .institute,
 .universityBoard {
     font: 500 18px 'Ubuntu', sans-serif;
+    line-height: 1.2;
 }
 
 .instituteLocation {
-    font: 500 15px 'Ubuntu', sans-serif;
+    font: 500 15px 'Ubuntu', sans-serif;    
+    line-height: 1.5;
 }
 
 .courseDuration {
@@ -134,10 +141,22 @@
     margin: 5px 5px;
     padding: 2px 5px;
     /* background-color: #e1e1e1; */
-    /* border-top: 1px solid #b5b4b4;
-    border-left: 1px solid #b5b4b4; */
-    box-shadow: 1px 1px 10px #444;
+    border: 1px solid #b5b4b47b;
+    /* border-left: 1px solid #b5b4b4; */
+    /* box-shadow: 1px 1px 10px #444; */
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    box-shadow: 12px 12px 24px #d4d4d4,
+        -12px -12px 24px #ffffff;
     border-radius: 5px;
+    color: #333;
+    user-select: none;
+    cursor: pointer;
+}
+
+.educationTabContent>ul>li>li:hover {
+    border: 1px solid crimson;
+    scale: 1.1;
+    color: #000;
 }
 
 /* responsive media query for education */

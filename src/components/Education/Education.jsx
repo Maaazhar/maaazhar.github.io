@@ -15,6 +15,7 @@ const Education = () => {
                 {
                     "title": "Complete Web Development (MERN stack)",
                     "institute": "Programming Hero",
+                    "instituteLink": "https://www.programming-hero.com/",
                     "location": "Dhaka, Bangladesh",
                     "duration": "6 Months",
                     "passingYear": "2021",
@@ -28,6 +29,7 @@ const Education = () => {
                 {
                     "title": "Search Engine Optimization",
                     "institute": "Programming Hero",
+                    "instituteLink": "https://www.programming-hero.com/",
                     "location": "Dhaka, Bangladesh",
                     "duration": "6 Months",
                     "passingYear": "2021",
@@ -47,7 +49,9 @@ const Education = () => {
                 {
                     "title": "BSc (Honors) in Electronics and Communication Engineering",
                     "institute": "Institute of Science and Technology",
+                    "instituteLink": "https://ist.edu.bd/",
                     "universityBoard": "National University, Bangladesh",
+                    "universityBoardLink": "https://www.nu.ac.bd/",
                     "location": "Dhaka, Bangladesh",
                     "duration": "4 Years",
                     "passingYear": "2020",
@@ -61,7 +65,9 @@ const Education = () => {
                 {
                     "title": "BSc (Honors) in Electronics and Communication Engineering",
                     "institute": "Institute of Science and Technology",
+                    "instituteLink": "https://ist.edu.bd/",
                     "universityBoard": "National University, Bangladesh",
+                    "universityBoardLink": "https://www.nu.ac.bd/",
                     "location": "Dhaka, Bangladesh",
                     "duration": "4 Years",
                     "passingYear": "2020",
@@ -75,7 +81,9 @@ const Education = () => {
                 {
                     "title": "Higher Secondary Certificate",
                     "institute": "Institute of Science and Technology",
+                    "instituteLink": "https://ist.edu.bd/",
                     "universityBoard": "National University, Bangladesh",
+                    "universityBoardLink": "https://www.nu.ac.bd/",
                     "location": "Dhaka, Bangladesh",
                     "duration": "4 Years",
                     "passingYear": "2020",
@@ -127,10 +135,10 @@ const Education = () => {
                                             {d.courseList.map((c, k) => (
                                                 <div
                                                     key={c - 1 + k}
-                                                    className={tabState === k ? "educationTabContent activeEducationContent  " : "educationTabContent"}>
+                                                    className={tabState === k ? "educationTabContent activeEducationTabContent  " : "educationTabContent"}>
                                                     <h3 className="courseTitle">{c.title}</h3>
-                                                    <p className="institute">{c.institute}</p>
-                                                    <p className="universityBoard">{c.universityBoard}</p>
+                                                    <p className="institute"><a href={c.instituteLink}>{c.institute}</a></p>
+                                                    <p className="universityBoard"><a href={c.universityBoardLink}>{c.universityBoard}</a></p>
                                                     <p className="instituteLocation">{c.location}</p>
                                                     <p className="courseDuration">Course Duration: {c.duration}</p>
                                                     <p className="passingYear">Completed in the year of {c.passingYear}</p>
