@@ -1,4 +1,4 @@
-.education{
+.education {
     background: #fff;
 }
 
@@ -11,16 +11,19 @@
     content: "what I learn";
 }
 
-.educationCategory{
-    box-shadow: 3px 3px 30px #444;
+.educationCategory {
+    /* box-shadow: 1px 1px 10px #444; */
     margin-bottom: 20px;
+    background: linear-gradient(145deg, #efefef, #ffffff);
+    box-shadow: 2px 2px 15px #b2b2b2,
+        -2px -2px 15px #cbcbcb;
 }
 
-.educationCategoryTitle{
+.educationCategoryTitle {
     color: crimson;
 }
 
-.educationTabsWrapper{
+.educationTabsWrapper {
     overflow: hidden;
 }
 
@@ -92,9 +95,10 @@
     font: 500 15px 'Ubuntu', sans-serif;
 }
 
-.courseDuration{
+.courseDuration {
     margin-top: 5px;
 }
+
 .courseDuration,
 .passingYear {
     color: #333;
@@ -126,7 +130,7 @@
     color: crimson;
 }
 
-.educationTabContent>ul>li>li{
+.educationTabContent>ul>li>li {
     margin: 5px 5px;
     padding: 2px 5px;
     /* background-color: #e1e1e1; */
@@ -188,8 +192,6 @@
     }
 }
 
-@media (max-width: 380px) {
-}
+@media (max-width: 380px) {}
 
-@media (max-width: 350px) {
-}
+@media (max-width: 350px) {}
