@@ -24,27 +24,25 @@
 }
 
 .educationCards{
+    padding: 20px 0px 50px 0px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    gap: 20px 0px;
+    gap: 30px 0px;
     flex-wrap: wrap;
 }
 
-.educationCards,
+.educationCardsWrapper,
 .educationTabsWrapper {
     overflow: hidden;
 }
 
-.educationCard:last-child{
-
-}
 .educationCard{
     padding: 15px;
     width: 30%;
     background: linear-gradient(145deg, #e6e6e6, #ffffff);
-    box-shadow: 12px 12px 24px #d4d4d4,
-        -12px -12px 24px #ffffff;
+    box-shadow: 8px 8px 16px #d4d4d4,
+        -8px -8px 16px #ffffff;
     border-radius: 5px;
 }
 
@@ -186,6 +184,9 @@
 
 /* responsive media query for education */
 @media (max-width: 1190px) {
+    .educationCard{
+        width: 45%;
+    }
 
     .educationTabWrapper {
         flex: 3;
@@ -225,6 +226,9 @@
         width: 250px;
     }
 
+    .educationCard{
+        width: 90%;
+    }
 
     .educationTab {
         padding: 10px 15px;

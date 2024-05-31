@@ -189,22 +189,23 @@ const Education = () => {
                                 {d.category} <i className="fas fa-angle-down"> </i>
                             </label>
                             <div className="educationContent accordionContent">
-                                <div className="educationCardsWrapper"></div>
-                                <div className="educationCards">
-                                    {d.courseList.map((c, k) => (
-                                        <div
-                                            key={c - 1 + k}
-                                            className="educationCard ">
-                                            <h3 className="courseTitle">{c.title}</h3>
-                                            <p className="institute"><a href={c.instituteLink} target="_blank">{c.institute}</a></p>
-                                            <p className="universityBoard"><a href={c.universityBoardLink} target="_blank">{c.universityBoard}</a></p>
-                                            <p className="instituteLocation">{c.location}</p>
-                                            <p className="courseDuration">Course Duration: {c.duration}</p>
-                                            <p className="passingYear">Completed in the year of {c.passingYear}</p>
-                                            <p className="courseDetails"></p>
-                                        </div>
-                                    )
-                                    )}
+                                <div className="educationCardsWrapper">
+                                    <div className="educationCards">
+                                        {d.courseList.map((c, k) => (
+                                            <div
+                                                key={c - 1 + k}
+                                                className="educationCard">
+                                                <h3 className="courseTitle">{c.title}</h3>
+                                                <p className="institute"><a href={c.instituteLink} target="_blank">{c.institute}</a></p>
+                                                <p className="universityBoard"><a href={c.universityBoardLink} target="_blank">{c.universityBoard}</a></p>
+                                                <p className="instituteLocation">{c.location}</p>
+                                                <p className="courseDuration">Course Duration: {c.duration}</p>
+                                                <p className="passingYear">Completed in the year of {c.passingYear}</p>
+                                                <p className="courseDetails"></p>
+                                            </div>
+                                        )
+                                        )}
+                                    </div>
                                 </div>
                                 {/* <div className="educationTabsWrapper">
                                     <div className="educationTabs">
