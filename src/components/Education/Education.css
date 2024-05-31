@@ -149,8 +149,7 @@
     /* border-left: 1px solid #b5b4b4; */
     /* box-shadow: 1px 1px 10px #444; */
     background: linear-gradient(145deg, #e6e6e6, #ffffff);
-    /* box-shadow: 12px 12px 24px #d4d4d4, -12px -12px 24px #ffffff; */
-    box-shadow: 5px 5px 10px #d4d4d4, -5px -5px 10px #ffffff;
+    box-shadow: 10px 10px 20px #d4d4d4, -10px -10px 20px #ffffff;
     border-radius: 5px;
     color: #333;
     user-select: none;
