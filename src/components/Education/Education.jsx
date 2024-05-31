@@ -27,6 +27,76 @@ const Education = () => {
                     ]
                 },
                 {
+                    "title": "Complete Web Development (MERN stack)",
+                    "institute": "Programming Hero",
+                    "instituteLink": "https://www.programming-hero.com/",
+                    "location": "Dhaka, Bangladesh",
+                    "duration": "6 Months",
+                    "passingYear": "2021",
+                    "majorSubject": [
+                        ["HTML", "CSS", "JavaScript", "ES6", "Bootstrap", "Material UI", "ReactJs", "Redux", "React-Hook", "NextJs", "React-Router", "TypeScrip",],
+                        ["JavaScript", "NodeJs", "ExpressJs", "MongoDB",],
+                        ["VS code", "Git", "Chrome Dev tool", "Figma",],
+                        ["GitHub", "Firebase", "Netlify",]
+                    ]
+                },
+                {
+                    "title": "Complete Web Development (MERN stack)",
+                    "institute": "Programming Hero",
+                    "instituteLink": "https://www.programming-hero.com/",
+                    "location": "Dhaka, Bangladesh",
+                    "duration": "6 Months",
+                    "passingYear": "2021",
+                    "majorSubject": [
+                        ["HTML", "CSS", "JavaScript", "ES6", "Bootstrap", "Material UI", "ReactJs", "Redux", "React-Hook", "NextJs", "React-Router", "TypeScrip",],
+                        ["JavaScript", "NodeJs", "ExpressJs", "MongoDB",],
+                        ["VS code", "Git", "Chrome Dev tool", "Figma",],
+                        ["GitHub", "Firebase", "Netlify",]
+                    ]
+                },
+                {
+                    "title": "Complete Web Development (MERN stack)",
+                    "institute": "Programming Hero",
+                    "instituteLink": "https://www.programming-hero.com/",
+                    "location": "Dhaka, Bangladesh",
+                    "duration": "6 Months",
+                    "passingYear": "2021",
+                    "majorSubject": [
+                        ["HTML", "CSS", "JavaScript", "ES6", "Bootstrap", "Material UI", "ReactJs", "Redux", "React-Hook", "NextJs", "React-Router", "TypeScrip",],
+                        ["JavaScript", "NodeJs", "ExpressJs", "MongoDB",],
+                        ["VS code", "Git", "Chrome Dev tool", "Figma",],
+                        ["GitHub", "Firebase", "Netlify",]
+                    ]
+                },
+                {
+                    "title": "Complete Web Development (MERN stack)",
+                    "institute": "Programming Hero",
+                    "instituteLink": "https://www.programming-hero.com/",
+                    "location": "Dhaka, Bangladesh",
+                    "duration": "6 Months",
+                    "passingYear": "2021",
+                    "majorSubject": [
+                        ["HTML", "CSS", "JavaScript", "ES6", "Bootstrap", "Material UI", "ReactJs", "Redux", "React-Hook", "NextJs", "React-Router", "TypeScrip",],
+                        ["JavaScript", "NodeJs", "ExpressJs", "MongoDB",],
+                        ["VS code", "Git", "Chrome Dev tool", "Figma",],
+                        ["GitHub", "Firebase", "Netlify",]
+                    ]
+                },
+                {
+                    "title": "Complete Web Development (MERN stack)",
+                    "institute": "Programming Hero",
+                    "instituteLink": "https://www.programming-hero.com/",
+                    "location": "Dhaka, Bangladesh",
+                    "duration": "6 Months",
+                    "passingYear": "2021",
+                    "majorSubject": [
+                        ["HTML", "CSS", "JavaScript", "ES6", "Bootstrap", "Material UI", "ReactJs", "Redux", "React-Hook", "NextJs", "React-Router", "TypeScrip",],
+                        ["JavaScript", "NodeJs", "ExpressJs", "MongoDB",],
+                        ["VS code", "Git", "Chrome Dev tool", "Figma",],
+                        ["GitHub", "Firebase", "Netlify",]
+                    ]
+                },
+                {
                     "title": "Search Engine Optimization",
                     "institute": "Programming Hero",
                     "instituteLink": "https://www.programming-hero.com/",
@@ -119,7 +189,24 @@ const Education = () => {
                                 {d.category} <i className="fas fa-angle-down"> </i>
                             </label>
                             <div className="educationContent accordionContent">
-                                <div className="educationTabsWrapper">
+                                <div className="educationCardsWrapper"></div>
+                                <div className="educationCards">
+                                    {d.courseList.map((c, k) => (
+                                        <div
+                                            key={c - 1 + k}
+                                            className="educationCard ">
+                                            <h3 className="courseTitle">{c.title}</h3>
+                                            <p className="institute"><a href={c.instituteLink} target="_blank">{c.institute}</a></p>
+                                            <p className="universityBoard"><a href={c.universityBoardLink} target="_blank">{c.universityBoard}</a></p>
+                                            <p className="instituteLocation">{c.location}</p>
+                                            <p className="courseDuration">Course Duration: {c.duration}</p>
+                                            <p className="passingYear">Completed in the year of {c.passingYear}</p>
+                                            <p className="courseDetails"></p>
+                                        </div>
+                                    )
+                                    )}
+                                </div>
+                                {/* <div className="educationTabsWrapper">
                                     <div className="educationTabs">
                                         <div className="educationTabWrapper ">
                                             {d.courseTitles.map((t, j) => (
@@ -137,12 +224,8 @@ const Education = () => {
                                                     key={c - 1 + k}
                                                     className={tabState === k ? "educationTabContent activeEducationTabContent  " : "educationTabContent"}>
                                                     <h3 className="courseTitle">{c.title}</h3>
-                                                    <p className="institute">
-                                                        <a href={c.instituteLink} target="_blank">{c.institute}</a>
-                                                    </p>
-                                                    <p className="universityBoard">
-                                                        <a href={c.universityBoardLink} target="_blank">{c.universityBoard}</a>
-                                                    </p>
+                                                    <p className="institute"><a href={c.instituteLink} target="_blank">{c.institute}</a></p>
+                                                    <p className="universityBoard"><a href={c.universityBoardLink} target="_blank">{c.universityBoard}</a></p>
                                                     <p className="instituteLocation">{c.location}</p>
                                                     <p className="courseDuration">Course Duration: {c.duration}</p>
                                                     <p className="passingYear">Completed in the year of {c.passingYear}</p>
@@ -161,7 +244,7 @@ const Education = () => {
                                             )}
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     )

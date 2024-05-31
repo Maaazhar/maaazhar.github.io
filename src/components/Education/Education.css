@@ -23,8 +23,29 @@
     color: crimson;
 }
 
+.educationCards{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px 0px;
+    flex-wrap: wrap;
+}
+
+.educationCards,
 .educationTabsWrapper {
     overflow: hidden;
+}
+
+.educationCard:last-child{
+
+}
+.educationCard{
+    padding: 15px;
+    width: 30%;
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    box-shadow: 12px 12px 24px #d4d4d4,
+        -12px -12px 24px #ffffff;
+    border-radius: 5px;
 }
 
 .educationTabs {
@@ -76,6 +97,7 @@
     display: none;
 }
 
+.educationCard>p>a,
 .educationTabContent>p>a{
     text-decoration: none;
     color:  inherit;
