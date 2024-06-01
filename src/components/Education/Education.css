@@ -23,7 +23,7 @@
     color: crimson;
 }
 
-.educationCards{
+.educationCards {
     padding: 20px 0px 50px 0px;
     display: flex;
     align-items: center;
@@ -37,7 +37,7 @@
     overflow: hidden;
 }
 
-.educationCard{
+.educationCard {
     padding: 15px;
     width: 30%;
     background: linear-gradient(145deg, #e6e6e6, #ffffff);
@@ -96,12 +96,12 @@
 }
 
 .educationCard>p>a,
-.educationTabContent>p>a{
+.educationTabContent>p>a {
     text-decoration: none;
-    color:  inherit;
+    color: inherit;
 }
 
-.educationTabContent>p>a:hover{
+.educationTabContent>p>a:hover {
     color: crimson;
 }
 
@@ -122,7 +122,7 @@
 }
 
 .instituteLocation {
-    font: 500 15px 'Ubuntu', sans-serif;    
+    font: 500 15px 'Ubuntu', sans-serif;
     line-height: 1.5;
 }
 
@@ -184,7 +184,7 @@
 
 /* responsive media query for education */
 @media (max-width: 1190px) {
-    .educationCard{
+    .educationCard {
         width: 45%;
     }
 
@@ -194,6 +194,12 @@
 }
 
 @media (max-width: 947px) {
+    .educationCard {
+        background: linear-gradient(145deg, #e6e6e6, #ffffff);
+        box-shadow: 6px 6px 12px #d4d4d4,
+            -6px -6px 12px #ffffff;
+    }
+
     .educationTabs {
         flex-direction: column;
     }
@@ -226,8 +232,11 @@
         width: 250px;
     }
 
-    .educationCard{
+    .educationCard {
         width: 90%;
+        background: linear-gradient(145deg, #e6e6e6, #ffffff);
+        box-shadow: 3px 3px 6px #d4d4d4,
+            -3px -3px 6px #ffffff;
     }
 
     .educationTab {
