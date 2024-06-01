@@ -133,27 +133,22 @@ const Education = () => {
                     ]
                 },
                 {
-                    "title": "BSc (Honors) in Electronics and Communication Engineering",
-                    "institute": "Institute of Science and Technology",
-                    "instituteLink": "https://ist.edu.bd/",
-                    "universityBoard": "National University, Bangladesh",
-                    "universityBoardLink": "https://www.nu.ac.bd/",
+                    "title": "Higher Secondary Certificate",
+                    "institute": "Motijheel Government Boys' High School",
+                    "instituteLink": "https://www.mgbhs.edu.bd/",
+                    "universityBoard": "Dhaka Education Board",
+                    "universityBoardLink": "https://www.dhakaeducationboard.gov.bd/",
                     "location": "Dhaka, Bangladesh",
                     "duration": "4 Years",
                     "passingYear": "2020",
-                    "majorSubject": [
-                        ["HTML", "CSS", "JavaScript", "ES6", "Bootstrap", "Material UI", "ReactJs", "Redux", "React-Hook", "NextJs", "React-Router", "TypeScrip",],
-                        ["JavaScript", "NodeJs", "ExpressJs", "MongoDB",],
-                        ["VS code", "Git", "Chrome Dev tool", "Figma",],
-                        ["GitHub", "Firebase", "Netlify",]
-                    ]
+                    "majorSubject": []
                 },
                 {
-                    "title": "Higher Secondary Certificate",
-                    "institute": "Institute of Science and Technology",
-                    "instituteLink": "https://ist.edu.bd/",
-                    "universityBoard": "National University, Bangladesh",
-                    "universityBoardLink": "https://www.nu.ac.bd/",
+                    "title": "Secondary School Certificate",
+                    "institute": "Notun Jurain K.M Mainuddin High School",
+                    "instituteLink": "https://deb108476.dhakaeducationboard.gov.bd/",
+                    "universityBoard": "Dhaka Education Board",
+                    "universityBoardLink": "https://www.dhakaeducationboard.gov.bd/",
                     "location": "Dhaka, Bangladesh",
                     "duration": "4 Years",
                     "passingYear": "2020",
