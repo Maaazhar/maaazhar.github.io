@@ -27,7 +27,7 @@ const Education = () => {
                             <label
                                 className="educationCategoryTitle accordionButton"
                                 htmlFor={"educationAccordion-" + i}>
-                                {d.category} <i className="fas fa-angle-down"> </i>
+                                {d.category} <i className="fas fa-angle-down"/>
                             </label>
                             <div className="educationContent accordionContent">
                                 <div className="educationCardsWrapper">
@@ -36,12 +36,12 @@ const Education = () => {
                                             <div
                                                 key={c - 1 + k}
                                                 className="educationCard">
-                                                <h3 className="courseTitle"><i className="fas fa-scroll"> </i>{c.title}</h3>
-                                                <p className="institute"><a href={c.instituteLink} target="_blank">{c.institute}</a></p>
-                                                <p className="universityBoard"><a href={c.universityBoardLink} target="_blank">{c.universityBoard}</a></p>
-                                                <p className="instituteLocation">{c.location}</p>
-                                                <p className="courseDuration">Course Duration: {c.duration}</p>
-                                                <p className="passingYear">Completed in the year of {c.passingYear}</p>
+                                                <h3 className="courseTitle"><i className="fas fa-scroll"/>{c.title}</h3>
+                                                <p className="institute"><i className="fas fa-school"/><a href={c.instituteLink} target="_blank">{c.institute}</a></p>
+                                                <p className="universityBoard"><i className="fas fa-university"/><a href={c.universityBoardLink} target="_blank">{c.universityBoard}</a></p>
+                                                <p className="instituteLocation"><i className="fas fa-map-marker-alt"/>{c.location}</p>
+                                                <p className="courseDuration"><i className="fas fa-stopwatch"/>Course Duration: {c.duration}</p>
+                                                <p className="passingYear"><i className="fas fa-calendar-check"/>Completed in the year of {c.passingYear}</p>
                                                 <p className="courseDetails"></p>
                                             </div>
                                         )
