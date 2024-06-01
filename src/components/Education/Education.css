@@ -110,10 +110,17 @@
 }
 
 .courseTitle {
+    position: relative;
     margin-bottom: 5px;
     color: crimson;
     font: 500 20px 'Ubuntu', sans-serif;
 }
+
+.courseTitle>i{
+    margin-right: 10px;
+    font-size: 15px;
+}
+
 
 .institute,
 .universityBoard {

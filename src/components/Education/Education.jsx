@@ -36,7 +36,7 @@ const Education = () => {
                                             <div
                                                 key={c - 1 + k}
                                                 className="educationCard">
-                                                <h3 className="courseTitle">{c.title}</h3>
+                                                <h3 className="courseTitle"><i className="fas fa-scroll"> </i>{c.title}</h3>
                                                 <p className="institute"><a href={c.instituteLink} target="_blank">{c.institute}</a></p>
                                                 <p className="universityBoard"><a href={c.universityBoardLink} target="_blank">{c.universityBoard}</a></p>
                                                 <p className="instituteLocation">{c.location}</p>
