@@ -16,7 +16,7 @@ const Education = () => {
                     "title": "Complete Web Development (MERN stack)",
                     "institute": "Programming Hero",
                     "instituteLink": "https://www.programming-hero.com/",
-                    "location": "Dhaka, Bangladesh",
+                    "location": "Dhaka, Bangladesh.",
                     "duration": "6 Months",
                     "passingYear": "2021",
                     "majorSubject": [
@@ -27,89 +27,80 @@ const Education = () => {
                     ]
                 },
                 {
-                    "title": "Complete Web Development (MERN stack)",
-                    "institute": "Programming Hero",
-                    "instituteLink": "https://www.programming-hero.com/",
-                    "location": "Dhaka, Bangladesh",
-                    "duration": "6 Months",
-                    "passingYear": "2021",
+                    "title": "Search Engine Optimization (SEO)",
+                    "institute": "Dimension IT and software",
+                    "instituteLink": "https://dimensionit.net/",
+                    "location": "Dhaka, Bangladesh.",
+                    "duration": "2 Months",
+                    "passingYear": "2020",
+                    "majorSubject": []
+                },
+                {
+                    "title": "Complete Web Design (HTML-CSS)",
+                    "institute": "Dimension IT and software",
+                    "instituteLink": "https://dimensionit.net/",
+                    "location": "Dhaka, Bangladesh.",
+                    "duration": "2 Months",
+                    "passingYear": "2020",
                     "majorSubject": [
-                        ["HTML", "CSS", "JavaScript", "ES6", "Bootstrap", "Material UI", "ReactJs", "Redux", "React-Hook", "NextJs", "React-Router", "TypeScrip",],
-                        ["JavaScript", "NodeJs", "ExpressJs", "MongoDB",],
-                        ["VS code", "Git", "Chrome Dev tool", "Figma",],
-                        ["GitHub", "Firebase", "Netlify",]
+                        ["HTML", "CSS", "JavaScript","Bootstrap",],
+                        ["sublime text"],
                     ]
                 },
                 {
-                    "title": "Complete Web Development (MERN stack)",
-                    "institute": "Programming Hero",
-                    "instituteLink": "https://www.programming-hero.com/",
-                    "location": "Dhaka, Bangladesh",
-                    "duration": "6 Months",
-                    "passingYear": "2021",
-                    "majorSubject": [
-                        ["HTML", "CSS", "JavaScript", "ES6", "Bootstrap", "Material UI", "ReactJs", "Redux", "React-Hook", "NextJs", "React-Router", "TypeScrip",],
-                        ["JavaScript", "NodeJs", "ExpressJs", "MongoDB",],
-                        ["VS code", "Git", "Chrome Dev tool", "Figma",],
-                        ["GitHub", "Firebase", "Netlify",]
-                    ]
+                    "title": "CompTIA A+",
+                    "institute": "Alison.com",
+                    "instituteLink": "https://alison.com/",
+                    "location": "Dublin, Ireland.",
+                    "duration": "2 Months",
+                    "passingYear": "2020",
+                    "majorSubject": []
                 },
                 {
-                    "title": "Complete Web Development (MERN stack)",
-                    "institute": "Programming Hero",
-                    "instituteLink": "https://www.programming-hero.com/",
+                    "title": "CCNA (Routing and Switching)",
+                    "institute": "Creative IT institute",
+                    "instituteLink": "https://www.creativeitinstitute.com/",
                     "location": "Dhaka, Bangladesh",
-                    "duration": "6 Months",
-                    "passingYear": "2021",
-                    "majorSubject": [
-                        ["HTML", "CSS", "JavaScript", "ES6", "Bootstrap", "Material UI", "ReactJs", "Redux", "React-Hook", "NextJs", "React-Router", "TypeScrip",],
-                        ["JavaScript", "NodeJs", "ExpressJs", "MongoDB",],
-                        ["VS code", "Git", "Chrome Dev tool", "Figma",],
-                        ["GitHub", "Firebase", "Netlify",]
-                    ]
+                    "duration": "3 Months",
+                    "passingYear": "2019",
+                    "majorSubject": []
                 },
                 {
-                    "title": "Complete Web Development (MERN stack)",
-                    "institute": "Programming Hero",
-                    "instituteLink": "https://www.programming-hero.com/",
+                    "title": "MTCRE and MTCNA",
+                    "institute": "Creative IT institute",
+                    "instituteLink": "https://www.creativeitinstitute.com/",
                     "location": "Dhaka, Bangladesh",
-                    "duration": "6 Months",
-                    "passingYear": "2021",
-                    "majorSubject": [
-                        ["HTML", "CSS", "JavaScript", "ES6", "Bootstrap", "Material UI", "ReactJs", "Redux", "React-Hook", "NextJs", "React-Router", "TypeScrip",],
-                        ["JavaScript", "NodeJs", "ExpressJs", "MongoDB",],
-                        ["VS code", "Git", "Chrome Dev tool", "Figma",],
-                        ["GitHub", "Firebase", "Netlify",]
-                    ]
+                    "duration": "3 Months",
+                    "passingYear": "2019",
+                    "majorSubject": []
                 },
                 {
-                    "title": "Complete Web Development (MERN stack)",
-                    "institute": "Programming Hero",
-                    "instituteLink": "https://www.programming-hero.com/",
+                    "title": "Introduction to Computer Networking",
+                    "institute": "Creative IT institute",
+                    "instituteLink": "https://www.creativeitinstitute.com/",
                     "location": "Dhaka, Bangladesh",
-                    "duration": "6 Months",
-                    "passingYear": "2021",
-                    "majorSubject": [
-                        ["HTML", "CSS", "JavaScript", "ES6", "Bootstrap", "Material UI", "ReactJs", "Redux", "React-Hook", "NextJs", "React-Router", "TypeScrip",],
-                        ["JavaScript", "NodeJs", "ExpressJs", "MongoDB",],
-                        ["VS code", "Git", "Chrome Dev tool", "Figma",],
-                        ["GitHub", "Firebase", "Netlify",]
-                    ]
+                    "duration": "3 Days",
+                    "passingYear": "2019",
+                    "majorSubject": []
                 },
                 {
-                    "title": "Search Engine Optimization",
-                    "institute": "Programming Hero",
-                    "instituteLink": "https://www.programming-hero.com/",
+                    "title": "Red Hat Linux (Installation and Basic Commands)",
+                    "institute": "Linux Pathshala",
+                    "instituteLink": "http://linuxpathshala.com/",
                     "location": "Dhaka, Bangladesh",
-                    "duration": "6 Months",
-                    "passingYear": "2021",
-                    "majorSubject": [
-                        ["HTML", "CSS", "JavaScript", "ES6", "Bootstrap", "Material UI", "ReactJs", "Redux", "React-Hook", "NextJs", "React-Router", "TypeScrip",],
-                        ["JavaScript", "NodeJs", "ExpressJs", "MongoDB",],
-                        ["VS code", "Git", "Chrome Dev tool", "Figma",],
-                        ["GitHub", "Firebase", "Netlify",]
-                    ]
-                }
+                    "duration": "1 Day",
+                    "passingYear": "2018",
+                    "majorSubject": []
+                },
+                {
+                    "title": "Windows Server 2012 (Installation and Basic Commands)",
+                    "institute": "Linux Pathshala",
+                    "instituteLink": "http://linuxpathshala.com/",
+                    "location": "Dhaka, Bangladesh",
+                    "duration": "1 Day",
+                    "passingYear": "2018",
+                    "majorSubject": []
+                },
             ]
         },
         {
@@ -125,12 +116,7 @@ const Education = () => {
                     "location": "Dhaka, Bangladesh",
                     "duration": "4 Years",
                     "passingYear": "2020",
-                    "majorSubject": [
-                        ["HTML", "CSS", "JavaScript", "ES6", "Bootstrap", "Material UI", "ReactJs", "Redux", "React-Hook", "NextJs", "React-Router", "TypeScrip",],
-                        ["JavaScript", "NodeJs", "ExpressJs", "MongoDB",],
-                        ["VS code", "Git", "Chrome Dev tool", "Figma",],
-                        ["GitHub", "Firebase", "Netlify",]
-                    ]
+                    "majorSubject": []
                 },
                 {
                     "title": "Higher Secondary Certificate",
