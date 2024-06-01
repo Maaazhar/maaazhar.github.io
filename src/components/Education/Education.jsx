@@ -5,7 +5,7 @@ import "./Education.css"
 const Education = () => {
     const [educationCategory, setEducationCategory] = useState(0)
     const toggleCategory = (i) => setEducationCategory(i);
-    
+
     // const [tabState, setTabState] = useState(0)
     // const toggleTab = (i) => setTabState(i);
 
@@ -27,7 +27,7 @@ const Education = () => {
                             <label
                                 className="educationCategoryTitle accordionButton"
                                 htmlFor={"educationAccordion-" + i}>
-                                {d.category} <i className="fas fa-angle-down"/>
+                                {d.category} <i className="fas fa-angle-down" />
                             </label>
                             <div className="educationContent accordionContent">
                                 <div className="educationCardsWrapper">
@@ -36,13 +36,20 @@ const Education = () => {
                                             <div
                                                 key={c - 1 + k}
                                                 className="educationCard">
-                                                <h3 className="courseTitle"><i className="fas fa-scroll"/><span>{c.title}</span></h3>
+                                                <h3 className="courseTitle">{c.title}</h3>
+                                                <p className="institute"><a href={c.instituteLink} target="_blank">{c.institute}</a></p>
+                                                <p className="universityBoard"><a href={c.universityBoardLink} target="_blank">{c.universityBoard}</a></p>
+                                                <p className="instituteLocation">{c.location}</p>
+                                                <p className="courseDuration">Course Duration: {c.duration}</p>
+                                                <p className="passingYear">Completed in the year of {c.passingYear}</p>
+                                                <p className="courseDetails"></p>
+                                                {/* <h3 className="courseTitle"><i className="fas fa-scroll"/><span>{c.title}</span></h3>
                                                 <p className="institute"><i className="fas fa-school"/><a href={c.instituteLink} target="_blank">{c.institute}</a></p>
                                                 <p className="universityBoard"><i className="fas fa-university"/><a href={c.universityBoardLink} target="_blank">{c.universityBoard}</a></p>
                                                 <p className="instituteLocation"><i className="fas fa-map-marker-alt"/><span>{c.location}</span></p>
                                                 <p className="courseDuration"><i className="fas fa-stopwatch"/><span>Course Duration: {c.duration}</span></p>
                                                 <p className="passingYear"><i className="fas fa-calendar-check"/><span>Completed in the year of {c.passingYear}</span></p>
-                                                <p className="courseDetails"></p>
+                                                <p className="courseDetails"></p> */}
                                             </div>
                                         )
                                         )}
@@ -92,7 +99,6 @@ const Education = () => {
                     )
                     )}
                 </div>
-                <h3 className="information">This section is under maintenance</h3>
             </div>
         </section>
     )

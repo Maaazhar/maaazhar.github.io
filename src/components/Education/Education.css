@@ -44,6 +44,13 @@
     box-shadow: 8px 8px 16px #d4d4d4,
         -8px -8px 16px #ffffff;
     border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0);
+    transition: all 0.3s ease-in-out;
+}
+
+.educationCard:hover{
+    border: 1px solid crimson;
+    scale: 1.025;
 }
 
 .educationTabs {
