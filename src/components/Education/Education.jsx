@@ -36,12 +36,12 @@ const Education = () => {
                                             <div
                                                 key={c - 1 + k}
                                                 className="educationCard">
-                                                <h3 className="courseTitle"><i className="fas fa-scroll"/>{c.title}</h3>
+                                                <h3 className="courseTitle"><i className="fas fa-scroll"/><span>{c.title}</span></h3>
                                                 <p className="institute"><i className="fas fa-school"/><a href={c.instituteLink} target="_blank">{c.institute}</a></p>
                                                 <p className="universityBoard"><i className="fas fa-university"/><a href={c.universityBoardLink} target="_blank">{c.universityBoard}</a></p>
-                                                <p className="instituteLocation"><i className="fas fa-map-marker-alt"/>{c.location}</p>
-                                                <p className="courseDuration"><i className="fas fa-stopwatch"/>Course Duration: {c.duration}</p>
-                                                <p className="passingYear"><i className="fas fa-calendar-check"/>Completed in the year of {c.passingYear}</p>
+                                                <p className="instituteLocation"><i className="fas fa-map-marker-alt"/><span>{c.location}</span></p>
+                                                <p className="courseDuration"><i className="fas fa-stopwatch"/><span>Course Duration: {c.duration}</span></p>
+                                                <p className="passingYear"><i className="fas fa-calendar-check"/><span>Completed in the year of {c.passingYear}</span></p>
                                                 <p className="courseDetails"></p>
                                             </div>
                                         )

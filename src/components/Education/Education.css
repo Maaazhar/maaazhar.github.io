@@ -109,6 +109,19 @@
     display: block;
 }
 
+
+
+.courseTitle,
+.institute,
+.universityBoard,
+.instituteLocation,
+.courseDuration,
+.passingYear{
+    display: flex;
+    align-items: center;
+}
+
+
 .courseTitle {
     position: relative;
     margin-bottom: 5px;
@@ -129,9 +142,25 @@
     line-height: 1.2;
 }
 
+.institute>i{
+    margin-right: 10px;
+    font-size: 15px;
+    color: #000000ab;
+}
+.universityBoard>i{
+    margin-right: 10px;
+    font-size: 20px;
+    color: #000000ab;
+}
+
 .instituteLocation {
     font: 500 15px 'Ubuntu', sans-serif;
     line-height: 1.5;
+}
+
+.instituteLocation>i{
+    margin-right: 20px;
+    color: #000000ab;
 }
 
 .courseDuration {
@@ -143,6 +172,12 @@
     color: #333;
     font: 500 15px 'Ubuntu', sans-serif;
     line-height: 1.2;
+}
+
+.courseDuration>i,
+.passingYear>i{
+    margin-right: 18px;
+    color: #000000ab;
 }
 
 .educationTabContent>ul {
