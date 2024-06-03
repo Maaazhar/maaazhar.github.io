@@ -49,14 +49,15 @@
 }
 
 .educationCard:hover{
-    /* border: 1px solid crimson; */
-    scale: 1.03;
+    border: 1px solid crimson;
+    scale: 1.04;
 }
 
 .educationCards:has(.educationCard:hover) .educationCard:not(:hover){
     scale: 0.95;
     opacity: 0.9;
     filter: brightness(0.95);
+    transform: rotate(5deg);
     /* border-image: linear-gradient(#00000010, #00000016) fill 1; */
 } 
 
