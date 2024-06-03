@@ -53,6 +53,17 @@
     scale: 1.025;
 }
 
+.educationCard:has(+ .educationCard:hover){
+    opacity: 0.8;
+    scale: 0.95;
+    transform: rotate(-5deg);
+}
+.educationCard:hover + .educationCard{
+    opacity: 0.8;
+    scale: 0.95;
+    transform: rotate(5deg);
+}
+
 .educationTabs {
     display: flex;
     padding: 10px;
