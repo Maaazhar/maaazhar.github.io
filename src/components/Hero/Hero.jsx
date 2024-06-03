@@ -22,13 +22,13 @@ export const Hero = () => {
                                     <span> smooth web experience.</span>
                                 </h2>
                                 <h3 className="text-4">
-                                    I am an <span> experienced web developer,</span>
+                                    I am an <span> experienced web developer, </span>
                                     I craft website with
-                                    <span> intuitive</span>
+                                    <span> intuitive </span>
                                     and
-                                    <span> engaging</span>
+                                    <span> engaging </span>
                                     user interfaces, integrate functionality with
-                                    <span> seamless</span>
+                                    <span> seamless </span>
                                     user experiences.
                                 </h3>
                                 <div className="home-btn">
