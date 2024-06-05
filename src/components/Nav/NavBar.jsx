@@ -5,8 +5,11 @@ export const NavBar = () => {
   const [navState, setNavState] = useState(0)
   const [navBgColor, setNavBgColor] = useState(false);
   const [menuBtnClick, setMenuBtnClick] = useState(false);
-  
-  const toggleNav = (i) => setNavState(i);
+
+  const toggleNav = (i) => {
+    setNavState(i);
+    setMenuBtnClick(false);
+  };
 
   const changeColor = () => window.scrollY >= 20 ? setNavBgColor(true) : setNavBgColor(false);
 
@@ -14,23 +17,25 @@ export const NavBar = () => {
 
   const toggleMenuBtn = () => setMenuBtnClick((open) => !open)
 
-  const closeMenuBtn = () => setMenuBtnClick(false)
-
-  const menu = ["home", "about", "skills", "experience", "project", "education", "contact", ]
+  const menu = ["home", "about", "skills", "experience", "project", "education", "contact",]
 
   return (
     <nav className={navBgColor ? "navbar sticky" : "navbar"}>
       <div className="max-width">
         <div className="logo"><a href="#"> MAZ <span> HAR. </span> </a> </div>
         <ul className={menuBtnClick ? "menu active" : "menu"}>
-          
-          <li><a href="#home" onClick={closeMenuBtn} className="menu-btn">Home</a></li>
+          {menu.map((m, i) => (
+            <li key={i - m - i}>
+              <a href={"#" + m} onClick={() => toggleNav(i)} className={navState === i ? "activeNav" : " "}>{m}</a>
+            </li>
+          ))}
+          {/* <li><a href="#home" onClick={closeMenuBtn} className="menu-btn">Home</a></li>
           <li><a href="#about" onClick={closeMenuBtn} className="menu-btn">About</a></li>
           <li><a href="#skills" onClick={closeMenuBtn} className="menu-btn">Skills</a></li>
           <li><a href="#experience" onClick={closeMenuBtn} className="menu-btn">Experience</a></li>
           <li><a href="#project" onClick={closeMenuBtn} className="menu-btn">Project</a></li>
           <li><a href="#education" onClick={closeMenuBtn} className="menu-btn">Education</a></li>
-          <li><a href="#contact" onClick={closeMenuBtn} className="menu-btn">Contact</a></li>
+          <li><a href="#contact" onClick={closeMenuBtn} className="menu-btn">Contact</a></li> */}
         </ul>
         <div className="menu-btn">
           <i
