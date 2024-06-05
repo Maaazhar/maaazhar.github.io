@@ -130,7 +130,6 @@ const Project = () => {
                             </div>
                         </div> */}
                 </div>
-                <h3 className="information">This section is under maintenance</h3>
             </div>
         </section>
     )

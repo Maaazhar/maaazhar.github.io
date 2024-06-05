@@ -15,7 +15,7 @@ const projects = [
           },
           {
               "image": GreenCrate,
-              "title": "Website of Green Crate Shop",
+              "title": "Website of Green Crate",
               "details": "Green Crate is an organic food provider in Dhaka, offering fresh and authentic product. The website features their products, services, and commitment to sustainable practices.",
               "technology": ["HTML", "CSS", "ReactJS", "Vite", "Font Awesome", "Organic  SEO"],
               "liveLink": ["http://greencratebd.com/", "https://greencrate.netlify.app/"],
@@ -25,14 +25,6 @@ const projects = [
   {
       "category": "Personal Project",
       "list": [
-          {
-              "image": portfolio,
-              "title": "Portfolio of Mazharul Islam",
-              "details": "This is a portfolio website of Mazharul Islam showcases his professional expertise as a web developer based in the UAE, featuring his portfolio, technical skills, and professional experience.",
-              "technology": ["HTML", "CSS", "ReactJS", "Vite", "Font Awesome", "Organic  SEO"],
-              "liveLink": ["https://maaazhar.github.io/"],
-              "githubLink": "https://github.com/Maaazhar/maaazhar.github.io"
-          },
           {
               "image": portfolio,
               "title": "Portfolio of Mazharul Islam",
