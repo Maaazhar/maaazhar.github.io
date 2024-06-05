@@ -45,16 +45,23 @@
   color: #fff;
   font-size: 18px;
   font-weight: 500;
-  margin-left: 25px;
-  transition: color 0.3s ease;
+  margin-left: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
 }
 
 .navbar .menu li a:hover {
   color: crimson;
+  background: #ababab11;
+  backdrop-filter: blur(15px);
+  box-shadow: 1px 1px 5px 1px #19ffffd4;
 }
 
 .navbar.sticky .menu li a:hover {
   color: #000;
+  /* background: #ababab11; */
+  box-shadow: 1px 1px 5px 1px #0000009d;
 }
 
 /* menu btn styling */
