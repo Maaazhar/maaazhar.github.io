@@ -28,7 +28,7 @@ const projects = [
           {
               "image": portfolio,
               "title": "Portfolio of Mazharul Islam",
-              "details": "This is a portfolio website of Mazharul Islam showcases his professional expertise as a web developer based in the UAE, featuring his portfolio, technical skills, and professional experience.",
+              "details": "This is a portfolio website of Mazharul Islam, a professional web developer based in the UAE, showcases his expertise, featuring his portfolio, technical skills, and professional experiences.",
               "technology": ["HTML", "CSS", "ReactJS", "Vite", "Font Awesome", "Organic  SEO"],
               "liveLink": ["https://maaazhar.github.io/"],
               "githubLink": "https://github.com/Maaazhar/maaazhar.github.io"
