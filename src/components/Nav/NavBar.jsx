@@ -2,9 +2,11 @@ import { useState } from 'react'
 import './NavBar.css'
 
 export const NavBar = () => {
-
+  const [navState, setNavState] = useState(0)
   const [navBgColor, setNavBgColor] = useState(false);
   const [menuBtnClick, setMenuBtnClick] = useState(false);
+  
+  const toggleNav = (i) => setNavState(i);
 
   const changeColor = () => window.scrollY >= 20 ? setNavBgColor(true) : setNavBgColor(false);
 
@@ -14,11 +16,14 @@ export const NavBar = () => {
 
   const closeMenuBtn = () => setMenuBtnClick(false)
 
+  const menu = ["home", "about", "skills", "experience", "project", "education", "contact", ]
+
   return (
     <nav className={navBgColor ? "navbar sticky" : "navbar"}>
       <div className="max-width">
         <div className="logo"><a href="#"> MAZ <span> HAR. </span> </a> </div>
         <ul className={menuBtnClick ? "menu active" : "menu"}>
+          
           <li><a href="#home" onClick={closeMenuBtn} className="menu-btn">Home</a></li>
           <li><a href="#about" onClick={closeMenuBtn} className="menu-btn">About</a></li>
           <li><a href="#skills" onClick={closeMenuBtn} className="menu-btn">Skills</a></li>

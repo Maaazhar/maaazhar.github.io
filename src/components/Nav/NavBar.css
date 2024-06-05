@@ -52,15 +52,15 @@
 }
 
 .navbar .menu li a:hover {
-  color: crimson;
-  background: #ababab11;
-  backdrop-filter: blur(15px);
+  color: #19ffff;
   box-shadow: 1px 1px 5px 1px #19ffffd4;
 }
 
+.navbar.sticky .menu li a {
+  transition: all 0.3s ease-in-out;
+}
 .navbar.sticky .menu li a:hover {
   color: #000;
-  /* background: #ababab11; */
   box-shadow: 1px 1px 5px 1px #0000009d;
 }
 
@@ -86,7 +86,7 @@
   .navbar .menu {
     display: block;
     position: fixed;
-    height: 58vh;
+    padding-bottom: 30px;
     width: 100%;
     left: -100%;
     top: 0;
