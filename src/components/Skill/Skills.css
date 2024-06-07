@@ -67,7 +67,7 @@
     scale: 0.95;
     opacity: 0.9;
     filter: brightness(0.95);
-    transform: rotate(5deg);
+    transform: rotate(5deg) translate(-5px,-2px);
 } 
 
 .skillImg {
