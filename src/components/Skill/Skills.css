@@ -59,8 +59,20 @@
     backdrop-filter: blur(15px);
     border-top: 1px solid #ffffff00;
     border-left: 1px solid #ffffff00;
-    box-shadow: 1px 1px 10px #19ffffd4;
+    box-shadow: 1px 1px 5px #19ffffd4;
+    animation: SkillButtonGlow 1s infinite ease-in-out;
+}
 
+@keyframes SkillButtonGlow {
+
+    0%,
+    100% {
+        box-shadow: 1px 1px 5px #19ffffd4;
+    }
+
+    50% {
+        box-shadow: 1.5px 1.5px 10px #19ffffd4;
+    }
 }
 
 .skill:has(.skillItem:hover) .skillItem:not(:hover) {
@@ -68,18 +80,6 @@
     opacity: 0.9;
     filter: brightness(0.95);
     animation: floating 3s infinite ease-in-out;
-}
-
-@keyframes floating {
-
-    0%,
-    100% {
-        transform: rotate(5deg) translate(-5px, -2px);
-    }
-
-    50% {
-        transform: rotate(-5deg) translate(5px, 2px);
-    }
 }
 
 .skillImg {

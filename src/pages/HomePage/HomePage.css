@@ -131,6 +131,20 @@ section .title::after {
     padding: 10px;
 }
 
+/* Similar Animations */
+
+@keyframes floating {
+
+    0%,
+    100% {
+        transform: rotate(5deg) translate(-5px, -2px);
+    }
+
+    50% {
+        transform: rotate(-5deg) translate(5px, 2px);
+    }
+}
+
 /* responsive media query for similar content */
 @media (max-width: 991px) {
     .max-width {

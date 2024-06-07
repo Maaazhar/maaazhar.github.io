@@ -58,8 +58,7 @@
     opacity: 0.9;
     filter: brightness(0.95);
     transform: rotate(5deg);
-    /* border-image: linear-gradient(#00000010, #00000016) fill 1; */
-} 
+    } 
 
 /* .educationCard:has(+ .educationCard:hover),
 .educationCard:hover + .educationCard{
