@@ -63,6 +63,13 @@
 
 }
 
+.skill:has(.skillItem:hover) .skillItem:not(:hover){
+    scale: 0.95;
+    opacity: 0.9;
+    filter: brightness(0.95);
+    transform: rotate(5deg);
+} 
+
 .skillImg {
     width: 30px;
     margin: 0px 10px;
