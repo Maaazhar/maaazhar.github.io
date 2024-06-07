@@ -63,12 +63,24 @@
 
 }
 
-.skill:has(.skillItem:hover) .skillItem:not(:hover){
+.skill:has(.skillItem:hover) .skillItem:not(:hover) {
     scale: 0.95;
     opacity: 0.9;
     filter: brightness(0.95);
-    transform: rotate(5deg) translate(-5px,-2px);
-} 
+    animation: floating 3s infinite ease-in-out;
+}
+
+@keyframes floating {
+
+    0%,
+    100% {
+        transform: rotate(5deg) translate(-5px, -2px);
+    }
+
+    50% {
+        transform: rotate(-5deg) translate(5px, 2px);
+    }
+}
 
 .skillImg {
     width: 30px;
