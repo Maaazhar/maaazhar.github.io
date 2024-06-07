@@ -48,17 +48,29 @@
     transition: all 0.3s ease-in-out;
 }
 
-.educationCard:hover{
-    border: 1px solid crimson;
+.educationCard:hover {
     scale: 1.04;
+    animation: educationCardGlow 3s infinite ease-in-out;
 }
 
-.educationCards:has(.educationCard:hover) .educationCard:not(:hover){
+@keyframes educationCardGlow {
+
+    0%,
+    100% {
+        box-shadow: 1px 1px 10px crimson;
+    }
+
+    50% {
+        box-shadow: 2px 2px 20px crimson;
+    }
+}
+
+.educationCards:has(.educationCard:hover) .educationCard:not(:hover) {
     scale: 0.95;
     opacity: 0.9;
     filter: brightness(0.95);
-    transform: rotate(5deg);
-    } 
+    animation: floating 3s infinite ease-in-out;
+}
 
 /* .educationCard:has(+ .educationCard:hover),
 .educationCard:hover + .educationCard{
@@ -137,7 +149,7 @@
 .universityBoard,
 .instituteLocation,
 .courseDuration,
-.passingYear{
+.passingYear {
     display: flex;
     align-items: center;
 }
@@ -150,7 +162,7 @@
     font: 500 20px 'Ubuntu', sans-serif;
 }
 
-.courseTitle>i{
+.courseTitle>i {
     margin-right: 10px;
     font-size: 15px;
     color: #dc143caf;
@@ -163,12 +175,13 @@
     line-height: 1.2;
 }
 
-.institute>i{
+.institute>i {
     margin-right: 10px;
     font-size: 15px;
     color: #000000ab;
 }
-.universityBoard>i{
+
+.universityBoard>i {
     margin-right: 10px;
     font-size: 20px;
     color: #000000ab;
@@ -179,7 +192,7 @@
     line-height: 1.5;
 }
 
-.instituteLocation>i{
+.instituteLocation>i {
     margin-right: 20px;
     color: #000000ab;
 }
@@ -196,7 +209,7 @@
 }
 
 .courseDuration>i,
-.passingYear>i{
+.passingYear>i {
     margin-right: 18px;
     color: #000000ab;
 }
