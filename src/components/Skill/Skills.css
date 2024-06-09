@@ -37,6 +37,7 @@
 
 
 .skillItem {
+    position: relative;
     display: block;
     height: 60px;
     display: flex;
@@ -52,7 +53,6 @@
     transition: all 0.3s ease-in-out;
     backdrop-filter: blur(8px);
     user-select: none;
-    overflow: hidden;
 }
 
 .skillItem:hover {

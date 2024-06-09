@@ -30,7 +30,7 @@ export const Skills = () => {
                             <div className="skillWrapper accordionContent">
                                 <div className="skill">
                                     {d.list.map((s, i) => (
-                                        <div className="skillItem" key={`${s.logo}-${i}`}>
+                                        <div className="skillItem" key={`${s.logo}-${i}`} style={{animationDelay: i+1}}>
                                             <div className="skillImg"> {s.logo} </div>
                                             <div className="skillName"> {s.title} </div>
                                             <div className="skillAge">
