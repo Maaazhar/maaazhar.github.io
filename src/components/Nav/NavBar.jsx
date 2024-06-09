@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './NavBar.css'
 
 export const NavBar = () => {
@@ -12,12 +12,40 @@ export const NavBar = () => {
   };
 
   const changeColor = () => window.scrollY >= 20 ? setNavBgColor(true) : setNavBgColor(false);
-
   window.addEventListener("scroll", changeColor);
 
   const toggleMenuBtn = () => setMenuBtnClick((open) => !open)
 
   const menu = ["home", "about", "skills", "experience", "project", "education", "contact",]
+
+  //Function to determine the active section while scrolling
+  const determineActiveSection = () => {
+    for (let i = menu.length - 1; i >= 0; i--) {
+      const section = document.getElementById(menu[i]);
+      if (section) {
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= 120 && rect.bottom >= 120) {
+          //Set the active link based on the section ID
+          setNavState(i);
+          break;
+        }
+      }
+    }
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      //Call the function to determine the active section while scrolling
+      determineActiveSection();
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    //Remove the scroll event listener when the component unmounts
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <nav className={navBgColor ? "navbar sticky" : "navbar"}>

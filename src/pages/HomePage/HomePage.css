@@ -139,12 +139,14 @@ section .title::after {
 
     0%,
     100% {
-        transform: rotate(3deg);
+        transform: rotate(1deg);
+        /* transform: translate(0px, -2px); */
         /* transform: rotate(5deg) translate(-5px, -2px); */
     }
 
     50% {
-        transform: rotate(-3deg);
+        transform: rotate(-1deg);
+        /* transform: translate(0px, 2px); */
         /* transform: rotate(-5deg) translate(5px, 2px); */
     }
 }

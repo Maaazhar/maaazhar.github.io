@@ -50,7 +50,7 @@
 
 .educationCard:hover {
     scale: 1.04;
-    animation: educationCardGlow 3s infinite ease-in-out;
+    animation: educationCardGlow 1s infinite ease-in-out;
 }
 
 @keyframes educationCardGlow {
