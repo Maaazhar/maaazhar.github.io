@@ -1,107 +1,183 @@
 {
-    "skills" : [
+    "skills": [
         {
             "category": "Front-End",
-            "skillList": [
+            "list": [
                 {
-                    "logo": "../../assets/images/skill-svg/html-5-logo.svg", 
-                    "name": "HTML", 
-                    "year": "2019"
+                    "logo": "./SkillLogo/HtmlLogo.jsx",
+                    "title": "HTML",
+                    "startingYear": 2019
                 },
                 {
-                    "logo": "../../assets/images/skill-svg/html-5-logo.svg", 
-                    "name": "CSS", 
-                    "year": "2019"
+                    "logo": "./SkillLogo/CssLogo.jsx",
+                    "title": "CSS",
+                    "startingYear": 2019
                 },
                 {
-                    "logo": "../../assets/images/skill-svg/html-5-logo.svg", 
-                    "name": "Bootstrap", 
-                    "year": "2019"
+                    "logo": "./SkillLogo/JavaScriptLogo.jsx",
+                    "title": "JavaScript",
+                    "startingYear": 2019
                 },
                 {
-                    "logo": "../../assets/images/skill-svg/html-5-logo.svg", 
-                    "name": "Material UI", 
-                    "year": "2020"
+                    "logo": "./SkillLogo/Es6Logo.jsx",
+                    "title": "ES6",
+                    "startingYear": 2019
                 },
                 {
-                    "logo": "../../assets/images/skill-svg/html-5-logo.svg", 
-                    "name": "JavaScript", 
-                    "year": "2019"
+                    "logo": "./SkillLogo/BootstrapLogo.jsx",
+                    "title": "Bootstrap",
+                    "startingYear": 2019
                 },
                 {
-                    "logo": "../../assets/images/skill-svg/html-5-logo.svg", 
-                    "name": "ES6", 
-                    "year": "2019"
+                    "logo": "./SkillLogo/MaterialUiLogo.jsx",
+                    "title": "Material UI",
+                    "startingYear": 2020
                 },
                 {
-                    "logo": "../../assets/images/skill-svg/html-5-logo.svg", 
-                    "name": "ReactJs", 
-                    "year": "2020"
+                    "logo": "./SkillLogo/ReactJsLogo.jsx",
+                    "title": "ReactJs",
+                    "startingYear": 2020
                 },
                 {
-                    "logo": "../../assets/images/skill-svg/html-5-logo.svg", 
-                    "name": "React-Hook", 
-                    "year": "2020"
+                    "logo": "./SkillLogo/ReduxLogo.jsx",
+                    "title": "Redux",
+                    "startingYear": 2020
                 },
                 {
-                    "logo": "../../assets/images/skill-svg/html-5-logo.svg", 
-                    "name": "Redux", 
-                    "year": "2020"
+                    "logo": "./SkillLogo/ReactHookLogo.jsx",
+                    "title": "React-Hook",
+                    "startingYear": 2020
                 },
                 {
-                    "logo": "../../assets/images/skill-svg/html-5-logo.svg", 
-                    "name": "React-Router", 
-                    "year": "2020"
+                    "logo": "./SkillLogo/NextJsLogo.jsx",
+                    "title": "NextJs",
+                    "startingYear": 2020
                 },
                 {
-                    "logo": "../../assets/images/skill-svg/html-5-logo.svg", 
-                    "name": "NextJs", 
-                    "year": "2020"
+                    "logo": "./SkillLogo/ReactRouterLogo.jsx",
+                    "title": "React-Router",
+                    "startingYear": 2020
                 },
                 {
-                    "logo": "../../assets/images/skill-svg/html-5-logo.svg", 
-                    "name": "TypeScrip", 
-                    "year": "2020"
+                    "logo": "./SkillLogo/TypeScriptLogo.jsx",
+                    "title": "TypeScrip",
+                    "startingYear": 2020
                 }
             ]
         },
         {
             "category": "Back-End",
-            "skillList": [
-                ["Logo", "JavaScript", 2019],
-                ["Logo", "NodeJs (CRUD)", 2020],
-                ["Logo", "ExpressJs", 2020],
-                ["Logo", "MongoDB", 2020]
+            "list": [
+                {
+                    "logo": "./SkillLogo/JavaScriptLogo.jsx",
+                    "title": "JavaScript",
+                    "startingYear": 2019
+                },
+                {
+                    "logo": "./SkillLogo/NodeJsLogo.jsx",
+                    "title": "NodeJs",
+                    "startingYear": 2020
+                },
+                {
+                    "logo": "./SkillLogo/ExpressLogo.jsx",
+                    "title": "ExpressJs",
+                    "startingYear": 2020
+                },
+                {
+                    "logo": "./SkillLogo/MongoDbLogo.jsx",
+                    "title": "MongoDB",
+                    "startingYear": 2020
+                }
             ]
         },
         {
             "category": "Tools",
-            "skillList": [
-                ["Logo", "VS code", 2019],
-                ["Logo", "Git", 2020],
-                ["Logo", "Chrome Dev tool", 2020],
-                ["Logo", "Code Blocks", 2017],
-                ["Logo", "Dev C++", 2017],
-                ["Logo", "Figma", 2020],
-                ["Logo", "PhotoShop", 2019]
+            "list": [
+                {
+                    "logo": "./SkillLogo/VsCodeLogo.jsx",
+                    "title": "VS code",
+                    "startingYear": 2020
+                },
+                {
+                    "logo": "./SkillLogo/GitLogo.jsx",
+                    "title": "Git",
+                    "startingYear": 2020
+                },
+                {
+                    "logo": "./SkillLogo/ChromeDevToolLogo.jsx",
+                    "title": "Chrome Dev tool",
+                    "startingYear": 2020
+                },
+                {
+                    "logo": "./SkillLogo/FigmaLogo.jsx",
+                    "title": "Figma",
+                    "startingYear": 2020
+                },
+                {
+                    "logo": "./SkillLogo/CodeBlocksLogo.jsx",
+                    "title": "Code Blocks",
+                    "startingYear": 2017
+                },
+                {
+                    "logo": "./SkillLogo/DevCppLogo.jsx",
+                    "title": "Dev C++",
+                    "startingYear": 2017
+                },
+                {
+                    "logo": "./SkillLogo/PhotoShopLogo.jsx",
+                    "title": "PhotoShop",
+                    "startingYear": 2019
+                }
             ]
         },
         {
             "category": "Platform",
-            "skillList": [
-                ["Logo", "GitHub", 2020],
-                ["Logo", "Firebase", 2020],
-                ["Logo", "Netlify", 2020],
-                ["Logo", "Vercel", 2022]
+            "list": [
+                {
+                    "logo": "./SkillLogo/GitLogo.jsx",
+                    "title": "GitHub",
+                    "startingYear": 2020
+                },
+                {
+                    "logo": "./SkillLogo/FirebaseLogo.jsx",
+                    "title": "Firebase",
+                    "startingYear": 2020
+                },
+                {
+                    "logo": "./SkillLogo/NetlifyLogo.jsx",
+                    "title": "Netlify",
+                    "startingYear": 2020
+                },
+                {
+                    "logo": "./SkillLogo/VercelLogo.jsx",
+                    "title": "Vercel",
+                    "startingYear": 2022
+                }
             ]
         },
         {
             "category": "Programming Language",
-            "skillList": [
-                ["Logo", "C", 2017],
-                ["Logo", "C++", 2018],
-                ["Logo", "JavaScript", 2019],
-                ["Logo", "Python", 2020]
+            "list": [
+                {
+                    "logo": "./SkillLogo/CLogo.jsx",
+                    "title": "C",
+                    "startingYear": 2017
+                },
+                {
+                    "logo": "./SkillLogo/CppLogo.jsx",
+                    "title": "C++",
+                    "startingYear": 2018
+                },
+                {
+                    "logo": "./SkillLogo/JavaScriptLogo.jsx",
+                    "title": "JavaScript",
+                    "startingYear": 2019
+                },
+                {
+                    "logo": "./SkillLogo/PythonLogo.jsx",
+                    "title": "Python",
+                    "startingYear": 2020
+                }
             ]
         }
     ]
