@@ -7,6 +7,7 @@ import Hero from "../../components/Hero/Hero"
 import NavBar from "../../components/Nav/NavBar"
 import Project from "../../components/Project/Project"
 import Skills from "../../components/Skill/Skills"
+import Data from "../../assets/database/Database.json"
 
 import "./HomePage.css"
 
@@ -16,7 +17,7 @@ export const HomePage = () => {
       <NavBar />
       <Hero />
       <About />
-      <Skills />
+      <Skills data={Data.skills} />
       <Experience />
       <Project />
       <Education />

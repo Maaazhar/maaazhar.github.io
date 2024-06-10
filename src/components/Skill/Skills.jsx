@@ -2,7 +2,8 @@ import "./Skills.css"
 import SkillList from "./SkillList.jsx";
 import { useState } from "react";
 
-export const Skills = () => {
+export const Skills = (props) => {
+    console.log(props);
     const currentYear = new Date().getFullYear();
     const [skillCategory, setSkillCategory] = useState(0)
     const toggleCategory = (i) => setSkillCategory(i);

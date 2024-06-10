@@ -53,7 +53,7 @@ export const NavBar = () => {
         <div className="logo"><a href="#"> MAZ <span> HAR. </span> </a> </div>
         <ul className={menuBtnClick ? "menu active" : "menu"}>
           {menu.map((m, i) => (
-            <li key={i - m - i}>
+            <li key={m + i}>
               <a href={"#" + m} onClick={() => toggleNav(i)} className={navState === i ? "activeNav" : " "}>{m}</a>
             </li>
           ))}

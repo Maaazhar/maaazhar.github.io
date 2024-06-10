@@ -12,7 +12,7 @@ const Project = () => {
                 <h2 className="title">Recent projects</h2>
                 <div className="projectContent">
                     {projectList.map((d, i) => (
-                        <div className="projectCategory accordion" key={`${d.category}-${i}`}>
+                        <div className="projectCategory accordion" key={d.category + i}>
                             <input
                                 type="radio"
                                 id={"projectAccordion-" + i}
@@ -30,13 +30,13 @@ const Project = () => {
                                 <div className="projectCard">
                                     {d.list.map((p, i) => (
                                         <div
-                                            key={`${p.image}-${i}`}
+                                            key={p.image + i}
                                             className={i % 2 === 0 ? "singleProject" : "singleProjectRevers"}>
                                             <div className="projectImg "><img src={p.image} alt="" /></div>
                                             <div className="projectDescription ">
                                                 <div className="projectTitleWrapper">
                                                     <h3 className="projectTitle">{p.title}</h3>
-                                                    <h3 className="projectSequence">{i+1}</h3>
+                                                    <h3 className="projectSequence">{i + 1}</h3>
                                                 </div>
                                                 <div className="projectInfo ">
                                                     <p className="projectDetails">{p.details}</p>
