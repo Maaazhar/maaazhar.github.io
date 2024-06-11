@@ -50,7 +50,7 @@ export const NavBar = () => {
   return (
     <nav className={navBgColor ? "navbar sticky" : "navbar"}>
       <div className="max-width">
-        <div className="logo"><a href="#"> MAZ <span> HAR. </span> </a> </div>
+        <div className="logo"><a href="#"> MAZ<span>HAR. </span> </a> </div>
         <ul className={menuBtnClick ? "menu active" : "menu"}>
           {menu.map((m, i) => (
             <li key={m + i}>

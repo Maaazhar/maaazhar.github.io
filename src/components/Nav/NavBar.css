@@ -24,15 +24,18 @@
   color: #fff;
   font-size: 35px;
   font-weight: 600;
+  letter-spacing: 2px;
 }
 
 .navbar .logo a span {
   color: crimson;
+  font-size: 37px;
+  letter-spacing: 0px;
   transition: all 0.3s ease;
 }
 
 .navbar.sticky .logo a span {
-  color: #fff;
+  color: #222;
 }
 
 .navbar .menu li {
@@ -60,6 +63,7 @@
 .navbar .menu li .activeNav {
   color: #19ffff;
   box-shadow: 1px 1px 5px 1px #19ffffd4;
+  transition: all 0.5s ease-in-out;
 }
 
 .navbar.sticky .menu li a {
@@ -74,6 +78,7 @@
 .navbar.sticky .menu li .activeNav {
   color: #000;
   box-shadow: 1px 1px 5px 1px #000000;
+  transition: all 0.5s ease-in-out;
 }
 
 
