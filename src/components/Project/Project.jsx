@@ -129,7 +129,7 @@ const Project = () => {
                                 </div>
                             </div>
                         </div> */}
-                </div>s
+                </div>
             </div>
         </section>
     )

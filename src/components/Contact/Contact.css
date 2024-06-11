@@ -3,9 +3,20 @@
     color: #dc143c;
 }
 
+.contact .title::after {
+    content: "get in touch";
+    background: none;
+}
+
 .contact-icon {
     display: flex;
+    align-items: center;
     justify-content: space-around;
+    padding: 10px 0px 10px 0px;
+    background-color: #ffffff10;
+    backdrop-filter: blur(20px);
+    border-radius: 5px;
+
 }
 
 .contact-icon i {
@@ -20,9 +31,9 @@
     fill: #fff;
 }
 
-.contact .title::after {
-    content: "get in touch";
-    background: none;
+
+.contact .contact-content {
+    align-items: start !important;
 }
 
 .contact .contact-content .column {
@@ -30,22 +41,27 @@
 }
 
 .contact .contact-content .text {
-    background-color: #ffffff10;
     margin-bottom: 15px;
     padding: 10px 0px 10px 0px;
-    border-radius: 6px;
-    text-align: center;
-    font-size: 28px;
-    color: crimson;
+    background-color: #ffffff10;
     backdrop-filter: blur(20px);
+    border-radius: 5px;
+    color: crimson;
+    font-size: 28px;
+    text-align: center;
 }
 
 .contact .contact-content .left p {
     text-align: justify;
 }
 
-.contact .contact-content .left .icons {
+.contact .contact-content .left .contactDetails {
     margin: 10px 0;
+    padding: 10px 10px 10px 20px;
+    background-color: #ffffff10;
+    backdrop-filter: blur(20px);
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 .contact .contact-content .row {
@@ -55,7 +71,7 @@
 }
 
 .contact .contact-content .row .info {
-    margin-left: 30px;
+    margin-left: 10px;
 }
 
 .contact i {
@@ -65,18 +81,19 @@
     width: 30px;
 }
 
-/* .contact>.max-width>.contact-content>.left>.icons>.row>.info>.sub-title:hover + .contact i {
+/* .contact>.max-width>.contact-content>.left>.contactDetails>.row>.info>.sub-title:hover + .contact i {
     color: #ffffff;
 } */
 
-.contact>.max-width>.contact-content>.left>.icons>.row>.info>.head {
+.contact>.max-width>.contact-content>.left>.contactDetails>.row>.info>.head {
     font-weight: 500;
     /* color: #c72041; */
     color: crimson;
 }
 
-.contact>.max-width>.contact-content>.left>.icons>.row>.info>.sub-title,
-.contact>.max-width>.contact-content>.left>.icons>.row>.info>.sub-title a {
+.contact>.max-width>.contact-content>.left>.contactDetails>.row>.info>.sub-title,
+.contact>.max-width>.contact-content>.left>.contactDetails>.row>.info>.sub-title a {
+    display: inline-block;
     color: #fff;
     /* padding: 0px 5px;
     border-radius: 2px;
@@ -84,13 +101,13 @@
     transition: all 0.3s ease; */
 }
 
-/* .contact>.max-width>.contact-content>.left>.icons>.row>.info>.sub-title:hover .contact>.max-width>.contact-content>.left>.icons>.row>.info>.head,
-.contact>.max-width>.contact-content>.left>.icons>.row>.info>.sub-title a:hover  .contact>.max-width>.contact-content>.left>.icons>.row>.info>.head {
+/* .contact>.max-width>.contact-content>.left>.contactDetails>.row>.info>.sub-title:hover .contact>.max-width>.contact-content>.left>.contactDetails>.row>.info>.head,
+.contact>.max-width>.contact-content>.left>.contactDetails>.row>.info>.sub-title a:hover  .contact>.max-width>.contact-content>.left>.contactDetails>.row>.info>.head {
     color: #fff;
 } */
 
-/* .contact>.max-width>.contact-content>.left>.icons>.row>.info>.sub-title:hover,
-.contact>.max-width>.contact-content>.left>.icons>.row>.info>.sub-title a:hover {
+/* .contact>.max-width>.contact-content>.left>.contactDetails>.row>.info>.sub-title:hover,
+.contact>.max-width>.contact-content>.left>.contactDetails>.row>.info>.sub-title a:hover {
     color: crimson;
     background: #fff;
 } */
@@ -190,5 +207,13 @@ input[type=number] {
 
     .right form .error-box {
         width: 150px;
+    }
+}
+
+@media (max-width: 340px) {
+
+    .contact>.max-width>.contact-content>.left>.contactDetails>.row>.info>.sub-title,
+    .contact>.max-width>.contact-content>.left>.contactDetails>.row>.info>.sub-title a {
+        font-size: 15px;
     }
 }

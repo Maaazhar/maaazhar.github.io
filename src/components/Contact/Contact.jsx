@@ -50,7 +50,7 @@ const Contact = () => {
                             {/* <a title="Mazharul Islam on Twitter" href="https://twitter.com/maaazhaaar" target="_blank"> <i
                                     className="fab fa-twitter-square"></i> </a> */}
                         </div>
-                        <div className="icons">
+                        <div className="contactDetails">
                             <div className="row">
                                 <i className="fas fa-user"></i>
                                 <div className="info">
