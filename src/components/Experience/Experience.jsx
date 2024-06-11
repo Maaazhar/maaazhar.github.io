@@ -25,7 +25,7 @@ const Experience = () => {
                         <div className="contentWrapper">
                             {jobList.jobs.map((d, i) => (
                                 <div
-                                    key={d - 1 + i}
+                                    key={d + 1 + i}
                                     className={tabState === i ? "content activeContent" : "content"}>
                                     <h3 className="position">{d.position}</h3>
                                     <p className="company">{d.company}</p>

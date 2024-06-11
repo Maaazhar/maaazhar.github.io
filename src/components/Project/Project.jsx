@@ -42,15 +42,15 @@ const Project = () => {
                                                     <p className="projectDetails">{p.details}</p>
                                                     <div className="projectTechnology">
                                                         <ul>
-                                                            {p.technology.map((t) => (
-                                                                <li key={t + 100}>{t}</li>
+                                                            {p.technology.map((t, i) => (
+                                                                <li key={t + i + 100}>{t}</li>
                                                             ))}
                                                         </ul>
                                                     </div>
                                                     <div className="projectLink ">
                                                         {p.liveLink.map((l) => (
                                                             <a
-                                                                key={l + 100}
+                                                                key={l + i + 100}
                                                                 href={l}
                                                                 target="_blank">
                                                                 <i className="fas fa-external-link-square-alt"></i>

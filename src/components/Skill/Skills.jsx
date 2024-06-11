@@ -14,7 +14,7 @@ export const Skills = (props) => {
                 <h2 className="title">My skills</h2>
                 <div className="skillsContent">
                     {SkillList.map((d, i) => (
-                        <div className="skillCategory accordion" key={`${d.category}-${i}`}>
+                        <div className="skillCategory accordion" key={d.category + i }>
                             <input
                                 type="radio"
                                 id={"skillAccordion-" + i}
@@ -31,7 +31,7 @@ export const Skills = (props) => {
                             <div className="skillWrapper accordionContent">
                                 <div className="skill">
                                     {d.list.map((s, i) => (
-                                        <div className="skillItem" key={`${s.logo}-${i}`} style={{animationDelay: i+1}}>
+                                        <div className="skillItem" key={s.logo + i} style={{ animationDelay: i + 1 }}>
                                             <div className="skillImg"> {s.logo} </div>
                                             <div className="skillName"> {s.title} </div>
                                             <div className="skillAge">

@@ -15,7 +15,7 @@ const Education = () => {
                 <h2 className="title">My Education</h2>
                 <div className="educationContentWrapper ">
                     {EducationList.map((d, i) => (
-                        <div className="educationCategory accordion" key={`${d.category}-${i}`}>
+                        <div className="educationCategory accordion" key={d.category + i}>
                             <input
                                 type="radio"
                                 id={"educationAccordion-" + i}
@@ -34,7 +34,7 @@ const Education = () => {
                                     <div className="educationCards">
                                         {d.courseList.map((c, k) => (
                                             <div
-                                                key={c - 1 + k}
+                                                key={c + k}
                                                 className="educationCard">
                                                 <h3 className="courseTitle">{c.title}</h3>
                                                 <p className="institute"><a href={c.instituteLink} target="_blank">{c.institute}</a></p>

@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react"
+
 import About from "../../components/About/About"
 import Contact from "../../components/Contact/Contact"
 import Education from "../../components/Education/Education"
@@ -12,12 +14,18 @@ import Data from "../../assets/database/Database.json"
 import "./HomePage.css"
 
 export const HomePage = () => {
+  const [data, setData] = useState({});
+
+  useEffect(() => {
+    setData(Data);
+  }, []);
+
   return (
     <>
       <NavBar />
       <Hero />
       <About />
-      <Skills data={Data.skills} />
+      <Skills data={data.skills} />
       <Experience />
       <Project />
       <Education />
