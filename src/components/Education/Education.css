@@ -38,14 +38,14 @@
 }
 
 .educationCard {
-    padding: 15px;
+    padding: 15px 5px;
     width: 30%;
     background: linear-gradient(145deg, #e6e6e6, #ffffff);
     box-shadow: 8px 8px 16px #d4d4d4,
         -8px -8px 16px #ffffff;
     border-radius: 5px;
     border: 1px solid rgba(255, 255, 255, 0);
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .educationCard:hover {
@@ -130,8 +130,16 @@
 
 .educationCard>p>a,
 .educationTabContent>p>a {
+    padding: 2px 10px;
+    border-radius: 5px;
     text-decoration: none;
     color: inherit;
+    transition: all 0.3s ease-in-out;
+}
+.educationCard>p>a:hover,
+.educationTabContent>p>a:hover {
+    padding: 5px 10px;
+    background: #c5c5c5;
 }
 
 .educationTabContent>p>a:hover {
@@ -158,6 +166,7 @@
 .courseTitle {
     position: relative;
     margin-bottom: 5px;
+    padding: 0px 10px;
     color: crimson;
     font: 500 20px 'Ubuntu', sans-serif;
 }
@@ -172,7 +181,6 @@
 .institute,
 .universityBoard {
     font: 500 18px 'Ubuntu', sans-serif;
-    line-height: 1.2;
 }
 
 .institute>i {
@@ -188,8 +196,9 @@
 }
 
 .instituteLocation {
+    margin: 3px 0px 5px 0px;
+    padding: 0px 10px;
     font: 500 15px 'Ubuntu', sans-serif;
-    line-height: 1.5;
 }
 
 .instituteLocation>i {
@@ -203,6 +212,7 @@
 
 .courseDuration,
 .passingYear {
+    padding: 0px 10px;
     color: #333;
     font: 500 15px 'Ubuntu', sans-serif;
     line-height: 1.2;

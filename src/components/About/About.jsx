@@ -29,21 +29,13 @@ export const About = () => {
                             </span>
                         </div>
                         <p>
-                            I am an experienced Web Developer, I bring designs to life, crafting interactive and
-                            visually engaging user interfaces that seamlessly blend in form with functionality. Utilizing my
-                            expertise in HTML, CSS, JavaScript, and ReactJS.
+                            I am an experienced Web Developer, I bring designs to life, crafting interactive and visually engaging user interfaces that seamlessly blend in form with functionality. Utilizing my expertise in HTML, CSS, JavaScript, and ReactJS.
                             <br />
-                            I ensure websites and web applications not only look stunning but also deliver intuitive and
-                            responsive experiences across various devices and browsers. From concept to execution, I strive
-                            to enhance user satisfaction by continuously refining and optimizing the digital journey. I
-                            ensure that every aspect of a website or application aligns with both aesthetic goals and
-                            usability requirements.
-                            <br />Beyond just coding, I continually explore emerging technologies and best practices to
-                            enhance performance, accessibility, and user experience.
+                            I ensure websites and web applications not only look stunning but also deliver intuitive and responsive experiences across various devices and browsers. From concept to execution, I strive to enhance user satisfaction by continuously refining and optimizing the digital journey. I ensure that every aspect of a website or application aligns with both aesthetic goals and usability requirements.
                             <br />
-                            Whether it is optimizing for speed, ensuring cross-browser compatibility, or integrating
-                            cutting-edge features, my passion lies in delivering polished, user-centric solutions that
-                            elevate the digital landscape and leave a lasting impression on visitors.
+                            Beyond just coding, I continuously explore emerging technologies and best practices to enhance performance, accessibility, and the user experience.
+                            <br />
+                            Whether it is optimizing for speed, ensuring cross-browser compatibility, or integrating cutting-edge features, my passion lies in delivering polished, user-centric solutions that elevate the digital landscape and leave a lasting impression on visitors.
                         </p>
                         <div className="about-btn">
                             <a target="_blank"
