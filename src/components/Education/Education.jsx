@@ -33,9 +33,7 @@ const Education = () => {
                                 <div className="educationCardsWrapper">
                                     <div className="educationCards">
                                         {d.courseList.map((c, k) => (
-                                            <div
-                                                key={c + k}
-                                                className="educationCard">
+                                            <div key={c + k} className="educationCard" style={{ "--delay": k + 1 }}>
                                                 <h3 className="courseTitle">{c.title}</h3>
                                                 <p className="institute"><a href={c.instituteLink} target="_blank">{c.institute}</a></p>
                                                 {c.universityBoard && <p className="universityBoard"><a href={c.universityBoardLink} target="_blank">{c.universityBoard}</a></p>}

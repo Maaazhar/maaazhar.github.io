@@ -35,7 +35,7 @@
 
 .home .overlay {
     width: 100vw;
-    background: rgba(0, 0, 0, 0.80);
+    background: rgba(0, 0, 0, 0.70);
     backdrop-filter: blur(100px);
     z-index: 1;
 }
