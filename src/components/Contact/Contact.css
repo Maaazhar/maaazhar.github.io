@@ -124,7 +124,7 @@
 }
 
 .contact .right form .textarea {
-    height: 150px;
+    height: 180px;
     width: 100%;
 }
 
@@ -149,9 +149,12 @@ input[type=number] {
     height: 100%;
     width: 100%;
     padding: 0 15px;
-    background: #ffffffcc;
-    backdrop-filter: blur(5px);
-    border: 1px solid lightgrey;
+    /* background: #ffffffcc;
+    backdrop-filter: blur(5px); */
+    background-color: #ffffff10;
+    backdrop-filter: blur(20px);
+    border: 1px solid #5b868641;
+    /* border: 1px solid lightgrey; */
     border-radius: 6px;
     outline: none;
     font-size: 17px;
@@ -159,14 +162,19 @@ input[type=number] {
     transition: all 0.3s ease;
 }
 
+::placeholder{
+    color: #999999c6;
+}
+
 .contact .right form .field input:focus,
 .contact .right form .textarea textarea:focus {
-    border-color: #b3b3b3;
+    border-color: #19ffff7e;
 }
 
 .contact .right form .textarea textarea {
     padding-top: 10px;
     resize: none;
+    color: #ddd;
 }
 
 .contact .right form .button-area {
