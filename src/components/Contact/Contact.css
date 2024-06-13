@@ -9,7 +9,7 @@
 }
 
 .detailsWrapper,
-.contact-form{
+.contact-form {
     overflow: hidden;
 }
 
@@ -119,8 +119,8 @@
     background: #55555568;
 }
 
-.contact-form{
-    padding: 10px;
+.contact-form {
+    padding: 20px;
     border-radius: 5px;
     background-color: #ffffff10;
     backdrop-filter: blur(20px);
@@ -132,9 +132,42 @@
 
 .contact .right form .field,
 .contact .right form .fields .field {
+    position: relative;
     height: 45px;
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.contact .right form .field span,
+.contact .right form .fields .field span {
+    position: absolute;
+    left: 0;
+    margin: 5px 0px 0px 5px;
+    padding: 5px;
+    color: #999999c6;
+    font: 400 18px 'Ubuntu', sans-serif;
+    pointer-events: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact .right form .field input:focus ~ span,
+.contact .right form .field textarea:focus ~ span,
+.contact .right form .fields .field input:focus ~ span, 
+.contact .right form .field input:valid ~ span,
+.contact .right form .field textarea:valid ~ span,
+.contact .right form .fields .field input:valid ~ span {
+    margin: 10px 0px 0px 10px;
+    padding: 2px 5px;
+    border-radius: 2px;
+    background-color: #373939ee;
+    backdrop-filter: blur(20px);
+    /* color: #444; */
+    /* color: #19ffffb4; */
+    color: #999;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transform: translateY(-20px);
 }
 
 .contact .right form .textarea {
@@ -162,7 +195,7 @@ input[type=number] {
 .contact .right form .textarea textarea {
     height: 100%;
     width: 100%;
-    padding: 0 15px;
+    padding: 20px 0px 15px 15px;
     /* background: #ffffffcc;
     backdrop-filter: blur(5px); */
     background-color: #ffffff05;
@@ -177,10 +210,6 @@ input[type=number] {
     transition: all 0.3s ease;
 }
 
-::placeholder{
-    color: #999999c6;
-    font: 400 18px 'Ubuntu', sans-serif;
-}
 
 .contact .right form .field input:focus,
 .contact .right form .textarea textarea:focus {

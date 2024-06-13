@@ -100,38 +100,25 @@ const Contact = () => {
                         <div className="text">Let me hear you <i className="far fa-smile"></i> </div>
                         <form className="contact-form" action="#" method="POST">
                             <div className="field">
-                                <input
-                                    type="text"
-                                    className="fullname"
-                                    placeholder="Name" />
+                                <input type="text" className="Name" required/>
+                                <span>Name</span>
                             </div>
                             <div className="fields">
                                 <div className="field name">
-                                    <input
-                                        type="number"
-                                        className="fullname"
-                                        placeholder="Mobile Number" />
+                                    <input type="number" className="mobile" required/>
+                                    <span>Mobile Number</span>
                                 </div>
                                 <div className="field email">
-                                    <input
-                                        type="text"
-                                        className="email-input"
-                                        placeholder="Email Address" />
+                                    <input type="text" className="email" required/>
+                                    <span>Email Address</span>
                                 </div>
                             </div>
                             <div className="field textarea">
-                                <textarea
-                                    className="message"
-                                    cols="30"
-                                    rows="10"
-                                    placeholder="Message">
-
-                                </textarea>
+                                <textarea className="message" cols="30" rows="10" required/>
+                                <span>Message</span>
                             </div>
                             <div className="button-area">
-                                <button className="send-msg" type="submit" name="send">
-                                    Send message
-                                </button>
+                                <button className="submitButton" type="submit" name="send"> Send message </button>
                             </div>
                         </form>
                     </div>
