@@ -104,12 +104,12 @@ const Contact = () => {
                                 <span>Name</span>
                             </div>
                             <div className="fields">
-                                <div className="field name">
-                                    <input type="number" className="mobile" required/>
+                                <div className="field mobile">
+                                    <input type="number" required/>
                                     <span>Mobile Number</span>
                                 </div>
                                 <div className="field email">
-                                    <input type="text" className="email" required/>
+                                    <input type="text"  required/>
                                     <span>Email Address</span>
                                 </div>
                             </div>
