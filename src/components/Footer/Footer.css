@@ -7,15 +7,25 @@ footer {
     text-align: center;
 }
 
-footer span a {
-    display: inline-block;
-    color: crimson;
-    font-weight: 600;
-    text-decoration: none;
+footer p {
+    padding: 2px 5px;
+    font: 400 18px 'Ubuntu', sans-serif;
+    
 }
 
-footer span a:hover {
-    color: limegreen;
+footer p a {
+    display: inline-block;
+    color: crimson;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+footer p a:hover {
+    padding: 0px 5px;
+    border-radius: 2px;
+    background-color: #88888850;
+    color: #19ffffac;
 }
 
 footer .fa-heart{
