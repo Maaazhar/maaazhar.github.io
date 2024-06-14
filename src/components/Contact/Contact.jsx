@@ -38,7 +38,6 @@ const Contact = () => {
         e.target.reset();
     };
 
-
     return (
         <section className="contact" id="contact">
             <div className="max-width">
@@ -136,7 +135,7 @@ const Contact = () => {
                     </div>
                     <div className="column right">
                         <div className="text">Let me hear you <i className="far fa-smile"></i> </div>
-                        <form className="contact-form"  onSubmit={handleSubmit} >
+                        <form className="contact-form" onSubmit={handleSubmit} >
                             <div className="field">
                                 <input type="text" className="Name" name="name" required onChange={handleChange} />
                                 <span>Name</span>
