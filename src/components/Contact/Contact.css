@@ -41,7 +41,7 @@
 }
 
 .contact .contact-content .column {
-    width: calc(50% - 30px);
+    width: calc(50% - 20px);
 }
 
 .contact .contact-content .text {
@@ -135,6 +135,7 @@
 .fields .mobile {
     flex: 5;
 }
+
 .fields .email {
     flex: 8;
 }
@@ -159,13 +160,10 @@
     transition: all 0.3s ease-in-out;
 }
 
-.contact .right form .field input:focus ~ span,
-.contact .right form .field textarea:focus ~ span,
-.contact .right form .fields .field input:focus ~ span, 
-.contact .right form .field input:valid ~ span,
-.contact .right form .field textarea:valid ~ span,
-.contact .right form .fields .field input:valid ~ span {
-    margin: 10px 0px 0px 10px;
+.contact .right form .field input:focus~span,
+.contact .right form .field textarea:focus~span,
+.contact .right form .fields .field input:focus~span {
+    margin: 10px 0px 0px 5px;
     padding: 2px 5px;
     border-radius: 2px;
     background-color: #373939ee;
@@ -175,8 +173,23 @@
     color: #aaa;
     font-size: 16px;
     font-weight: 500;
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
     transform: translateY(-20px);
+}
+
+.contact .right form .field input:valid~span,
+.contact .right form .field textarea:valid~span,
+.contact .right form .fields .field input:valid~span {
+    margin: 10px 0px 0px 5px;
+    padding: 2px 5px;
+    border-radius: 2px;
+    background-color: #373939ee;
+    backdrop-filter: blur(20px);
+    color: #888;
+    font-size: 16px;
+    font-weight: 500;
+    transform: translateY(-20px);
+
 }
 
 .contact .right form .textarea {
@@ -250,6 +263,12 @@ input[type=number] {
 .right form .button-area button:hover {
     color: crimson;
     background: none;
+}
+
+@media (max-width: 1104px) {
+    .contact .contact-content .column {
+        width: calc(50% - 10px);
+    }
 }
 
 @media (max-width: 500px) {
