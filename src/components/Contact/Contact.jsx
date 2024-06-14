@@ -44,7 +44,7 @@ const Contact = () => {
                 <h2 className="title">Contact me</h2>
                 <div className="contact-content">
                     <div className="column left">
-                        <div className="text">Find me on</div>
+                        <div className="text">Find me through</div>
                         <div className="detailsWrapper">
                             <div className="contact-icon">
                                 <a
@@ -93,7 +93,11 @@ const Contact = () => {
                                     <i className="fas fa-user"></i>
                                     <div className="info">
                                         <div className="head">Full Name</div>
-                                        <div className="sub-title">Md. Mazharul Islam</div>
+                                        <div className="sub-title">
+                                            <a href="https://www.google.com/search?q=maaazhar" target="_blank">
+                                                Md. Mazharul Islam
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                                 <div className="row">
@@ -101,7 +105,7 @@ const Contact = () => {
                                     <div className="info">
                                         <div className="head">Mobile</div>
                                         <div className="sub-title">
-                                            <a href="tel:+971557517099">
+                                            <a href="tel:+971557517099" target="_blank">
                                                 +971 55 751 7099
                                             </a>
                                         </div>
@@ -112,7 +116,7 @@ const Contact = () => {
                                     <div className="info">
                                         <div className="head">Email</div>
                                         <div className="sub-title">
-                                            <a href="mailto:mailformazhar@gmail.com">
+                                            <a href="mailto:mailformazhar@gmail.com" target="_blank">
                                                 mailformazhar@gmail.com
                                             </a>
                                         </div>
@@ -123,8 +127,7 @@ const Contact = () => {
                                     <div className="info">
                                         <div className="head">Address</div>
                                         <div className="sub-title">
-                                            <a target="_blank"
-                                                href="https://maps.app.goo.gl/8MdpjKg6kGaM47h99">
+                                            <a href="https://maps.app.goo.gl/8MdpjKg6kGaM47h99" target="_blank">
                                                 Abu Dhabi, United Arab Emirates.
                                             </a>
                                         </div>
@@ -134,7 +137,7 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className="column right">
-                        <div className="text">Let me hear you <i className="far fa-smile"></i> </div>
+                        <div className="text">Let me hear from you </div>
                         <form className="contact-form" onSubmit={handleSubmit} >
                             <div className="field">
                                 <input type="text" className="Name" name="name" required onChange={handleChange} />
