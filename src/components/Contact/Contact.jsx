@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./Contact.css"
-import emailjs  from "@emailjs/browser";
+import emailjs from "@emailjs/browser";
 
 const initialState = {
     name: "",
@@ -10,7 +10,7 @@ const initialState = {
 };
 
 const Contact = () => {
-    const [{ name, mobileNumber, email, location, businessSector, message }, setState] = useState(initialState);
+    const [{ name, mobileNumber, email, message }, setState] = useState(initialState);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -22,10 +22,10 @@ const Contact = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        console.log(name, mobileNumber, email, location, businessSector, message);
+        console.log(name, mobileNumber, email, message);
 
         emailjs
-            .sendForm("service_5gs2esc", "template_ja41rov", e.target, "ryATaCtwCACOTJFM7")
+            .sendForm("service_7v5ut7i", "template_3fshrxi", e.target, "hePZkEZ91OxliJO6E")
             .then(
                 (result) => {
                     console.log(result.text);
@@ -136,27 +136,27 @@ const Contact = () => {
                     </div>
                     <div className="column right">
                         <div className="text">Let me hear you <i className="far fa-smile"></i> </div>
-                        <form className="contact-form" action="#" method="POST">
+                        <form className="contact-form"  onSubmit={handleSubmit} >
                             <div className="field">
-                                <input type="text" className="Name" required />
+                                <input type="text" className="Name" name="name" required onChange={handleChange} />
                                 <span>Name</span>
                             </div>
                             <div className="fields">
                                 <div className="field mobile">
-                                    <input type="number" required />
+                                    <input type="number" name="mobileNumber" required onChange={handleChange} />
                                     <span>Mobile Number</span>
                                 </div>
                                 <div className="field email">
-                                    <input type="text" required />
+                                    <input type="text" name="email" required onChange={handleChange} />
                                     <span>Email Address</span>
                                 </div>
                             </div>
                             <div className="field textarea">
-                                <textarea className="message" cols="30" rows="10" required />
+                                <textarea className="message" cols="30" rows="10" name="message" required onChange={handleChange} />
                                 <span>Message</span>
                             </div>
                             <div className="button-area">
-                                <button className="submitButton" type="submit" name="send"> Send message </button>
+                                <button className="submitButton" type="submit" > Send message </button>
                             </div>
                         </form>
                     </div>
