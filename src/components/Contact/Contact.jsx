@@ -1,6 +1,44 @@
+import { useState } from "react";
 import "./Contact.css"
+import emailjs  from "@emailjs/browser";
+
+const initialState = {
+    name: "",
+    mobileNumber: "",
+    email: "",
+    message: ""
+};
 
 const Contact = () => {
+    const [{ name, mobileNumber, email, location, businessSector, message }, setState] = useState(initialState);
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setState((prevState) => ({ ...prevState, [name]: value }));
+    };
+
+    const clearState = () => setState({ ...initialState });
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        console.log(name, mobileNumber, email, location, businessSector, message);
+
+        emailjs
+            .sendForm("service_5gs2esc", "template_ja41rov", e.target, "ryATaCtwCACOTJFM7")
+            .then(
+                (result) => {
+                    console.log(result.text);
+                    clearState();
+                },
+                (error) => {
+                    console.log(error.text);
+                }
+            );
+        e.target.reset();
+    };
+
+
     return (
         <section className="contact" id="contact">
             <div className="max-width">
@@ -100,21 +138,21 @@ const Contact = () => {
                         <div className="text">Let me hear you <i className="far fa-smile"></i> </div>
                         <form className="contact-form" action="#" method="POST">
                             <div className="field">
-                                <input type="text" className="Name" required/>
+                                <input type="text" className="Name" required />
                                 <span>Name</span>
                             </div>
                             <div className="fields">
                                 <div className="field mobile">
-                                    <input type="number" required/>
+                                    <input type="number" required />
                                     <span>Mobile Number</span>
                                 </div>
                                 <div className="field email">
-                                    <input type="text"  required/>
+                                    <input type="text" required />
                                     <span>Email Address</span>
                                 </div>
                             </div>
                             <div className="field textarea">
-                                <textarea className="message" cols="30" rows="10" required/>
+                                <textarea className="message" cols="30" rows="10" required />
                                 <span>Message</span>
                             </div>
                             <div className="button-area">
