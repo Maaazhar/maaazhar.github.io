@@ -29,7 +29,7 @@
     border: 2px solid #dc143c00;
     border-radius: 5px;
     color: #dc143cdd;
-    font-size: 40px;
+    font-size: 45px;
 }
 
 .contact-icon i:hover {
@@ -55,7 +55,7 @@
 }
 
 .contact .contact-content .column {
-    width: calc(50% - 20px);
+    width: calc(50% - 10px);
 }
 
 .contact .contact-content .text {
@@ -76,7 +76,7 @@
 
 .contact .contact-content .left .contactDetails {
     margin: 10px 0;
-    padding: 20px 10px 20px 20px;
+    padding: 25px 10px 30px 20px;
     background-color: #ffffff10;
     backdrop-filter: blur(20px);
     border-radius: 5px;
@@ -133,7 +133,7 @@
 }
 
 .contact-form {
-    padding: 15px 10px;
+    padding: 20px 15px;
     border-radius: 5px;
     background-color: #ffffff10;
     backdrop-filter: blur(20px);
@@ -158,7 +158,7 @@
     position: relative;
     height: 45px;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .contact .right form .field span,
@@ -193,7 +193,7 @@
 .contact .right form .field input:valid~span,
 .contact .right form .field textarea:valid~span,
 .contact .right form .fields .field input:valid~span {
-    margin: 10px 0px 0px 5px;
+    margin: 8px 0px 0px 5px;
     padding: 2px 5px;
     border-radius: 2px;
     background-color: #373939ee;

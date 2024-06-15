@@ -139,8 +139,8 @@ const Contact = () => {
                     <div className="column right">
                         <div className="text">Let me hear from you </div>
                         <form className="contact-form" onSubmit={handleSubmit} >
-                            <div className="field">
-                                <input type="text" className="Name" name="name" required onChange={handleChange} />
+                            <div className="field Name">
+                                <input type="text" name="name" required onChange={handleChange} />
                                 <span>Name</span>
                             </div>
                             <div className="fields">
