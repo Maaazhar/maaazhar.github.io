@@ -41,27 +41,24 @@ const Project = () => {
                                                 <div className="projectInfo ">
                                                     <p className="projectDetails">{p.details}</p>
                                                     <div className="projectTechnology">
-                                                        <ul>
+                                                        <ul style={{ "--totalItem": p.technology.length }}>
                                                             {p.technology.map((t, i) => (
-                                                                <li key={t + i + 100}>{t}</li>
+                                                                <li key={t + i + 100} style={{ "--item": i + 1 }} >{t}</li>
                                                             ))}
                                                         </ul>
                                                     </div>
                                                     <div className="projectLink ">
                                                         {p.liveLink.map((l) => (
-                                                            <a
-                                                                key={l + i + 100}
+                                                            <a  key={l + i + 100}
                                                                 href={l}
                                                                 target="_blank">
                                                                 <i className="fas fa-external-link-square-alt"></i>
                                                             </a>
                                                         ))}
-                                                        {p.githubLink ?
-                                                            <a
-                                                                href={p.githubLink}
+                                                        {p.githubLink &&
+                                                            <a  href={p.githubLink}
                                                                 target="_blank"><i className="fab fa-github"></i>
-                                                            </a>
-                                                            : " "}
+                                                            </a>}
                                                     </div>
                                                 </div>
                                             </div>

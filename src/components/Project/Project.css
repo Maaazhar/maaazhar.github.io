@@ -83,11 +83,11 @@
     text-shadow: 5px 5px 10px #000;
 }
 
-.singleProjectRevers>.projectDescription>.projectTitleWrapper{
+.singleProjectRevers>.projectDescription>.projectTitleWrapper {
     justify-content: start;
 }
 
-.projectSequence{
+.projectSequence {
     position: absolute;
     right: 0;
     color: #66666657;
@@ -96,7 +96,7 @@
     z-index: -1;
 }
 
-.singleProjectRevers>.projectDescription>.projectTitleWrapper>.projectSequence{
+.singleProjectRevers>.projectDescription>.projectTitleWrapper>.projectSequence {
     left: 0;
 }
 
@@ -106,6 +106,7 @@
     flex-direction: column;
     width: 50%;
     right: 0;
+    overflow: hidden;
     /* transform: translateX(-15%); */
 }
 
@@ -127,7 +128,7 @@
     border-left: 1px solid #ffffff17;
     font: 400 16px "Poppins", sans-serif;
     text-shadow: 5px 5px 10px #000;
-    
+
 }
 
 .projectTechnology {
@@ -137,6 +138,7 @@
 }
 
 .projectTechnology>ul {
+    position: relative;
     float: right;
     display: flex;
     gap: 10px;
@@ -206,7 +208,7 @@
     border: 1px solid #dc143c50;
     /* border-top: 1px solid #ffffff17;
     border-left: 1px solid #ffffff17; */
-    animation: ripple 0.8s infinite linear ;
+    animation: ripple 0.8s infinite linear;
 }
 
 .projectLink>a:hover i {
@@ -326,7 +328,7 @@
     }
 
     .projectSequence,
-    .singleProjectRevers>.projectDescription>.projectTitleWrapper>.projectSequence{
+    .singleProjectRevers>.projectDescription>.projectTitleWrapper>.projectSequence {
         right: auto;
         left: auto;
         font-size: 90px;
@@ -355,22 +357,42 @@
     }
 
     .projectTechnology>ul {
+        position: relative;
+        margin: 15px;
         float: left;
-        display: flex;
-        flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        gap: 10px;
+        /* flex-wrap: wrap; */
+        /* overflow-x: auto; */
+        /* gap: 10px; */
         font-size: 15px;
-    }
-
-    .projectTechnology>ul>li {
-        background-color: #0000002d;
-        backdrop-filter: blur(0px);
     }
 
     .singleProjectRevers>.projectDescription>.projectInfo>.projectTechnology>ul {
         float: left;
+    }
+
+    .projectTechnology>ul>li {
+        position: absolute;
+        width: 120px;
+        left: max(calc(105px * var(--totalItem)), 100%);
+        padding: 10px;
+        /* margin-top: 20px; */
+        background-color: #0000002d;
+        backdrop-filter: blur(0px);
+        text-align: center;
+        animation: scrollLeft 30s infinite linear;
+        animation-delay: calc((30s / var(--totalItem)) * ((var(--totalItem) - var(--item)))*(-1));
+    }
+
+    @keyframes scrollLeft {
+        to {
+            left: -130px;
+        }
+    }
+
+    .projectTechnology>ul:focus ~ .projectTechnology>ul>li{
+        animation-play-state: paused!important;
     }
 
     .projectLink {
@@ -378,12 +400,7 @@
         float: left;
         display: flex;
         justify-content: center;
-        margin-top: 15px;
-        margin-inline: none;
-    }
-
-    .singleProjectRevers>.projectDescription>.projectInfo>.projectLink {
-        margin-inline: 35%;
+        margin: 15px 0px 10px 0px;
     }
 
     .projectLink>a {
@@ -406,6 +423,7 @@
 @media (max-width: 380px) {}
 
 @media (max-width: 350px) {
+
     .singleProjectRevers>.projectDescription,
     .projectDescription {
         margin-top: 5px;
@@ -416,7 +434,7 @@
     }
 
     .projectSequence,
-    .singleProjectRevers>.projectDescription>.projectTitleWrapper>.projectSequence{
+    .singleProjectRevers>.projectDescription>.projectTitleWrapper>.projectSequence {
         font-size: 80px;
     }
 }
