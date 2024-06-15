@@ -9,7 +9,7 @@ const projects = [
           {
               "image": imgOfRafada,
               "title": "Website of RAFADA Group",
-              "details": "This is a business website of RAFADA Group, consisting a total of 17 page, accommodating an individual single page for each of their 14 companies to promote them by sharing their business information.",
+              "details": "This is a business website of RAFADA Group, consisting of a total of 17 pages, accommodating an individual single page for each of their 14 companies to promote them by sharing their business information.",
               "technology": ["HTML", "CSS", "ReactJS", "Bootstrap", "Font Awesome", "Organic  SEO"],
               "liveLink": ["https://www.rafadagroup.com/"],
           },

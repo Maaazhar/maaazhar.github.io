@@ -29,7 +29,7 @@ const jobList = {
       "location": "Dhaka, Bangladesh.",
       "duration": "June, 2022 - August, 2023",
       "description": [
-        "Design, developed, maintained, and shipped interactive cross browser compatibility and mobile responsiveness web applications for the company using HTML, CSS, JavaScript, and ReactJS.",
+        "Designed, developed, maintained, and shipped interactive cross-browser compatibility and mobile responsiveness web applications for the company using HTML, CSS, JavaScript, and ReactJS.",
         "Pioneered and built a website for the company.",
         "Built and lead a new department (software department) in the company.",
       ]
@@ -41,7 +41,7 @@ const jobList = {
       "duration": "August 2021 - May 2022",
       "description": [
         "Perform regular maintenance tasks such as software updates, system backups, and hardware diagnostics to ensure optimal performance and reliability of computer systems.",
-        "Installing, configuring, and updating software and hardware, as well as troubleshooting and resolving technical issues",
+        "Installing, configuring, and updating software and hardware, as well as troubleshooting and resolving technical issues.",
         "Monitor network traffic and system logs to identify and troubleshoot potential security breaches or performance issues, implementing appropriate solutions to mitigate risks.",
       ]
     },

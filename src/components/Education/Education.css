@@ -70,7 +70,7 @@
     opacity: 0.9;
     filter: brightness(0.95);
     animation: floating 3s infinite ease-in-out;
-    animation-delay: calc(0.1s * var(--delay));
+    animation-delay: calc(-0.1s * var(--delay));
 }
 
 /* .educationCard:has(+ .educationCard:hover),
