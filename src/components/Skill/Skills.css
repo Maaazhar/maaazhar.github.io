@@ -50,6 +50,8 @@
     /* border: 1px solid rgba(255, 255, 255, 0.05); */
     border-top: 1px solid #ffffff17;
     border-left: 1px solid #ffffff17;
+    border-right: 1px solid #ffffff00;
+    border-bottom: 1px solid #ffffff00;
     transition: all 0.3s ease-in-out;
     backdrop-filter: blur(8px);
     user-select: none;
@@ -57,10 +59,10 @@
 
 .skillItem:hover {
     backdrop-filter: blur(15px);
-    border-top: 1px solid #ffffff00;
-    border-left: 1px solid #ffffff00;
+    border: 1px solid #19ffff59;
     box-shadow: 1px 1px 5px #19ffffd4;
-    animation: SkillButtonGlow 1s infinite ease-in-out;
+    /* animation: SkillButtonGlow 1s infinite ease-in-out; */
+    animation: SkillButtonRipple 1s infinite linear ;
 }
 
 @keyframes SkillButtonGlow {
@@ -72,6 +74,20 @@
 
     50% {
         box-shadow: 1.5px 1.5px 10px #19ffffd4;
+    }
+}
+
+@keyframes SkillButtonRipple {
+    0% {
+        box-shadow: 0 0 0 0 #19ffff36, 0 0 0 0 #19ffff36;
+    }
+
+    80% {
+        box-shadow: 0 0 0 5px #19ffff00, 0 0 0 10px #19ffff00;
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 #19ffff00, 0 0 0 0 #19ffff00;
     }
 }
 
