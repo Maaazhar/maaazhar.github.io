@@ -15,8 +15,7 @@
     /* box-shadow: 1px 1px 10px #444; */
     margin-bottom: 20px;
     background: linear-gradient(145deg, #e6e6e6, #ffffff);
-    box-shadow: 12px 12px 24px #d4d4d4,
-        -12px -12px 24px #ffffff;
+    box-shadow: 12px 12px 24px #d4d4d4, -12px -12px 24px #ffffff;
 }
 
 .educationCategoryTitle {
@@ -41,8 +40,7 @@
     padding: 15px 5px;
     width: 30%;
     background: linear-gradient(145deg, #e6e6e6, #ffffff);
-    box-shadow: 8px 8px 16px #d4d4d4,
-        -8px -8px 16px #ffffff;
+    box-shadow: 8px 8px 16px #d4d4d4, -8px -8px 16px #ffffff;
     border-radius: 5px;
     border: 1px solid rgba(255, 255, 255, 0);
     transition: all 0.5s ease-in-out;
@@ -50,7 +48,9 @@
 
 .educationCard:hover {
     scale: 1.04;
-    animation: educationCardGlow 1s infinite ease-in-out;
+    /* animation: educationCardGlow 1s infinite ease-in-out; */
+    border: 1px solid crimson;
+    animation: ripple 1s infinite linear ;
 }
 
 @keyframes educationCardGlow {
