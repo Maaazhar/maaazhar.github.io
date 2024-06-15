@@ -162,16 +162,16 @@
 
 .projectLink {
     float: right;
-    align-self: flex-end;
+    align-self: center;
     display: flex;
     margin-top: 20px;
-    margin-inline: 35%;
+    /* margin-inline: 35%; */
 }
 
 .singleProjectRevers>.projectDescription>.projectInfo>.projectLink {
     float: left;
-    margin-inline: 35%;
-    align-self: flex-start;
+    /* margin-inline: 35%; */
+    align-self: center;
 }
 
 .projectLink>a {
@@ -183,10 +183,12 @@
     margin-left: 20px;
     border-top: 1px solid #ffffff17;
     border-left: 1px solid #ffffff17;
+    border-right: 1px solid #ffffff00;
+    border-bottom: 1px solid #ffffff00;
     font-size: 18px;
     color: inherit;
     text-decoration: none;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 
@@ -200,10 +202,11 @@
 }
 
 .projectLink>a:hover {
-    background-color: #cccccc;
+    /* background-color: #cccccc; */
+    border: 1px solid #dc143c50;
     /* border-top: 1px solid #ffffff17;
     border-left: 1px solid #ffffff17; */
-    animation: ripple 1s infinite linear ;
+    animation: ripple 0.8s infinite linear ;
 }
 
 .projectLink>a:hover i {
@@ -370,8 +373,6 @@
         float: left;
     }
 
-    
-
     .projectLink {
         width: 100%;
         float: left;
@@ -379,6 +380,10 @@
         justify-content: center;
         margin-top: 15px;
         margin-inline: none;
+    }
+
+    .singleProjectRevers>.projectDescription>.projectInfo>.projectLink {
+        margin-inline: 35%;
     }
 
     .projectLink>a {
