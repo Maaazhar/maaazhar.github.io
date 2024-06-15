@@ -106,7 +106,6 @@
     flex-direction: column;
     width: 50%;
     right: 0;
-    overflow: hidden;
     /* transform: translateX(-15%); */
 }
 
@@ -339,6 +338,8 @@
         position: relative;
         width: 100%;
         left: 0;
+        padding-bottom: 10px;
+        overflow: hidden;
     }
 
     .projectDetails {
@@ -377,7 +378,6 @@
         width: 120px;
         left: max(calc(105px * var(--totalItem)), 100%);
         padding: 10px;
-        /* margin-top: 20px; */
         background-color: #0000002d;
         backdrop-filter: blur(0px);
         text-align: center;
