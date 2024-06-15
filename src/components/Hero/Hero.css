@@ -124,10 +124,14 @@
     transition: all 0.3s ease;
 }
 
-.home .home-content a:hover {
+.home .home-content a:hover,
+.home .home-content a:focus {
+    outline: none;
     color: crimson;
     background: none;
+    animation: ripple 1s infinite linear ;
 }
+
 
 /* responsive media query */
 @media (max-width: 1104px) {
@@ -171,7 +175,7 @@
 
     .home .home-content .text-4 {
         width: 70%;
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .home-btn {
@@ -229,13 +233,12 @@
     }
 
     .home .home-content .text-3 {
-        font-size: 25px;
+        font-size: 28px;
         text-align: center;
     }
 
     .home .home-content .text-4 {
         width: 100%;
-        font-size: 15px;
         text-align: center;
     }
 
@@ -249,7 +252,7 @@
 
     .home-btn a {
         padding: 10px 15px !important;
-        margin-top: 10px;
+        /* margin-top: 10px; */
         font-size: 27px;
     }
 }
@@ -260,17 +263,18 @@
     }
 
     .home .home-content .text-3 {
-        font-size: 22px;
+        font-size: 25px;
     }
 
     .home-btn {
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between !important;
         flex-flow: row wrap;
     }
 
     .home-btn a {
+        padding: 10px 12px !important;
         font-size: 20px;
     }
 }
@@ -287,11 +291,12 @@
     .home-btn {
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between !important;
         flex-flow: row wrap;
     }
 
     .home-btn a {
+        padding: 10px 7px !important;
         font-size: 18px !important;
     }
 }

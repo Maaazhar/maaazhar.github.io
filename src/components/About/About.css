@@ -56,8 +56,10 @@
 }
 
 .about .about-content .right a:hover {
+    outline: none;
     color: crimson;
     background: none;
+    animation: ripple 1s infinite linear ;
 }
 
 /* responsive media query */

@@ -151,6 +151,20 @@ section .title::after {
     }
 }
 
+@keyframes ripple {
+    0% {
+        box-shadow: 0 0 0 0 #dc143c6c, 0 0 0 0 #dc143c6c;
+    }
+
+    80% {
+        box-shadow: 0 0 0 10px #dc143c00, 0 0 0 20px #dc143c00;
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 #dc143c00, 0 0 0 0 #dc143c00;
+    }
+}
+
 /* responsive media query for similar content */
 @media (max-width: 991px) {
     .max-width {

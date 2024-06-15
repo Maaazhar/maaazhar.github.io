@@ -33,14 +33,14 @@ export const Hero = () => {
                                 </h3>
                                 <div className="home-btn">
                                     <a
-                                        className="home-btn-item"
+                                        className="btn home-btn-item"
                                         target="_blank"
                                         href="https://www.linkedin.com/in/maaazhar/"
                                         title="See LinekdIn">
                                         See LinekdIn
                                     </a>
                                     <a
-                                        className="home-btn-item"
+                                        className="btn home-btn-item"
                                         target="_blank"
                                         href="https://drive.google.com/file/d/1-MoxBC-ULS87ZQZMdUBgPPxZapFSc8nc/view"
                                         title="See Resume">

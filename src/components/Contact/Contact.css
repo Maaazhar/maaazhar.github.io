@@ -24,13 +24,26 @@
 }
 
 .contact-icon i {
-    font-size: 40px !important;
+    width: 100%;
+    padding: 5px;
+    border: 2px solid crimson;
+    border-radius: 5px;
+    color: crimson;
+    font-size: 35px;
 }
 
 .contact-icon i:hover {
     color: #bbb;
+    animation: ripple 1s infinite linear ;
 }
 
+.contact-icon svg{
+    width: 100%;
+    padding: 5px;
+    border: 2px solid crimson;
+    border-radius: 5px;
+    
+}
 .contact-icon svg:hover {
     fill: #ddd;
 }
@@ -80,9 +93,8 @@
     font: 400 18px 'Ubuntu', sans-serif;
 }
 
-.contact i {
+.contactDetails .row i {
     font-size: 25px;
-    /* color: #ac2842; */
     color: crimson;
     width: 30px;
 }
@@ -243,6 +255,7 @@ input[type=number] {
 .contact .right form .button-area {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .right form .button-area button {
@@ -251,8 +264,8 @@ input[type=number] {
     width: 100%;
     height: 45px;
     outline: none;
-    font: 400 20px 'Ubuntu', sans-se3rif;
     border-radius: 6px;
+    font: 400 20px 'Ubuntu', sans-se3rif;
     cursor: pointer;
     flex-wrap: nowrap;
     background: crimson;
@@ -261,8 +274,10 @@ input[type=number] {
 }
 
 .right form .button-area button:hover {
+    outline: none;
     color: crimson;
     background: none;
+    animation: ripple 1s infinite linear ;
 }
 
 @media (max-width: 1104px) {

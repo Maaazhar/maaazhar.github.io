@@ -37,7 +37,7 @@ export const About = () => {
                             <br />
                             Whether it is optimizing for speed, ensuring cross-browser compatibility, or integrating cutting-edge features, my passion lies in delivering polished, user-centric solutions that elevate the digital landscape and leave a lasting impression on visitors.
                         </p>
-                        <div className="about-btn">
+                        <div className="btn about-btn">
                             <a target="_blank"
                                 href="https://drive.google.com/u/1/uc?id=1-MoxBC-ULS87ZQZMdUBgPPxZapFSc8nc&export=download"
                                 title="Download Resume">Download My Resume</a>
