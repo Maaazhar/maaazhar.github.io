@@ -26,15 +26,16 @@
 .contact-icon i {
     width: 100%;
     padding: 5px;
-    border: 2px solid crimson;
+    border: 2px solid #dc143c00;
     border-radius: 5px;
-    color: crimson;
-    font-size: 35px;
+    color: #dc143cdd;
+    font-size: 40px;
 }
 
 .contact-icon i:hover {
+    border: 2px solid #dc143c99;
     color: #bbb;
-    animation: ripple 1s infinite linear ;
+    animation: ripple 0.8s infinite linear ;
 }
 
 .contact-icon svg{
@@ -269,7 +270,7 @@ input[type=number] {
     cursor: pointer;
     flex-wrap: nowrap;
     background: crimson;
-    border: 2px solid crimson;
+    border: 1px solid #dc143c99;
     transition: all 0.3s ease;
 }
 
@@ -277,7 +278,7 @@ input[type=number] {
     outline: none;
     color: crimson;
     background: none;
-    animation: ripple 1s infinite linear ;
+    animation: ripple 0.8s infinite linear ;
 }
 
 @media (max-width: 1104px) {

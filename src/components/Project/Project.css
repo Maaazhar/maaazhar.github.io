@@ -370,12 +370,15 @@
         float: left;
     }
 
+    
+
     .projectLink {
         width: 100%;
         float: left;
         display: flex;
         justify-content: center;
         margin-top: 15px;
+        margin-inline: none;
     }
 
     .projectLink>a {
