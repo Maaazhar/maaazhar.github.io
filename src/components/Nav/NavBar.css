@@ -12,8 +12,8 @@
   padding: 20px 0;
   /* background: #dc143cce;
   backdrop-filter: blur(3px); */
-    background-color: #000000bb;
-    backdrop-filter: blur(10px);
+  background-color: #000000bb;
+  backdrop-filter: blur(10px);
 }
 
 .navbar .max-width {
@@ -49,6 +49,7 @@
   display: block;
   margin-left: 10px;
   padding: 5px 10px;
+  border: 1px solid #19ffff00;
   border-radius: 5px;
   color: #fff;
   font-size: 18px;
@@ -58,13 +59,15 @@
 }
 
 .navbar .menu li a:hover {
-  box-shadow: 1px 1px 5px 1px #19ffffd4;
+  animation: SkillButtonRipple 1s infinite linear;
+  /* box-shadow: 1px 1px 5px 1px #19ffffd4; */
 }
-
 
 .navbar .menu li .activeNav {
   color: #19ffff;
   box-shadow: 1px 1px 5px 1px #19ffffd4;
+  /* box-shadow: 1px 1px 5px #19ffffd4, 1.5px 1.5px 10px #19ffffd4; */
+
   transition: all 0.5s ease-in-out;
 }
 
@@ -76,13 +79,11 @@
   box-shadow: 1px 1px 5px 1px #0000009d;
 }
 
-
 .navbar.sticky .menu li .activeNav {
   color: #000;
   box-shadow: 1px 1px 5px 1px #000000;
   transition: all 0.5s ease-in-out;
 } */
-
 
 /* menu btn styling */
 .menu-btn {
