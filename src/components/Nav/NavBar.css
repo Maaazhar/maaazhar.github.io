@@ -59,6 +59,8 @@
 }
 
 .navbar .menu li a:hover {
+  border: 1px solid #19ffff50;
+  box-shadow: 1px 1px 5px #19ffffd4;
   animation: SkillButtonRipple 1s infinite linear;
   /* box-shadow: 1px 1px 5px 1px #19ffffd4; */
 }
