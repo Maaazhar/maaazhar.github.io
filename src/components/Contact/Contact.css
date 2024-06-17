@@ -49,7 +49,6 @@
     fill: #ddd;
 }
 
-
 .contact .contact-content {
     align-items: start !important;
 }
@@ -204,14 +203,12 @@
     font-size: 16px;
     font-weight: 500;
     transform: translateY(-20px);
-
 }
 
 .contact .right form .textarea {
     height: 180px;
     width: 100%;
 }
-
 
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
@@ -243,7 +240,6 @@ input[type=number] {
     font-family: 'Poppins', sans-serif;
     transition: all 0.3s ease;
 }
-
 
 .contact .right form .field input:focus,
 .contact .right form .textarea textarea:focus {
@@ -306,7 +302,6 @@ input[type=number] {
 }
 
 @media (max-width: 340px) {
-
     .contact>.max-width>.contact-content>.left>.detailsWrapper>.contactDetails>.row>.info>.sub-title,
     .contact>.max-width>.contact-content>.left>.detailsWrapper>.contactDetails>.row>.info>.sub-title a {
         font-size: 16px;
