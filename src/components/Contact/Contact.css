@@ -183,7 +183,8 @@
     backdrop-filter: blur(20px);
     /* color: #444; */
     /* color: #19ffffb4; */
-    color: #aaa;
+    color: #19ffff80;
+    /* color: #aaa; */
     font-size: 16px;
     font-weight: 500;
     /* letter-spacing: 1px; */
@@ -198,7 +199,8 @@
     border-radius: 2px;
     background-color: #373939ee;
     backdrop-filter: blur(20px);
-    color: #888;
+    /* color: #888; */
+    color: #68f9f9cb;
     font-size: 16px;
     font-weight: 500;
     transform: translateY(-20px);
