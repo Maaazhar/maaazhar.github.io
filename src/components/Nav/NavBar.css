@@ -69,8 +69,12 @@
   color: #19ffff;
   box-shadow: 1px 1px 5px 1px #19ffffd4;
   /* box-shadow: 1px 1px 5px #19ffffd4, 1.5px 1.5px 10px #19ffffd4; */
-
   transition: all 0.5s ease-in-out;
+}
+
+.navbar .menu li a.activeNav:hover{
+  box-shadow: 1px 1px 5px 1px #19ffffd4;
+  animation: paused;
 }
 
 .navbar.sticky .menu li a {
