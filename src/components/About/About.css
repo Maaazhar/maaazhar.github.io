@@ -1,3 +1,6 @@
+.about {
+    /* background: #fff; */
+}
 .about .title::after {
     content: "who I am";
 }

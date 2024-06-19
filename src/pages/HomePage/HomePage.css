@@ -14,7 +14,6 @@ section {
 }
 
 .about,
-.services,
 .project,
 .skills,
 .contact,
@@ -24,12 +23,24 @@ footer {
 
 .about .about-content,
 .project .project-content,
-.services .serv-content,
 .contact .contact-content {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+}
+
+#root{
+    background: url("../../assets/images/banner.jpg");
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.about,
+.experience,
+.education{
+    background: #fff;
+    /* backdrop-filter: blur(5px); */
 }
 
 .home,
@@ -38,9 +49,9 @@ footer {
 .contact,
 .footer {
     color: #fff;
-    background: url("../../assets/images/banner.jpg");
-    background-size: 100%;
-    background-attachment: fixed;
+    /* background: url("../../assets/images/banner.jpg"); */
+    /* background-size: 100%; */
+    /* background-attachment: fixed; */
 }
 
 .skills .title::before,

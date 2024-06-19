@@ -85,7 +85,7 @@ const EducationList = [
         "majorSubject": []
       },
       {
-        "title": "Windows Server 2012 (Installation and Basic Commands)",
+        "title": "Windows Server (Installation and Basic Commands)",
         "institute": "Linux Pathshala,",
         "instituteLink": "http://linuxpathshala.com/",
         "location": "Dhaka, Bangladesh.",
