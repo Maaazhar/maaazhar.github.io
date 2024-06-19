@@ -30,6 +30,7 @@
     border-radius: 5px;
     color: #dc143cdd;
     font-size: 45px;
+    transition: all 0.3s ease-in-out;
 }
 
 .contact-icon i:hover {
