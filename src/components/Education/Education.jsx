@@ -23,7 +23,7 @@ const Education = () => {
                                 name="educationAccordion"
                                 value={i}
                                 onClick={() => toggleCategory(i)}
-                                checked={educationCategory === i ? true : false} />
+                                defaultChecked={educationCategory === i ? true : false} />
                             <label
                                 className="educationCategoryTitle accordionButton"
                                 htmlFor={"educationAccordion-" + i}>

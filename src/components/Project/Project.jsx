@@ -20,7 +20,7 @@ const Project = () => {
                                 name="projectAccordion"
                                 value={i}
                                 onClick={() => toggleCategory(i)}
-                                checked={projectCategory === i ? true : false} />
+                                defaultChecked={projectCategory === i ? true : false} />
                             <label
                                 className="projectCategoryTitle accordionButton"
                                 htmlFor={"projectAccordion-" + i}>
