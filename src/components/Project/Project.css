@@ -207,7 +207,7 @@
     border: 1px solid #dc143c50;
     /* border-top: 1px solid #ffffff17;
     border-left: 1px solid #ffffff17; */
-    animation: ripple 0.8s infinite linear;
+    animation: ripple-dc143c50 0.8s infinite linear;
 }
 
 .projectLink>a:hover i {

@@ -35,7 +35,7 @@
 .contact-icon i:hover {
     border: 2px solid #dc143c99;
     color: #bbb;
-    animation: ripple 0.8s infinite linear ;
+    animation: ripple-dc143c50 0.8s infinite linear ;
 }
 
 .contact-icon svg{
@@ -276,7 +276,7 @@ input[type=number] {
     outline: none;
     color: crimson;
     background: none;
-    animation: ripple 0.8s infinite linear ;
+    animation: ripple-dc143c50 0.8s infinite linear ;
 }
 
 @media (max-width: 1104px) {

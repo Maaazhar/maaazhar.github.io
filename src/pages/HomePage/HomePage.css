@@ -151,7 +151,7 @@ section .title::after {
     }
 }
 
-@keyframes ripple {
+@keyframes ripple-dc143c50 {
     /* 0% {
         box-shadow: 0 0 0 0 #dc143c6c, 0 0 0 0 #dc143c6c;
     }
@@ -173,6 +173,30 @@ section .title::after {
         box-shadow: 0 0 0 10px #dc143c50,
             0 0 0 20px #dc143c10;
     }
+}
+
+
+@keyframes ripple-19ffffd4 {
+    0% {
+        box-shadow: 0 0 0 0 #19ffff36, 0 0 0 0 #19ffff36;
+    }
+
+    80% {
+        box-shadow: 0 0 0 5px #19ffff00, 0 0 0 10px #19ffff00;
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 #19ffff00, 0 0 0 0 #19ffff00;
+    }
+    /* 0% {
+        box-shadow: 0 0 0 0 #19ffff36,
+            0 0 0 5px #19ffff36;
+    }
+
+    100% {
+        box-shadow: 0 0 0 5px #19ffff36,
+            0 0 0 10px #19ffff00;
+    } */
 }
 
 /* @keyframes anan {

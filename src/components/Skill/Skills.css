@@ -62,7 +62,7 @@
     border: 1px solid #19ffff50;
     box-shadow: 1px 1px 5px #19ffffd4;
     /* animation: SkillButtonGlow 1s infinite ease-in-out; */
-    animation: SkillButtonRipple 1s infinite linear ;
+    animation: ripple-19ffffd4 1s infinite linear ;
 }
 
 @keyframes SkillButtonGlow {
@@ -77,28 +77,6 @@
     }
 }
 
-@keyframes SkillButtonRipple {
-    0% {
-        box-shadow: 0 0 0 0 #19ffff36, 0 0 0 0 #19ffff36;
-    }
-
-    80% {
-        box-shadow: 0 0 0 5px #19ffff00, 0 0 0 10px #19ffff00;
-    }
-
-    100% {
-        box-shadow: 0 0 0 0 #19ffff00, 0 0 0 0 #19ffff00;
-    }
-    /* 0% {
-        box-shadow: 0 0 0 0 #19ffff36,
-            0 0 0 5px #19ffff36;
-    }
-
-    100% {
-        box-shadow: 0 0 0 5px #19ffff36,
-            0 0 0 10px #19ffff00;
-    } */
-}
 
 .skill:has(.skillItem:hover) .skillItem:not(:hover) {
     scale: 0.95;

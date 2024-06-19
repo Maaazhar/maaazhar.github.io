@@ -59,7 +59,7 @@
     outline: none;
     color: crimson;
     background: none;
-    animation: ripple 0.8s infinite linear ;
+    animation: ripple-dc143c50 0.8s infinite linear ;
 }
 
 /* responsive media query */

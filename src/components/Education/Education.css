@@ -50,7 +50,7 @@
     scale: 1.04;
     /* animation: educationCardGlow 1s infinite ease-in-out; */
     border: 1px solid crimson;
-    animation: ripple 0.8s infinite linear;
+    animation: ripple-dc143c50 0.8s infinite linear;
 }
 
 @keyframes educationCardGlow {
