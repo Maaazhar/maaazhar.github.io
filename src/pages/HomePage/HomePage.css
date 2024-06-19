@@ -129,6 +129,17 @@ section .title::after {
     transition: transform 0.5s ease-in-out;
 }
 
+.accordionButton:hover i {
+    text-shadow: 1px 1px 5px  #1d1c1dcd;
+    animation: blinkIcon 0.5s infinite linear alternate;
+}
+
+@keyframes blinkIcon {
+    to{
+        color: #19ffff;
+    }
+}
+
 .accordion>input[type="radio"]:checked~.accordionButton>i {
     transform: rotate(180deg);
 }
