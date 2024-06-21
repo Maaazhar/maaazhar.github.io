@@ -132,6 +132,11 @@ section .title::after {
     transition: all 0.3s ease-in-out;
 }
 
+.accordion:has(input[type="radio"]:not(:checked)) .accordionButton:hover {
+    padding: 20px 15px;
+    opacity: 0.8;
+}
+
 .accordion:has(input[type="radio"]:not(:checked)) .accordionButton:hover i {
     text-shadow: 1px 1px 5px #1d1c1dcd;
     animation: blinkIcon 0.5s infinite linear alternate;
