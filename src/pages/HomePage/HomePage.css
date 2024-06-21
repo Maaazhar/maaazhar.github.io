@@ -123,7 +123,17 @@ section .title::after {
     font: 500 30px 'Ubuntu', sans-serif;
     user-select: none;
     cursor: pointer;
+    opacity: 0.8;
     transition: all 0.3s ease-in-out;
+}
+
+.accordion:has(input[type="radio"]:checked) .accordionButton {
+    opacity: 1;
+}
+
+.accordion:has(input[type="radio"]:not(:checked)) .accordionButton:hover {
+    padding: 20px 15px;
+    opacity: 1;
 }
 
 .accordionButton>i {
@@ -132,20 +142,23 @@ section .title::after {
     transition: all 0.3s ease-in-out;
 }
 
-.accordion:has(input[type="radio"]:not(:checked)) .accordionButton:hover {
-    padding: 20px 15px;
-    opacity: 0.8;
-}
-
 .accordion:has(input[type="radio"]:not(:checked)) .accordionButton:hover i {
     text-shadow: 1px 1px 5px #1d1c1dcd;
-    animation: blinkIcon 0.5s infinite linear alternate;
+    animation: blinkIcon 1s infinite ease-in-out alternate;
 }
 
 @keyframes blinkIcon {
-    to {
+    0%{
+        color: #19ffff;
+        translate: 0px -8px;
+    }
+    50%{
+        color: crimson;
+    }
+    100% {
         color: #19ffff;
         /* color: #cbb2fa; */
+        translate: 0px 8px;
     }
 }
 
