@@ -139,27 +139,12 @@ section .title::after {
 .accordionButton>i {
     color: crimson;
     font-size: 28px;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .accordion:has(input[type="radio"]:not(:checked)) .accordionButton:hover i {
     text-shadow: 1px 1px 5px #1d1c1dcd;
-    animation: blinkIcon 1s infinite ease-in-out alternate;
-}
-
-@keyframes blinkIcon {
-    0%{
-        color: #19ffff;
-        translate: 0px -8px;
-    }
-    50%{
-        color: crimson;
-    }
-    100% {
-        color: #19ffff;
-        /* color: #cbb2fa; */
-        translate: 0px 8px;
-    }
+    animation: blinkIcon 1s -0.5s infinite ease-in-out alternate;
 }
 
 .accordion>input[type="radio"]:checked~.accordionButton>i {
@@ -178,6 +163,21 @@ section .title::after {
 }
 
 /* Similar Animations */
+
+@keyframes blinkIcon {
+    0%{
+        color: #19ffff;
+        translate: 0px -8px;
+    }
+    50%{
+        color: crimson;
+    }
+    100% {
+        color: #19ffff;
+        /* color: #cbb2fa; */
+        translate: 0px 8px;
+    }
+}
 
 @keyframes floating {
 
