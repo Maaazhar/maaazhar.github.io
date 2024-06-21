@@ -30,7 +30,7 @@ footer {
     justify-content: space-between;
 }
 
-#root{
+#root {
     background: url("../../assets/images/banner.jpg");
     background-size: 100%;
     background-attachment: fixed;
@@ -38,7 +38,7 @@ footer {
 
 .about,
 .experience,
-.education{
+.education {
     background: #fff;
     /* backdrop-filter: blur(5px); */
 }
@@ -119,24 +119,28 @@ section .title::after {
     align-items: center;
     justify-content: space-between;
     border-radius: 5px;
+    color: crimson;
     font: 500 30px 'Ubuntu', sans-serif;
     user-select: none;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
 .accordionButton>i {
+    color: crimson;
     font-size: 28px;
-    transition: transform 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
-.accordionButton:hover i {
-    text-shadow: 1px 1px 5px  #1d1c1dcd;
+.accordion:has(input[type="radio"]:not(:checked)) .accordionButton:hover i {
+    text-shadow: 1px 1px 5px #1d1c1dcd;
     animation: blinkIcon 0.5s infinite linear alternate;
 }
 
 @keyframes blinkIcon {
-    to{
+    to {
         color: #19ffff;
+        /* color: #cbb2fa; */
     }
 }
 
@@ -210,6 +214,7 @@ section .title::after {
     100% {
         box-shadow: 0 0 0 0 #19ffff00, 0 0 0 0 #19ffff00;
     }
+
     /* 0% {
         box-shadow: 0 0 0 0 #19ffff36,
             0 0 0 5px #19ffff36;
