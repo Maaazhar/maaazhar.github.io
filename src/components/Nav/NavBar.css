@@ -59,19 +59,20 @@
   transition: all 0.3s ease-in-out;
 }
 
-.navbar .menu li a::before{
+.navbar .menu li a::before {
   content: "";
   position: absolute;
   top: 50%;
   left: 50%;
   width: 0;
-  height: 0;border: 1px solid #19ffff00;
+  height: 0;
+  border: 1px solid #19ffff00;
   border-radius: 5px;
   transition: all 0.5s ease-in-out;
   z-index: -1;
 }
 
-.navbar .menu li a:hover::before{
+.navbar .menu li a:hover::before {
   top: 0;
   left: 0;
   width: 100%;
@@ -92,7 +93,7 @@
   transition: all 0.5s ease-in-out;
 }
 
-.navbar .menu li a.activeNav::before{
+.navbar .menu li a.activeNav::before {
   content: "";
   position: absolute;
   top: 0;
@@ -105,10 +106,11 @@
   z-index: -1;
 }
 
-.navbar .menu li a.activeNav:hover::before{
+.navbar .menu li a.activeNav:hover::before {
+  background: #72f8f820;
   border: 1px solid #19ffff00;
-  box-shadow: 1px 1px 5px #19ffffd4;
-  transition: none;
+  box-shadow: 1px 1px 5px 1px #19ffffd4;
+  transition: all 0.5s ease-in-out;
   animation: paused;
 }
 
