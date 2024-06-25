@@ -172,13 +172,25 @@
     .experienceTabs>.tabWrapper>.tab {
         padding: 10px 20px;
         border-left: none;
-        border-bottom: 3px solid #dc143c33;
+        border-top: 3px solid #dc143c33;
+    }
+    .experienceTabs>.tabWrapper>.tab::before{
+        width: 100%;
+        height: 0%;
+    }
+    
+    .experienceTabs>.tabWrapper>.tab:hover::before{
+        height: 100%;
     }
 
     .experienceTabs>.tabWrapper>.activeTab {
-        border-bottom: 3px solid crimson;
+        border-top: 3px solid crimson;
     }
-
+    
+    .experienceTabs>.tabWrapper>.activeTab::before{
+        width: 100%;
+        height: 100%;
+    }
 
 }
 
