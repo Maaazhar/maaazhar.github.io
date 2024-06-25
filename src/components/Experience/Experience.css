@@ -75,6 +75,7 @@
     color: crimson;
     /* background: #9e9e9e56; */
     border-left: 3px solid #dc143c;
+    transition: all 0.5s ease-in-out;
 }
 
 .experienceTabs>.tabWrapper>.activeTab::before{
@@ -177,6 +178,7 @@
     .experienceTabs>.tabWrapper>.tab::before{
         width: 100%;
         height: 0%;
+        transition-delay: 0.3s;
     }
     
     .experienceTabs>.tabWrapper>.tab:hover::before{
@@ -185,11 +187,6 @@
 
     .experienceTabs>.tabWrapper>.activeTab {
         border-top: 3px solid crimson;
-    }
-    
-    .experienceTabs>.tabWrapper>.activeTab::before{
-        width: 100%;
-        height: 100%;
     }
 
 }
