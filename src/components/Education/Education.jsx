@@ -6,6 +6,8 @@ const Education = () => {
     const [educationCategory, setEducationCategory] = useState(0)
     const toggleCategory = (i) => setEducationCategory(i);
 
+    console.log(EducationList);
+
     // const [tabState, setTabState] = useState(0)
     // const toggleTab = (i) => setTabState(i);
 
@@ -37,6 +39,7 @@ const Education = () => {
                                                 <h3 className="courseTitle">{c.title}</h3>
                                                 <p className="institute"><a href={c.instituteLink} target="_blank">{c.institute}</a></p>
                                                 {c.universityBoard && <p className="universityBoard"><a href={c.universityBoardLink} target="_blank">{c.universityBoard}</a></p>}
+                                                {/* {c.logo && <img className="instituteLogo" src={c.logo} alt="Institute Logo" />} */}
                                                 <p className="instituteLocation">{c.location}</p>
                                                 <p className="courseDuration">Course Duration: {c.duration}</p>
                                                 <p className="passingYear">Completed in the year of {c.passingYear}</p>

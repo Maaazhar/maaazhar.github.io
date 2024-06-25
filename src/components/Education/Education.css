@@ -37,6 +37,7 @@
 }
 
 .educationCard {
+    position: relative;
     padding: 15px 5px;
     width: 30%;
     background: linear-gradient(145deg, #e6e6e6, #ffffff);
@@ -44,6 +45,7 @@
     border-radius: 5px;
     border: 1px solid rgba(255, 255, 255, 0);
     transition: all 0.5s ease-in-out;
+    overflow: hidden;
 }
 
 .educationCard:hover {
@@ -151,7 +153,16 @@
     display: block;
 }
 
-
+.instituteLogo{
+    border: 2px solid red;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+    rotate: 15deg;
+    z-index: 1;
+}
 
 .courseTitle,
 .institute,
@@ -159,8 +170,10 @@
 .instituteLocation,
 .courseDuration,
 .passingYear {
+    position: relative;
     display: flex;
     align-items: center;
+    z-index: 2;
 }
 
 

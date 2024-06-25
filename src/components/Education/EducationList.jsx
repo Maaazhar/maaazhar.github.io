@@ -8,6 +8,8 @@ const EducationList = [
         "title": "Complete Web Development (MERN stack)",
         "institute": "Programming Hero,",
         "instituteLink": "https://www.programming-hero.com/",
+        // "logo": "../../assets/images/educationInstituteLogo/programingHero.svg",
+        "logo": "./profile.jpg",
         "location": "Dhaka, Bangladesh.",
         "duration": "6 Months",
         "passingYear": "2021",
