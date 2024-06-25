@@ -66,6 +66,21 @@
     width: 100%;
 }
 
+.experienceTabs>.tabWrapper>.tab::after{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    top: 0;
+    left: -3px;
+    border-left: 3px solid #dc143c;
+    transition: all 0.5s ease-in-out;
+}
+
+.experienceTabs>.tabWrapper>.activeTab.tab::after{
+    height: 100%;
+}
+
 .experienceTabs>.tabWrapper>.tab:hover {
     /* background: #9e9e9e56; */
 }
@@ -74,7 +89,6 @@
     position: relative;
     color: crimson;
     /* background: #9e9e9e56; */
-    border-left: 3px solid #dc143c;
     transition: all 0.5s ease-in-out;
 }
 
@@ -175,6 +189,23 @@
         border-left: none;
         border-top: 3px solid #dc143c33;
     }
+
+    .experienceTabs>.tabWrapper>.tab::after{
+        width: 0%;
+        height: 100%;
+        top: -3px;
+        left: 0;
+        border-right: none;
+        border-left: none;
+        border-top: 3px solid #dc143c;
+        transition: all 0.5s ease-in-out;
+        transition-delay: 0.3s;
+    }
+    
+    .experienceTabs>.tabWrapper>.activeTab.tab::after{
+        width: 100%;
+    }
+
     .experienceTabs>.tabWrapper>.tab::before{
         width: 100%;
         height: 0%;
@@ -186,7 +217,7 @@
     }
 
     .experienceTabs>.tabWrapper>.activeTab {
-        border-top: 3px solid crimson;
+        /* border-top: 3px solid crimson; */
     }
 
 }
