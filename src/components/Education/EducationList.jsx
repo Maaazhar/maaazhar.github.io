@@ -8,7 +8,9 @@ const EducationList = [
         "title": "Complete Web Development (MERN stack)",
         "institute": "Programming Hero,",
         "instituteLink": "https://www.programming-hero.com/",
-        "logo": "/src/assets/images/educationInstituteLogo/programingHero.svg",
+        "logo": {
+          "instituteLogo": "/src/assets/images/educationInstituteLogo/programingHero.svg"
+        },
         "location": "Dhaka, Bangladesh.",
         "duration": "6 Months",
         "passingYear": "2021",
@@ -23,7 +25,9 @@ const EducationList = [
         "title": "Search Engine Optimization (SEO)",
         "institute": "Dimension IT and software,",
         "instituteLink": "https://dimensionit.net/",
-        "logo": "/src/assets/images/educationInstituteLogo/dimensionITAndSoftware.png",
+        "logo": {
+          "instituteLogo": "/src/assets/images/educationInstituteLogo/dimensionITAndSoftware.png"
+        },
         "location": "Dhaka, Bangladesh.",
         "duration": "2 Months",
         "passingYear": "2020",
@@ -33,7 +37,9 @@ const EducationList = [
         "title": "Complete Web Design (HTML-CSS)",
         "institute": "Dimension IT and software,",
         "instituteLink": "https://dimensionit.net/",
-        "logo": "/src/assets/images/educationInstituteLogo/dimensionITAndSoftware.png",
+        "logo": {
+          "instituteLogo": "/src/assets/images/educationInstituteLogo/dimensionITAndSoftware.png"
+        },
         "location": "Dhaka, Bangladesh.",
         "duration": "2 Months",
         "passingYear": "2020",
@@ -46,6 +52,9 @@ const EducationList = [
         "title": "CompTIA A+",
         "institute": "Alison.com,",
         "instituteLink": "https://alison.com/",
+        "logo": {
+          "instituteLogo": "/src/assets/images/educationInstituteLogo/alison.svg"
+        },
         "location": "Dublin, Ireland.",
         "duration": "2 Months",
         "passingYear": "2020",
@@ -55,6 +64,9 @@ const EducationList = [
         "title": "CCNA (Routing and Switching)",
         "institute": "Creative IT institute,",
         "instituteLink": "https://www.creativeitinstitute.com/",
+        "logo": {
+          "instituteLogo": "/src/assets/images/educationInstituteLogo/creativeIT.png"
+        },
         "location": "Dhaka, Bangladesh.",
         "duration": "3 Months",
         "passingYear": "2019",
@@ -64,6 +76,9 @@ const EducationList = [
         "title": "MTCRE and MTCNA",
         "institute": "Creative IT institute,",
         "instituteLink": "https://www.creativeitinstitute.com/",
+        "logo": {
+          "instituteLogo": "/src/assets/images/educationInstituteLogo/creativeIT.png"
+        },
         "location": "Dhaka, Bangladesh.",
         "duration": "3 Months",
         "passingYear": "2019",
@@ -73,6 +88,9 @@ const EducationList = [
         "title": "Introduction to Computer Networking",
         "institute": "Creative IT institute,",
         "instituteLink": "https://www.creativeitinstitute.com/",
+        "logo": {
+          "instituteLogo": "/src/assets/images/educationInstituteLogo/creativeIT.png"
+        },
         "location": "Dhaka, Bangladesh.",
         "duration": "3 Days",
         "passingYear": "2019",
@@ -82,6 +100,9 @@ const EducationList = [
         "title": "Red Hat Linux (Installation and Basic Commands)",
         "institute": "Linux Pathshala,",
         "instituteLink": "http://linuxpathshala.com/",
+        "logo": {
+          "instituteLogo": "/src/assets/images/educationInstituteLogo/linuxPathshala.png"
+        },
         "location": "Dhaka, Bangladesh.",
         "duration": "1 Day",
         "passingYear": "2018",
@@ -91,6 +112,9 @@ const EducationList = [
         "title": "Windows Server (Installation and Basic Commands)",
         "institute": "Linux Pathshala,",
         "instituteLink": "http://linuxpathshala.com/",
+        "logo": {
+          "instituteLogo": "/src/assets/images/educationInstituteLogo/linuxPathshala.png"
+        },
         "location": "Dhaka, Bangladesh.",
         "duration": "1 Day",
         "passingYear": "2018",
@@ -108,6 +132,10 @@ const EducationList = [
         "instituteLink": "https://ist.edu.bd/",
         "universityBoard": "National University, Bangladesh.",
         "universityBoardLink": "https://www.nu.ac.bd/",
+        "logo": {
+          "instituteLogo": "/src/assets/images/educationInstituteLogo/ist.png",
+          "universityBoardLogo": "/src/assets/images/educationInstituteLogo/nu.png"
+        },
         "location": "Dhaka, Bangladesh.",
         "duration": "4 Years",
         "passingYear": "2020",

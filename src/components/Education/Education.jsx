@@ -40,8 +40,9 @@ const Education = () => {
                                                 <p className="institute"><a href={c.instituteLink} target="_blank">{c.institute}</a></p>
                                                 {c.universityBoard && <p className="universityBoard"><a href={c.universityBoardLink} target="_blank">{c.universityBoard}</a></p>}
                                                 {c.logo &&
-                                                    <div className="educationLogo">
-                                                        <img className="instituteLogo" src={c.logo} alt="Institute Logo" />
+                                                    <div className={c.logo.universityBoardLogo ? "educationLogoSM": "educationLogo"}>
+                                                        <img className="instituteLogo" src={c.logo.instituteLogo} alt="Institute Logo" />
+                                                        {c.logo.universityBoardLogo && <img className="universityBoardLogo" src={c.logo.universityBoardLogo} alt="Institute Logo" />}
                                                     </div>}
                                                 <p className="instituteLocation">{c.location}</p>
                                                 <p className="courseDuration">Course Duration: {c.duration}</p>
