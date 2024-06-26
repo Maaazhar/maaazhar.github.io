@@ -147,6 +147,10 @@ const EducationList = [
         "instituteLink": "https://www.mgbhs.edu.bd/",
         "universityBoard": "Dhaka Education Board.",
         "universityBoardLink": "https://www.dhakaeducationboard.gov.bd/",
+        "logo": {
+          "instituteLogo": "/src/assets/images/educationInstituteLogo/mgbhs.png",
+          "universityBoardLogo": "/src/assets/images/educationInstituteLogo/dhakaEducationBoard.png"
+        },
         "location": "Dhaka, Bangladesh.",
         "duration": "4 Years",
         "passingYear": "2020",
@@ -161,6 +165,10 @@ const EducationList = [
         "instituteLink": "https://deb108476.dhakaeducationboard.gov.bd/",
         "universityBoard": "Dhaka Education Board.",
         "universityBoardLink": "https://www.dhakaeducationboard.gov.bd/",
+        "logo": {
+          "instituteLogo": "/src/assets/images/educationInstituteLogo/njkmhs.png",
+          "universityBoardLogo": "/src/assets/images/educationInstituteLogo/dhakaEducationBoard.png"
+        },
         "location": "Dhaka, Bangladesh.",
         "duration": "4 Years",
         "passingYear": "2020",

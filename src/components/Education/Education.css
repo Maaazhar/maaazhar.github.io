@@ -202,7 +202,7 @@
  
 .educationLogoSM img.universityBoardLogo {
     position: absolute;
-    bottom: 0%;
+    bottom: 10%;
     right: -10%;
     width: 160px;
     rotate: -25deg;
