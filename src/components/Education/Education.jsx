@@ -6,8 +6,6 @@ const Education = () => {
     const [educationCategory, setEducationCategory] = useState(0)
     const toggleCategory = (i) => setEducationCategory(i);
 
-    console.log(EducationList);
-
     // const [tabState, setTabState] = useState(0)
     // const toggleTab = (i) => setTabState(i);
 

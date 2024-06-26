@@ -383,7 +383,34 @@
 
 }
 
-@media (max-width: 690px) {}
+@media (max-width: 870px) {
+    .educationCard:hover .educationLogo img.instituteLogo {
+        bottom: 5%;
+        right: 2%;
+        width: 50px;
+        rotate: 360deg;
+        filter: grayscale(0);
+        opacity: 0.8;
+    }
+
+    .educationCard:hover .educationLogoSM img.instituteLogo {
+        bottom: 15%;
+        right: 20%;
+        width: 50px;
+        rotate: 360deg;
+        filter: grayscale(0);
+        opacity: 0.8;
+    }
+
+    .educationCard:hover .educationLogoSM img.universityBoardLogo {
+        bottom: 15%;
+        right: 2%;
+        width: 50px;
+        rotate: -360deg;
+        filter: grayscale(0);
+        opacity: 0.8;
+    }
+}
 
 @media (max-width: 500px) {
     .education .title::before {
@@ -407,6 +434,33 @@
     }
 }
 
-@media (max-width: 380px) {}
+@media (max-width: 380px) {
+    .educationCard:hover .educationLogo img.instituteLogo {
+        bottom: 15%;
+        right: 2%;
+        width: 50px;
+        rotate: 360deg;
+        filter: grayscale(0);
+        opacity: 0.8;
+    }
+
+    .educationCard:hover .educationLogoSM img.instituteLogo {
+        bottom: 15%;
+        right: 20%;
+        width: 50px;
+        rotate: 360deg;
+        filter: grayscale(0);
+        opacity: 0.8;
+    }
+
+    .educationCard:hover .educationLogoSM img.universityBoardLogo {
+        bottom: 15%;
+        right: 2%;
+        width: 50px;
+        rotate: -360deg;
+        filter: grayscale(0);
+        opacity: 0.8;
+    }
+}
 
 @media (max-width: 350px) {}
