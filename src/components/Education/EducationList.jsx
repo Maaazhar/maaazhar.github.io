@@ -1,3 +1,13 @@
+import programingHero from "../../assets/images/educationInstituteLogo/programingHero.svg"
+import dimensionITAndSoftware from "../../assets/images/educationInstituteLogo/dimensionITAndSoftware.png"
+import alison from "../../assets/images/educationInstituteLogo/alison.svg"
+import creativeIT from "../../assets/images/educationInstituteLogo/creativeIT.png"
+import linuxPathshala from "../../assets/images/educationInstituteLogo/linuxPathshala.png"
+import ist from "../../assets/images/educationInstituteLogo/ist.png"
+import nu from "../../assets/images/educationInstituteLogo/nu.png"
+import mgbhs from "../../assets/images/educationInstituteLogo/mgbhs.png"
+import dhakaEducationBoard from "../../assets/images/educationInstituteLogo/dhakaEducationBoard.png"
+import njkmhs from "../../assets/images/educationInstituteLogo/njkmhs.png"
 
 const EducationList = [
   {
@@ -9,7 +19,7 @@ const EducationList = [
         "institute": "Programming Hero,",
         "instituteLink": "https://www.programming-hero.com/",
         "logo": {
-          "instituteLogo": "/src/assets/images/educationInstituteLogo/programingHero.svg"
+          "instituteLogo": programingHero
         },
         "location": "Dhaka, Bangladesh.",
         "duration": "6 Months",
@@ -26,7 +36,7 @@ const EducationList = [
         "institute": "Dimension IT and software,",
         "instituteLink": "https://dimensionit.net/",
         "logo": {
-          "instituteLogo": "/src/assets/images/educationInstituteLogo/dimensionITAndSoftware.png"
+          "instituteLogo": dimensionITAndSoftware
         },
         "location": "Dhaka, Bangladesh.",
         "duration": "2 Months",
@@ -38,7 +48,7 @@ const EducationList = [
         "institute": "Dimension IT and software,",
         "instituteLink": "https://dimensionit.net/",
         "logo": {
-          "instituteLogo": "/src/assets/images/educationInstituteLogo/dimensionITAndSoftware.png"
+          "instituteLogo": dimensionITAndSoftware
         },
         "location": "Dhaka, Bangladesh.",
         "duration": "2 Months",
@@ -53,7 +63,7 @@ const EducationList = [
         "institute": "Alison.com,",
         "instituteLink": "https://alison.com/",
         "logo": {
-          "instituteLogo": "/src/assets/images/educationInstituteLogo/alison.svg"
+          "instituteLogo": alison
         },
         "location": "Dublin, Ireland.",
         "duration": "2 Months",
@@ -65,7 +75,7 @@ const EducationList = [
         "institute": "Creative IT institute,",
         "instituteLink": "https://www.creativeitinstitute.com/",
         "logo": {
-          "instituteLogo": "/src/assets/images/educationInstituteLogo/creativeIT.png"
+          "instituteLogo": creativeIT
         },
         "location": "Dhaka, Bangladesh.",
         "duration": "3 Months",
@@ -77,7 +87,7 @@ const EducationList = [
         "institute": "Creative IT institute,",
         "instituteLink": "https://www.creativeitinstitute.com/",
         "logo": {
-          "instituteLogo": "/src/assets/images/educationInstituteLogo/creativeIT.png"
+          "instituteLogo": creativeIT
         },
         "location": "Dhaka, Bangladesh.",
         "duration": "3 Months",
@@ -89,7 +99,7 @@ const EducationList = [
         "institute": "Creative IT institute,",
         "instituteLink": "https://www.creativeitinstitute.com/",
         "logo": {
-          "instituteLogo": "/src/assets/images/educationInstituteLogo/creativeIT.png"
+          "instituteLogo": creativeIT
         },
         "location": "Dhaka, Bangladesh.",
         "duration": "3 Days",
@@ -101,7 +111,7 @@ const EducationList = [
         "institute": "Linux Pathshala,",
         "instituteLink": "http://linuxpathshala.com/",
         "logo": {
-          "instituteLogo": "/src/assets/images/educationInstituteLogo/linuxPathshala.png"
+          "instituteLogo": linuxPathshala
         },
         "location": "Dhaka, Bangladesh.",
         "duration": "1 Day",
@@ -113,7 +123,7 @@ const EducationList = [
         "institute": "Linux Pathshala,",
         "instituteLink": "http://linuxpathshala.com/",
         "logo": {
-          "instituteLogo": "/src/assets/images/educationInstituteLogo/linuxPathshala.png"
+          "instituteLogo": linuxPathshala
         },
         "location": "Dhaka, Bangladesh.",
         "duration": "1 Day",
@@ -133,8 +143,8 @@ const EducationList = [
         "universityBoard": "National University, Bangladesh.",
         "universityBoardLink": "https://www.nu.ac.bd/",
         "logo": {
-          "instituteLogo": "/src/assets/images/educationInstituteLogo/ist.png",
-          "universityBoardLogo": "/src/assets/images/educationInstituteLogo/nu.png"
+          "instituteLogo": ist,
+          "universityBoardLogo": nu
         },
         "location": "Dhaka, Bangladesh.",
         "duration": "4 Years",
@@ -148,8 +158,8 @@ const EducationList = [
         "universityBoard": "Dhaka Education Board.",
         "universityBoardLink": "https://www.dhakaeducationboard.gov.bd/",
         "logo": {
-          "instituteLogo": "/src/assets/images/educationInstituteLogo/mgbhs.png",
-          "universityBoardLogo": "/src/assets/images/educationInstituteLogo/dhakaEducationBoard.png"
+          "instituteLogo": mgbhs,
+          "universityBoardLogo": dhakaEducationBoard
         },
         "location": "Dhaka, Bangladesh.",
         "duration": "4 Years",
@@ -166,8 +176,8 @@ const EducationList = [
         "universityBoard": "Dhaka Education Board.",
         "universityBoardLink": "https://www.dhakaeducationboard.gov.bd/",
         "logo": {
-          "instituteLogo": "/src/assets/images/educationInstituteLogo/njkmhs.png",
-          "universityBoardLogo": "/src/assets/images/educationInstituteLogo/dhakaEducationBoard.png"
+          "instituteLogo": njkmhs,
+          "universityBoardLogo": dhakaEducationBoard
         },
         "location": "Dhaka, Bangladesh.",
         "duration": "4 Years",
