@@ -139,6 +139,7 @@
     color: inherit;
     transition: all 0.3s ease-in-out;
 }
+
 .educationCard>p>a:hover,
 .educationTabContent>p>a:hover {
     padding: 5px 10px;
@@ -153,15 +154,25 @@
     display: block;
 }
 
-.instituteLogo{
-    border: 2px solid red;
+img.instituteLogo {
     position: absolute;
-    top: 50px;
-    right: 20px;
-    width: 100px;
-    height: 100px;
-    rotate: 15deg;
+    top: -10%;
+    right: 50%;
+    width: 160px;
+    rotate: 385deg;
+    filter: grayscale(1);
+    opacity: 0.2;
+    transition: all 1s ease-in-out;
     z-index: 1;
+}
+
+.educationCard:hover .instituteLogo {
+    top: 45%;
+    right: 0%;
+    width: 60px;
+    rotate: 0deg;
+    filter: grayscale(0);
+    opacity: 0.8;
 }
 
 .courseTitle,
