@@ -14,6 +14,7 @@
   backdrop-filter: blur(3px); */
   background-color: #000000bb;
   backdrop-filter: blur(10px);
+  border-bottom: 1px solid #ffffff24;
 }
 
 .navbar .max-width {
@@ -23,7 +24,7 @@
 }
 
 .navbar .logo a {
-  color: #fff;
+  color: #bbb;
   font-size: 35px;
   font-weight: 600;
   letter-spacing: 2px;
@@ -52,7 +53,7 @@
   padding: 5px 10px;
   border: 1px solid #19ffff00;
   border-radius: 5px;
-  color: #fff;
+  color: #bbb;
   font-size: 18px;
   font-weight: 500;
   text-transform: capitalize;
