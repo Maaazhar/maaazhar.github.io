@@ -49,6 +49,7 @@
     cursor: pointer;
     white-space: nowrap;
     transition: all 0.2s;
+    z-index: 1;
 }
 
 .experienceTabs>.tabWrapper>.tab::before{
@@ -60,6 +61,7 @@
     left: 0;
     background: #9e9e9e56;
     transition: all 0.5s ease-in-out;
+    z-index: -1;
 }
 
 .experienceTabs>.tabWrapper>.tab:hover::before{
@@ -91,6 +93,7 @@
     color: crimson;
     /* background: #9e9e9e56; */
     transition: all 0.5s ease-in-out;
+    z-index: 2;
 }
 
 .experienceTabs>.tabWrapper>.activeTab.tab::before{
@@ -102,6 +105,7 @@
     left: 0;
     background: #9e9e9e56;
     transition: all 0.5s ease-in-out;
+    z-index: -1;
 }
 
 .experienceTabs>.contentWrapper {
