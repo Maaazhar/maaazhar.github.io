@@ -180,8 +180,8 @@ const EducationList = [
           "universityBoardLogo": dhakaEducationBoard
         },
         "location": "Dhaka, Bangladesh.",
-        "duration": "4 Years",
-        "passingYear": "2020",
+        "duration": "2 Years",
+        "passingYear": "2013",
         "majorSubject": [
           [],
           []
