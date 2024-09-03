@@ -60,7 +60,7 @@
 .skillItem:hover {
     backdrop-filter: blur(15px);
     border: 1px solid #19ffff50;
-    box-shadow: 1px 1px 5px #19ffffd4;
+    box-shadow: 0px 0px 5px #19ffffd4;
     /* animation: SkillButtonGlow 1s infinite ease-in-out; */
     animation: ripple-19ffffd4 1s infinite linear ;
 }
