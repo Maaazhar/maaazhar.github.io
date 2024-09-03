@@ -182,11 +182,15 @@
     }
 
     .experienceTabs>.tabWrapper {
+        position: sticky;
+        top: 85px;
         flex-direction: row;
         overflow-x: auto;
         padding-bottom: 10px;
         margin-right: 0px;
         margin-bottom: 10px;
+        backdrop-filter: blur(50px);
+        z-index: 1;
     }
 
     .experienceTabs>.tabWrapper>.tab {
