@@ -1,6 +1,7 @@
 import imgOfRafada from "../../assets/images/project/rafada.png";
-import portfolio from "../../assets/images/project/portfolio.jpg";
 import GreenCrate from "../../assets/images/project/GreenCrate.jpg";
+import portfolio from "../../assets/images/project/portfolio.jpg";
+import tweetex from "../../assets/images/project/tweetex.jpg";
 
 const projects = [
   {
@@ -25,6 +26,14 @@ const projects = [
   {
       "category": "Personal Project",
       "list": [
+          {
+              "image": tweetex,
+              "title": "Tweet a micro blogging web app",
+              "details": "Tweet is a micro-blogging web app similar to X (formerly Twitter). Currently, users can post and like content, with plans to introduce comment and follow features in the future, enhancing user interaction.",
+              "technology": ["HTML", "CSS", "ReactJS", "Vite", "Font Awesome", "Organic  SEO"],
+              "liveLink": ["https://maaazhar.github.io/"],
+              "githubLink": "https://github.com/Maaazhar/maaazhar.github.io"
+          },
           {
               "image": portfolio,
               "title": "Portfolio of Mazharul Islam",
