@@ -2,6 +2,7 @@ import imgOfRafada from "../../assets/images/project/rafada.png";
 import GreenCrate from "../../assets/images/project/GreenCrate.jpg";
 import portfolio from "../../assets/images/project/portfolio.jpg";
 import tweetex from "../../assets/images/project/tweetex.jpg";
+import msTube from "../../assets/images/project/msTube.jpg";
 
 const projects = [
     {
@@ -27,10 +28,18 @@ const projects = [
         "category": "Personal Project",
         "list": [
             {
+                "image": msTube,
+                "title": "MS Tube, a YouTube clone",
+                "details": "MS Tube is a YouTube clone app that streams videos using YouTube’s original links, offering a similar user experience for watching and exploring content while leveraging YouTube’s vast video library and functionality.",
+                "technology": ["ReactJS", "Material UI", "Vite", "Rapid API", "Axios", "Vercel", "Organic  SEO"],
+                "liveLink": ["https://tweetex.vercel.app/"],
+                "githubLink": "https://github.com/Maaazhar/tweet"
+            },
+            {
                 "image": tweetex,
                 "title": "Tweet a micro blogging web app",
                 "details": "Tweet is a micro-blogging web app similar to X (formerly Twitter). Currently, users can post and like content, with plans to introduce comment and follow features in the future, enhancing user interaction.",
-                "technology": ["ReactJS", "NextJS", "TypeScript", "Tailwind CSS", "SupaBase", "PostgreSQL","Vercel", "Organic  SEO"],
+                "technology": ["ReactJS", "NextJS", "TypeScript", "Tailwind CSS", "SupaBase", "PostgreSQL", "Vercel", "Organic  SEO"],
                 "liveLink": ["https://tweetex.vercel.app/"],
                 "githubLink": "https://github.com/Maaazhar/tweet"
             },
