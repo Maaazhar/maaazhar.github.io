@@ -31,7 +31,7 @@ const projects = [
                 "image": msTube,
                 "title": "MS Tube a YouTube clone",
                 "details": "MS Tube is a YouTube clone app that streams videos using YouTube’s original links, offering a similar user experience for watching and exploring content while leveraging YouTube’s vast video library and functionality.",
-                "technology": ["ReactJS", "Material UI", "Vite", "Rapid API", "Axios", "Vercel", "Organic  SEO"],
+                "technology": ["ReactJS", "Material UI", "Vite", "Rapid API", "Axios", "GithubPages", "Organic  SEO"],
                 "liveLink": ["https://maaazhar.github.io/msTube/"],
                 "githubLink": "https://github.com/Maaazhar/msTube"
             },
