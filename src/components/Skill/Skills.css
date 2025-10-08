@@ -11,20 +11,26 @@
     grid-row-gap: 10px; */
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
 }
 
 .skillCategory {
     background-color: #ffffff10;
     backdrop-filter: blur(10px);
+    border-radius: 5px;
     border-top: 1px solid #ffffff17;
     border-left: 1px solid #ffffff17;
 }
 
 .skillCategoryTitle {
+    padding: 15px;
     color: #dc143c;
+    font: 500 30px 'Ubuntu', sans-serif;
 }
 
+.skillWrapper{
+    padding: 10px;
+}
 
 .skill {
     padding: 0px 10px;

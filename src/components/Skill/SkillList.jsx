@@ -9,6 +9,7 @@ import Es6Logo from "./Logo/Es6Logo";
 import ExpressLogo from "./Logo/ExpressLogo";
 import FigmaLogo from "./Logo/FigmaLogo";
 import FirebaseLogo from "./Logo/FirebaseLogo";
+import GitHubActionLogo from "./Logo/GitHubActionLogo";
 import GitHubLogo from "./Logo/GitHubLogo";
 import GitLogo from "./Logo/GitLogo";
 import HtmlLogo from "./Logo/HtmlLogo";
@@ -19,11 +20,14 @@ import NextJsLogo from "./Logo/NextJsLogo";
 import NodeJsLogo from "./Logo/NodeJsLogo";
 import NetlifyLogo from "./Logo/NetlifyLogo";
 import PhotoShopLogo from "./Logo/PhotoShopLogo";
+import PostgreSQLLogo from "./Logo/PostgreSQLLogo";
 import PythonLogo from "./Logo/PythonLogo";
 import ReactHookLogo from "./Logo/ReactHookLogo";
 import ReactJsLogo from "./Logo/ReactJsLogo";
 import ReactRouterLogo from "./Logo/ReactRouterLogo";
 import ReduxLogo from "./Logo/ReduxLogo";
+import SQLLogo from "./Logo/SQLLogo";
+import SupabaseLogo from "./Logo/SupabaseLogo";
 import TypeScriptLogo from "./Logo/TypeScriptLogo";
 import VercelLogo from "./Logo/VercelLogo";
 import VsCodeLogo from "./Logo/VsCodeLogo";
@@ -53,7 +57,9 @@ const skills = [
             { "logo": <JavaScriptLogo />, "title": "JavaScript", "startingYear": 2019 },
             { "logo": <NodeJsLogo />, "title": "NodeJs", "startingYear": 2020 },
             { "logo": <ExpressLogo />, "title": "ExpressJs", "startingYear": 2020 },
-            { "logo": <MongoDbLogo />, "title": "MongoDB", "startingYear": 2020 }
+            { "logo": <MongoDbLogo />, "title": "MongoDB", "startingYear": 2020 },
+            { "logo": <SQLLogo />, "title": "SQL", "startingYear": 2024 },
+            { "logo": <PostgreSQLLogo />, "title": "PostgreSQL", "startingYear": 2024 },
         ]
     },
     {
@@ -61,6 +67,7 @@ const skills = [
         "list": [
             { "logo": <VsCodeLogo />, "title": "VS code", "startingYear": 2020 },
             { "logo": <GitLogo />, "title": "Git", "startingYear": 2020 },
+            { "logo": <GitHubActionLogo />, "title": "GitHub Action", "startingYear": 2023 },
             { "logo": <ChromeDevToolLogo />, "title": "Chrome Dev tool", "startingYear": 2020 },
             { "logo": <FigmaLogo />, "title": "Figma", "startingYear": 2020 },
             { "logo": <CodeBlocksLogo />, "title": "Code Blocks", "startingYear": 2017 },
@@ -73,6 +80,7 @@ const skills = [
         "list": [
             { "logo": <GitHubLogo />, "title": "GitHub", "startingYear": 2020 },
             { "logo": <FirebaseLogo />, "title": "Firebase", "startingYear": 2020 },
+            { "logo": <SupabaseLogo />, "title": "Supabase", "startingYear": 2020 },
             { "logo": <NetlifyLogo />, "title": "Netlify", "startingYear": 2020 },
             { "logo": <VercelLogo />, "title": "Vercel", "startingYear": 2022 }
         ]
