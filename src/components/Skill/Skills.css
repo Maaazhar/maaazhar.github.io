@@ -28,7 +28,7 @@
     font: 500 30px 'Ubuntu', sans-serif;
 }
 
-.skillWrapper{
+.skillWrapper {
     padding: 10px;
 }
 
@@ -61,6 +61,7 @@
     transition: all 0.3s ease-in-out;
     backdrop-filter: blur(8px);
     user-select: none;
+    overflow: hidden;
 }
 
 .skillItem:hover {
@@ -68,7 +69,7 @@
     border: 1px solid #19ffff50;
     box-shadow: 0px 0px 5px #19ffffd4;
     /* animation: SkillButtonGlow 1s infinite ease-in-out; */
-    animation: ripple-19ffffd4 1s infinite linear ;
+    animation: ripple-19ffffd4 1s infinite linear;
 }
 
 @keyframes SkillButtonGlow {
@@ -93,20 +94,40 @@
 }
 
 .skillImg {
-    width: 30px;
-    margin: 0px 10px;
+    position: absolute;
+    margin-left: -10px;
+    right: 0%;
+    top: 0%;
     padding-top: 5px;
-    overflow: hidden;
+    transition: all 0.8s ease-in-out;
+}
+
+.skillItem:hover .skillImg {
+    right: 40%;
+}
+
+.skillImg svg {
+    width: 80px;
+    fill: #faebd797;
+    /* fill: #dc143c; */
+    opacity: 0.1;
+    transform: rotate(330deg);
+    transition: all 0.8s ease-in-out;
+    z-index: 1;
 }
 
 .skillItem:hover .skillImg svg {
+    width: 45px;
     fill: #dc143c;
+    opacity: 0.5;
+    transform: rotate(0deg);
 }
 
 .skillName {
     margin: 0px 5px;
     font: 20px 'Ubuntu', sans-serif;
     text-shadow: 5px 5px 10px #000;
+    z-index: 2;
 }
 
 .skillAge {
@@ -115,6 +136,7 @@
     font-family: 'Ubuntu', sans-serif;
     color: #cfbca2;
     text-shadow: 1px 1px 5px #000;
+    z-index: 2;
 }
 
 
@@ -124,11 +146,11 @@
     }
 
     .skillImg {
-        width: 25px;
+        /* width: 25px; */
     }
 
     .skillImg svg {
-        width: 25px;
+        /* width: 25px; */
     }
 
     .skillName {
@@ -150,12 +172,12 @@
     }
 
     .skillImg {
-        width: 20px;
-        margin: 0px 5px;
+        /* width: 20px;
+        margin: 0px 5px; */
     }
 
     .skillImg svg {
-        width: 20px;
+        /* width: 20px; */
     }
 
     .skillName {
@@ -174,6 +196,10 @@
         font-size: 25px;
     }
 
+    .skillWrapper {
+        padding-inline: 0px;
+    }
+
     .skill {
         align-items: flex-start;
         justify-content: center;
@@ -181,17 +207,28 @@
 
     .skillItem {
         margin: 5px;
-        height: 145px;
+        height: 80px;
         flex-direction: column;
     }
 
     .skillImg {
-        width: 25px;
-        margin: 2px 0px;
+        /* width: 25px;
+        margin: 2px 0px; */
+        right: -15%;
+        padding-top: 0px;
+    }
+
+    .skillItem:hover .skillImg {
+        right: 5%;        
+        top: -5%;
     }
 
     .skillImg svg {
-        width: 25px;
+        width: 60px;
+    }
+
+    .skillItem:hover .skillImg svg {
+        width: 80px;
     }
 
     .skillName {

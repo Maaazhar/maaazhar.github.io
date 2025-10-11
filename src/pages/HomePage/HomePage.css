@@ -306,6 +306,10 @@ section .title::after {
         font-size: 35px;
     }
 
+    .skills .max-width {
+        padding: 0 10px;
+    }
+
     .scroll-up-btn {
         right: 15px;
         bottom: 15px;

@@ -1,97 +1,64 @@
-import BootstrapLogo from "./Logo/BootstrapLogo";
-import ChromeDevToolLogo from "./Logo/ChromeDevToolLogo";
-import CLogo from "./Logo/CLogo";
-import CodeBlocksLogo from "./Logo/CodeBlocksLogo";
-import CppLogo from "./Logo/CppLogo";
-import CssLogo from "./Logo/CssLogo";
-import DevCppLogo from "./Logo/DevCppLogo";
-import Es6Logo from "./Logo/Es6Logo";
-import ExpressLogo from "./Logo/ExpressLogo";
-import FigmaLogo from "./Logo/FigmaLogo";
-import FirebaseLogo from "./Logo/FirebaseLogo";
-import GitHubActionLogo from "./Logo/GitHubActionLogo";
-import GitHubLogo from "./Logo/GitHubLogo";
-import GitLogo from "./Logo/GitLogo";
-import HtmlLogo from "./Logo/HtmlLogo";
-import JavaScriptLogo from "./Logo/JavaScriptLogo";
-import MaterialUiLogo from "./Logo/MaterialUiLogo";
-import MongoDbLogo from "./Logo/MongoDbLogo";
-import NextJsLogo from "./Logo/NextJsLogo";
-import NodeJsLogo from "./Logo/NodeJsLogo";
-import NetlifyLogo from "./Logo/NetlifyLogo";
-import PhotoShopLogo from "./Logo/PhotoShopLogo";
-import PostgreSQLLogo from "./Logo/PostgreSQLLogo";
-import PythonLogo from "./Logo/PythonLogo";
-import ReactHookLogo from "./Logo/ReactHookLogo";
-import ReactJsLogo from "./Logo/ReactJsLogo";
-import ReactRouterLogo from "./Logo/ReactRouterLogo";
-import ReduxLogo from "./Logo/ReduxLogo";
-import SQLLogo from "./Logo/SQLLogo";
-import SupabaseLogo from "./Logo/SupabaseLogo";
-import TypeScriptLogo from "./Logo/TypeScriptLogo";
-import VercelLogo from "./Logo/VercelLogo";
-import VsCodeLogo from "./Logo/VsCodeLogo";
-
+import * as logo from "./Logo/logo";
 
 const skills = [
     {
         "category": "Front-End",
         "list": [
-            { "logo": <HtmlLogo />, "title": "HTML", "startingYear": 2019 },
-            { "logo": <CssLogo />, "title": "CSS", "startingYear": 2019 },
-            { "logo": <JavaScriptLogo />, "title": "JavaScript", "startingYear": 2019 },
-            { "logo": <Es6Logo />, "title": "ES6", "startingYear": 2019 },
-            { "logo": <BootstrapLogo />, "title": "Bootstrap", "startingYear": 2019 },
-            { "logo": <MaterialUiLogo />, "title": "Material UI", "startingYear": 2020 },
-            { "logo": <ReactJsLogo />, "title": "ReactJs", "startingYear": 2020 },
-            { "logo": <ReduxLogo />, "title": "Redux", "startingYear": 2020 },
-            { "logo": <ReactHookLogo />, "title": "React-Hook", "startingYear": 2020 },
-            { "logo": <NextJsLogo />, "title": "NextJs", "startingYear": 2020 },
-            { "logo": <ReactRouterLogo />, "title": "React-Router", "startingYear": 2020 },
-            { "logo": <TypeScriptLogo />, "title": "TypeScrip", "startingYear": 2020 }
+            { "logo": <logo.HtmlLogo />, "title": "HTML", "startingYear": 2019 },
+            { "logo": <logo.CssLogo />, "title": "CSS", "startingYear": 2019 },
+            { "logo": <logo.JavaScriptLogo />, "title": "JavaScript", "startingYear": 2019 },
+            { "logo": <logo.Es6Logo />, "title": "ES6", "startingYear": 2019 },
+            { "logo": <logo.BootstrapLogo />, "title": "Bootstrap", "startingYear": 2019 },
+            { "logo": <logo.MaterialUiLogo />, "title": "Material UI", "startingYear": 2020 },
+            { "logo": <logo.ReactJsLogo />, "title": "ReactJs", "startingYear": 2020 },
+            { "logo": <logo.ReduxLogo />, "title": "Redux", "startingYear": 2020 },
+            { "logo": <logo.ReactHookLogo />, "title": "React-Hook", "startingYear": 2020 },
+            { "logo": <logo.NextJsLogo />, "title": "NextJs", "startingYear": 2020 },
+            { "logo": <logo.ReactRouterLogo />, "title": "React-Router", "startingYear": 2020 },
+            { "logo": <logo.TypeScriptLogo />, "title": "TypeScrip", "startingYear": 2020 }
         ]
     },
     {
         "category": "Back-End",
         "list": [
-            { "logo": <JavaScriptLogo />, "title": "JavaScript", "startingYear": 2019 },
-            { "logo": <NodeJsLogo />, "title": "NodeJs", "startingYear": 2020 },
-            { "logo": <ExpressLogo />, "title": "ExpressJs", "startingYear": 2020 },
-            { "logo": <MongoDbLogo />, "title": "MongoDB", "startingYear": 2020 },
-            { "logo": <SQLLogo />, "title": "SQL", "startingYear": 2024 },
-            { "logo": <PostgreSQLLogo />, "title": "PostgreSQL", "startingYear": 2024 },
+            { "logo": <logo.JavaScriptLogo />, "title": "JavaScript", "startingYear": 2019 },
+            { "logo": <logo.NodeJsLogo />, "title": "NodeJs", "startingYear": 2020 },
+            { "logo": <logo.ExpressLogo />, "title": "ExpressJs", "startingYear": 2020 },
+            { "logo": <logo.MongoDbLogo />, "title": "MongoDB", "startingYear": 2020 },
+            { "logo": <logo.SQLLogo />, "title": "SQL", "startingYear": 2024 },
+            { "logo": <logo.PostgreSQLLogo />, "title": "PostgreSQL", "startingYear": 2024 },
         ]
     },
     {
         "category": "Tools",
         "list": [
-            { "logo": <VsCodeLogo />, "title": "VS code", "startingYear": 2020 },
-            { "logo": <GitLogo />, "title": "Git", "startingYear": 2020 },
-            { "logo": <GitHubActionLogo />, "title": "GitHub Action", "startingYear": 2023 },
-            { "logo": <ChromeDevToolLogo />, "title": "Chrome Dev tool", "startingYear": 2020 },
-            { "logo": <FigmaLogo />, "title": "Figma", "startingYear": 2020 },
-            { "logo": <CodeBlocksLogo />, "title": "Code Blocks", "startingYear": 2017 },
-            { "logo": <DevCppLogo />, "title": "Dev C++", "startingYear": 2017 },
-            { "logo": <PhotoShopLogo />, "title": "PhotoShop", "startingYear": 2019 }
+            { "logo": <logo.VsCodeLogo />, "title": "VS code", "startingYear": 2020 },
+            { "logo": <logo.GitLogo />, "title": "Git", "startingYear": 2020 },
+            { "logo": <logo.GitHubActionLogo />, "title": "GitHub Action", "startingYear": 2023 },
+            { "logo": <logo.ChromeDevToolLogo />, "title": "Chrome Dev tool", "startingYear": 2020 },
+            { "logo": <logo.FigmaLogo />, "title": "Figma", "startingYear": 2020 },
+            { "logo": <logo.CodeBlocksLogo />, "title": "Code Blocks", "startingYear": 2017 },
+            { "logo": <logo.DevCppLogo />, "title": "Dev C++", "startingYear": 2017 },
+            { "logo": <logo.PhotoShopLogo />, "title": "PhotoShop", "startingYear": 2019 }
         ]
     },
     {
         "category": "Platform",
         "list": [
-            { "logo": <GitHubLogo />, "title": "GitHub", "startingYear": 2020 },
-            { "logo": <FirebaseLogo />, "title": "Firebase", "startingYear": 2020 },
-            { "logo": <SupabaseLogo />, "title": "Supabase", "startingYear": 2020 },
-            { "logo": <NetlifyLogo />, "title": "Netlify", "startingYear": 2020 },
-            { "logo": <VercelLogo />, "title": "Vercel", "startingYear": 2022 }
+            { "logo": <logo.GitHubLogo />, "title": "GitHub", "startingYear": 2020 },
+            { "logo": <logo.FirebaseLogo />, "title": "Firebase", "startingYear": 2020 },
+            { "logo": <logo.SupabaseLogo />, "title": "Supabase", "startingYear": 2020 },
+            { "logo": <logo.NetlifyLogo />, "title": "Netlify", "startingYear": 2020 },
+            { "logo": <logo.VercelLogo />, "title": "Vercel", "startingYear": 2022 }
         ]
     },
     {
         "category": "Programming Language",
         "list": [
-            { "logo": <CLogo />, "title": "C", "startingYear": 2017 },
-            { "logo": <CppLogo />, "title": "C++", "startingYear": 2018 },
-            { "logo": <JavaScriptLogo />, "title": "JavaScript", "startingYear": 2019 },
-            { "logo": <PythonLogo />, "title": "Python", "startingYear": 2020 }
+            { "logo": <logo.CLogo />, "title": "C", "startingYear": 2017 },
+            { "logo": <logo.CppLogo />, "title": "C++", "startingYear": 2018 },
+            { "logo": <logo.JavaScriptLogo />, "title": "JavaScript", "startingYear": 2019 },
+            { "logo": <logo.PythonLogo />, "title": "Python", "startingYear": 2020 }
         ]
     }
 ];

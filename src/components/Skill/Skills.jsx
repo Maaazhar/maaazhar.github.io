@@ -72,9 +72,7 @@ export const Skills = () => {
                                     {d.list.map((s, i) => {
                                         return (
                                             <div className="skillItem" key={`${s.logo}-${i}`}>
-                                                <div className="skillImg">
-                                                    {s.logo}
-                                                </div>
+                                                <div className="skillImg">{s.logo}</div>
                                                 <div className="skillName">{s.title}</div>
                                                 <div className="skillAge">{currentYear - s.startingYear}+ Years of<br />Experience </div>
                                             </div>
