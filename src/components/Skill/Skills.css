@@ -103,7 +103,7 @@
 }
 
 .skillItem:hover .skillImg {
-    right: 40%;
+    right: calc(50% - calc(45px/2));
 }
 
 .skillImg svg {
