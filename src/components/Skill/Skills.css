@@ -14,6 +14,55 @@
     gap: 15px;
 }
 
+.skillTabWrapper {
+    position: sticky;
+    top: 85px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.skillTabs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff10;
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    border: 1px solid #ffffff17;
+    overflow-x: auto;
+}
+
+.skillTab {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 10px 10px 0px;
+    padding: 8px 16px;
+    background: #2c2c2c80;
+    border-radius: 5px;
+    border: 1px solid #ffffff17;
+    font: 500 18px 'Ubuntu', sans-serif;
+    color: inherit;
+    text-shadow: 5px 5px 10px #000;
+    transition: all 0.3s ease-in-out;
+    backdrop-filter: blur(8px);
+    white-space: nowrap;
+    z-index: 2;
+}
+
+.skillTab:hover {
+    background: #1a1a1a80;
+    border: 1px solid #dc143c65;
+    /* color: #dc143c; */
+}
+
+.activeTab{
+    background: #1a1a1a80;
+    border: 1px solid #dc143c65;
+    color: #dc143c;
+}
+
 .skillCategory {
     background-color: #ffffff10;
     backdrop-filter: blur(10px);
@@ -33,14 +82,13 @@
 }
 
 .skill {
-    padding: 0px 10px;
+    /* padding: 0px 10px; */
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     overflow: hidden;
 }
-
 
 .skillItem {
     position: relative;
@@ -163,6 +211,12 @@
 }
 
 @media (max-width: 991px) {
+
+    .skillTab {
+        display: block;
+        font: 500 15px 'Ubuntu', sans-serif;
+    }
+
     .skillCategoryTitle {
         padding: 10px;
     }
@@ -190,7 +244,23 @@
     }
 }
 
+@media (max-width: 735px) {
+    .skillTabs {
+        justify-content: start;
+        padding-left: 10px;
+    }
+}
+
 @media (max-width: 500px) {
+
+    .skillTabs {
+        justify-content: start;
+        padding-left: 10px;
+    }
+
+    .skillTab {
+        font: 500 15px 'Ubuntu', sans-serif;
+    }
 
     .skillCategoryTitle {
         font-size: 25px;
@@ -219,7 +289,7 @@
     }
 
     .skillItem:hover .skillImg {
-        right: 5%;        
+        right: 5%;
         top: -5%;
     }
 

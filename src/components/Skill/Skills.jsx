@@ -1,11 +1,22 @@
 import "./Skills.css"
 import SkillList from "./SkillList.jsx";
-// import { useState } from "react";
+import { useState, useRef } from "react";
 
 export const Skills = () => {
     const currentYear = new Date().getFullYear();
-    // const [skillCategory, setSkillCategory] = useState(0)
-    // const toggleCategory = (i) => setSkillCategory(i);
+    const [skillCategory, setSkillCategory] = useState(undefined)
+    const tabWrapperRef = useRef(null);
+
+    const handleTabClick = (i, id, e) => {
+        if (e && typeof e.preventDefault === "function") e.preventDefault();
+        setSkillCategory(i);
+        const target = document.getElementById(id);
+        if (target) {
+            const tabsHeight = tabWrapperRef.current ? tabWrapperRef.current.getBoundingClientRect().height : 0;
+            const top = target.getBoundingClientRect().top + window.scrollY - tabsHeight - 100;
+            window.scrollTo({ top, behavior: "smooth" });
+        }
+    }
 
     return (
         <section className="skills" id="skills">
@@ -64,8 +75,30 @@ export const Skills = () => {
                     )}
                 </div> */}
                 <div className="skillsContent">
+                    <div className="skillTabWrapper" ref={tabWrapperRef}>
+                        <div className="skillTabs">
+                            {
+                                SkillList.map((d, i) => {
+                                    const id = d.category.toLowerCase().replace(/ /g, "-");
+                                    return (
+                                        <a
+                                            href={"#" + id}
+                                            key={d + 1 + i}
+                                            onClick={(e) => handleTabClick(i, id, e)}
+                                            className={skillCategory === i ? "skillTab activeTab" : "skillTab"}>
+                                            {d.category}
+                                        </a>
+                                    )
+                                }
+                                )
+                            }
+                        </div>
+                    </div>
                     {SkillList.map((d, i) => (
-                        <div className="skillCategory" key={d.category + i}>
+                        <div
+                            className="skillCategory"
+                            key={d.category + i}
+                            id={d.category.toLowerCase().replace(/ /g, "-")}>
                             <div className="skillCategoryTitle">{d.category}</div>
                             <div className="skillWrapper">
                                 <div className="skill">
