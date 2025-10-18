@@ -9,13 +9,15 @@ const skills = [
             { "logo": <logo.JavaScriptLogo />, "title": "JavaScript", "startingYear": 2019 },
             { "logo": <logo.Es6Logo />, "title": "ES6", "startingYear": 2019 },
             { "logo": <logo.BootstrapLogo />, "title": "Bootstrap", "startingYear": 2019 },
+            { "logo": <logo.TailwindCssLogo />, "title": "Tailwind CSS", "startingYear": 2020 },
             { "logo": <logo.MaterialUiLogo />, "title": "Material UI", "startingYear": 2020 },
             { "logo": <logo.ReactJsLogo />, "title": "ReactJs", "startingYear": 2020 },
             { "logo": <logo.ReduxLogo />, "title": "Redux", "startingYear": 2020 },
             { "logo": <logo.ReactHookLogo />, "title": "React-Hook", "startingYear": 2020 },
             { "logo": <logo.NextJsLogo />, "title": "NextJs", "startingYear": 2020 },
             { "logo": <logo.ReactRouterLogo />, "title": "React-Router", "startingYear": 2020 },
-            { "logo": <logo.TypeScriptLogo />, "title": "TypeScrip", "startingYear": 2020 }
+            { "logo": <logo.TypeScriptLogo />, "title": "TypeScript", "startingYear": 2020 },
+            { "logo": <logo.SEOLogo />, "title": "SEO", "startingYear": 2019 }
         ]
     },
     {

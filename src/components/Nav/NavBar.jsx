@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import './NavBar.css'
+import ActiveSectionIndicator from '../../utils/activeSectionIndicator';
 
 export const NavBar = () => {
   const [navState, setNavState] = useState(0)
@@ -18,34 +19,35 @@ export const NavBar = () => {
 
   const menu = ["home", "about", "skills", "experience", "project", "education", "contact",]
 
-  //Function to determine the active section while scrolling
-  const determineActiveSection = () => {
-    for (let i = menu.length - 1; i >= 0; i--) {
-      const section = document.getElementById(menu[i]);
-      if (section) {
-        const rect = section.getBoundingClientRect();
-        if (rect.top <= 120 && rect.bottom >= 120) {
-          //Set the active link based on the section ID
-          setNavState(i);
-          break;
-        }
-      }
-    }
-  };
+  ActiveSectionIndicator({sections: menu, top: 120, mount: navState, setMount: setNavState})
 
-  useEffect(() => {
-    const handleScroll = () => {
-      //Call the function to determine the active section while scrolling
-      determineActiveSection();
-    };
+  // useEffect(() => {
+  //   //Function to determine the active section while scrolling
+  //   const determineActiveSection = () => {
+  //     for (let i = menu.length - 1; i >= 0; i--) {
+  //       const section = document.getElementById(menu[i]);
+  //       if (section) {
+  //         const rect = section.getBoundingClientRect();
+  //         if (rect.top <= 120 && rect.bottom >= 120) {
+  //           //Set the active link based on the section ID
+  //           setNavState(i);
+  //           break;
+  //         }
+  //       }
+  //     }
+  //   };
+  //   const handleScroll = () => {
+  //     //Call the function to determine the active section while scrolling
+  //     determineActiveSection();
+  //   };
 
-    window.addEventListener("scroll", handleScroll);
+  //   window.addEventListener("scroll", handleScroll);
 
-    //Remove the scroll event listener when the component unmounts
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  //   //Remove the scroll event listener when the component unmounts
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
 
   return (
     <nav className={navBgColor ? "navbar sticky" : "navbar"}>

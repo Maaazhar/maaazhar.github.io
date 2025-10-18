@@ -57,7 +57,7 @@
     /* color: #dc143c; */
 }
 
-.activeTab{
+.activeTab {
     background: #1a1a1a80;
     border: 1px solid #dc143c65;
     color: #dc143c;
@@ -284,13 +284,16 @@
     .skillImg {
         /* width: 25px;
         margin: 2px 0px; */
+        top: 20%;
         right: -15%;
-        padding-top: 0px;
+        /* padding-top: 0px; */
     }
 
     .skillItem:hover .skillImg {
-        right: 5%;
-        top: -5%;
+        /* right: 5%;
+        top: -5%; */
+        top: 0%;
+        right: calc(50% - calc(50px/2));
     }
 
     .skillImg svg {
@@ -298,7 +301,7 @@
     }
 
     .skillItem:hover .skillImg svg {
-        width: 80px;
+        width: 50px;
     }
 
     .skillName {
