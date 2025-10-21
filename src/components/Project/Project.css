@@ -387,13 +387,13 @@
 
     .workingMode,
     .singleProjectRevers>.projectDescription>.projectTitleWrapper>.workingMode {
-        transform: translate(180px, 85%);
+        transform: translate(200px, 85%);
         font-size: 20px;
         left: 0;
     }
 
     .workingMode-0 {
-        transform: translate(170px, 85%);
+        transform: translate(190px, 85%);
     }
 
     .projectTitleWrapper:has(.projectSubTitle), .singleProjectRevers>.projectDescription>.projectTitleWrapper:has(.projectSubTitle) {
@@ -493,7 +493,18 @@
 
 }
 
-@media (max-width: 380px) {}
+@media (max-width: 380px) {
+    .workingMode,
+    .singleProjectRevers>.projectDescription>.projectTitleWrapper>.workingMode {
+        transform: translate(172px, 100%);
+        font-size: 18px;
+        left: 0;
+    }
+
+    .workingMode-0 {
+        transform: translate(160px, 100%);
+    }
+}
 
 @media (max-width: 350px) {
 
@@ -502,8 +513,22 @@
         margin-top: 5px;
     }
 
+    .workingMode,
+    .singleProjectRevers>.projectDescription>.projectTitleWrapper>.workingMode {
+        transform: translate(142px, 120%);
+        font-size: 14px;
+        left: 0;
+    }
+
+    .workingMode-0 {
+        transform: translate(130px, 120%);
+    }
+    .workingMode-3 {
+        transform: translate(147px, 120%);
+    }
+
     .projectDetails {
-        margin-top: 5px;
+        margin-top: 20px;
     }
 
     .projectSequence,
