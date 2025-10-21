@@ -83,6 +83,25 @@
     text-shadow: 5px 5px 10px #000;
 }
 
+.projectTitleWrapper:has(.projectSubTitle) {
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.singleProjectRevers>.projectDescription>.projectTitleWrapper:has(.projectSubTitle)  {
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.projectSubTitle {
+    color: #9b9b9bcb;
+    font: 400 15px 'Poppins', sans-serif;
+    margin-left: 15px;
+    text-shadow: 5px 5px 10px #000;
+    text-transform: capitalize;
+}
+
 .singleProjectRevers>.projectDescription>.projectTitleWrapper {
     justify-content: start;
 }
@@ -90,14 +109,25 @@
 .projectSequence {
     position: absolute;
     right: 0;
-    color: #66666657;
-    font: 600 100px "Poppins", sans-serif;
+    color: #66666669;
+    font: 600 100px/0.6 "Poppins", sans-serif;
     text-shadow: none;
     z-index: -1;
+}
+.workingMode {
+    position: absolute;
+    transform: translate( -10%,150%);
+    color: #666666aa;
+    text-shadow: none;
+    font-size: 30px;
+    text-transform: capitalize;
 }
 
 .singleProjectRevers>.projectDescription>.projectTitleWrapper>.projectSequence {
     left: 0;
+}
+.singleProjectRevers>.projectDescription>.projectTitleWrapper>.workingMode {
+    transform: translate(0%,150%);
 }
 
 .projectInfo {
@@ -117,7 +147,7 @@
 
 .projectDetails {
     position: relative;
-    margin-top: 30px;
+    margin-top: 60px;
     padding: 20px;
     background-color: #0c181aa0;
     backdrop-filter: blur(1px);

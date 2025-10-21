@@ -1,6 +1,6 @@
 import "./Skills.css"
 import SkillList from "./SkillList.jsx";
-import { useEffect, useState, useRef } from "react";
+import { useState, useRef } from "react";
 import ActiveSectionIndicator from "../../utils/activeSectionIndicator.jsx";
 
 export const Skills = () => {
@@ -20,35 +20,8 @@ export const Skills = () => {
     }
 
     const skills = SkillList.map(skill => skill.category.toLowerCase().replace(/ /g, "-"));
-    console.log(skills);
-
     ActiveSectionIndicator({sections: skills, top: 170, mount: skillCategory, setMount: setSkillCategory})
-
-    
-    // useEffect(() => {
-    //     //Function to determine the active section while scrolling
-    //     const determineActiveSection = () => {
-    //         for (let i = skills.length - 1; i >= 0; i--) {
-    //             const section = document.getElementById(skills[i]);
-    //             if (section) {
-    //                 const rect = section.getBoundingClientRect();
-    //                 if (rect.top <= 170 && rect.bottom >= 10) {
-    //                     //Set the active link based on the section ID
-    //                     if (skillCategory !== i) setSkillCategory(i)
-    //                     break;
-    //                 }
-    //             }
-    //         }
-    //     };
-
-    //     window.addEventListener("scroll", determineActiveSection);
-
-    //     //Remove the scroll event listener when the component unmounts
-    //     return () => {
-    //       window.removeEventListener("scroll", determineActiveSection);
-    //     };
-    //   }, [skills]);
-
+ 
     return (
         <section className="skills" id="skills">
             <div className="max-width">

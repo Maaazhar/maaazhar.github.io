@@ -11,7 +11,7 @@ const ActiveSectionIndicator = ({sections, top, mount, setMount}) => {
           const rect = section.getBoundingClientRect();
           if (rect.top <= top && rect.bottom >= 10) {
             //Set the active link based on the section ID
-            if (mount !== i) setMount(i)
+            mount !== i && setMount(i)
             break;
           }
         }

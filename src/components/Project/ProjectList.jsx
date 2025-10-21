@@ -1,24 +1,54 @@
+import aqary from "../../assets/images/project/aqary.jpg";
+import dvProperty from "../../assets/images/project/dvProperty.jpg";
 import imgOfRafada from "../../assets/images/project/rafada.png";
 import GreenCrate from "../../assets/images/project/GreenCrate.jpg";
-import portfolio from "../../assets/images/project/portfolio.jpg";
-import tweetex from "../../assets/images/project/tweetex.jpg";
 import msTube from "../../assets/images/project/msTube.jpg";
+import portfolio from "../../assets/images/project/portfolio.jpg";
+import pureHome from "../../assets/images/project/pureHome.jpg";
+import tweetex from "../../assets/images/project/tweetex.jpg";
 
 const projects = [
     {
         "category": "Client Project",
         "list": [
             {
+                "image": dvProperty,
+                "workingMode": "solo",
+                "title": "Diamond Vista Properties",
+                "details": "Website of Diamond Vista Properties, a modern real estate platform featuring dynamic property listings, intuitive navigation, and a clean responsive interface providing users with a seamless experience to explore luxury and affordable homes across Dubai.",
+                "technology": ["ReactJS", "NextJS", "Tailwind CSS", "SVG", "Email Service", "Organic  SEO", "Dynamic SEO implementation"],
+                "liveLink": ["https://dvproperty.vercel.app/"],
+            },
+            {
+                "image": pureHome,
+                "workingMode": "collaborative",
+                "title": "Pure Home Real Estate",
+                "details": "The website Pure Home Real Estate LLC, it showcases comprehensive listings, detailed investment insights and expert guidance across the UAE market, delivering a refined and user-focused experience for renters, buyers and investors.",
+                "technology": ["HTML", "CSS", "NextJS", "ReactJS", "Font Awesome", "Organic  SEO"],
+                "liveLink": ["https://purehome-re.ae/"],
+            },
+            {
+                "image": aqary,
+                "workingMode": "collaborative",
+                "title": "Aqary Investment",
+                "details": "The website of Aqary Investment & Development, showcasing their real-estate services across the UAE with clear property listings, professional branding, and an inviting user experience that supports clients in buying, selling, renting and investing with confidence.",
+                "technology": ["NextJS", "ReactJS", "MaterialUI", "Font Awesome", "Organic  SEO"],
+                "liveLink": ["https://aqaryaid.com/en"],
+            },
+            {
                 "image": imgOfRafada,
-                "title": "Website of RAFADA Group",
-                "details": "This is a business website of RAFADA Group, consisting of a total of 17 pages, accommodating an individual single page for each of their 14 companies to promote them by sharing their business information.",
-                "technology": ["HTML", "CSS", "ReactJS", "Bootstrap", "Font Awesome", "Organic  SEO"],
-                "liveLink": ["https://www.rafadagroup.com/"],
+                "workingMode": "solo",
+                "title": "RAFADA Group",
+                "details": "Website of RAFADA Group, a polished corporate site showcasing the companys diverse business portfolio, clear service offerings, and professional branding, delivering a streamlined user experience to engage clients across the UAE.",
+                "technology": ["HTML", "CSS", "ReactJS", "Bootstrap", "Font Awesome", "Email Service", "Organic  SEO"],
+                "liveLink": ["https://www.rafadagroupuae.com/"],
             },
             {
                 "image": GreenCrate,
-                "title": "Website of Green Crate",
-                "details": "Green Crate is an organic food provider in Dhaka, offering fresh and authentic product. The website features their products, services, and commitment to sustainable practices.",
+                "workingMode": "solo",
+                "title": "Green Crate",
+                "subTitle": "[only desktop version]",
+                "details": "Green Crates website, a vibrant e-commerce platform showcasing eco-friendly crates with engaging visuals, intuitive navigation, and seamless user experience, making green choices simple and stylish for every customer.",
                 "technology": ["HTML", "CSS", "ReactJS", "Vite", "Font Awesome", "Organic  SEO"],
                 "liveLink": ["http://greencratebd.com/", "https://greencrate.netlify.app/"],
             }
