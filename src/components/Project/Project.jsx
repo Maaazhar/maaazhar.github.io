@@ -38,7 +38,7 @@ const Project = () => {
                                                     <h3 className="projectTitle">{p.title}</h3>
                                                     {p.subTitle && <h3 className="projectSubTitle">{p.subTitle}</h3>}
                                                     <h3 className="projectSequence">{i + 1}</h3>
-                                                    <h3 className="workingMode">[{p.workingMode}]</h3>
+                                                    <h3 className={`workingMode workingMode-${i}`}>[{p.workingMode}]</h3>
                                                 </div>
                                                 <div className="projectInfo ">
                                                     <p className="projectDetails">{p.details}</p>
