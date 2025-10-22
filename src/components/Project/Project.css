@@ -10,22 +10,84 @@
 }
 
 .projectContent {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    gap: 15px;
+    /* align-items: center;
+    justify-content: center;
+    /* display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 10px; */
+}
+
+
+.projectTabWrapper {
+    position: sticky;
+    top: 85px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.projectTabs {
+    display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    background-color: #ffffff10;
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    border: 1px solid #ffffff17;
+    overflow-x: auto;
+}
+
+.projectTab {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 10px 10px 0px;
+    padding: 8px 16px;
+    background: #2c2c2c80;
+    border-radius: 5px;
+    border: 1px solid #ffffff17;
+    font: 500 18px 'Ubuntu', sans-serif;
+    color: inherit;
+    text-shadow: 5px 5px 10px #000;
+    transition: all 0.3s ease-in-out;
+    backdrop-filter: blur(8px);
+    white-space: nowrap;
+    z-index: 2;
+}
+
+.projectTab:hover {
+    background: #1a1a1a80;
+    border: 1px solid #dc143c65;
+    /* color: #dc143c; */
+}
+
+.activeTab {
+    background: #1a1a1a80;
+    border: 1px solid #dc143c65;
+    color: #dc143c;
 }
 
 .projectCategory {
     background-color: #ffffff10;
     backdrop-filter: blur(10px);
+    border-radius: 5px;
     border-top: 1px solid #ffffff17;
     border-left: 1px solid #ffffff17;
 }
 
 .projectCategoryTitle {
+    padding: 15px;
     color: #dc143c;
+    font: 500 30px 'Ubuntu', sans-serif;
+}
+
+.projectWrapper{
+    padding: 10px;
 }
 
 .projectCard {
@@ -121,7 +183,7 @@
 
 .workingMode {
     position: absolute;
-    transform: translate(-55px, -70%);
+    transform: translate(-65px, 50%);
     color: #66666669;
     text-shadow: none;
     font-size: 30px;
@@ -130,12 +192,12 @@
 }
 
 .workingMode-0 {
-    transform: translate(-35px, -70%);
+    transform: translate(-35px, 50%);
 }
 
 .singleProjectRevers>.projectDescription>.projectTitleWrapper>.workingMode {
     /* transform: translate(0%,150%); */
-    transform: translate(55px, -70%);
+    transform: translate(65px, 50%);
 }
 
 .projectInfo {
@@ -172,6 +234,7 @@
     position: relative;
     width: 100%;
     margin-top: 20px;
+    /* border: 1px solid red; */
 }
 
 .projectTechnology>ul {
@@ -389,7 +452,7 @@
     .workingMode,
     .singleProjectRevers>.projectDescription>.projectTitleWrapper>.workingMode {
         transform: translateY(80%);
-        right: 50px;
+        right: 55px;
         font-size: 20px;
     }
     
@@ -494,6 +557,14 @@
 }
 
 @media (max-width: 380px) {
+    .projectTabs {
+        padding-left: 10px;
+    }
+
+    .projectTab {
+        display: block;
+        font: 500 15px 'Ubuntu', sans-serif;
+    }
     /* .workingMode,
     .singleProjectRevers>.projectDescription>.projectTitleWrapper>.workingMode {
         transform: translate(172px, 100%);
@@ -507,6 +578,10 @@
 }
 
 @media (max-width: 350px) {
+
+    .projectTabs {
+        justify-content: start;
+    }
 
     .singleProjectRevers>.projectDescription,
     .projectDescription {

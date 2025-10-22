@@ -265,6 +265,9 @@ section .title::after {
     .max-width {
         padding: 0 50px;
     }
+    .project .max-width {
+        padding: 0 20px;
+    }
 
     .accordionButton {
         padding: 10px;
@@ -306,7 +309,8 @@ section .title::after {
         font-size: 35px;
     }
 
-    .skills .max-width {
+    .skills .max-width,
+    .project .max-width {
         padding: 0 10px;
     }
 

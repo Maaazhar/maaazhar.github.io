@@ -59,6 +59,7 @@ const projects = [
         "list": [
             {
                 "image": msTube,
+                "workingMode": "solo",
                 "title": "MS Tube a YouTube clone",
                 "details": "MS Tube is a YouTube clone app that streams videos using YouTube’s original links, offering a similar user experience for watching and exploring content while leveraging YouTube’s vast video library and functionality.",
                 "technology": ["ReactJS", "Material UI", "Vite", "Rapid API", "Axios", "GithubPages", "Organic  SEO"],
@@ -67,6 +68,7 @@ const projects = [
             },
             {
                 "image": tweetex,
+                "workingMode": "solo",
                 "title": "Tweet a micro blogging web app",
                 "details": "Tweet is a micro-blogging web app similar to X (formerly Twitter). Currently, users can post and like content, with plans to introduce comment and follow features in the future, enhancing user interaction.",
                 "technology": ["ReactJS", "NextJS", "TypeScript", "Tailwind CSS", "SupaBase", "PostgreSQL", "Vercel", "Organic  SEO"],
@@ -75,6 +77,7 @@ const projects = [
             },
             {
                 "image": portfolio,
+                "workingMode": "solo",
                 "title": "Portfolio of Mazharul Islam",
                 "details": "This is a portfolio website of Mazharul Islam, a professional web developer based in the UAE, showcases his expertise, featuring his portfolio, technical skills, and professional experiences.",
                 "technology": ["HTML", "CSS", "ReactJS", "Vite", "Font Awesome", "Organic  SEO"],
