@@ -1,4 +1,4 @@
-import ActiveSectionIndicator from "../../utils/activeSectionIndicator.jsx";
+import {ActiveSectionIndicator, handleTabClick} from "../../utils/utils.jsx";
 import "./Project.css";
 import projectList from "./ProjectList.jsx"
 import { useRef, useState } from "react";
@@ -9,17 +9,6 @@ const Project = () => {
 
     const projects = projectList.map(project => project.category.toLowerCase().replace(/ /g, "-"));
     ActiveSectionIndicator({ sections: projects, top: 170, mount: projectCategory, setMount: setProjectCategory })
-
-    const handleTabClick = (i, id, e) => {
-        if (e && typeof e.preventDefault === "function") e.preventDefault();
-        setProjectCategory(i);
-        const target = document.getElementById(id);
-        if (target) {
-            const tabsHeight = tabWrapperRef.current ? tabWrapperRef.current.getBoundingClientRect().height : 0;
-            const top = target.getBoundingClientRect().top + window.scrollY - tabsHeight - 100;
-            window.scrollTo({ top, behavior: "smooth" });
-        }
-    }
 
     return (
         <section className="project" id="project">
@@ -35,7 +24,7 @@ const Project = () => {
                                         <a
                                             href={"#" + id}
                                             key={d + 1 + i}
-                                            onClick={(e) => handleTabClick(i, id, e)}
+                                            onClick={(e) => handleTabClick(i, id, tabWrapperRef, setProjectCategory, e)}
                                             className={projectCategory === i ? "projectTab activeTab" : "projectTab"}>
                                             {d.category}
                                         </a>

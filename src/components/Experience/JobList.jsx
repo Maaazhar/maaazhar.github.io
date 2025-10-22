@@ -1,10 +1,8 @@
 
-const jobList = {
-  "companies": ["Abu Dhabi City", "MJ Project Management", "Top Tier Technology", "Top Tier Technology", "Technology Palli", "Creative IT Institute"],
-  "jobs": [
+const jobList = [
     {
       "position": "Freelance Web Developer",
-      "company": "Abu Dhabi City.",
+      "company": "Abu Dhabi City",
       "location": "Abu Dhabi, United Arab Emirates.",
       "duration": "December, 2023 - Present",
       "description": [
@@ -15,7 +13,7 @@ const jobList = {
     },
     {
       "position": "Computer Engineer (Web Developer) - Remote",
-      "company": "MJ Project Management LLC.",
+      "company": "MJ Project Management LLC",
       "location": "Dubai, United Arab Emirates.",
       "duration": "November, 2023 - Present",
       "description": [
@@ -25,7 +23,7 @@ const jobList = {
     },
     {
       "position": "Web Developer (Front-End, ReactJS)",
-      "company": "Top Tier Technology.",
+      "company": "Top Tier Technology",
       "location": "Dhaka, Bangladesh.",
       "duration": "June, 2022 - August, 2023",
       "description": [
@@ -36,7 +34,7 @@ const jobList = {
     },
     {
       "position": "System Admin",
-      "company": "Top Tier Technology.",
+      "company": "Top Tier Technology",
       "location": "Dhaka, Bangladesh.",
       "duration": "August 2021 - May 2022",
       "description": [
@@ -47,7 +45,7 @@ const jobList = {
     },
     {
       "position": "Network Engineer",
-      "company": "Technology Palli.",
+      "company": "Technology Palli",
       "location": "Dhaka, Bangladesh.",
       "duration": "February 2020 - July 2021",
       "description": [
@@ -58,7 +56,7 @@ const jobList = {
     },
     {
       "position": "Network Support Engineer (intern)",
-      "company": "Creative IT Institute.",
+      "company": "Creative IT Institute",
       "location": "Dhaka, Bangladesh.",
       "duration": "November 2019 - January 2020",
       "description": [
@@ -67,7 +65,6 @@ const jobList = {
         "Participate in training sessions and workshops to develop skills in network design, routing, switching, and security, contributing to professional growth and readiness for future responsibilities in the field.",
       ]
     }
-  ]
-};
+  ];
 
 export default jobList;

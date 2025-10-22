@@ -1,6 +1,5 @@
 import { useEffect } from "react";
-
-const ActiveSectionIndicator = ({sections, top, mount, setMount}) => {
+export const ActiveSectionIndicator = ({ sections, top, mount, setMount }) => {
 
   useEffect(() => {
     //Function to determine the active section while scrolling
@@ -27,4 +26,13 @@ const ActiveSectionIndicator = ({sections, top, mount, setMount}) => {
   }, [sections]);
 }
 
-export default ActiveSectionIndicator
+export const handleTabClick = (i, id, ref, set, e) => {
+  if (e && typeof e.preventDefault === "function") e.preventDefault();
+  set(i);
+  const target = document.getElementById(id);
+  if (target) {
+    const tabsHeight = ref.current ? ref.current.getBoundingClientRect().height : 0;
+    const top = target.getBoundingClientRect().top + window.scrollY - tabsHeight - 100;
+    window.scrollTo({ top, behavior: "smooth" });
+  }
+}
