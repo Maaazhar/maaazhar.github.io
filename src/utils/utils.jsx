@@ -18,12 +18,13 @@ export const ActiveSectionIndicator = ({ sections, top, mount, setMount }) => {
     };
 
     window.addEventListener("scroll", determineActiveSection);
+    determineActiveSection(); //Initial check on mount
 
     //Remove the scroll event listener when the component unmounts
     return () => {
       window.removeEventListener("scroll", determineActiveSection);
     };
-  }, [sections]);
+  }, [sections, top, mount, setMount]);
 }
 
 export const handleTabClick = (i, id, ref, set, e) => {
