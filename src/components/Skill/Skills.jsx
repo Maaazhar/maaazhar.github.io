@@ -1,13 +1,13 @@
 import "./Skills.css"
+import { useState} from "react";
 import SkillList from "./SkillList.jsx";
-import { useState, useRef } from "react";
-import { ActiveSectionIndicator, handleTabClick } from "../../utils/utils.jsx";
+import {handleTabClick } from "../../utils/utils.js";
+import { ActiveSectionIndicator} from "../../utils/sideEffect.jsx";
 
 export const Skills = () => {
     const currentYear = new Date().getFullYear();
-    const [skillCategory, setSkillCategory] = useState(undefined)
-    const tabWrapperRef = useRef(null);
-
+    const [skillCategory, setSkillCategory] = useState(undefined);
+    const ref = document.querySelector('#skills .skillTabWrapper');
     const skills = SkillList.map(skill => skill.category.toLowerCase().replace(/ /g, "-"));
     ActiveSectionIndicator({ sections: skills, top: 170, mount: skillCategory, setMount: setSkillCategory })
 
@@ -15,10 +15,8 @@ export const Skills = () => {
         <section className="skills" id="skills">
             <div className="max-width">
                 <h2 className="title">My skills</h2>
-
-
                 <div className="skillsContent">
-                    <div className="skillTabWrapper" ref={tabWrapperRef}>
+                    <div className="skillTabWrapper">
                         <div className="skillTabs">
                             {SkillList.map((d, i) => {
                                 const id = d.category.toLowerCase().replace(/ /g, "-");
@@ -26,7 +24,7 @@ export const Skills = () => {
                                     <a
                                         href={"#" + id}
                                         key={d + 1 + i}
-                                        onClick={(e) => handleTabClick(i, id, tabWrapperRef, setSkillCategory, e)}
+                                        onClick={(e) => handleTabClick(i, id, ref, 100, setSkillCategory, e)}
                                         className={skillCategory === i ? "skillTab activeTab" : "skillTab"}>
                                         {d.category}
                                     </a>
@@ -49,8 +47,7 @@ export const Skills = () => {
                                                 <div className="skillName">{s.title}</div>
                                                 <div className="skillAge">{currentYear - s.startingYear}+ Years of<br />Experience </div>
                                             </div>
-                                        )
-                                    }
+                                        )}
                                     )}
                                 </div>
                             </div>

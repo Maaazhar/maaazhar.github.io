@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './NavBar.css'
-import {ActiveSectionIndicator} from "../../utils/utils.jsx";
+import {ActiveSectionIndicator} from "../../utils/sideEffect.jsx";
 
 export const NavBar = () => {
   const [navState, setNavState] = useState(0)

@@ -20,6 +20,14 @@ const projects = [
                 "liveLink": ["https://dvproperty.vercel.app/"],
             },
             {
+                "image": imgOfRafada,
+                "workingMode": "solo",
+                "title": "RAFADA Group",
+                "details": "Website of RAFADA Group, a polished corporate site showcasing the companys diverse business portfolio, clear service offerings, and professional branding, delivering a streamlined user experience to engage clients across the UAE.",
+                "technology": ["HTML", "CSS", "ReactJS", "Bootstrap", "Font Awesome", "Email Service", "Organic  SEO"],
+                "liveLink": ["https://www.rafadagroupuae.com/"],
+            },
+            {
                 "image": pureHome,
                 "workingMode": "collaborative",
                 "title": "Pure Home Real Estate",
@@ -34,14 +42,6 @@ const projects = [
                 "details": "Aqary Investment & Developments website, showcasing their real-estate services across the UAE with clear property listings, professional branding, and an inviting user experience that supports clients in buying, selling, renting and investing with confidence.",
                 "technology": ["NextJS", "ReactJS", "MaterialUI", "Font Awesome", "Organic  SEO"],
                 "liveLink": ["https://aqaryaid.com/en"],
-            },
-            {
-                "image": imgOfRafada,
-                "workingMode": "solo",
-                "title": "RAFADA Group",
-                "details": "Website of RAFADA Group, a polished corporate site showcasing the companys diverse business portfolio, clear service offerings, and professional branding, delivering a streamlined user experience to engage clients across the UAE.",
-                "technology": ["HTML", "CSS", "ReactJS", "Bootstrap", "Font Awesome", "Email Service", "Organic  SEO"],
-                "liveLink": ["https://www.rafadagroupuae.com/"],
             },
             {
                 "image": GreenCrate,

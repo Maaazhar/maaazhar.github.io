@@ -1,12 +1,12 @@
-import {ActiveSectionIndicator, handleTabClick} from "../../utils/utils.jsx";
 import "./Project.css";
+import { useState } from "react";
 import projectList from "./ProjectList.jsx"
-import { useRef, useState } from "react";
+import {handleTabClick } from "../../utils/utils.js";
+import {ActiveSectionIndicator} from "../../utils/sideEffect.jsx";
 
 const Project = () => {
-    const [projectCategory, setProjectCategory] = useState(undefined)
-    const tabWrapperRef = useRef(null);
-
+    const [projectCategory, setProjectCategory] = useState(undefined);
+    const ref = document.querySelector('#project .projectTabWrapper');
     const projects = projectList.map(project => project.category.toLowerCase().replace(/ /g, "-"));
     ActiveSectionIndicator({ sections: projects, top: 170, mount: projectCategory, setMount: setProjectCategory })
 
@@ -15,7 +15,7 @@ const Project = () => {
             <div className="max-width">
                 <h2 className="title">Recent projects</h2>
                 <div className="projectContent">
-                    <div className="projectTabWrapper" ref={tabWrapperRef}>
+                    <div className="projectTabWrapper">
                         <div className="projectTabs">
                             {
                                 projectList.map((d, i) => {
@@ -24,7 +24,7 @@ const Project = () => {
                                         <a
                                             href={"#" + id}
                                             key={d + 1 + i}
-                                            onClick={(e) => handleTabClick(i, id, tabWrapperRef, setProjectCategory, e)}
+                                            onClick={(e) => handleTabClick(i, id, ref, 100, setProjectCategory, e)}
                                             className={projectCategory === i ? "projectTab activeTab" : "projectTab"}>
                                             {d.category}
                                         </a>

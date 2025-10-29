@@ -26,14 +26,3 @@ export const ActiveSectionIndicator = ({ sections, top, mount, setMount }) => {
     };
   }, [sections, top, mount, setMount]);
 }
-
-export const handleTabClick = (i, id, ref, set, e) => {
-  if (e && typeof e.preventDefault === "function") e.preventDefault();
-  set(i);
-  const target = document.getElementById(id);
-  if (target) {
-    const tabsHeight = ref.current ? ref.current.getBoundingClientRect().height : 0;
-    const top = target.getBoundingClientRect().top + window.scrollY - tabsHeight - 100;
-    window.scrollTo({ top, behavior: "smooth" });
-  }
-}
