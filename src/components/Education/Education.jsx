@@ -1,18 +1,15 @@
+import "./Education.css"
 import { useState } from "react";
 import EducationList from "./EducationList.jsx"
-import "./Education.css"
 import { handleTabClick } from "../../utils/utils.js";
 import { ActiveSectionIndicator } from "../../utils/sideEffect.jsx";
 
 const Education = () => {
-    const [educationCategory, setEducationCategory] = useState(0)
+    const [educationCategory, setEducationCategory] = useState(undefined);
     const ref = document.querySelector('#education .educationTabWrapper');
     const educations = EducationList.map(edu => edu.category.toLowerCase().replace(/ /g, "-"));
     ActiveSectionIndicator({ sections: educations, top: 170, mount: educationCategory, setMount: setEducationCategory });
-    // const toggleCategory = (i) => setEducationCategory(i);
 
-    // const [tabState, setTabState] = useState(0)
-    // const toggleTab = (i) => setTabState(i);
     return (
         <section className="education" id="education">
             <div className="max-width">

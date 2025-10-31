@@ -1,11 +1,12 @@
 import "./Project.css";
 import { useState } from "react";
 import projectList from "./ProjectList.jsx"
-import {handleTabClick } from "../../utils/utils.js";
-import {ActiveSectionIndicator} from "../../utils/sideEffect.jsx";
+import { handleTabClick } from "../../utils/utils.js";
+import { ActiveSectionIndicator } from "../../utils/sideEffect.jsx";
 
 const Project = () => {
     const [projectCategory, setProjectCategory] = useState(undefined);
+    const [expanded, setExpanded] = useState({});
     const ref = document.querySelector('#project .projectTabWrapper');
     const projects = projectList.map(project => project.category.toLowerCase().replace(/ /g, "-"));
     ActiveSectionIndicator({ sections: projects, top: 170, mount: projectCategory, setMount: setProjectCategory })
@@ -17,73 +18,62 @@ const Project = () => {
                 <div className="projectContent">
                     <div className="projectTabWrapper">
                         <div className="projectTabs">
-                            {
-                                projectList.map((d, i) => {
-                                    const id = d.category.toLowerCase().replace(/ /g, "-");
-                                    return (
-                                        <a
-                                            href={"#" + id}
-                                            key={d + 1 + i}
-                                            onClick={(e) => handleTabClick(i, id, ref, 100, setProjectCategory, e)}
-                                            className={projectCategory === i ? "projectTab activeTab" : "projectTab"}>
-                                            {d.category}
-                                        </a>
-                                    )
-                                }
+                            {projectList.map((d, i) => {
+                                const id = d.category.toLowerCase().replace(/ /g, "-");
+                                return (
+                                    <a
+                                        key={d + 1 + i}
+                                        href={"#" + id}
+                                        onClick={(e) => handleTabClick(i, id, ref, 100, setProjectCategory, e)}
+                                        className={projectCategory === i ? "projectTab activeTab" : "projectTab"}>
+                                        {d.category}
+                                    </a>
                                 )
-                            }
+                            })}
                         </div>
                     </div>
-                    {projectList.map((d, i) => (
-                        <div className="projectCategory"
-                            key={d.category + i}
-                            id={d.category.toLowerCase().replace(/ /g, "-")}>
-                            <h2 className="projectCategoryTitle">{d.category}</h2>
-                            <div className="projectWrapper">
-                                <div className="projectCard">
-                                    {d.list.map((p, i) => (
-                                        <div
-                                            key={p.image + i}
-                                            className={i % 2 === 0 ? "singleProject" : "singleProjectRevers"}>
-                                            <div className="projectImg "><img src={p.image} alt="" /></div>
-                                            <div className="projectDescription ">
-                                                <div className="projectTitleWrapper">
-                                                    <h3 className="projectTitle">{p.title}</h3>
-                                                    {p.subTitle && <h3 className="projectSubTitle">{p.subTitle}</h3>}
-                                                    <h3 className="projectSequence">{i + 1}</h3>
-                                                    <h3 className={`workingMode workingMode-${i}`}>[{p.workingMode}]</h3>
-                                                </div>
-                                                <div className="projectInfo ">
-                                                    <p className="projectDetails">{p.details}</p>
-                                                    <div className="projectTechnology">
-                                                        <ul style={{ "--totalItem": p.technology.length }}>
-                                                            {p.technology.map((t, i) => (
-                                                                <li key={t + i + 100} style={{ "--item": i + 1 }} >{t}</li>
-                                                            ))}
-                                                        </ul>
-                                                    </div>
-                                                    <div className="projectLink ">
-                                                        {p.liveLink.map((l) => (
-                                                            <a key={l + i + 100}
-                                                                href={l}
-                                                                target="_blank">
-                                                                <i className="fas fa-external-link-square-alt"></i>
-                                                            </a>
-                                                        ))}
-                                                        {p.githubLink &&
-                                                            <a href={p.githubLink}
-                                                                target="_blank"><i className="fab fa-github"></i>
-                                                            </a>}
-                                                    </div>
-                                                </div>
+                    {projectList.map((d, i) => {
+                        const id = d.category.toLowerCase().replace(/ /g, "-");
+                        return (
+                            <div className="projectCategory"
+                                key={d.category + i}
+                                id={id}>
+                                <h2 className="projectCategoryTitle">{d.category}</h2>
+                                <div className="projectWrapper">
+                                    <div className="projectCard">
+                                        {d.list.slice(0, 3).map((p, j) => SingleProject(p, j))}
+                                        {d.list.length > 3 && (
+                                            <div
+                                                className="extraProjects"
+                                                style={{ maxHeight: expanded[i] ? 'fit-content' : '0px' }}
+                                                aria-hidden={!expanded[i]}
+                                            >
+                                                {d.list.slice(3).map((p, j) => SingleProject(p, j + 3))}
                                             </div>
-                                        </div>
-                                    )
-                                    )}
+                                        )}
+                                        {d.list.length > 3 && (
+                                            <div className="showMoreBtnWrapper">
+                                                <button
+                                                    className="showMoreBtn"
+                                                    onClick={() => setExpanded(prev => ({ ...prev, [i]: !prev[i] }))}
+                                                    aria-expanded={!!expanded[i]}
+                                                >
+                                                    {expanded[i]
+                                                        ? (<a
+                                                            href={`#${id}`}
+                                                            onClick={(e) => handleTabClick(i, id, ref, 100, setProjectCategory, e)}>
+                                                            Show Less
+                                                        </a>)
+                                                        : 'Show More'
+                                                    }
+                                                </button>
+                                            </div>
+                                        )}
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    )
+                        )
+                    }
                     )}
                 </div>
 
@@ -159,3 +149,42 @@ const Project = () => {
 };
 
 export default Project;
+
+const SingleProject = (p, idx) => (
+    <div
+        key={p.image + idx}
+        className={idx % 2 === 0 ? "singleProject" : "singleProjectRevers"}>
+        <div className="projectImg "><img src={p.image} alt="" /></div>
+        <div className="projectDescription ">
+            <div className="projectTitleWrapper">
+                <h3 className="projectTitle">{p.title}</h3>
+                {p.subTitle && <h3 className="projectSubTitle">{p.subTitle}</h3>}
+                <h3 className="projectSequence">{idx + 1}</h3>
+                <h3 className={`workingMode workingMode-${idx}`}>[{p.workingMode}]</h3>
+            </div>
+            <div className="projectInfo ">
+                <p className="projectDetails">{p.details}</p>
+                <div className="projectTechnology">
+                    <ul style={{ "--totalItem": p.technology.length }}>
+                        {p.technology.map((t, k) => (
+                            <li key={t + k + 100} style={{ "--item": k + 1 }} >{t}</li>
+                        ))}
+                    </ul>
+                </div>
+                <div className="projectLink ">
+                    {p.liveLink.map((l, li) => (
+                        <a key={l + li + 100}
+                            href={l}
+                            target="_blank">
+                            <i className="fas fa-external-link-square-alt"></i>
+                        </a>
+                    ))}
+                    {p.githubLink &&
+                        <a href={p.githubLink}
+                            target="_blank"><i className="fab fa-github"></i>
+                        </a>}
+                </div>
+            </div>
+        </div>
+    </div>
+)

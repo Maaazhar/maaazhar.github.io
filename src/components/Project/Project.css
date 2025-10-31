@@ -40,7 +40,7 @@
     border: 1px solid #ffffff17;
     overflow-x: auto;
 }
-
+.showMoreBtn,
 .projectTab {
     display: block;
     display: flex;
@@ -57,9 +57,11 @@
     transition: all 0.3s ease-in-out;
     backdrop-filter: blur(8px);
     white-space: nowrap;
+    cursor: pointer;
     z-index: 2;
 }
 
+.showMoreBtn:hover,
 .projectTab:hover {
     background: #1a1a1a80;
     border: 1px solid #dc143c65;
@@ -92,6 +94,26 @@
 
 .projectCard {
     overflow: hidden;
+}
+
+.extraProjects {
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+.showMoreBtnWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    margin: -50px 0px 10px 0px;
+}
+
+.showMoreBtn,
+.showMoreBtn a{
+    font: 400 18px 'Ubuntu', sans-serif;
+    color: inherit;
+    text-decoration: none;
 }
 
 .singleProject {

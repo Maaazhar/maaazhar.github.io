@@ -44,7 +44,7 @@ const EducationList = [
         "majorSubject": []
       },
       {
-        "title": "Complete Web Design (HTML-CSS)",
+        "title": "Complete Web Design",
         "institute": "Dimension IT and software,",
         "instituteLink": "https://dimensionit.net/",
         "logo": {
