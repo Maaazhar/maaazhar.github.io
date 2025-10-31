@@ -45,7 +45,8 @@
     margin: 10px 10px 10px 0px;
     padding: 8px 16px;
     background: linear-gradient(145deg, #e6e6e66f, #ffffff6e);
-    box-shadow: 12px 12px 24px #d4d4d4, -12px -12px 24px #ffffff;
+    box-shadow: 12px 12px 24px #d4d4d4, -12px -12px 24px #e8e8e8;
+    /* box-shadow: 12px 12px 24px #d4d4d4, -12px -12px 24px #ffffff; */
     border: 1px solid #dc143c00;
     font: 500 18px 'Ubuntu', sans-serif;
     color: inherit;
