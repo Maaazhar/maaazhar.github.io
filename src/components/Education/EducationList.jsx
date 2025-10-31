@@ -11,7 +11,7 @@ import njkmhs from "../../assets/images/educationInstituteLogo/njkmhs.png"
 
 const EducationList = [
   {
-    "category": "Professional Training and Course",
+    "category": "Professional Course",
     "courseTitles": ["Complete Web Development", "Search Engine Optimization", "Complete Web Design", "CompTIA A+", "CCNA", "MTCRE and MTCNA", "Computer Network", "Red Hat Linux", "Windows Server"],
     "courseList": [
       {

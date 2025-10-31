@@ -213,7 +213,7 @@
 @media (max-width: 991px) {
 
     .skillTab {
-        display: block;
+        /* display: block; */
         font: 500 15px 'Ubuntu', sans-serif;
     }
 
@@ -254,8 +254,8 @@
 @media (max-width: 500px) {
 
     .skillTabs {
-        justify-content: start;
-        padding-left: 10px;
+        /* justify-content: start;
+        padding-left: 10px; */
     }
 
     .skillTab {

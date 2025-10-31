@@ -11,15 +11,70 @@
     content: "what I learn";
 }
 
+.educationContent {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.educationTabWrapper {
+    position: sticky;
+    top: 85px;
+    /* background: linear-gradient(145deg, #e6e6e66e, #ffffff23); */
+    background-color: #ffffff10;
+    /* box-shadow: 12px 12px 24px #d4d4d4, -12px -12px 24px #ffffff; */
+    box-shadow: 12px 12px 24px #d4d4d4, -12px -12px 24px #e8e8e8;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.educationTabs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    overflow-x: auto;
+}
+
+.educationTab {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 10px 10px 0px;
+    padding: 8px 16px;
+    background: linear-gradient(145deg, #e6e6e66f, #ffffff6e);
+    box-shadow: 12px 12px 24px #d4d4d4, -12px -12px 24px #ffffff;
+    border: 1px solid #dc143c00;
+    font: 500 18px 'Ubuntu', sans-serif;
+    color: inherit;
+    transition: all 0.3s ease-in-out;
+    white-space: nowrap;
+    z-index: 2;
+}
+
+.educationTab:hover {
+    border: 1px solid #dc143c5a;
+}
+
+.activeEducationTab {
+    color: #dc143c;
+    border: 1px solid #dc143c72;
+}
+
 .educationCategory {
     /* box-shadow: 1px 1px 10px #444; */
+    /* border: 1px solid red; */
     margin-bottom: 20px;
     background: linear-gradient(145deg, #e6e6e6, #ffffff);
     box-shadow: 12px 12px 24px #d4d4d4, -12px -12px 24px #ffffff;
 }
 
 .educationCategoryTitle {
-    color: crimson;
+    padding: 15px;
+    color: #dc143c;
+    font: 500 30px 'Ubuntu', sans-serif;
 }
 
 .educationCards {
@@ -31,8 +86,7 @@
     flex-wrap: wrap;
 }
 
-.educationCardsWrapper,
-.educationTabsWrapper {
+.educationCardsWrapper {
     overflow: hidden;
 }
 
@@ -82,7 +136,7 @@
     transform: rotate(5deg);
 } */
 
-.educationTabs {
+/* .educationTabs {
     display: flex;
     padding: 10px;
 }
@@ -129,7 +183,7 @@
 
 .educationTabContent {
     display: none;
-}
+} */
 
 .educationCard>p>a,
 .educationTabContent>p>a {
@@ -347,7 +401,7 @@
     }
 
     .educationTabWrapper {
-        flex: 3;
+        /* flex: 3; */
     }
 }
 
@@ -359,25 +413,25 @@
     }
 
     .educationTabs {
-        flex-direction: column;
+        /* flex-direction: column; */
     }
 
     .educationTabWrapper {
-        flex-direction: row;
+        /* flex-direction: row;
         overflow-x: auto;
         padding-bottom: 10px;
         margin-right: 0px;
-        margin-bottom: 10px;
+        margin-bottom: 10px; */
     }
 
     .educationTab {
-        padding: 10px 20px;
+        /* padding: 10px 20px;
         border-left: none;
-        border-bottom: 3px solid #dc143c33;
+        border-bottom: 3px solid #dc143c33; */
     }
 
     .activeEducationTab {
-        border-bottom: 3px solid crimson;
+        /* border-bottom: 3px solid crimson; */
     }
 
 
@@ -412,6 +466,7 @@
     }
 }
 
+
 @media (max-width: 500px) {
     .education .title::before {
         width: 250px;
@@ -425,12 +480,19 @@
     }
 
     .educationTab {
-        padding: 10px 15px;
-        font-size: 16px;
+        /* padding: 10px 15px;
+        font-size: 16px; */
     }
-
+    
     .educationTabContentWrapper {
         align-self: center;
+    }
+}
+
+@media (max-width: 455px) {
+    .educationTabs {
+        justify-content: start;
+        padding-left: 10px;
     }
 }
 
