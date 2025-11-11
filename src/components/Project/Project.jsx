@@ -51,7 +51,6 @@ const Project = () => {
                                         {d.list.length > 3 && (
                                             <div
                                                 className="extraProjects"
-                                                // style={{ maxHeight: expanded[i] ? 'fit-content' : '0px' }}
                                                 aria-hidden={!expanded[i]}
                                             >
                                                 {d.list.slice(3).map((p, j) => SingleProject(p, j + 3))}
@@ -62,11 +61,6 @@ const Project = () => {
                                                 <button
                                                     className="showMoreBtn"
                                                     onClick={() => {setExpanded(prev => ({ ...prev, [i]: !prev[i] })) }}
-                                                    // onClick={() => {
-                                                    //     expanded[i]
-                                                    //         ? setTimeout(() => { setExpanded(prev => ({ ...prev, [i]: false })) }, 10)
-                                                    //         : setExpanded(prev => ({ ...prev, [i]: true }))
-                                                    // }}
                                                     aria-expanded={!!expanded[i]}
                                                 >
                                                     {expanded[i]

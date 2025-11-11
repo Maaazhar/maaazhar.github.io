@@ -166,16 +166,18 @@ section .title::after {
 
 @keyframes blinkIcon {
     0%{
-        color: #19ffff;
-        translate: 0px -8px;
+        /* color: #19ffff; */
+        color: #3e3e3ea2;
+        translate: 0px -5px;
     }
     50%{
-        color: crimson;
+        color: #dc143ca2;
     }
     100% {
-        color: #19ffff;
+        /* color: #19ffff; */
+        color: #3e3e3ea2;
         /* color: #cbb2fa; */
-        translate: 0px 8px;
+        translate: 0px 5px;
     }
 }
 
