@@ -18,7 +18,7 @@ const Experience = () => {
                     <div className="experienceTabs">
                         <div className="tabWrapper">
                             {jobList.map((d, i) => {
-                                const id = d.company.toLowerCase().replace(/ /g, "-") + i;
+                                const id = d.company.toLowerCase().replace(/ /g, "-") + "-" + (i + 1);
                                 return (
                                     <button
                                         key={d + 1 + i}
@@ -33,7 +33,7 @@ const Experience = () => {
                             {jobList.map((d, i) => (
                                 <div
                                     key={d + 1 + i}
-                                    id={d.company.toLowerCase().replace(/ /g, "-") + i}
+                                    id={d.company.toLowerCase().replace(/ /g, "-") + "-" + (i + 1)}
                                     className={tabState === i ? "content activeContent" : "content"}>
                                     <h3 className="position">{d.position}</h3>
                                     <p className="company">{d.company}.</p>

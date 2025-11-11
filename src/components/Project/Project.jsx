@@ -10,6 +10,7 @@ const Project = () => {
     const ref = document.querySelector('#project .projectTabWrapper');
     const projects = projectList.map(project => project.category.toLowerCase().replace(/ /g, "-"));
     ActiveSectionIndicator({ sections: projects, top: 170, mount: projectCategory, setMount: setProjectCategory })
+    setTimeout(() => { }, 500);
 
     return (
         <section className="project" id="project">
@@ -34,6 +35,11 @@ const Project = () => {
                     </div>
                     {projectList.map((d, i) => {
                         const id = d.category.toLowerCase().replace(/ /g, "-");
+                        let showMoreId, showLessId;
+                        if (d.list.length > 3) {
+                            showMoreId = d.list[3].title.toLowerCase().replace(/ /g, "-") + "-4";
+                            showLessId = d.list[2].title.toLowerCase().replace(/ /g, "-") + "-3";
+                        }
                         return (
                             <div className="projectCategory"
                                 key={d.category + i}
@@ -45,7 +51,7 @@ const Project = () => {
                                         {d.list.length > 3 && (
                                             <div
                                                 className="extraProjects"
-                                                style={{ maxHeight: expanded[i] ? 'fit-content' : '0px' }}
+                                                // style={{ maxHeight: expanded[i] ? 'fit-content' : '0px' }}
                                                 aria-hidden={!expanded[i]}
                                             >
                                                 {d.list.slice(3).map((p, j) => SingleProject(p, j + 3))}
@@ -55,16 +61,25 @@ const Project = () => {
                                             <div className="showMoreBtnWrapper">
                                                 <button
                                                     className="showMoreBtn"
-                                                    onClick={() => setExpanded(prev => ({ ...prev, [i]: !prev[i] }))}
+                                                    onClick={() => {setExpanded(prev => ({ ...prev, [i]: !prev[i] })) }}
+                                                    // onClick={() => {
+                                                    //     expanded[i]
+                                                    //         ? setTimeout(() => { setExpanded(prev => ({ ...prev, [i]: false })) }, 10)
+                                                    //         : setExpanded(prev => ({ ...prev, [i]: true }))
+                                                    // }}
                                                     aria-expanded={!!expanded[i]}
                                                 >
                                                     {expanded[i]
                                                         ? (<a
-                                                            href={`#${id}`}
-                                                            onClick={(e) => handleTabClick(i, id, ref, 100, setProjectCategory, e)}>
+                                                            href={`#${showLessId}`}
+                                                            onClick={(e) => handleTabClick(i, showLessId, ref, 100, setProjectCategory, e)}>
                                                             Show Less
                                                         </a>)
-                                                        : 'Show More'
+                                                        : (<a
+                                                            href={`#${showMoreId}`}
+                                                            onClick={(e) => handleTabClick(i, showMoreId, ref, 100, setProjectCategory, e)}>
+                                                            Show {d.list.length - 3} More
+                                                        </a>)
                                                     }
                                                 </button>
                                             </div>
@@ -153,6 +168,7 @@ export default Project;
 const SingleProject = (p, idx) => (
     <div
         key={p.image + idx}
+        id={p.title.toLowerCase().replace(/ /g, "-") + "-" + (idx + 1)}
         className={idx % 2 === 0 ? "singleProject" : "singleProjectRevers"}>
         <div className="projectImg "><img src={p.image} alt="" /></div>
         <div className="projectDescription ">

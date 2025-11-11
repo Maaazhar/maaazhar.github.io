@@ -40,13 +40,14 @@
     border: 1px solid #ffffff17;
     overflow-x: auto;
 }
+
 .showMoreBtn,
 .projectTab {
     display: block;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 10px 10px 10px 0px;
+    margin: 10px;
     padding: 8px 16px;
     background: #2c2c2c80;
     border-radius: 5px;
@@ -88,7 +89,7 @@
     font: 500 30px 'Ubuntu', sans-serif;
 }
 
-.projectWrapper{
+.projectWrapper {
     padding: 10px;
 }
 
@@ -97,8 +98,11 @@
 }
 
 .extraProjects {
+    max-height: 0px;
     overflow: hidden;
-    transition: max-height 0.5s ease;
+    visibility: hidden;
+    interpolate-size: allow-keywords;
+    transition: max-height 0.5s ease-in-out;
 }
 
 .showMoreBtnWrapper {
@@ -109,8 +113,25 @@
     margin: -50px 0px 10px 0px;
 }
 
+.projectCard:has(.showMoreBtn[aria-expanded="true"]) .extraProjects {
+    max-height: fit-content;
+    visibility: visible;
+}
+
+.showMoreBtn::before,
+.showMoreBtn::after {
+    content: "▼";
+    transition: transform 0.5s ease-in-out;
+}
+
+.showMoreBtn[aria-expanded="true"]::before,
+.showMoreBtn[aria-expanded="true"]::after {
+    transform: rotate(180deg);
+}
+
 .showMoreBtn,
-.showMoreBtn a{
+.showMoreBtn a {
+    margin-inline: 10px;
     font: 400 18px 'Ubuntu', sans-serif;
     color: inherit;
     text-decoration: none;
@@ -341,6 +362,10 @@
 
 /* responsive media query for Project */
 @media (max-width: 1104px) {
+    .showMoreBtnWrapper {
+        margin: 0px 0px 20px 0px;
+    }
+
     .projectTitleWrapper {
         font-size: 22px;
     }
@@ -477,12 +502,13 @@
         right: 55px;
         font-size: 20px;
     }
-    
+
     .workingMode-0 {
         right: 25px;
     }
 
-    .projectTitleWrapper:has(.projectSubTitle), .singleProjectRevers>.projectDescription>.projectTitleWrapper:has(.projectSubTitle) {
+    .projectTitleWrapper:has(.projectSubTitle),
+    .singleProjectRevers>.projectDescription>.projectTitleWrapper:has(.projectSubTitle) {
         align-items: flex-start;
     }
 
@@ -587,6 +613,7 @@
         display: block;
         font: 500 15px 'Ubuntu', sans-serif;
     }
+
     /* .workingMode,
     .singleProjectRevers>.projectDescription>.projectTitleWrapper>.workingMode {
         transform: translate(172px, 100%);
