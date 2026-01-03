@@ -110,6 +110,7 @@
     visibility: visible;
 }
 
+
 .showMoreBtnWrapper {
     width: 100%;
     display: flex;
@@ -127,7 +128,7 @@
     text-decoration: none;
 }
 
-.showMoreBtn:hover{
+.showMoreBtn:hover {
     color: #dc143c;
 }
 
@@ -138,6 +139,7 @@
     animation: blinkIcon 1s infinite ease-in-out alternate;
     transition: transform 0.5s ease-in-out;
 }
+
 .showMoreBtn:hover::before,
 .showMoreBtn:hover::after {
     opacity: 0.8;

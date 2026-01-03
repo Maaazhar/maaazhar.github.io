@@ -49,10 +49,7 @@ const Project = () => {
                                     <div className="projectCard">
                                         {d.list.slice(0, 3).map((p, j) => SingleProject(p, j))}
                                         {d.list.length > 3 && (
-                                            <div
-                                                className="extraProjects"
-                                                aria-hidden={!expanded[i]}
-                                            >
+                                            <div className="extraProjects" aria-hidden={!expanded[i]}>
                                                 {d.list.slice(3).map((p, j) => SingleProject(p, j + 3))}
                                             </div>
                                         )}
@@ -60,7 +57,7 @@ const Project = () => {
                                             <div className="showMoreBtnWrapper">
                                                 <button
                                                     className="showMoreBtn"
-                                                    onClick={() => {setExpanded(prev => ({ ...prev, [i]: !prev[i] })) }}
+                                                    onClick={() => { setExpanded(prev => ({ ...prev, [i]: !prev[i] })) }}
                                                     aria-expanded={!!expanded[i]}
                                                 >
                                                     {expanded[i]

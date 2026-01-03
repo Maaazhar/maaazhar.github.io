@@ -19,10 +19,10 @@ export const Hero = () => {
                                     I transform
                                     <span> idea </span>
                                     into
-                                    <span> smooth web experience.</span>
+                                    <span> digital experience.</span>
                                 </h2>
                                 <h3 className="text-4">
-                                    I am an <span> experienced web developer, </span>
+                                    I am an <span> experienced software engineer, specializing in web application and website, </span>
                                     I craft website with
                                     <span> intuitive </span>
                                     and
@@ -36,8 +36,8 @@ export const Hero = () => {
                                         className="btn home-btn-item"
                                         target="_blank"
                                         href="https://www.linkedin.com/in/maaazhar/"
-                                        title="See LinekdIn">
-                                        See LinekdIn
+                                        title="See LinkedIn">
+                                        See LinkedIn
                                     </a>
                                     <a
                                         className="btn home-btn-item"

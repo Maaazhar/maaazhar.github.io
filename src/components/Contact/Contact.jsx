@@ -60,11 +60,17 @@ const Contact = () => {
                                     <i className="fab fa-github-square"></i>
                                 </a>
                                 <a
+                                    title="Mazharul Islam on WhatsApp"
+                                    href="https://wa.me/971557517099"
+                                    target="_blank">
+                                    <i className="fab fa-whatsapp"></i>
+                                </a>
+                                {/* <a
                                     title="Mazharul Islam on Code pen"
                                     href="https://codepen.io/maaazhar"
                                     target="_blank">
                                     <i className="fab fa-codepen"></i>
-                                </a>
+                                </a> */}
                                 {/* <a
                                     title="Mazharul Islam on Code sand box"
                                     href="https://codesandbox.io/u/Maaazhar"
@@ -79,12 +85,12 @@ const Contact = () => {
                                         </g>
                                     </svg>
                                 </a> */}
-                                <a
+                                {/* <a
                                     title="Mazharul Islam on Facebook"
                                     href="https://www.facebook.com/MAAAZHAAAR/"
                                     target="_blank">
                                     <i className="fab fa-facebook-square"></i>
-                                </a>
+                                </a> */}
                                 {/* <a title="Mazharul Islam on Twitter" href="https://twitter.com/maaazhaaar" target="_blank"> <i
                                     className="fab fa-twitter-square"></i> </a> */}
                             </div>
