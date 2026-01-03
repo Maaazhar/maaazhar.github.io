@@ -161,7 +161,7 @@ const SingleProject = (p, idx) => (
         key={p.image + idx}
         id={p.title.toLowerCase().replace(/ /g, "-") + "-" + (idx + 1)}
         className={idx % 2 === 0 ? "singleProject" : "singleProjectRevers"}>
-        <div className="projectImg "><img src={p.image} alt="" /></div>
+        <div className="projectImg "><a href={p.liveLink.at(-1)} target="_blank"><img src={p.image} alt="" /></a></div>
         <div className="projectDescription ">
             <div className="projectTitleWrapper">
                 <h3 className="projectTitle">{p.title}</h3>
