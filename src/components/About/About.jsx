@@ -3,7 +3,9 @@ import PP from "../../assets/images/profile.jpg"
 import "./About.css"
 
 export const About = () => {
-    const profession = [" Web Development.", " Front-End Development.", " ReactJS Development.", " MERN Stack Development.", " Web Design."];
+    // const profession = [" Web Development.", " Front-End Development.", " ReactJS Development.", " MERN Stack Development.", " Web Design."];
+    const professions = ["Software Engineering.", "Web Development.", "JavaScript Development.", "Front-End Developer.", "Back-End Development.", "Full-Stack Development.", "MERN-Stack Development."
+    ];
 
     return (
         <section className="about" id="about">
@@ -18,7 +20,7 @@ export const About = () => {
                             <span> Maz-har </span> and reach me out for
                             <span className="aboutWork">
                                 <Typewriter
-                                    words={profession}
+                                    words={professions}
                                     loop={999}
                                     cursor
                                     cursorStyle='|'
@@ -28,15 +30,21 @@ export const About = () => {
                                 />
                             </span>
                         </div>
-                        <p>
-                            I am an experienced software engineer, bringing designs to life by crafting interactive and visually engaging user interfaces that seamlessly blend form with functionality. I focus on building clean, intuitive interfaces that feel natural and user-friendly.
-                            <br />
-                            Utilizing my expertise in HTML, CSS, JavaScript, and React, I develop modern websites and web applications that not only look stunning but also deliver responsive and consistent experiences across devices and browsers.
-                            <br />
-                            From concept to execution, I prioritize user satisfaction by continuously refining and optimizing the digital journey. I ensure every aspect of an application aligns with both aesthetic goals and strong usability standards.
-                            <br />
-                            Alongside frontend development, I actively work with backend technologies including Node.js, Express, and MongoDB to build scalable, high-performance systems, delivering polished, user-centric solutions that leave a lasting impression.
-                        </p>
+                        <div>
+                            <p className="aboutTextChunk">
+                                I am an experienced software engineer, bringing designs to life by crafting interactive and visually engaging user interfaces that seamlessly blend form with functionality. I focus on building clean, intuitive interfaces that feel natural and user-friendly.
+                            </p>
+                            <p className="aboutTextChunk">
+                                Utilizing my expertise in HTML, CSS, JavaScript, and React, I develop modern websites and web applications that not only look stunning but also deliver responsive and consistent experiences across devices and browsers.
+                            </p>
+                            <p className="aboutTextChunk">
+                                From concept to execution, I prioritize user satisfaction by continuously refining and optimizing the digital journey. I ensure every aspect of an application aligns with both aesthetic goals and strong usability standards.
+
+                            </p>
+                            <p className="aboutTextChunk">
+                                Alongside frontend development, I actively work with backend technologies including Node.js, Express, and MongoDB to build scalable, high-performance systems, delivering polished, user-centric solutions that leave a lasting impression.
+                            </p>
+                        </div>
                         {/* <p>
                             I am an experienced Web Developer, I bring designs to life, crafting interactive and visually engaging user interfaces that seamlessly blend in form with functionality. Utilizing my expertise in HTML, CSS, JavaScript, and ReactJS.
                             <br />

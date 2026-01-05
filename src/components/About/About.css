@@ -15,13 +15,16 @@
 .about .about-content .left img {
     display: block;
     width: 320px;
-    aspect-ratio: 1/1.3;
+    aspect-ratio: 1/1.5;
     object-fit: cover;
     border-radius: 2%;
 }
 
 .about .about-content .right {
     width: 55%;
+}
+.about .about-content .right .aboutTextChunk{
+    margin-bottom: 10px;
 }
 
 .about .about-content .right .text {

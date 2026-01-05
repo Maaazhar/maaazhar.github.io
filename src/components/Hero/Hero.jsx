@@ -22,12 +22,14 @@ export const Hero = () => {
                                     <span> digital experience.</span>
                                 </h2>
                                 <h3 className="text-4">
-                                    I am an <span> experienced software engineer, specializing in web application and website, </span>
-                                    I craft website with
-                                    <span> intuitive </span>
-                                    and
+                                    I am an 
+                                    <span> experienced software engineer, </span>
+                                    specializing in web application and website, I build
+                                    {/* <span> intuitive </span> and */}
                                     <span> engaging </span>
-                                    user interfaces, integrate functionality with
+                                    user interfaces,
+                                    <span> robust </span> 
+                                    functionality and
                                     <span> seamless </span>
                                     user experiences.
                                 </h3>
