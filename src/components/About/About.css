@@ -71,7 +71,7 @@
 /* responsive media query */
 @media (max-width: 1104px) {
     .about .about-content .left img {
-        height: 350px;
+        /* height: 350px; */
     }
     .about .about-content .right .text {
         font-size: 25px;
